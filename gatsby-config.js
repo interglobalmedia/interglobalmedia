@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Inter 🌐 Media`,
+    author: `Maria D. Campbell`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.interglobalmedianetwork.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `letsbsocial1`,
     },
   },
   plugins: [
