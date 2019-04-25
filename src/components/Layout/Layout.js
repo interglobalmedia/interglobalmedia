@@ -1,7 +1,6 @@
 import React from "react"
-import { StaticQuery, graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import Header from '../Header/Header'
+import { StaticQuery, graphql } from "gatsby"
+import Header from "../Header/Header"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -23,7 +22,7 @@ const Layout = ({ children }) => (
           <main className="Site-content">{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
-          {` `}
+            {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
