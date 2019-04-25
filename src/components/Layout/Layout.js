@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "../Header/Header"
+import Footer from "../Footer/Footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -14,17 +15,13 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <div style={{ background: "#ffec8f" }}>
         <header>
           <Header siteTitle={data.site.siteMetadata.title} />
         </header>
         <div className="Site">
           <main className="Site-content">{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Footer />
         </div>
       </div>
     )}
