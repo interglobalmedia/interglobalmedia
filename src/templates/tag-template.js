@@ -22,8 +22,10 @@ const Tags = props => {
           {posts.map(({ node }, i) => (
             <Link to={node.fields.slug} key={i}>
               <ul style={{ marginLeft: "-8rem" }}>
-                <li style={{ listStyleType: "square" }}>
-                  {node.frontmatter.title}
+                <li style={{ listStyleType: "square", color: "#717171" }}>
+                  <span style={{ color: "#007acc" }}>
+                    {node.frontmatter.title}
+                  </span>
                 </li>
               </ul>
             </Link>
