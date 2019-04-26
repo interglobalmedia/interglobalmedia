@@ -93,7 +93,6 @@ const BlogPostTemplate = props => {
                     style={{
                       color: "#268bd2",
                       marginRight: "0.25rem",
-                      marginLeft: "0.5rem",
                     }}
                   />
                   {category}
