@@ -38,7 +38,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: `Maria D. Campbell`,
+  siteTitle: `Inter 🌐 Media`,
 }
 
 export default Header
