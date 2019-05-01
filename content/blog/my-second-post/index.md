@@ -1,11 +1,12 @@
 ---
-title: "My Second Post!"
+title: 'My Second Post!'
 image: salty_egg.jpg
 description: This is another description.
-date: "2015-05-06T23:46:37.121Z"
-tags: ["blogging"]
-categories: ["writing"]
-author: "Maria D. Campbell"
+date: '2015-05-06T23:46:37.121Z'
+tags: ['blogging']
+categories: ['writing']
+type: 'post'
+author: 'Maria D. Campbell'
 ---
 
 Wow! I love blogging so much already.
