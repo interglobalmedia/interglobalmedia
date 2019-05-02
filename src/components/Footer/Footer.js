@@ -6,6 +6,7 @@ import {
     faDirections,
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
+import ScrollUpButton from 'react-scroll-up-button'
 
 const Footer = () => {
     return (
@@ -18,6 +19,9 @@ const Footer = () => {
             }}
         >
             <div style={{marginBottom: '1rem'}}>
+                <ScrollUpButton
+                    style={{background: 'transparent', outline: 'none'}}
+                />
                 <a
                     href="mailto:interglobalmedia@gmail.com"
                     style={{boxShadow: 'none', marginRight: '1rem'}}
