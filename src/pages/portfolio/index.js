@@ -30,14 +30,9 @@ const PortfolioIndex = props => {
             <ColumnsDiv>
                 {portfolioData.map((project, index) => (
                     <ProjectDiv key={index}>
-                        <Link
-                            to={'/portfolio/view'}
-                            state={project}
-                            key={project.title}
-                            style={{boxShadow: 'none'}}
-                        >
+                        <span style={{color: 'rgb(216, 132, 46)'}}>
                             {project.title}
-                        </Link>
+                        </span>
                         <img
                             src={project.image}
                             alt={project.title}
@@ -61,20 +56,6 @@ const PortfolioIndex = props => {
                             }}
                         >
                             {project.shortDescription}
-                        </p>
-                        <p
-                            style={{
-                                width: '100%',
-                                maxWidth: '800px',
-                                display: 'flex',
-                                alignItems: 'flex-end',
-                                flexDirection: 'column',
-                                justifyContent: 'flex-start',
-                                marginTop: '-1rem',
-                                color: '#717171',
-                            }}
-                        >
-                            {project.shortDescription2}
                         </p>
                         <span style={{color: 'rgb(216, 132, 46)'}}>
                             {project.tags}
