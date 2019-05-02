@@ -1,0 +1,63 @@
+import React from "react"
+import { Link, graphql } from "gatsby"
+import Layout from "../components/Layout/Layout"
+import styled from "@emotion/styled"
+
+const Categories = props => {
+  const posts = props.data.allMarkdownRemark.edges
+  const { category } = props.pageContext
+  return (
+    <Layout>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "3rem auto",
+        }}
+      >
+        <h1 style={{ color: "#717171" }}>{`posts in: ${category}`}</h1>
+        <div>
+          {posts.map(({ node }, i) => (
+            <Link to={node.fields.slug} key={i}>
+              <ul style={{ marginLeft: "-7rem" }}>
+                <li style={{ listStyleType: "square", color: "#717171" }}>
+                  <span style={{ color: "#007acc" }}>
+                    {node.frontmatter.title}
+                  </span>
+                </li>
+              </ul>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export default Categories
+
+export const query = graphql`
+  query CategoriesQuery($category: String!) {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { categories: { eq: $category } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+          frontmatter {
+            categories
+          }
+        }
+      }
+    }
+  }
+`
