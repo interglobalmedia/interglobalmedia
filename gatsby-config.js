@@ -2,13 +2,14 @@ module.exports = {
     siteMetadata: {
         title: `Inter 🌐 Media`,
         author: `Maria D. Campbell`,
-        description: `A starter blog demonstrating what Gatsby can do.`,
+        description: `The Business Website for Inter-Global Media Network, Inc.`,
         siteUrl: `https://www.interglobalmedianetwork.com/`,
         social: {
             twitter: `letsbsocial1`,
         },
     },
     plugins: [
+        `gatsby-plugin-sass`,
         `gatsby-plugin-emotion`,
         {
             resolve: `gatsby-source-filesystem`,
