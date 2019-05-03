@@ -827,4 +827,22 @@ pre[class*='language-'] code[class*='language-'] {
     padding-bottom: 1rem;
 }
 
-/* Scrollup Button Styling */
+/* declaring this in _global._scss takes care of Firefox bug re <a>text
+decoration */
+a {
+    text-decoration: none;
+}
+
+.active {
+    cursor: pointer;
+}
+
+/* Clearfix */
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

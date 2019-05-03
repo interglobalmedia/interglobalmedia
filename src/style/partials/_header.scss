@@ -1,0 +1,202 @@
+/* Mobile Hamburger Styling */
+
+div.hamburger {
+    display: block;
+    width: 36px;
+    height: 30px;
+    position: fixed;
+    top: 33px;
+    right: 1.5rem;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+div.hamburger div.line {
+    width: 100%;
+    height: 6px;
+    margin: 0 0 6px 0;
+    background: $chocolate;
+    transition: transform 0.3s, opacity 0.1s;
+}
+
+/* End Mobile Hamburger Styling */
+
+.hide {
+    opacity: 0;
+    transform: translate(42px);
+}
+
+.animate0 {
+    transform: rotate(45deg) translateY(17px);
+}
+
+.animate2 {
+    transform: rotate(-45deg) translateY(-17px);
+}
+
+/* End Animation classes for Hamburger Rotation Animation Styling in topNavNarrow */
+
+/* Animation classes for Hamburger Rotation Animation Styling Used in topNavNarrow */
+
+nav.responsive-menu {
+    width: 100%;
+    height: 85px;
+    overflow-y: visible;
+    opacity: 1;
+    z-index: 1;
+    transition: height 0.5s ease, opacity 1s;
+
+    li a,
+    li div.active {
+        display: none !important;
+    }
+
+    & ul {
+        -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+        -webkit-transform-origin: 50% 0;
+        -webkit-transition: 350ms;
+        -moz-transition: 350ms;
+        -o-transition: 350ms;
+        transition: 350ms;
+    }
+}
+
+nav.responsive-menu.show {
+    opacity: 1;
+    z-index: 2;
+    transition: height 0.5s ease, visibility 1s;
+    height: 100vh;
+    padding-top: 6rem;
+    display: flex;
+
+    h1 {
+        display: none;
+    }
+
+    li {
+        margin-top: 1.5rem;
+    }
+
+    li a,
+    li div.active {
+        display: block !important;
+        font-size: 24px;
+    }
+
+    margin-top: 15px;
+
+    a {
+        color: $mainBackground;
+
+        &:hover,
+        &:focus {
+            color: $chocolate;
+            transition: 1s ease-out;
+        }
+    }
+
+    & ul {
+        -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+        margin: 30px auto 0;
+
+        li div.active a {
+            display: none !important;
+        }
+    }
+
+    @media #{$min-990} {
+        display: none;
+    }
+}
+
+/* Get rid of .top nav > 900px wide screens with display: none so does not take up space on page */
+
+nav.top {
+    display: none;
+}
+
+/* End responsive Menu Styling */
+
+/* Wider Screens Styling > 675px */
+
+div.hamburger,
+nav.responsive-menu {
+    @media #{$min-990} {
+        display: none;
+    }
+}
+
+/* Make sure that nav links are not reversed in mobile */
+
+nav li a {
+    display: block;
+
+    @media #{$min-990} {
+        display: inline-block;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+nav li {
+    display: block;
+
+    @media #{$min-990} {
+        display: inline-block;
+    }
+}
+
+nav ul {
+    @media #{$min-990} {
+        display: inline-block;
+        float: right;
+    }
+}
+
+/* end nav link fix */
+
+/* Nav Styling > 900px wide */
+
+nav.top {
+    @media #{$min-990} {
+        display: block;
+        width: 100%;
+        height: 85px;
+        z-index: 4;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: -140px;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    li a {
+        display: block !important;
+        font-size: 20px;
+    }
+
+    a {
+        color: $mainBackground;
+
+        &:hover,
+        &:focus {
+            color: $chocolate;
+            transition: 1s ease-out;
+        }
+    }
+
+    li a.active {
+        display: none;
+    }
+}
+
+/* get rid of duplicate active links created by label with react-router-dom. Gets rid of dups in mobile nav. */
+
+li div a,
+li div.active a {
+    display: none !important;
+}
