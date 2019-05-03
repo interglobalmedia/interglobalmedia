@@ -10,7 +10,7 @@ import {Helmet} from 'react-helmet'
 export const PostDiv = styled.div`
     width: 90%;
     max-width: 1026px;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
     & a {
         box-shadow: none;
     }
