@@ -1,8 +1,45 @@
 import React, {Component} from 'react'
 import Helmet from 'react-helmet'
 import {Link} from 'gatsby'
-
+import styled from '@emotion/styled'
 import Layout from '../../components/Layout/Layout'
+
+const ViewDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    width: 90%;
+    color: rgb(88, 86, 86);
+`
+
+const TitleH2Style = styled.h2`
+    text-align: center;
+    font-weight: 400;
+    color: rgb(216, 132, 46);
+`
+
+const ShortDescDiv = styled.div`
+    display: flex;
+`
+
+const AnchorsDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & a {
+        box-shadow: none;
+    }
+    & a:first-of-type {
+        margin-bottom: -1.25rem;
+        margin-top: 1rem;
+    }
+    & a:nth-of-type(2) {
+        margin-bottom: -1.25rem;
+    }
+    & a:nth-of-type(3) {
+        margin-bottom: 1rem;
+    }
+`
 
 export class view extends Component {
     render() {
@@ -25,15 +62,7 @@ export class view extends Component {
                 <Helmet>
                     <title>{`${title} | Inter-Global Media`}</title>
                 </Helmet>
-                <div
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        margin: '3rem auto',
-                        width: '90%',
-                        color: 'rgb(88,86,86)',
-                    }}
-                >
+                <ViewDiv>
                     <Link
                         to="/portfolio"
                         style={{
@@ -46,59 +75,23 @@ export class view extends Component {
                         &larr; back
                     </Link>
 
-                    <h2
-                        style={{
-                            textAlign: 'center',
-                            fontWeight: '400',
-                            color: 'rgb(216, 132, 46)',
-                        }}
-                    >
-                        {title}
-                    </h2>
+                    <TitleH2Style>{title}</TitleH2Style>
                     <img src={image} alt={title} />
-                    <div style={{display: 'flex'}}>{shortDescription}</div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'flex-start',
-                        }}
-                    >
-                        <a
-                            href={more}
-                            alt={title}
-                            style={{
-                                boxShadow: 'none',
-                                marginBottom: '-1.25rem',
-                                marginTop: '1rem',
-                            }}
-                            target="_new"
-                        >
+                    <ShortDescDiv>{shortDescription}</ShortDescDiv>
+                    <AnchorsDiv>
+                        <a href={more} alt={title} target="_new">
                             Read More About {title}
                         </a>
                         <br />
-                        <a
-                            href={repository}
-                            alt={title}
-                            style={{
-                                boxShadow: 'none',
-                                marginBottom: '-1.25rem',
-                            }}
-                            target="_new"
-                        >
+                        <a href={repository} alt={title} target="_new">
                             {title} Source Code
                         </a>
                         <br />
-                        <a
-                            href={website}
-                            alt={title}
-                            style={{boxShadow: 'none', marginBottom: '1rem'}}
-                            target="_ne"
-                        >
+                        <a href={website} alt={title} target="_new">
                             {title} Live Site
                         </a>
-                    </div>
-                </div>
+                    </AnchorsDiv>
+                </ViewDiv>
             </Layout>
         )
     }
