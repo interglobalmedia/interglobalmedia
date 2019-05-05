@@ -25,7 +25,7 @@ const Footer = () => {
     return (
         <footer
             style={{
-                background: 'rgb(132, 0, 88)',
+                background: 'rgb(98,22,69)',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
