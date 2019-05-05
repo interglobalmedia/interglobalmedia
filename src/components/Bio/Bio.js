@@ -5,74 +5,79 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react'
+import {StaticQuery, graphql} from 'gatsby'
+import Image from 'gatsby-image'
+import styled from '@emotion/styled'
+import {rhythm} from '../../utils/typography'
 
-import { rhythm } from "../../utils/typography"
+const BioDiv = styled.div`
+    display: flex;
+    margin-bottom: rhythm(2.5);
+`
 
 function Bio() {
-  return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
+    return (
+        <StaticQuery
+            query={bioQuery}
+            render={data => {
+                const {author, social} = data.site.siteMetadata
+                return (
+                    <BioDiv
+                        style={{
+                            display: `flex`,
+                            marginBottom: rhythm(2.5),
+                        }}
+                    >
+                        <Image
+                            fixed={data.avatar.childImageSharp.fixed}
+                            alt={author}
+                            style={{
+                                marginRight: rhythm(1 / 2),
+                                marginBottom: 0,
+                                minWidth: 50,
+                                borderRadius: `100%`,
+                            }}
+                            imgStyle={{
+                                borderRadius: `50%`,
+                            }}
+                        />
+                        <p>
+                            Created by <strong>{author}</strong> who lives and
+                            works in New York City building useful things.
+                            {` `}
+                            <a
+                                href={`https://twitter.com/${social.twitter}`}
+                                style={{boxShadow: 'none'}}
+                            >
+                                You should follow her on Twitter.
+                            </a>
+                        </p>
+                    </BioDiv>
+                )
             }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Created by <strong>{author}</strong> who lives and works in New
-              York City building useful things.
-              {` `}
-              <a
-                href={`https://twitter.com/${social.twitter}`}
-                style={{ boxShadow: "none" }}
-              >
-                You should follow her on Twitter.
-              </a>
-            </p>
-          </div>
-        )
-      }}
-    />
-  )
+        />
+    )
 }
 
 const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
+    query BioQuery {
+        avatar: file(absolutePath: {regex: "/profile-pic.jpg/"}) {
+            childImageSharp {
+                fixed(width: 50, height: 50) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
         }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
+        site {
+            siteMetadata {
+                author
+                social {
+                    twitter
+                }
+            }
         }
-      }
     }
-  }
 `
 
 export default Bio
