@@ -58,7 +58,7 @@ const BlogPostTemplate = props => {
                         width: '100%',
                         maxWidth: '1026px',
                         margin: '3rem auto',
-                        textAling: 'left',
+                        textAlign: 'left',
                     }}
                 >
                     <h1 style={{textAlign: 'center'}}>{title}</h1>

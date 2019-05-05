@@ -7,12 +7,25 @@ import {
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
+import styled from '@emotion/styled'
+
+const AnchorDiv = styled.div`
+    margin-bottom: 1rem;
+`
+const AnchorStyle = styled.a`
+    box-shadow: none;
+    margin-right: 1rem;
+`
+
+const SiteCredsDiv = styled.div`
+    color: rgb(216, 132, 46);
+`
 
 const Footer = () => {
     return (
         <footer
             style={{
-                background: 'rgb(132, 0, 88)',
+                background: 'rgb(98,22,69)',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -21,17 +34,14 @@ const Footer = () => {
                 overflow: 'hidden',
             }}
         >
-            <div style={{marginBottom: '1rem'}}>
+            <AnchorDiv>
                 <ScrollUpButton
                     style={{background: 'transparent', outline: 'none'}}
                 />
-                <a
-                    href="mailto:interglobalmedia@gmail.com"
-                    style={{boxShadow: 'none', marginRight: '1rem'}}
-                >
+                <AnchorStyle href="mailto:interglobalmedia@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} />
                     Contact
-                </a>
+                </AnchorStyle>
                 <Link
                     to="/sitemap"
                     style={{boxShadow: 'none', marginRight: '1rem'}}
@@ -43,12 +53,12 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faRss} />
                     RSS
                 </Link>
-            </div>
-            <div style={{color: 'rgb(216, 132, 46)'}}>
+            </AnchorDiv>
+            <SiteCredsDiv>
                 © {new Date().getFullYear()}
                 {` `}
                 Inter-Global Media Network, Inc.
-            </div>
+            </SiteCredsDiv>
         </footer>
     )
 }

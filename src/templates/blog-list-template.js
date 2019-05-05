@@ -37,7 +37,7 @@ export const PostListTitle = styled.h1`
     font-weight: normal;
     margin-bottom: 0.25rem;
     line-height: 1.3;
-    color: rgb(190, 138, 96);
+    color: #007acc;
     & :hover {
         text-decoration: underline;
     }
