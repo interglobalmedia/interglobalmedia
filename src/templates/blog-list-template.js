@@ -37,7 +37,7 @@ export const PostListTitle = styled.h1`
     font-weight: normal;
     margin-bottom: 0.25rem;
     line-height: 1.3;
-    color: #52afd2;
+    color: rgb(190, 138, 96);
     & :hover {
         text-decoration: underline;
     }
@@ -47,7 +47,7 @@ export const ExcerptWrapUl = styled.ul`
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    color: #717171;
+    color: rgb(161, 141, 104);
     & li {
         list-style-type: none;
     }
@@ -69,7 +69,7 @@ export const PostListMetaDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    color: #717171;
+    color: rgba(47, 0, 0);
 `
 
 export const PrevNextUl = styled.ul`
