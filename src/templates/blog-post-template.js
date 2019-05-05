@@ -35,12 +35,21 @@ const BlogPostTemplate = props => {
                 post
                 author={author}
             />
-            <div style={{margin: '0 auto', color: '#717171'}}>
+            <div
+                style={{
+                    margin: '0 auto',
+                    color: 'rgb(47,0,0)',
+                }}
+            >
                 <div>
                     {image && (
                         <Img
                             fluid={image.childImageSharp.fluid}
-                            style={{width: '100%', height: '400px'}}
+                            style={{
+                                width: '100%',
+                                height: '400px',
+                                marginTop: '0',
+                            }}
                         />
                     )}
                 </div>

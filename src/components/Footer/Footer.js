@@ -12,10 +12,13 @@ const Footer = () => {
     return (
         <footer
             style={{
-                minHeight: '90px',
-                paddingTop: '50px',
-                textAlign: 'center',
-                color: '#717171',
+                background: 'rgb(132, 0, 88)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                paddingTop: '3rem',
+                marginBottom: '-2rem',
+                overflow: 'hidden',
             }}
         >
             <div style={{marginBottom: '1rem'}}>
@@ -41,14 +44,11 @@ const Footer = () => {
                     RSS
                 </Link>
             </div>
-            © {new Date().getFullYear()}
-            {` `}
-            <a
-                href="https://www.interglobalmedianetwork.com"
-                style={{boxShadow: 'none'}}
-            >
+            <div style={{color: 'rgb(216, 132, 46)'}}>
+                © {new Date().getFullYear()}
+                {` `}
                 Inter-Global Media Network, Inc.
-            </a>
+            </div>
         </footer>
     )
 }
