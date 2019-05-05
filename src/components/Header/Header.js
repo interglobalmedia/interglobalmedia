@@ -38,7 +38,10 @@ const Header = ({siteTitle}) => (
         <HeaderStyle>
             <nav className="responsive-menu">
                 <ResponsiveHeading1>
-                    <Link to="/" style={{boxShadow: 'none', color: '#d8842e'}}>
+                    <Link
+                        to="/"
+                        style={{boxShadow: 'none', color: 'rgb(47,0,0)'}}
+                    >
                         {siteTitle}
                     </Link>
                 </ResponsiveHeading1>
@@ -49,9 +52,9 @@ const Header = ({siteTitle}) => (
                             style={{
                                 marginRight: '1.5rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Home
                         </Link>
@@ -62,9 +65,9 @@ const Header = ({siteTitle}) => (
                             style={{
                                 marginRight: '1.5rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Blog
                         </Link>
@@ -73,12 +76,10 @@ const Header = ({siteTitle}) => (
                         <Link
                             to="/portfolio"
                             style={{
-                                // marginRight: '-3rem',
-                                // paddingRight: '-6rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Portfolio
                         </Link>
@@ -87,7 +88,10 @@ const Header = ({siteTitle}) => (
             </nav>
             <nav className="top">
                 <TopHeading1>
-                    <Link to="/" style={{boxShadow: 'none', color: '#d8842e'}}>
+                    <Link
+                        to="/"
+                        style={{boxShadow: 'none', color: 'rgba(47,0,0)'}}
+                    >
                         {siteTitle}
                     </Link>
                 </TopHeading1>
@@ -98,9 +102,9 @@ const Header = ({siteTitle}) => (
                             style={{
                                 marginRight: '1.5rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Home
                         </Link>
@@ -111,9 +115,9 @@ const Header = ({siteTitle}) => (
                             style={{
                                 marginRight: '1.5rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Blog
                         </Link>
@@ -124,9 +128,9 @@ const Header = ({siteTitle}) => (
                             style={{
                                 marginRight: '1.5rem',
                                 boxShadow: 'none',
-                                color: '#d8842e',
+                                color: 'rgb(47,0,0)',
                             }}
-                            activeStyle={{color: '#007acc'}}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Portfolio
                         </Link>
