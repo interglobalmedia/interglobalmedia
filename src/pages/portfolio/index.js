@@ -52,7 +52,7 @@ const PortfolioIndex = props => {
                                 flexDirection: 'column',
                                 justifyContent: 'flex-start',
                                 marginTop: '-1rem',
-                                color: '#717171',
+                                color: 'rgb(88,86,86)',
                             }}
                         >
                             {project.shortDescription}

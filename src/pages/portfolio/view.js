@@ -31,7 +31,7 @@ export class view extends Component {
                         flexDirection: 'column',
                         margin: '3rem auto',
                         width: '90%',
-                        color: '#717171',
+                        color: 'rgb(88,86,86)',
                     }}
                 >
                     <Link
@@ -46,7 +46,13 @@ export class view extends Component {
                         &larr; back
                     </Link>
 
-                    <h2 style={{textAlign: 'center', fontWeight: '400'}}>
+                    <h2
+                        style={{
+                            textAlign: 'center',
+                            fontWeight: '400',
+                            color: 'rgb(216, 132, 46)',
+                        }}
+                    >
                         {title}
                     </h2>
                     <img src={image} alt={title} />
