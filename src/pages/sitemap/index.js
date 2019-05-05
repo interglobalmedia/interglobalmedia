@@ -1,78 +1,85 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
+import styled from '@emotion/styled'
 import Layout from '../../components/Layout/Layout'
+
+const SitemapDiv = styled.div`
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 1026px;
+    background: rgba(235, 181, 135, 0.7);
+    padding: 1.5rem;
+    letter-spacing: 0.07em;
+    & h1,
+    h2,
+    h3 {
+        color: rgb(133, 68, 66);
+    }
+`
+
+const SitemapUl = styled.ul`
+    list-style-type: square;
+    list-style-position: outside;
+    & li {
+        color: rgb(133, 68, 66);
+    }
+`
+
+const MetaDiv = styled.div`
+    box-shadow: none;
+    color: rgba(153, 170, 181, 1);
+`
+
+const SitemapSpan = styled.span`
+    color: rgba(88, 86, 86, 0.7);
+`
 
 const SiteMapPage = props => {
     const postList = props.data.allMarkdownRemark
     return (
         <Layout>
-            <div
-                style={{
-                    margin: '3rem auto',
-                    width: '90%',
-                    maxWidth: '1026px',
-                    background: 'rgba(255,240,216,1)',
-                    padding: '1.5rem',
-                    letterSpacing: '0.07em',
-                }}
-            >
-                <h1 style={{color: '#717171'}}>Sitemap</h1>
-                <h2 style={{color: '#717171'}}>Pages</h2>
-                <ul style={{listStyleType: 'square'}}>
-                    <li style={{color: '#717171'}}>
+            <SitemapDiv>
+                <h1>Sitemap</h1>
+                <h2>Pages</h2>
+                <SitemapUl>
+                    <li>
                         <Link to="/" style={{boxShadow: 'none'}}>
-                            <span style={{color: 'rgba(82,175,210,1)'}}>
-                                Home
-                            </span>
+                            <SitemapSpan>Home</SitemapSpan>
                         </Link>
                     </li>
-                    <li style={{color: '#717171'}}>
+                    <li>
                         <Link to="/blog" style={{boxShadow: 'none'}}>
-                            <span style={{color: 'rgba(82,175,210,1)'}}>
-                                Blog
-                            </span>
+                            <SitemapSpan>Blog</SitemapSpan>
                         </Link>
                     </li>
-                    <li style={{color: '#717171'}}>
+                    <li>
                         <Link to="/portfolio" style={{boxShadow: 'none'}}>
-                            <span style={{color: 'rgba(82,175,210,1)'}}>
-                                Portfolio
-                            </span>
+                            <SitemapSpan>Portfolio</SitemapSpan>
                         </Link>
                     </li>
-                    <li style={{color: '#717171'}}>
+                    <li>
                         <Link to="/rss.xml" style={{boxShadow: 'none'}}>
-                            <span style={{color: 'rgba(82,175,210,1)'}}>
-                                RSS
-                            </span>
+                            <SitemapSpan>RSS</SitemapSpan>
                         </Link>
                     </li>
-                </ul>
-                <h2 style={{color: '#717171'}}>Posts</h2>
+                </SitemapUl>
+                <h2>Posts</h2>
 
                 {postList.edges.map(({node}, i) => (
-                    <Link
-                        to={node.fields.slug}
-                        key={i}
-                        style={{color: 'rgba(82,175,210,1)'}}
-                    >
+                    <Link to={node.fields.slug} key={i}>
                         <h3>{node.frontmatter.title}</h3>
-                        by {node.frontmatter.author} on {node.frontmatter.date}
-                        <ul>
-                            <li
-                                style={{
-                                    listStyleType: 'square',
-                                    color: 'rgba(82,175,210,1)',
-                                }}
-                            >
-                                <span style={{color: 'rgba(82,175,210,1)'}}>
-                                    {node.excerpt}
-                                </span>
+                        <MetaDiv>
+                            by {node.frontmatter.author} on{' '}
+                            {node.frontmatter.date}
+                        </MetaDiv>
+                        <SitemapUl>
+                            <li>
+                                <SitemapSpan>{node.excerpt}</SitemapSpan>
                             </li>
-                        </ul>
+                        </SitemapUl>
                     </Link>
                 ))}
-            </div>
+            </SitemapDiv>
         </Layout>
     )
 }
