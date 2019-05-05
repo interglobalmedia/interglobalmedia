@@ -24,42 +24,38 @@ const ProjectDiv = styled.div`
     }
 `
 
+const ImgStyle = styled.img`
+    max-width: 800px;
+    width: 100%;
+    max-height: 800px;
+    height: 100%;
+`
+
+const ParaStyle = styled.p`
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -1rem;
+    color: rgb(88, 86, 86);
+`
+
+const SpanStyle = styled.span`
+    color: rgb(216, 132, 46);
+`
+
 const PortfolioIndex = props => {
     return (
         <Layout>
             <ColumnsDiv>
                 {portfolioData.map((project, index) => (
                     <ProjectDiv key={index}>
-                        <span style={{color: 'rgb(216, 132, 46)'}}>
-                            {project.title}
-                        </span>
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            style={{
-                                maxWidth: '800px',
-                                width: '100%',
-                                maxHeight: '800px',
-                                height: '100%',
-                            }}
-                        />
-                        <p
-                            style={{
-                                width: '100%',
-                                maxWidth: '800px',
-                                display: 'flex',
-                                alignItems: 'flex-end',
-                                flexDirection: 'column',
-                                justifyContent: 'flex-start',
-                                marginTop: '-1rem',
-                                color: 'rgb(88,86,86)',
-                            }}
-                        >
-                            {project.shortDescription}
-                        </p>
-                        <span style={{color: 'rgb(216, 132, 46)'}}>
-                            {project.tags}
-                        </span>
+                        <SpanStyle>{project.title}</SpanStyle>
+                        <ImgStyle src={project.image} alt={project.title} />
+                        <ParaStyle>{project.shortDescription}</ParaStyle>
+                        <SpanStyle>{project.tags}</SpanStyle>
                         <br />
                         <Link
                             to={'/portfolio/view'}
