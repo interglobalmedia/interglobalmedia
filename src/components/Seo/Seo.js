@@ -21,7 +21,6 @@ const SEO = ({
     lang,
 }) => (
     <StaticQuery
-        const
         query={query}
         render={({
             site: {
@@ -117,7 +116,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-    title: q,
+    title: null,
     description: null,
     image: null,
     pathname: null,
