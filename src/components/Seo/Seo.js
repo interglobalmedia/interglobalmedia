@@ -54,6 +54,7 @@ const SEO = ({
                         title={seo.title}
                         titleTemplate={titleTemplate}
                     >
+                        <meta name="keywords" content={seo.keywords} />
                         <meta name="description" content={seo.description} />
                         <meta name="image" content={seo.image} />
                         {seo.siteUrl && (
@@ -116,7 +117,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-    title: null,
+    title: q,
     description: null,
     image: null,
     pathname: null,
@@ -200,6 +201,7 @@ const query = graphql`
                 defaultImage: image
                 author
                 twitterUsername
+                defaulteywords: keywords
             }
         }
     }
