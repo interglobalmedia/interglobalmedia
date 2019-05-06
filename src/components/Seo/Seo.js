@@ -47,7 +47,13 @@ const SEO = ({
             }
             return (
                 <>
-                    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+                    <Helmet
+                        htmlAttributes={{
+                            lang,
+                        }}
+                        title={seo.title}
+                        titleTemplate={titleTemplate}
+                    >
                         <meta name="description" content={seo.description} />
                         <meta name="image" content={seo.image} />
                         {seo.siteUrl && (
@@ -178,6 +184,23 @@ SEO.defaultProps = {
         'npm audit fix',
         'snyk',
     ],
-    author: 'interglobalmedia',
+    author: `interglobalmedia`,
+    lang: `en`,
 }
 export default SEO
+
+const query = graphql`
+    query SEO {
+        site {
+            siteMetadata {
+                defaultTitle: title
+                titleTemplate
+                defaultDescription: description
+                siteUrl: siteUrl
+                defaultImage: image
+                author
+                twitterUsername
+            }
+        }
+    }
+`
