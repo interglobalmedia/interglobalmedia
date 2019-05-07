@@ -17,7 +17,7 @@ const AnchorStyle = styled.a`
     margin-right: 1rem;
 `
 
-const SiteCredsDiv = styled.div`
+export const SiteCredsDiv = styled.div`
     color: rgb(216, 132, 46);
 `
 
