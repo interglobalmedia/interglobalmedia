@@ -12,6 +12,90 @@ import PrevNext from '../components/PrevNext/PrevNext'
 import Share from '../components/Share/Share'
 import '../components/Layout/Layout.scss'
 
+const OuterWrapperDiv = styled.div`
+  margin; 0 auto;
+  color: rgb(47,0,0);
+  text-align: left;
+`
+
+const OuterMetaDiv = styled.div`
+    width: 90%;
+    max-width: 1026px;
+    margin: 3rem auto;
+`
+
+const MetaH1Title = styled.h1`
+    text-align: center;
+`
+
+const MetaPDate = styled.div`
+    text-align: center;
+    margin-bottom: 1rem;
+`
+
+const DangerousHTMLDiv = styled.div`
+    & h1,
+    &h2,
+    &h3,
+    &h4,
+    & h5,
+    & h6 {
+        color: rgb(47, 0, 0);
+        max-width: 1026px;
+        margin: 0 auto;
+    }
+    & p {
+        color: rgba(88, 86, 86, 0.7);
+    }
+    & blockquote p {
+        color: rebeccapurple;
+    }
+    & ul {
+        list-style-type: none;
+    }
+    & ul li::before {
+        content: '▪ ';
+        color: rgb(47, 0, 0);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    & ol li {
+        counter-increment: list;
+        list-style-type: none;
+        position: relative;
+    }
+    & ol li:before {
+        color: rgb(47, 0, 0);
+        content: counter(list) '.';
+        left: -32px;
+        position: absolute;
+        text-align: right;
+        width: 26px;
+    }
+    & li {
+        color: rgba(88, 86, 86, 0.7);
+    }
+    & a {
+        box-shadow: none;
+    }
+`
+
+const TagCatWrapperDiv = styled.div`
+    margin: 0 auto;
+    max-width: 1026px;
+    display: flex;
+    flex-direction: column;
+`
+
+const TagDiv = styled.div`
+    margin-bottom: 0.25rem;
+`
+
+const CatDiv = styled.div`
+  margin-bottom 2rem;
+`
+
 const BlogPostTemplate = props => {
     const thumbnail =
         props.data.markdownRemark.frontmatter.image &&
@@ -36,12 +120,7 @@ const BlogPostTemplate = props => {
                 author={author}
             />
             <Layout>
-                <div
-                    style={{
-                        margin: '0 auto',
-                        color: 'rgb(47,0,0)',
-                    }}
-                >
+                <OuterWrapperDiv>
                     <div>
                         {image && (
                             <Img
@@ -54,38 +133,18 @@ const BlogPostTemplate = props => {
                             />
                         )}
                     </div>
-                    <div
-                        style={{
-                            width: '100%',
-                            maxWidth: '1026px',
-                            margin: '3rem auto',
-                            textAlign: 'left',
-                        }}
-                    >
-                        <h1 style={{textAlign: 'center'}}>{title}</h1>
-                        <p style={{textAlign: 'center'}}>{date}</p>
+                    <OuterMetaDiv>
+                        <MetaH1Title>{title}</MetaH1Title>
+                        <MetaPDate>{date}</MetaPDate>
 
-                        <div
+                        <DangerousHTMLDiv
                             dangerouslySetInnerHTML={{
                                 __html: props.data.markdownRemark.html,
                             }}
-                            style={{
-                                width: '90%',
-                                maxWidth: '1026px',
-                                margin: '0 auto',
-                            }}
                         />
 
-                        <div
-                            style={{
-                                width: '90%',
-                                margin: '0 auto',
-                                maxWidth: '1026px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                            }}
-                        >
-                            <div style={{marginBottom: '1rem'}}>
+                        <TagCatWrapperDiv>
+                            <TagDiv>
                                 <span>Tagged in: </span>
                                 {tags.map((tag, i) => (
                                     <Link
@@ -100,8 +159,8 @@ const BlogPostTemplate = props => {
                                         {tag}{' '}
                                     </Link>
                                 ))}
-                            </div>
-                            <div style={{marginBottom: '2rem'}}>
+                            </TagDiv>
+                            <CatDiv>
                                 <span>Categorized under: </span>
                                 {categories.map((category, i) => (
                                     <Link
@@ -119,17 +178,17 @@ const BlogPostTemplate = props => {
                                         {category}
                                     </Link>
                                 ))}
-                            </div>
+                            </CatDiv>
                             <Bio />
-                        </div>
+                        </TagCatWrapperDiv>
                         <div className="prev-next-div">
                             <PrevNext
                                 prev={prev && prev.node}
                                 next={next && next.node}
                             />
                         </div>
-                    </div>
-                </div>
+                    </OuterMetaDiv>
+                </OuterWrapperDiv>
             </Layout>
         </>
     )
