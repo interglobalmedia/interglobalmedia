@@ -5,11 +5,12 @@ import {faTag, faFolder} from '@fortawesome/free-solid-svg-icons'
 import {graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import styled from '@emotion/styled'
+import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
 import Bio from '../components/Bio/Bio'
 import PrevNext from '../components/PrevNext/PrevNext'
 import Share from '../components/Share/Share'
+import SEO from '../components/Seo/Seo'
 import '../components/Layout/Layout.scss'
 
 const OuterWrapperDiv = styled.div`
@@ -106,7 +107,7 @@ const BlogPostTemplate = props => {
         image,
         tags,
         categories,
-        description,
+        postdescription,
         author,
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
@@ -114,11 +115,14 @@ const BlogPostTemplate = props => {
         <>
             <SEO
                 title={title}
-                description={description}
+                description={postdescription}
                 image={thumbnail}
                 post
                 author={author}
             />
+            <Helmet>
+                <title>{title}</title>
+            </Helmet>
             <Layout>
                 <OuterWrapperDiv>
                     <div>
@@ -136,7 +140,6 @@ const BlogPostTemplate = props => {
                     <OuterMetaDiv>
                         <MetaH1Title>{title}</MetaH1Title>
                         <MetaPDate>{date}</MetaPDate>
-
                         <DangerousHTMLDiv
                             dangerouslySetInnerHTML={{
                                 __html: props.data.markdownRemark.html,
@@ -206,7 +209,7 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 tags
                 categories
-                description
+                postdescription
                 image {
                     childImageSharp {
                         resize(width: 1500, height: 1500) {
