@@ -7,6 +7,8 @@ const PrevNextUl = styled.ul`
     justify-content: space-between;
     list-style-type: none;
     margin-right: 1rem;
+    width: 100%;
+    margin-left: 0;
 `
 
 const PrevNext = props => {
