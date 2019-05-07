@@ -81,9 +81,6 @@ export const PrevNextUl = styled.ul`
     max-width: 1026px;
     margin: 1.5rem auto;
     padding: 0 0.5rem 0;
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 const BlogPage = props => {
