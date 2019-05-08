@@ -11,6 +11,12 @@ import styled from '@emotion/styled'
 
 const AnchorDiv = styled.div`
     margin-bottom: 1rem;
+    & a {
+        box-shadow: none;
+    }
+    & a:nth-of-type(2) {
+        margin-right: 1rem;
+    }
 `
 const AnchorStyle = styled.a`
     box-shadow: none;
@@ -42,14 +48,11 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faEnvelope} />
                     Contact
                 </AnchorStyle>
-                <Link
-                    to="/sitemap"
-                    style={{boxShadow: 'none', marginRight: '1rem'}}
-                >
+                <Link to="/sitemap">
                     <FontAwesomeIcon icon={faDirections} />
                     Sitemap
                 </Link>
-                <Link to="/rss.xml" style={{boxShadow: 'none'}}>
+                <Link to="/rss.xml">
                     <FontAwesomeIcon icon={faRss} />
                     RSS
                 </Link>
