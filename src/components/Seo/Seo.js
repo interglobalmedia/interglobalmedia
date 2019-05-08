@@ -11,7 +11,7 @@ import {Helmet} from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 
 const SEO = ({
-    title,
+    siteTitle,
     description,
     image,
     pathname,
@@ -26,7 +26,7 @@ const SEO = ({
             site: {
                 siteMetadata: {
                     defaultTitle,
-                    titleTemplate,
+                    siteTitleTemplate,
                     defaultDescription,
                     siteUrl,
                     defaultImage,
@@ -37,7 +37,7 @@ const SEO = ({
             },
         }) => {
             const seo = {
-                title: title || defaultTitle,
+                title: siteTitle || defaultTitle,
                 description: description || defaultDescription,
                 image: `${image || defaultImage}`,
                 author: author,
@@ -50,10 +50,11 @@ const SEO = ({
                         htmlAttributes={{
                             lang,
                         }}
-                        title={seo.title}
-                        titleTemplate={titleTemplate}
+                        siteTitle={seo.siteTitle}
+                        siteTitleTemplate={siteTitleTemplate}
                     >
                         <meta name="keywords" content={seo.keywords} />
+                        <meta name="author" content={seo.author} />
                         <meta name="description" content={seo.description} />
                         <meta name="image" content={seo.image} />
                         {seo.siteUrl && (
@@ -64,6 +65,9 @@ const SEO = ({
                         )}
                         {seo.title && (
                             <meta property="og:title" content={seo.title} />
+                        )}
+                        {seo.author && (
+                            <meta property="og:author" content={seo.author} />
                         )}
                         {seo.description && (
                             <meta
@@ -76,7 +80,7 @@ const SEO = ({
                         )}
                         <meta
                             name="twitter:card"
-                            content="summary_larg_image"
+                            content="summary_large_image"
                         />
                         {twitterUsername && (
                             <meta
@@ -184,7 +188,7 @@ SEO.defaultProps = {
         'npm audit fix',
         'snyk',
     ],
-    author: `interglobalmedia`,
+    author: `Maria D. Campbell`,
     lang: `en`,
 }
 export default SEO
@@ -193,8 +197,8 @@ const query = graphql`
     query SEO {
         site {
             siteMetadata {
-                defaultTitle: title
-                titleTemplate
+                title: siteTitle
+                siteTitleTemplate
                 defaultDescription: description
                 siteUrl: siteUrl
                 defaultImage: image

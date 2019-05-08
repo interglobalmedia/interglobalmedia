@@ -17,6 +17,9 @@ const SitemapDiv = styled.div`
     h3 {
         color: rgb(133, 68, 66);
     }
+    & ul li a {
+        box-shadow: none;
+    }
 `
 
 const SitemapUl = styled.ul`
@@ -39,7 +42,7 @@ const SitemapSpan = styled.span`
 const SiteMapPage = props => {
     const postList = props.data.allMarkdownRemark
     const {data} = props
-    const siteTitle = data.site.siteMetadata.title
+    const siteTitle = data.site.siteMetadata.siteTitle
     const keywords = data.site.siteMetadata.keywords
     return (
         <>
@@ -58,22 +61,22 @@ const SiteMapPage = props => {
                     <h2>Pages</h2>
                     <SitemapUl>
                         <li>
-                            <Link to="/" style={{boxShadow: 'none'}}>
+                            <Link to="/">
                                 <SitemapSpan>Home</SitemapSpan>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/blog" style={{boxShadow: 'none'}}>
+                            <Link to="/blog">
                                 <SitemapSpan>Blog</SitemapSpan>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/portfolio" style={{boxShadow: 'none'}}>
+                            <Link to="/portfolio">
                                 <SitemapSpan>Portfolio</SitemapSpan>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/rss.xml" style={{boxShadow: 'none'}}>
+                            <Link to="/rss.xml">
                                 <SitemapSpan>RSS</SitemapSpan>
                             </Link>
                         </li>
@@ -106,7 +109,7 @@ export const sitemapQuery = graphql`
     query sitemapQuery {
         site {
             siteMetadata {
-                title
+                siteTitle
                 keywords
             }
         }

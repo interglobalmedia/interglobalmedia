@@ -1,7 +1,7 @@
 ---
 title: 'My Second Post!'
 image: salty_egg.jpg
-description: This is another description.
+postdescription: This is another description.
 date: '2015-05-06T23:46:37.121Z'
 tags: ['blogging']
 categories: ['writing']

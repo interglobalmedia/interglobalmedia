@@ -4,25 +4,31 @@ import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
 import Layout from '../../components/Layout/Layout'
 
-const ViewDiv = styled.div`
+export const ViewDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
     width: 90%;
     color: rgb(88, 86, 86);
+    & a {
+        box-shadow: none;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto 1rem;
+    }
 `
 
-const TitleH2Style = styled.h2`
+export const TitleH2Style = styled.h2`
     text-align: center;
     font-weight: 400;
     color: rgb(216, 132, 46);
 `
 
-const ShortDescDiv = styled.div`
+export const ShortDescDiv = styled.div`
     display: flex;
 `
 
-const AnchorsDiv = styled.div`
+export const AnchorsDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,7 +47,7 @@ const AnchorsDiv = styled.div`
     }
 `
 
-export class view extends Component {
+export class View extends Component {
     render() {
         const passedData = this.props.location.state || {
             title: 'default title',
@@ -69,31 +75,41 @@ export class view extends Component {
                 </Helmet>
                 <Layout>
                     <ViewDiv>
-                        <Link
-                            to="/portfolio"
-                            style={{
-                                boxShadow: 'none',
-                                width: '100%',
-                                maxWidth: '1280px',
-                                margin: '0 auto 1rem',
-                            }}
-                        >
-                            &larr; back
-                        </Link>
+                        <Link to="/portfolio">&larr; back</Link>
 
-                        <TitleH2Style>{title}</TitleH2Style>
-                        <img src={image} alt={title} />
-                        <ShortDescDiv>{shortDescription}</ShortDescDiv>
+                        <TitleH2Style data-testid="project-title">
+                            {title}
+                        </TitleH2Style>
+                        <img
+                            data-testid="project-image"
+                            src={image}
+                            alt={title}
+                        />
+                        <ShortDescDiv data-testid="project-shortDesc">
+                            {shortDescription}
+                        </ShortDescDiv>
                         <AnchorsDiv>
-                            <a href={more} alt={title} target="_new">
+                            <a
+                                href={more}
+                                target="_new"
+                                data-testid="project-more"
+                            >
                                 Read More About {title}
                             </a>
                             <br />
-                            <a href={repository} alt={title} target="_new">
+                            <a
+                                href={repository}
+                                target="_new"
+                                data-testid="project-repository"
+                            >
                                 {title} Source Code
                             </a>
                             <br />
-                            <a href={website} alt={title} target="_new">
+                            <a
+                                href={website}
+                                target="_new"
+                                data-testid="project-website"
+                            >
                                 {title} Live Site
                             </a>
                         </AnchorsDiv>
@@ -104,13 +120,13 @@ export class view extends Component {
     }
 }
 
-export default view
+export default View
 
 export const viewQuery = graphql`
     query viewQuery {
         site {
             siteMetadata {
-                title
+                siteTitle
                 keywords
             }
         }

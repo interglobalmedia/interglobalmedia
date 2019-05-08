@@ -6,7 +6,7 @@ import portfolioData from '../../data/portfolio'
 import styled from '@emotion/styled'
 import SEO from '../../components/Seo/Seo'
 
-const ColumnsDiv = styled.div`
+export const ColumnsDiv = styled.div`
     width: 90%;
     max-width: 1280px;
     display: flex;
@@ -17,23 +17,26 @@ const ColumnsDiv = styled.div`
     justify-content: center;
 `
 
-const ProjectDiv = styled.div`
+export const ProjectDiv = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 0 auto;
+    & a {
+        box-shadow: none;
+    }
     @media (min-width: 990px) {
         columns: 2 auto;
     }
 `
 
-const ImgStyle = styled.img`
+export const ImgStyle = styled.img`
     max-width: 800px;
     width: 100%;
     max-height: 800px;
     height: 100%;
 `
 
-const ParaStyle = styled.p`
+export const ParaStyle = styled.p`
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -44,21 +47,17 @@ const ParaStyle = styled.p`
     color: rgb(88, 86, 86);
 `
 
-const SpanStyle = styled.span`
+export const SpanStyle = styled.span`
     color: rgb(216, 132, 46);
 `
 
 const PortfolioIndex = props => {
     const {data} = props
-    const siteTitle = data.site.siteMetadata.title
+    const title = data.site.siteMetadata.siteTitle
     const keywords = data.site.siteMetadata.keywords
     return (
         <>
-            <SEO
-                location={props.location}
-                title={siteTitle}
-                keywords={keywords}
-            />
+            <SEO location={props.location} title={title} keywords={keywords} />
             <Helmet>
                 <meta charset="utf-8" />
                 <title>Portfolio Page</title>
@@ -76,7 +75,6 @@ const PortfolioIndex = props => {
                                 to={'/portfolio/view'}
                                 state={project}
                                 key={project.title}
-                                style={{boxShadow: 'none'}}
                             >
                                 <p>view more</p>
                             </Link>
@@ -94,7 +92,7 @@ export const indexQuery = graphql`
     query indexQuery {
         site {
             siteMetadata {
-                title
+                siteTitle
                 keywords
             }
         }
