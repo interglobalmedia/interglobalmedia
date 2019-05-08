@@ -10,6 +10,12 @@ export const ViewDiv = styled.div`
     margin: 3rem auto;
     width: 90%;
     color: rgb(88, 86, 86);
+    & a {
+        box-shadow: none;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto 1rem;
+    }
 `
 
 export const TitleH2Style = styled.h2`
@@ -69,17 +75,7 @@ export class View extends Component {
                 </Helmet>
                 <Layout>
                     <ViewDiv>
-                        <Link
-                            to="/portfolio"
-                            style={{
-                                boxShadow: 'none',
-                                width: '100%',
-                                maxWidth: '1280px',
-                                margin: '0 auto 1rem',
-                            }}
-                        >
-                            &larr; back
-                        </Link>
+                        <Link to="/portfolio">&larr; back</Link>
 
                         <TitleH2Style data-testid="project-title">
                             {title}
