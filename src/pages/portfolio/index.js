@@ -21,6 +21,9 @@ export const ProjectDiv = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 0 auto;
+    & a {
+        box-shadow: none;
+    }
     @media (min-width: 990px) {
         columns: 2 auto;
     }
@@ -72,7 +75,6 @@ const PortfolioIndex = props => {
                                 to={'/portfolio/view'}
                                 state={project}
                                 key={project.title}
-                                style={{boxShadow: 'none'}}
                             >
                                 <p>view more</p>
                             </Link>
