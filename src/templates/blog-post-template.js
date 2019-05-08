@@ -91,10 +91,16 @@ const TagCatWrapperDiv = styled.div`
 
 const TagDiv = styled.div`
     margin-bottom: 0.25rem;
+    & a {
+        box-shadow: none;
+    }
 `
 
 const CatDiv = styled.div`
   margin-bottom 2rem;
+  & a {
+        box-shadow: none;
+    }
 `
 
 const BlogPostTemplate = props => {
@@ -150,11 +156,7 @@ const BlogPostTemplate = props => {
                             <TagDiv>
                                 <span>Tagged in: </span>
                                 {tags.map((tag, i) => (
-                                    <Link
-                                        to={`/tags/${tag}`}
-                                        key={i}
-                                        style={{boxShadow: 'none'}}
-                                    >
+                                    <Link to={`/tags/${tag}`} key={i}>
                                         <FontAwesomeIcon
                                             icon={faTag}
                                             style={{color: '#268bd2'}}
@@ -169,7 +171,6 @@ const BlogPostTemplate = props => {
                                     <Link
                                         to={`/categories/${category}`}
                                         key={i}
-                                        style={{boxShadow: 'none'}}
                                     >
                                         <FontAwesomeIcon
                                             icon={faFolder}
