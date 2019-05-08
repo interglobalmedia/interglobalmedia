@@ -9,6 +9,10 @@ const PrevNextUl = styled.ul`
     margin-right: 1rem;
     width: 100%;
     margin-left: 0;
+    & a {
+        color: rgba(216, 132, 46, 1);
+        box-shadow: none;
+    }
 `
 
 const PrevNext = props => {
@@ -17,26 +21,14 @@ const PrevNext = props => {
         <PrevNextUl>
             {prev && (
                 <li>
-                    <Link
-                        to={prev.fields.slug}
-                        style={{
-                            color: 'rgba(216,132,46, 1)',
-                            boxShadow: 'none',
-                        }}
-                    >
+                    <Link to={prev.fields.slug}>
                         ← Newer <br />
                     </Link>
                 </li>
             )}
             {next && (
                 <li>
-                    <Link
-                        to={next.fields.slug}
-                        style={{
-                            color: 'rgba(216,132,46, 1)',
-                            boxShadow: 'none',
-                        }}
-                    >
+                    <Link to={next.fields.slug}>
                         Older → <br />
                     </Link>
                 </li>

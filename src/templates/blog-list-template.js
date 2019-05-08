@@ -117,6 +117,7 @@ const BlogPage = props => {
                             <PostListMetaDiv>
                                 by {node.frontmatter.author} on{' '}
                                 {node.frontmatter.date}
+                                <br />
                             </PostListMetaDiv>
                             <ExcerptWrapUl>
                                 <li>

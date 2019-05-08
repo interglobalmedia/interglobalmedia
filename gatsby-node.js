@@ -30,6 +30,7 @@ exports.createPages = ({actions, graphql}) => {
                                     author
                                     tags
                                     categories
+                                    postdescription
                                 }
                             }
                         }
@@ -54,7 +55,6 @@ exports.createPages = ({actions, graphql}) => {
                 )
                 // Create blog-list pages
                 const posts = result.data.allMarkdownRemark.edges
-                const projects = result.data.allMarkdownRemark.edges
                 // All tags
                 let allTags = []
                 // Iterate through each post pulling all found tags into allTags array
