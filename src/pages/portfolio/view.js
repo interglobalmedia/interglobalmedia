@@ -64,7 +64,7 @@ export class View extends Component {
             more,
         } = passedData
         return (
-            <>
+            <Layout>
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta
@@ -72,50 +72,45 @@ export class View extends Component {
                         content="web development, react, gatsbyjs, google custom search, mongodb, postgresql, nodejs, npm, office 365, dropbox paper, trello, jsx, css in js, styled components, jira, atlassian, git, distributed version control, github, development, production, feature branches, continuous deployment, aws amplify, git integration, css3, html5, audio, video, full stack development, front end development, back end development, automated workflows, aws, netlify, gh pages, heroku, command line, osx, serverless stack, cross browser compatibility, shadow dom, testing, jest testing, html5 canvas, webgl, linting, eslint, prettier, babel, webpack, css modules, sass, node sass, homebrew, responsive design, es6, modern javascript, node security, npm audit fix, snyk"
                     />
                     <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
+                    <meta name="repository" content={repository} />
+                    <meta name="description" content={shortDescription} />
+                    <meta name="image" content={image} />
+                    <meta name="website" content={website} />
+                    <meta name="more" content={more} />
                 </Helmet>
-                <Layout>
-                    <ViewDiv>
-                        <Link to="/portfolio">&larr; back</Link>
+                <ViewDiv>
+                    <Link to="/portfolio">&larr; back</Link>
 
-                        <TitleH2Style data-testid="project-title">
-                            {title}
-                        </TitleH2Style>
-                        <img
-                            data-testid="project-image"
-                            src={image}
-                            alt={title}
-                        />
-                        <ShortDescDiv data-testid="project-shortDesc">
-                            {shortDescription}
-                        </ShortDescDiv>
-                        <AnchorsDiv>
-                            <a
-                                href={more}
-                                target="_new"
-                                data-testid="project-more"
-                            >
-                                Read More About {title}
-                            </a>
-                            <br />
-                            <a
-                                href={repository}
-                                target="_new"
-                                data-testid="project-repository"
-                            >
-                                {title} Source Code
-                            </a>
-                            <br />
-                            <a
-                                href={website}
-                                target="_new"
-                                data-testid="project-website"
-                            >
-                                {title} Live Site
-                            </a>
-                        </AnchorsDiv>
-                    </ViewDiv>
-                </Layout>
-            </>
+                    <TitleH2Style data-testid="project-title">
+                        {title}
+                    </TitleH2Style>
+                    <img data-testid="project-image" src={image} alt={title} />
+                    <ShortDescDiv data-testid="project-shortDesc">
+                        {shortDescription}
+                    </ShortDescDiv>
+                    <AnchorsDiv>
+                        <a href={more} target="_new" data-testid="project-more">
+                            Read More About {title}
+                        </a>
+                        <br />
+                        <a
+                            href={repository}
+                            target="_new"
+                            data-testid="project-repository"
+                        >
+                            {title} Source Code
+                        </a>
+                        <br />
+                        <a
+                            href={website}
+                            target="_new"
+                            data-testid="project-website"
+                        >
+                            {title} Live Site
+                        </a>
+                    </AnchorsDiv>
+                </ViewDiv>
+            </Layout>
         )
     }
 }
@@ -126,7 +121,7 @@ export const viewQuery = graphql`
     query viewQuery {
         site {
             siteMetadata {
-                siteTitle
+                title
                 keywords
             }
         }

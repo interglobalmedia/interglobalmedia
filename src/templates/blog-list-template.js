@@ -4,7 +4,7 @@ import {rhythm} from '../utils/typography'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 import Img from 'gatsby-image'
-import {Helmet} from 'react-helmet'
+import SEO from '../components/Seo/Seo'
 // import { OutboundLink } from 'gatsby-plugin-gtag'
 
 export const PostDiv = styled.div`
@@ -93,20 +93,12 @@ const BlogPage = props => {
             ? '/blog/'
             : `/blog/${(currentPage - 1).toString()}`
     const nextPage = `/blog/${(currentPage + 1).toString()}`
+    const {data} = props
+    const title = data.site.siteMetadata.title
+    const keywords = data.site.siteMetadata.keywords
     return (
         <Layout>
-            <Helmet>
-                <meta charset="utf-8" />
-                <title>Blog Page</title>
-                <Link
-                    rel="canonical"
-                    href="https://www.mariadcampbell.com/blog"
-                />
-                {/* <OutboundLink href="https://www.mariadcampbell.com/blog/">
-          Check out Maria D. Campbell's developer notebook blog list
-          page!
-                </OutboundLink> */}
-            </Helmet>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <PostDiv>
                 {postList.edges.map(({node}, i) => (
                     <Link to={node.fields.slug} key={i}>
@@ -174,6 +166,11 @@ export default BlogPage
 
 export const blogListQuery = graphql`
     query blogListQuery($skip: Int!, $limit: Int!) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
         allMarkdownRemark(
             sort: {fields: [frontmatter___date], order: DESC}
             filter: {frontmatter: {type: {eq: "post"}}}

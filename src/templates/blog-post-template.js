@@ -104,6 +104,7 @@ const CatDiv = styled.div`
 `
 
 const BlogPostTemplate = props => {
+    // const url = props.data.site.siteMetadata.siteUrl
     const thumbnail =
         props.data.markdownRemark.frontmatter.image &&
         props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
@@ -113,88 +114,80 @@ const BlogPostTemplate = props => {
         image,
         tags,
         categories,
-        postdescription,
+        description,
         author,
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
     return (
-        <>
-            <SEO
-                title={title}
-                description={postdescription}
-                image={thumbnail}
-                post
-                author={author}
-            />
+        <Layout>
             <Helmet>
                 <title>{title}</title>
+                <meta name="description" content={description} />
+                <meta name="image" content={thumbnail} />
+                <meta name="categories" content={categories} />
+                <meta name="tags" content={tags} />
             </Helmet>
-            <Layout>
-                <OuterWrapperDiv>
-                    <div>
-                        {image && (
-                            <Img
-                                fluid={image.childImageSharp.fluid}
-                                style={{
-                                    width: '100%',
-                                    height: '400px',
-                                    marginTop: '0',
-                                }}
-                            />
-                        )}
-                    </div>
-                    <OuterMetaDiv>
-                        <MetaH1Title>{title}</MetaH1Title>
-                        <MetaPDate>{date}</MetaPDate>
-                        <DangerousHTMLDiv
-                            dangerouslySetInnerHTML={{
-                                __html: props.data.markdownRemark.html,
+            <OuterWrapperDiv>
+                <div>
+                    {image && (
+                        <Img
+                            fluid={image.childImageSharp.fluid}
+                            style={{
+                                width: '100%',
+                                height: '400px',
+                                marginTop: '0',
                             }}
                         />
+                    )}
+                </div>
+                <OuterMetaDiv>
+                    <MetaH1Title>{title}</MetaH1Title>
+                    <MetaPDate>{date}</MetaPDate>
+                    <DangerousHTMLDiv
+                        dangerouslySetInnerHTML={{
+                            __html: props.data.markdownRemark.html,
+                        }}
+                    />
 
-                        <TagCatWrapperDiv>
-                            <TagDiv>
-                                <span>Tagged in: </span>
-                                {tags.map((tag, i) => (
-                                    <Link to={`/tags/${tag}`} key={i}>
-                                        <FontAwesomeIcon
-                                            icon={faTag}
-                                            style={{color: '#268bd2'}}
-                                        />{' '}
-                                        {tag}{' '}
-                                    </Link>
-                                ))}
-                            </TagDiv>
-                            <CatDiv>
-                                <span>Categorized under: </span>
-                                {categories.map((category, i) => (
-                                    <Link
-                                        to={`/categories/${category}`}
-                                        key={i}
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={faFolder}
-                                            style={{
-                                                color: '#268bd2',
-                                                marginRight: '0.25rem',
-                                            }}
-                                        />
-                                        {category}
-                                    </Link>
-                                ))}
-                            </CatDiv>
-                            <Bio />
-                        </TagCatWrapperDiv>
-                        <div className="prev-next-div">
-                            <PrevNext
-                                prev={prev && prev.node}
-                                next={next && next.node}
-                            />
-                        </div>
-                    </OuterMetaDiv>
-                </OuterWrapperDiv>
-            </Layout>
-        </>
+                    <TagCatWrapperDiv>
+                        <TagDiv>
+                            <span>Tagged in: </span>
+                            {tags.map((tag, i) => (
+                                <Link to={`/tags/${tag}`} key={i}>
+                                    <FontAwesomeIcon
+                                        icon={faTag}
+                                        style={{color: '#268bd2'}}
+                                    />{' '}
+                                    {tag}{' '}
+                                </Link>
+                            ))}
+                        </TagDiv>
+                        <CatDiv>
+                            <span>Categorized under: </span>
+                            {categories.map((category, i) => (
+                                <Link to={`/categories/${category}`} key={i}>
+                                    <FontAwesomeIcon
+                                        icon={faFolder}
+                                        style={{
+                                            color: '#268bd2',
+                                            marginRight: '0.25rem',
+                                        }}
+                                    />
+                                    {category}
+                                </Link>
+                            ))}
+                        </CatDiv>
+                        <Bio />
+                    </TagCatWrapperDiv>
+                    <div className="prev-next-div">
+                        <PrevNext
+                            prev={prev && prev.node}
+                            next={next && next.node}
+                        />
+                    </div>
+                </OuterMetaDiv>
+            </OuterWrapperDiv>
+        </Layout>
     )
 }
 
@@ -210,7 +203,7 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 tags
                 categories
-                postdescription
+                description
                 image {
                     childImageSharp {
                         resize(width: 1500, height: 1500) {
