@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
+import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 
@@ -29,6 +30,9 @@ const Tags = props => {
     const {tag} = props.pageContext
     return (
         <Layout>
+            <Helmet>
+                <title>Categories Page</title>
+            </Helmet>
             <TagsDiv>
                 <h1>{`posts in: ${tag}`}</h1>
                 <div>

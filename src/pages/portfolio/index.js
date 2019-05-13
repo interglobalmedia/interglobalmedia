@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import {Helmet} from 'react-helmet'
 import Layout from '../../components/Layout/Layout'
 import portfolioData from '../../data/portfolio'
 import styled from '@emotion/styled'
@@ -53,36 +52,30 @@ export const SpanStyle = styled.span`
 
 const PortfolioIndex = props => {
     const {data} = props
-    const title = data.site.siteMetadata.siteTitle
+    const title = data.site.siteMetadata.title
     const keywords = data.site.siteMetadata.keywords
     return (
-        <>
+        <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <Helmet>
-                <meta charset="utf-8" />
-                <title>Portfolio Page</title>
-            </Helmet>
-            <Layout>
-                <ColumnsDiv>
-                    {portfolioData.map((project, index) => (
-                        <ProjectDiv key={index}>
-                            <SpanStyle>{project.title}</SpanStyle>
-                            <ImgStyle src={project.image} alt={project.title} />
-                            <ParaStyle>{project.shortDescription}</ParaStyle>
-                            <SpanStyle>{project.tags}</SpanStyle>
-                            <br />
-                            <Link
-                                to={'/portfolio/view'}
-                                state={project}
-                                key={project.title}
-                            >
-                                <p>view more</p>
-                            </Link>
-                        </ProjectDiv>
-                    ))}
-                </ColumnsDiv>
-            </Layout>
-        </>
+            <ColumnsDiv>
+                {portfolioData.map((project, index) => (
+                    <ProjectDiv key={index}>
+                        <SpanStyle>{project.title}</SpanStyle>
+                        <ImgStyle src={project.image} alt={project.title} />
+                        <ParaStyle>{project.shortDescription}</ParaStyle>
+                        <SpanStyle>{project.tags}</SpanStyle>
+                        <br />
+                        <Link
+                            to={'/portfolio/view'}
+                            state={project}
+                            key={project.title}
+                        >
+                            <p>view more</p>
+                        </Link>
+                    </ProjectDiv>
+                ))}
+            </ColumnsDiv>
+        </Layout>
     )
 }
 
@@ -92,7 +85,7 @@ export const indexQuery = graphql`
     query indexQuery {
         site {
             siteMetadata {
-                siteTitle
+                title
                 keywords
             }
         }

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
+import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 
@@ -29,6 +30,9 @@ const Categories = props => {
     const {category} = props.pageContext
     return (
         <Layout>
+            <Helmet>
+                <title>Categories Page</title>
+            </Helmet>
             <CategoryDiv>
                 <h1>{`posts in: ${category}`}</h1>
                 <div>
@@ -49,8 +53,8 @@ const Categories = props => {
 
 export default Categories
 
-export const query = graphql`
-    query CategoriesQuery($category: String!) {
+export const categoriesQuery = graphql`
+    query categoriesQuery($category: String!) {
         allMarkdownRemark(
             limit: 2000
             sort: {fields: [frontmatter___date], order: DESC}
