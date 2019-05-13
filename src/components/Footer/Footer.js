@@ -52,10 +52,10 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faDirections} />
                     Sitemap
                 </Link>
-                <Link to="/rss.xml">
+                <a href="http://www.interglobalmedianetwork.com/rss.xml">
                     <FontAwesomeIcon icon={faRss} />
                     RSS
-                </Link>
+                </a>
             </AnchorDiv>
             <SiteCredsDiv>
                 © {new Date().getFullYear()}
