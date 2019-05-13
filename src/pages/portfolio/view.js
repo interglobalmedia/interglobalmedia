@@ -16,6 +16,9 @@ export const ViewDiv = styled.div`
         max-width: 1280px;
         margin: 0 auto 1rem;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 export const TitleH2Style = styled.h2`
@@ -25,25 +28,18 @@ export const TitleH2Style = styled.h2`
 `
 
 export const ShortDescDiv = styled.div`
-    display: flex;
+    // display: flex;
 `
 
-export const AnchorsDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+export const AnchorsUl = styled.ul`
+    display: grid;
+    margin-top: 1.5rem;
+    list-style-type: square;
     & a {
         box-shadow: none;
     }
-    & a:first-of-type {
-        margin-bottom: -1.25rem;
-        margin-top: 1rem;
-    }
-    & a:nth-of-type(2) {
-        margin-bottom: -1.25rem;
-    }
-    & a:nth-of-type(3) {
-        margin-bottom: 1rem;
+    & a:hover {
+        text-decoration: underline;
     }
 `
 
@@ -88,27 +84,35 @@ export class View extends Component {
                     <ShortDescDiv data-testid="project-shortDesc">
                         {shortDescription}
                     </ShortDescDiv>
-                    <AnchorsDiv>
-                        <a href={more} target="_new" data-testid="project-more">
-                            Read More About {title}
-                        </a>
-                        <br />
-                        <a
-                            href={repository}
-                            target="_new"
-                            data-testid="project-repository"
-                        >
-                            {title} Source Code
-                        </a>
-                        <br />
-                        <a
-                            href={website}
-                            target="_new"
-                            data-testid="project-website"
-                        >
-                            {title} Live Site
-                        </a>
-                    </AnchorsDiv>
+                    <AnchorsUl>
+                        <li>
+                            <a
+                                href={more}
+                                target="_new"
+                                data-testid="project-more"
+                            >
+                                Read More About {title}
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href={repository}
+                                target="_new"
+                                data-testid="project-repository"
+                            >
+                                {title} Source Code
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href={website}
+                                target="_new"
+                                data-testid="project-website"
+                            >
+                                {title} Live Site
+                            </a>
+                        </li>
+                    </AnchorsUl>
                 </ViewDiv>
             </Layout>
         )
