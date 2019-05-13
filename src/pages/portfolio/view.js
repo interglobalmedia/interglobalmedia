@@ -15,6 +15,7 @@ export const ViewDiv = styled.div`
         width: 100%;
         max-width: 1280px;
         margin: 0 auto 1rem;
+        cursor: pointer;
     }
     & a:hover {
         text-decoration: underline;
@@ -35,12 +36,6 @@ export const AnchorsUl = styled.ul`
     display: grid;
     margin-top: 1.5rem;
     list-style-type: square;
-    & a {
-        box-shadow: none;
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 export class View extends Component {

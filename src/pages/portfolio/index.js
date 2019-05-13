@@ -15,12 +15,22 @@ export const ColumnsDiv = styled.div`
     }
 `
 
-export const ProjectDiv = styled.div`
+export const ProjectUl = styled.div`
     width: 90%;
     max-width: 1026px;
-    margin: 0 auto;
+    margin: 1rem auto;
+    list-style-type: none;
     & a {
-        box-shadow: none;
+        box-shadow: none !important;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & li:last-child {
+        margin-top: 0.5rem;
+    }
+    @media (min-width: 990px) {
+        margin: 0.5rem auto;
     }
 `
 
@@ -53,26 +63,30 @@ const PortfolioIndex = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv>
                 {portfolioData.map((project, index) => (
-                    <ProjectDiv key={index}>
-                        <Link
-                            to={'/portfolio/view'}
-                            state={project}
-                            key={project.title}
-                        >
-                            {project.title}
-                        </Link>
+                    <ProjectUl key={index}>
+                        <li>
+                            <Link
+                                to={'/portfolio/view'}
+                                state={project}
+                                key={project.title}
+                            >
+                                {project.title}
+                            </Link>
+                        </li>
                         <ImgStyle src={project.image} alt={project.title} />
                         <ParaStyle>{project.shortDescription}</ParaStyle>
                         <SpanStyle>{project.tags}</SpanStyle>
                         <br />
-                        <Link
-                            to={'/portfolio/view'}
-                            state={project}
-                            key={project.title}
-                        >
-                            <p>view more</p>
-                        </Link>
-                    </ProjectDiv>
+                        <li>
+                            <Link
+                                to={'/portfolio/view'}
+                                state={project}
+                                key={project.title}
+                            >
+                                <p>view more</p>
+                            </Link>
+                        </li>
+                    </ProjectUl>
                 ))}
             </ColumnsDiv>
         </Layout>
