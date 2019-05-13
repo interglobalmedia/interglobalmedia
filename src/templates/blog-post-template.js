@@ -80,6 +80,9 @@ const DangerousHTMLDiv = styled.div`
     & a {
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 const TagCatWrapperDiv = styled.div`
@@ -94,13 +97,19 @@ const TagDiv = styled.div`
     & a {
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 const CatDiv = styled.div`
   margin-bottom 2rem;
   & a {
-        box-shadow: none;
-    }
+      box-shadow: none;
+  }
+  & a:hover {
+      text-decoration: underline;
+  }
 `
 
 const BlogPostTemplate = props => {
