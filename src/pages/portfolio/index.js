@@ -7,13 +7,12 @@ import SEO from '../../components/Seo/Seo'
 
 export const ColumnsDiv = styled.div`
     width: 90%;
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
     margin: 3rem auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    @media (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 `
 
 export const ProjectDiv = styled.div`
@@ -23,16 +22,11 @@ export const ProjectDiv = styled.div`
     & a {
         box-shadow: none;
     }
-    @media (min-width: 990px) {
-        columns: 2 auto;
-    }
 `
 
 export const ImgStyle = styled.img`
     max-width: 800px;
     width: 100%;
-    max-height: 800px;
-    height: 100%;
 `
 
 export const ParaStyle = styled.p`
@@ -60,7 +54,13 @@ const PortfolioIndex = props => {
             <ColumnsDiv>
                 {portfolioData.map((project, index) => (
                     <ProjectDiv key={index}>
-                        <SpanStyle>{project.title}</SpanStyle>
+                        <Link
+                            to={'/portfolio/view'}
+                            state={project}
+                            key={project.title}
+                        >
+                            {project.title}
+                        </Link>
                         <ImgStyle src={project.image} alt={project.title} />
                         <ParaStyle>{project.shortDescription}</ParaStyle>
                         <SpanStyle>{project.tags}</SpanStyle>
