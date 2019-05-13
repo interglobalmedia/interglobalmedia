@@ -4,7 +4,7 @@ import {
     ViewDiv,
     TitleH2Style,
     ShortDescDiv,
-    AnchorsDiv,
+    AnchorsUl,
 } from '../../pages/portfolio/view'
 
 describe('portfolio/view', () => {
@@ -21,7 +21,7 @@ describe('portfolio/view', () => {
         expect(container).toBeInTheDocument()
     })
     it(`should render an AnchorsDiv emotion styled component`, () => {
-        const {container} = render(<AnchorsDiv />)
+        const {container} = render(<AnchorsUl />)
         expect(container).toBeInTheDocument()
     })
     it(`should render a project title`, () => {

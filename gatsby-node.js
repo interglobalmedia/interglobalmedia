@@ -30,7 +30,6 @@ exports.createPages = ({actions, graphql}) => {
                                     author
                                     tags
                                     categories
-                                    description
                                 }
                             }
                         }
