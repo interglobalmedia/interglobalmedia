@@ -19,6 +19,9 @@ const SitemapDiv = styled.div`
     & ul li a {
         box-shadow: none;
     }
+    & a:hover h3 {
+        text-decoration: underline;
+    }
 `
 
 const SitemapUl = styled.ul`
@@ -26,6 +29,9 @@ const SitemapUl = styled.ul`
     list-style-position: outside;
     & li {
         color: rgb(133, 68, 66);
+    }
+    & a:hover {
+        text-decoration: underline;
     }
 `
 
