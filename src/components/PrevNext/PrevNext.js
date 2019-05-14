@@ -13,6 +13,9 @@ const PrevNextUl = styled.ul`
         color: rgba(216, 132, 46, 1);
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 const PrevNext = props => {
