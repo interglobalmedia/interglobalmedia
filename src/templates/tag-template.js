@@ -25,6 +25,12 @@ const TagsDiv = styled.div`
     }
 `
 
+const TagDiv = styled.div`
+    & a:hover {
+        text-decoration: underline;
+    }
+`
+
 const Tags = props => {
     const posts = props.data.allMarkdownRemark.edges
     const {tag} = props.pageContext
@@ -35,7 +41,7 @@ const Tags = props => {
             </Helmet>
             <TagsDiv>
                 <h1>{`posts in: ${tag}`}</h1>
-                <div>
+                <TagDiv>
                     {posts.map(({node}, i) => (
                         <Link to={node.fields.slug} key={i}>
                             <ul>
@@ -45,7 +51,7 @@ const Tags = props => {
                             </ul>
                         </Link>
                     ))}
-                </div>
+                </TagDiv>
             </TagsDiv>
         </Layout>
     )

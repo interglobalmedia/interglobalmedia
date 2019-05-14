@@ -17,6 +17,9 @@ const ResponsiveHeading1 = styled.h1`
     font-size: 2rem;
     font-weight: normal;
     margin-top: 2.25rem;
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 const TopHeading1 = styled.h1`
