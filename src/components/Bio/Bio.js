@@ -17,6 +17,9 @@ const BioDiv = styled.div`
     & a {
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 
 function Bio() {
