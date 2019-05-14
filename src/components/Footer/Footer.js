@@ -17,6 +17,9 @@ const AnchorDiv = styled.div`
     & a:nth-of-type(2) {
         margin-right: 1rem;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
 `
 const AnchorStyle = styled.a`
     box-shadow: none;
