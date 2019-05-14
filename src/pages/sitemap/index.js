@@ -66,6 +66,11 @@ const SiteMapPage = props => {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/tags">
+                            <SitemapSpan>Tags</SitemapSpan>
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/rss.xml">
                             <SitemapSpan>RSS</SitemapSpan>
                         </Link>
