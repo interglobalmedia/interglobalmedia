@@ -4,7 +4,7 @@ import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 
-const CategoryDiv = styled.div`
+const CategoriesDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,12 @@ const CategoryDiv = styled.div`
     }
 `
 
+const CategoryDiv = styled.div`
+    & a:hover {
+        text-decoration: underline;
+    }
+`
+
 const Categories = props => {
     const posts = props.data.allMarkdownRemark.edges
     const {category} = props.pageContext
@@ -33,9 +39,9 @@ const Categories = props => {
             <Helmet>
                 <title>Categories Page</title>
             </Helmet>
-            <CategoryDiv>
+            <CategoriesDiv>
                 <h1>{`posts in: ${category}`}</h1>
-                <div>
+                <CategoryDiv>
                     {posts.map(({node}, i) => (
                         <Link to={node.fields.slug} key={i}>
                             <ul>
@@ -45,8 +51,8 @@ const Categories = props => {
                             </ul>
                         </Link>
                     ))}
-                </div>
-            </CategoryDiv>
+                </CategoryDiv>
+            </CategoriesDiv>
         </Layout>
     )
 }

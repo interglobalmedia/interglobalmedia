@@ -98,6 +98,7 @@ nav.responsive-menu.show {
         &:focus {
             color: $chocolate;
             transition: 1s ease-out;
+            text-decoration: underline;
         }
     }
 
@@ -192,6 +193,7 @@ nav.top {
         &:focus {
             color: $chocolate;
             transition: 1s ease-out;
+            text-decoration: underline;
         }
     }
 
