@@ -1,7 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Link} from 'gatsby'
-import {faTag, faFolder} from '@fortawesome/free-solid-svg-icons'
+import {faTag, faFolder, faComment} from '@fortawesome/free-solid-svg-icons'
 import {graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import styled from '@emotion/styled'
@@ -134,6 +134,19 @@ const CatDiv = styled.div`
   }
 `
 
+export const DiscussTwitter = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    & a {
+        box-shadow: none;
+    }
+    & :hover {
+        text-decoration: underline;
+    }
+`
+
 const BlogPostTemplate = props => {
     const url = props.data.site.siteMetadata.siteUrl
     const thumbnail =
@@ -149,6 +162,7 @@ const BlogPostTemplate = props => {
         author,
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
+    const blogPostUrl = `${url}${props.location.pathname}`
     return (
         <Layout>
             <Helmet>
@@ -212,6 +226,19 @@ const BlogPostTemplate = props => {
                         </CatDiv>
                         <Bio />
                     </TagCatWrapperDiv>
+                    <DiscussTwitter>
+                        <a
+                            target="_new"
+                            rel="noopener noreferrer"
+                            /* using mobile.twitter.com because if people haven't upgraded to the new experience, the regular URL wont work for them */
+                            href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
+                                blogPostUrl,
+                            )}`}
+                        >
+                            <FontAwesomeIcon icon={faComment} /> Discuss On
+                            Twitter
+                        </a>
+                    </DiscussTwitter>
                     <div className="prev-next-div">
                         <PrevNext
                             prev={prev && prev.node}
