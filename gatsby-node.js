@@ -17,7 +17,6 @@ exports.createPages = ({actions, graphql}) => {
                 {
                     allMarkdownRemark(
                         sort: {order: DESC, fields: [frontmatter___date]}
-                        filter: {frontmatter: {type: {eq: "post"}}}
                         limit: 1000
                     ) {
                         edges {
@@ -111,11 +110,9 @@ exports.createPages = ({actions, graphql}) => {
                     })
                 })
                 // Create blog post list pages
-                const postsPerPage = 2
+                const postsPerPage = 6
                 const numPages = Math.ceil(posts.length / postsPerPage)
-                Array.from({
-                    length: numPages,
-                }).forEach((_, i) => {
+                Array.from({length: numPages}).forEach((_, i) => {
                     createPage({
                         path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
                         component: blogListTemplate,
@@ -136,11 +133,7 @@ exports.createPages = ({actions, graphql}) => {
 exports.onCreateNode = ({node, getNode, actions}) => {
     const {createNodeField} = actions
     if (node.internal.type === `MarkdownRemark`) {
-        const slug = createFilePath({
-            node,
-            getNode,
-            basePath: `pages`,
-        })
+        const slug = createFilePath({node, getNode, basePath: `pages`})
         createNodeField({
             node,
             name: `slug`,
