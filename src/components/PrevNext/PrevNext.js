@@ -10,7 +10,7 @@ const PrevNextUl = styled.ul`
     width: 100%;
     margin-left: 0;
     & a {
-        color: rgba(216, 132, 46, 1);
+        color: rgb(47, 0, 0);
         box-shadow: none;
     }
     & a:hover {

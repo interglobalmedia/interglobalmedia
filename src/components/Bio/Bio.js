@@ -14,11 +14,15 @@ import {rhythm} from '../../utils/typography'
 const BioDiv = styled.div`
     display: flex;
     margin-bottom: rhythm(2.5);
+    color: rgba(88, 86, 86, 1);
     & a {
         box-shadow: none;
     }
     & a:hover {
         text-decoration: underline;
+    }
+    & strong {
+        color: rgb(47, 0, 0);
     }
 `
 
