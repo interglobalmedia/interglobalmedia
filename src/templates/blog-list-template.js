@@ -112,7 +112,6 @@ const BlogPage = props => {
                             <PostListMetaDiv>
                                 by {node.frontmatter.author} on{' '}
                                 {node.frontmatter.date}
-                                <br />
                             </PostListMetaDiv>
                             <ExcerptWrapUl>
                                 <li>
@@ -135,10 +134,11 @@ const BlogPage = props => {
                             rel="prev"
                             style={{
                                 color: prevPage
-                                    ? 'rgba(216,132,46, 1)'
-                                    : 'rgba(0,0,0,0.8)',
+                                    ? 'color: rgb(47, 0, 0);'
+                                    : 'color: rgb(47, 0, 0)',
                                 boxShadow: 'none',
                                 letterSpacing: '0.07em',
+                                marginLeft: '0.25rem',
                             }}
                         >
                             ← Newer
@@ -150,10 +150,11 @@ const BlogPage = props => {
                             rel="next"
                             style={{
                                 color: nextPage
-                                    ? 'rgba(216,132,46, 1)'
-                                    : 'rgba(0,0,0,0.8)',
+                                    ? 'color: rgb(47, 0, 0);'
+                                    : 'color: rgb(47, 0, 0)',
                                 boxShadow: 'none',
                                 letterSpacing: '0.07em',
+                                marginLeft: '0.5rem',
                             }}
                         >
                             Older →
@@ -169,14 +170,8 @@ export default BlogPage
 
 export const blogListQuery = graphql`
     query blogListQuery($skip: Int!, $limit: Int!) {
-        site {
-            siteMetadata {
-                title
-            }
-        }
         allMarkdownRemark(
             sort: {fields: [frontmatter___date], order: DESC}
-            filter: {frontmatter: {type: {eq: "post"}}}
             limit: $limit
             skip: $skip
         ) {
@@ -199,6 +194,11 @@ export const blogListQuery = graphql`
                         }
                     }
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
             }
         }
     }
