@@ -1,7 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Link} from 'gatsby'
-import {faTag, faFolder} from '@fortawesome/free-solid-svg-icons'
+import {faTag, faFolder, faComment} from '@fortawesome/free-solid-svg-icons'
 import {graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import styled from '@emotion/styled'
@@ -13,13 +13,13 @@ import Share from '../components/Share/Share'
 import SEO from '../components/Seo/Seo'
 import '../components/Layout/Layout.scss'
 
-const OuterWrapperDiv = styled.div`
+const PostWrapperDiv = styled.div`
   margin; 0 auto;
   color: rgb(47,0,0);
   text-align: left;
 `
 
-const OuterMetaDiv = styled.div`
+const PostMetaDiv = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 3rem auto;
@@ -46,7 +46,7 @@ const DangerousHTMLDiv = styled.div`
         margin: 0 auto;
     }
     & p {
-        color: rgba(88, 86, 86, 0.7);
+        color: rgba(88,86,86,1);
     }
     & blockquote p {
         color: rebeccapurple;
@@ -54,12 +54,24 @@ const DangerousHTMLDiv = styled.div`
     & ul {
         list-style-type: none;
     }
-    & ul li::before {
+    & ul li:before {
+        color: rgb(47, 0, 0);
+        content: content: '▪ ';
+        left: -32px;
+        position: absolute;
+        text-align: right;
+        width: 26px;
+    }
+    & ul li {
+        counter-increment: list;
+        list-style-type: none;
+        position: relative;
+    }
+    & ul li:before  {
         content: '▪ ';
         color: rgb(47, 0, 0);
         display: inline-block;
         width: 1em;
-        margin-left: -1em;
     }
     & ol li {
         counter-increment: list;
@@ -92,6 +104,11 @@ const TagCatWrapperDiv = styled.div`
     flex-direction: column;
 `
 
+export const TaggedInSpan = styled.span`
+    letter-spacing: 0.07em;
+    font-weight: bold;
+`
+
 const TagDiv = styled.div`
     margin-bottom: 0.25rem;
     & a {
@@ -100,6 +117,11 @@ const TagDiv = styled.div`
     & a:hover {
         text-decoration: underline;
     }
+`
+
+export const CagtegorizedInSpan = styled.span`
+    letter-spacing: 0.07em;
+    font-weight: bold;
 `
 
 const CatDiv = styled.div`
@@ -112,8 +134,21 @@ const CatDiv = styled.div`
   }
 `
 
+export const DiscussTwitter = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1.5rem auto 0;
+    & a {
+        box-shadow: none;
+    }
+    & :hover {
+        text-decoration: underline;
+    }
+`
+
 const BlogPostTemplate = props => {
-    // const url = props.data.site.siteMetadata.siteUrl
+    const url = props.data.site.siteMetadata.siteUrl
     const thumbnail =
         props.data.markdownRemark.frontmatter.image &&
         props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
@@ -127,6 +162,7 @@ const BlogPostTemplate = props => {
         author,
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
+    const blogPostUrl = `${url}${props.location.pathname}`
     return (
         <Layout>
             <Helmet>
@@ -136,7 +172,7 @@ const BlogPostTemplate = props => {
                 <meta name="categories" content={categories} />
                 <meta name="tags" content={tags} />
             </Helmet>
-            <OuterWrapperDiv>
+            <PostWrapperDiv>
                 <div>
                     {image && (
                         <Img
@@ -149,7 +185,7 @@ const BlogPostTemplate = props => {
                         />
                     )}
                 </div>
-                <OuterMetaDiv>
+                <PostMetaDiv>
                     <MetaH1Title>{title}</MetaH1Title>
                     <MetaPDate>{date}</MetaPDate>
                     <DangerousHTMLDiv
@@ -160,7 +196,7 @@ const BlogPostTemplate = props => {
 
                     <TagCatWrapperDiv>
                         <TagDiv>
-                            <span>Tagged in: </span>
+                            <TaggedInSpan>Tagged in: </TaggedInSpan>
                             {tags.map((tag, i) => (
                                 <Link to={`/tags/${tag}`} key={i}>
                                     <FontAwesomeIcon
@@ -172,7 +208,9 @@ const BlogPostTemplate = props => {
                             ))}
                         </TagDiv>
                         <CatDiv>
-                            <span>Categorized under: </span>
+                            <CagtegorizedInSpan>
+                                Categorized under:{' '}
+                            </CagtegorizedInSpan>
                             {categories.map((category, i) => (
                                 <Link to={`/categories/${category}`} key={i}>
                                     <FontAwesomeIcon
@@ -182,34 +220,54 @@ const BlogPostTemplate = props => {
                                             marginRight: '0.25rem',
                                         }}
                                     />
-                                    {category}
+                                    {category}{' '}
                                 </Link>
                             ))}
                         </CatDiv>
-                        <Bio />
                     </TagCatWrapperDiv>
+                    <DiscussTwitter>
+                        <a
+                            target="_new"
+                            rel="noopener noreferrer"
+                            /* using mobile.twitter.com because if people haven't upgraded to the new experience, the regular URL wont work for them */
+                            href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
+                                blogPostUrl,
+                            )}`}
+                        >
+                            <FontAwesomeIcon icon={faComment} /> Discuss On
+                            Twitter
+                        </a>
+                    </DiscussTwitter>
+                    <div className="post-social-share">
+                        <Share
+                            title={title}
+                            url={url}
+                            pathname={props.location.pathname}
+                        />
+                    </div>
+                    <Bio />
                     <div className="prev-next-div">
                         <PrevNext
                             prev={prev && prev.node}
                             next={next && next.node}
                         />
                     </div>
-                </OuterMetaDiv>
-            </OuterWrapperDiv>
+                </PostMetaDiv>
+            </PostWrapperDiv>
         </Layout>
     )
 }
 
 export default BlogPostTemplate
 
-export const pageQuery = graphql`
-    query pageQuery($slug: String!) {
+export const query = graphql`
+    query PostQuery($slug: String!) {
         markdownRemark(fields: {slug: {eq: $slug}}) {
             html
             excerpt
             frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "MMMM Do, YYYY")
                 tags
                 categories
                 description
@@ -223,6 +281,11 @@ export const pageQuery = graphql`
                         }
                     }
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                siteUrl
             }
         }
     }
