@@ -136,9 +136,9 @@ const CatDiv = styled.div`
 
 export const DiscussTwitter = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1.5rem auto 0;
     & a {
         box-shadow: none;
     }
@@ -224,7 +224,6 @@ const BlogPostTemplate = props => {
                                 </Link>
                             ))}
                         </CatDiv>
-                        <Bio />
                     </TagCatWrapperDiv>
                     <DiscussTwitter>
                         <a
@@ -239,6 +238,14 @@ const BlogPostTemplate = props => {
                             Twitter
                         </a>
                     </DiscussTwitter>
+                    <div className="post-social-share">
+                        <Share
+                            title={title}
+                            url={url}
+                            pathname={props.location.pathname}
+                        />
+                    </div>
+                    <Bio />
                     <div className="prev-next-div">
                         <PrevNext
                             prev={prev && prev.node}
