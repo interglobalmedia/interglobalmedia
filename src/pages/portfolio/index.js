@@ -66,7 +66,7 @@ const PortfolioIndex = props => {
                     <ProjectUl key={index}>
                         <li>
                             <Link
-                                to={'/portfolio/view'}
+                                to={'/portfolio/portfolio-view'}
                                 state={project}
                                 key={project.title}
                             >
@@ -79,7 +79,7 @@ const PortfolioIndex = props => {
                         <br />
                         <li>
                             <Link
-                                to={'/portfolio/view'}
+                                to={'/portfolio/portfolio-view'}
                                 state={project}
                                 key={project.title}
                             >
