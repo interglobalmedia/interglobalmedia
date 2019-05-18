@@ -1,19 +1,19 @@
 import React from 'react'
 import {render} from 'react-testing-library'
 import {
-    ViewDiv,
-    TitleH2Style,
+    PortfolioViewDiv,
+    PortfolioViewH2Style,
     ShortDescDiv,
     AnchorsUl,
-} from '../../pages/portfolio/view'
+} from '../../pages/portfolio/portfolio-view'
 
-describe('portfolio/view', () => {
+describe('portfolio/portfolio-view', () => {
     it(`should render a ViewDiv emotion styled component`, () => {
-        const {container} = render(<ViewDiv />)
+        const {container} = render(<PortfolioViewDiv />)
         expect(container).toBeInTheDocument()
     })
     it('should render a TitleH2Style emotion styled component', () => {
-        const {container} = render(<TitleH2Style />)
+        const {container} = render(<PortfolioViewH2Style />)
         expect(container).toBeInTheDocument()
     })
     it(`should render a ShortDescDiv emotion styled component`, () => {
