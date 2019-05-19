@@ -5,13 +5,13 @@ import Layout from '../../components/Layout/Layout'
 import FSJSLiveSites from '../../components/FSJS/FSJSLiveSites'
 import fsjs from '../../data/fsjs'
 
-const FullStackWrapperDiv = styled.div`
+export const WrapperDiv = styled.div`
     margin: 0 auto;
     width: 90%;
     max-width: 1026px;
 `
 
-const BackDiv = styled.div`
+export const BackDiv = styled.div`
     margin-top: 1.5rem;
     & a {
         box-shadow: none;
@@ -21,14 +21,14 @@ const BackDiv = styled.div`
     }
 `
 
-const FullStackH1Style = styled.h1`
+export const H1Style = styled.h1`
     font-weight: normal;
     text-align: center;
     margin-top: 3rem;
     color: rgb(216, 132, 46);
 `
 
-const FSIconSpan = styled.span`
+export const IconSpan = styled.span`
     color: #2f0000;
 `
 
@@ -40,24 +40,30 @@ const FullStackDiv = styled.div`
     }
 `
 
-const ApproachDiv = styled.div`
+export const H2Style = styled.h2`
+    font-weight: normal;
+    text-align: center;
+    color: rgb(216, 132, 46);
+`
+
+export const ApproachDiv = styled.div`
     width: 100%;
     margin: 0 auto 1rem;
     max-width: 1026px;
     color: rgb(88, 86, 86);
 `
 
-const ApproachSpan = styled.span`
+export const ApproachSpan = styled.span`
     font-weight: bold;
     color: #2f0000;
 `
 
-const AllTagsDiv = styled.div`
+export const AllTagsDiv = styled.div`
     color: rgb(216, 132, 46);
     margin-bottom: 1rem;
 `
 
-const LiveSitesDiv = styled.div`
+export const LiveSitesDiv = styled.div`
     margin-bottom: 1rem;
     margin: 0 auto 3rem;
     display: flex;
@@ -68,25 +74,25 @@ const LiveSitesDiv = styled.div`
     }
 `
 
-const IncludesSpan = styled.span`
+export const IncludesSpan = styled.span`
     font-weight: bold;
     color: #2f0000;
 `
 
-const LiveSitesSpan = styled.div`
+export const LiveSitesSpan = styled.div`
     font-weight: bold;
 `
 
 const FullStackSJS = props => {
     return (
         <Layout>
-            <FullStackWrapperDiv>
+            <WrapperDiv>
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <FullStackH1Style>
-                    <FSIconSpan>{fsjs.icon}</FSIconSpan> {fsjs.title}
-                </FullStackH1Style>
+                <H1Style>
+                    <IconSpan>{fsjs.icon}</IconSpan> {fsjs.title}
+                </H1Style>
                 <FullStackDiv>
                     <img src={fsjs.image} alt={fsjs.title} />
                     <ApproachDiv>
@@ -103,7 +109,7 @@ const FullStackSJS = props => {
                         <FSJSLiveSites />
                     </LiveSitesDiv>
                 </FullStackDiv>
-            </FullStackWrapperDiv>
+            </WrapperDiv>
         </Layout>
     )
 }
