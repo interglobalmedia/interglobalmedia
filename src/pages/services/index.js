@@ -109,10 +109,9 @@ class ServicesIndex extends Component {
                                 </Link>
                             </li>
                             <p>{service.shortDescription}</p>
-                            <span>{service.tags} and more</span>
-                            <br />
+                            <span>{service.tags}</span> <br />
                             <MoreLi>
-                                <Link to={'../fsjs'} key={service.title}>
+                                <Link to={service.path} key={service.title}>
                                     <p>view more</p>
                                 </Link>
                             </MoreLi>
