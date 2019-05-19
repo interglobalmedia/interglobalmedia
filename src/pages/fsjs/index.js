@@ -32,8 +32,6 @@ export const IconSpan = styled.span`
     color: #2f0000;
 `
 
-const shortDescP = styled.p``
-
 const FullStackDiv = styled.div`
     & img {
         width: 100%;
