@@ -104,12 +104,12 @@ class ServicesIndex extends Component {
                     {servicesData.map((service, index) => (
                         <ServicesUl key={index}>
                             <li>
-                                <Link to={'../fsjs'} key={service.title}>
+                                <Link to={service.path} key={service.title}>
                                     {service.icon} {service.title}
                                 </Link>
                             </li>
                             <p>{service.shortDescription}</p>
-                            <span>{service.tags}</span>
+                            <span>{service.tags} and more</span>
                             <br />
                             <MoreLi>
                                 <Link to={'../fsjs'} key={service.title}>
