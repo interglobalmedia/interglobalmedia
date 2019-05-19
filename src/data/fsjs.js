@@ -1,7 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTerminal, faCodeBranch} from '@fortawesome/free-solid-svg-icons'
-import {faNodeJs, faJira, faGitSquare} from '@fortawesome/free-brands-svg-icons'
+import {faNodeJs} from '@fortawesome/free-brands-svg-icons'
 
 import fullstack from '../images/fullstack.jpg'
 
@@ -28,6 +27,8 @@ const fsjs = {
         'css3',
         ', ',
         'ejs',
+        ', ',
+        '@emotion/styled',
         ', ',
         'es6 modules',
         ', ',
