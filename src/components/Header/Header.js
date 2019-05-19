@@ -87,6 +87,18 @@ const Header = ({siteTitle}) => (
                             Portfolio
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            to="/services"
+                            style={{
+                                boxShadow: 'none',
+                                color: 'rgb(47,0,0)',
+                            }}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
+                        >
+                            Services
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <nav className="top">
@@ -136,6 +148,19 @@ const Header = ({siteTitle}) => (
                             activeStyle={{color: 'rgba(190,138,96,1)'}}
                         >
                             Portfolio
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/services"
+                            style={{
+                                marginRight: '1.5rem',
+                                boxShadow: 'none',
+                                color: 'rgb(47,0,0)',
+                            }}
+                            activeStyle={{color: 'rgba(190,138,96,1)'}}
+                        >
+                            Services
                         </Link>
                     </li>
                 </ul>
