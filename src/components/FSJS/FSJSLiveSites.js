@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link, graphql} from 'gatsby'
 
 import chatApp from '../../images/chatterbox.jpg'
 import speechToText from '../../images/speech-to-text.jpg'
 import canvasArt from '../../images/client-canvas-art.jpg'
 import nodeDrawingApp from '../../images/node-collaborative-drawing-app.jpg'
 
-const SiteWrapperDiv = styled.div`
+export const SiteWrapperDiv = styled.div`
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -34,7 +33,7 @@ max-width: 1026px;
     }
 `
 
-const SiteLi = styled.li`
+export const SiteLi = styled.li`
     width: 90%;
     display: block;
     margin: 0 auto;
@@ -51,7 +50,7 @@ const SiteLi = styled.li`
     }
 `
 
-const SpanStyle = styled.span`
+export const SpanStyle = styled.span`
     font-weight: bold;
 `
 
@@ -87,6 +86,10 @@ const FSJSLiveSites = () => {
         {
             id: 2,
             tagNames: [
+                'code refactoring',
+                ', ',
+                'workflow refactoring',
+                ', ',
                 'react',
                 ', ',
                 'webpack 4+',
@@ -135,6 +138,10 @@ const FSJSLiveSites = () => {
         {
             id: 3,
             tagNames: [
+                'code refactoring',
+                ', ',
+                'workflow refactoring',
+                ', ',
                 'canvas 2d',
                 ', ',
                 'canvas animation',
@@ -163,7 +170,7 @@ const FSJSLiveSites = () => {
                 ', ',
                 'websockets',
                 ', ',
-                'express',
+                'expressjs',
                 ', ',
                 'node canvas',
             ],
