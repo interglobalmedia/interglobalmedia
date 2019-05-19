@@ -44,42 +44,12 @@ const ServicesUl = styled.ul`
     }
 `
 
-const ServiceDiv = styled.div`
-    padding: 1rem 0;
-`
-
-const ImgStyle = styled.img`
-    // display: none;
-`
-
-const ShortDescriptionDiv = styled.div`
-    color: rgb(88, 86, 86);
-    margin: 0 auto 1rem;
-    @media (min-width: 800px) {
-        max-width: 600px;
-        width: 100%;
-    }
-`
-
-const IncludesStrong = styled.strong`
-    color: rgb(110, 71, 64);
-`
-
-const TagsSpan = styled.span`
-    color: rgb(216, 132, 46);
-`
-
-const DescriptionDetailsDiv = styled.div`
-    margin-top: 0.5rem;
-    width: 100%;
-    max-width: 600px;
-`
-
 const MoreLi = styled.li`
     margin-top: 1.5rem;
     width: 100%;
     margin-bottom: 1.5rem;
 `
+
 const MoreSpan = styled.span`
     font-style: italic;
     color: rgb(216, 132, 46);
@@ -109,7 +79,8 @@ class ServicesIndex extends Component {
                                 </Link>
                             </li>
                             <p>{service.shortDescription}</p>
-                            <span>{service.tags}</span> <br />
+                            {service.tags}
+                            <br />
                             <MoreLi>
                                 <Link to={service.path} key={service.title}>
                                     <p>view more</p>
