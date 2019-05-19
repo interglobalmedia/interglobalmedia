@@ -69,7 +69,6 @@ class ServicesIndex extends Component {
                     meta={[{name: 'description', content: siteDescription}]}
                     title={`Services | ${siteTitle}`}
                 />
-                <ServicesH1>Services</ServicesH1>
                 <ServicesWrapperDiv>
                     {servicesData.map((service, index) => (
                         <ServicesUl key={index}>
