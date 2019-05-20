@@ -2,8 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faLink} from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/Layout/Layout'
 import cli from '../../data/cli'
 
@@ -57,24 +55,20 @@ const CLI = props => {
                     <CLIApproachDiv>
                         <IncludesSpan>more info:</IncludesSpan>{' '}
                         <ATagStyle href={cli.infoUrl1} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> Command Line
-                            Interface on Wikipedia
+                            Command Line Interface on Wikipedia
                         </ATagStyle>
                         ,{' '}
                         <ATagStyle href={cli.infoUrl2} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> Refreshable
-                            Braille Display on Wikipedia
+                            Refreshable Braille Display on Wikipedia
                         </ATagStyle>
                         ,{' '}
                         <ATagStyle href={cli.infoUrl3} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> Shell Computing On
-                            Wikipedia
+                            Shell Computing On Wikipedia
                         </ATagStyle>
                         ,{' '}
                         <ATagStyle href={cli.infoUrl4} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> What are the
-                            advantages and disadvantages of Command Line
-                            Interface? on Quora
+                            What are the advantages and disadvantages of Command
+                            Line Interface? on Quora
                         </ATagStyle>
                     </CLIApproachDiv>
                 </CLIDiv>
