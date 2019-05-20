@@ -1,6 +1,4 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faJira} from '@fortawesome/free-brands-svg-icons'
 
 import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
 
@@ -23,7 +21,6 @@ const devWorkflows = {
         ', ',
         'javascript backend directory and file structure',
     ],
-    icon: <FontAwesomeIcon icon={faJira} />,
 }
 
 export default devWorkflows

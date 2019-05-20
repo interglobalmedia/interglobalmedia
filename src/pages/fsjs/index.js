@@ -30,10 +30,6 @@ export const H1Style = styled.h1`
     color: rgb(216, 132, 46);
 `
 
-export const IconSpan = styled.span`
-    color: #2f0000;
-`
-
 const FullStackDiv = styled.div`
     & img {
         width: 100%;
@@ -90,9 +86,7 @@ const FullStackSJS = props => {
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <H1Style>
-                    <IconSpan>{fsjs.icon}</IconSpan> {fsjs.title}
-                </H1Style>
+                <H1Style>{fsjs.title}</H1Style>
                 <FullStackDiv>
                     <Img
                         fluid={props.data.fullstackImage.childImageSharp.fluid}

@@ -1,6 +1,4 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCodeBranch} from '@fortawesome/free-solid-svg-icons'
 
 import gitForNonDevs from '../images/roksolana-zasiadko-30856-unsplash.jpg'
 
@@ -36,7 +34,6 @@ const gfnd = {
         'creating the gh-pages branch on the remote repository for free static site hosting on github',
     ],
     infoUrl: 'https://en.wikipedia.org/wiki/Git',
-    icon: <FontAwesomeIcon icon={faCodeBranch} />,
 }
 
 export default gfnd
