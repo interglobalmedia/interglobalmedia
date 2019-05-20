@@ -33,6 +33,9 @@ const ServicesUl = styled.ul`
     padding: 1.5rem 1rem 0;
     & a {
         box-shadow: none;
+        @media (min-width: 400px) {
+            font-size: 1.2rem;
+        }
     }
     & :hover,
     & :focus {
@@ -73,17 +76,17 @@ class ServicesIndex extends Component {
                     {servicesData.map((service, index) => (
                         <ServicesUl key={index}>
                             <li>
-                                <Link to={service.path} key={service.title}>
+                                <a href={service.path} key={service.title}>
                                     {service.icon} {service.title}
-                                </Link>
+                                </a>
                             </li>
                             <p>{service.shortDescription}</p>
                             {service.tags}
                             <br />
                             <MoreLi>
-                                <Link to={service.path} key={service.title}>
+                                <a href={service.path} key={service.title}>
                                     <p>view more</p>
-                                </Link>
+                                </a>
                             </MoreLi>
                         </ServicesUl>
                     ))}
