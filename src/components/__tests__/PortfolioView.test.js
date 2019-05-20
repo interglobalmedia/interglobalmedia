@@ -2,7 +2,7 @@ import React from 'react'
 import {render} from 'react-testing-library'
 import {
     PortfolioViewDiv,
-    PortfolioViewH2Style,
+    PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
 } from '../../pages/portfolio/portfolio-view'
@@ -13,7 +13,7 @@ describe('portfolio/portfolio-view', () => {
         expect(container).toBeInTheDocument()
     })
     it('should render a TitleH2Style emotion styled component', () => {
-        const {container} = render(<PortfolioViewH2Style />)
+        const {container} = render(<PortfolioViewH1Style />)
         expect(container).toBeInTheDocument()
     })
     it(`should render a ShortDescDiv emotion styled component`, () => {
