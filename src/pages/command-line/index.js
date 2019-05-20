@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
+import {Link, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/Layout/Layout'
@@ -28,11 +29,11 @@ const CLIDiv = styled.div`
 const CLIApproachDiv = styled.div`
     width: 100 %;
     margin: 0 auto 3rem;
-    max- width: 1026px;
+    max-width: 1026px;
     color: rgb(88, 86, 86);
 `
 
-const CLI = () => {
+const CLI = props => {
     return (
         <Layout>
             <WrapperDiv>
@@ -44,7 +45,11 @@ const CLI = () => {
                     <br />
                 </H1Style>
                 <CLIDiv>
-                    <img src={cli.image} alt={cli.title} />
+                    <Img
+                        fluid={props.data.cliImage.childImageSharp.fluid}
+                        style={{marginBottom: '1.5rem'}}
+                        alt={cli.title}
+                    />
                     <H2Style>{cli.shortDescription}</H2Style>
                     <ApproachDiv>
                         <ApproachSpan>background:</ApproachSpan>{' '}
@@ -83,3 +88,17 @@ const CLI = () => {
 }
 
 export default CLI
+
+export const query = graphql`
+    query cliQuery {
+        cliImage: file(
+            relativePath: {eq: "rohan-makhecha-408608-unsplash.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

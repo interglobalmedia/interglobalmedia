@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
+import {Link, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/Layout/Layout'
@@ -35,7 +36,7 @@ export const ATagStyle = styled.a`
     }
 `
 
-const GitForNonDevs = () => {
+const GitForNonDevs = props => {
     return (
         <Layout>
             <WrapperDiv>
@@ -47,7 +48,13 @@ const GitForNonDevs = () => {
                     <br />
                 </H1Style>
                 <GitForNonDevsDiv>
-                    <img src={gfnd.image} alt={gfnd.title} />
+                    <Img
+                        fluid={
+                            props.data.gitForNonDevsImage.childImageSharp.fluid
+                        }
+                        style={{marginBottom: '1.5rem'}}
+                        alt={gfnd.title}
+                    />
                     <H2Style>{gfnd.shortDescription}</H2Style>
                     <ApproachDiv>
                         <ApproachSpan>background:</ApproachSpan>{' '}
@@ -74,3 +81,17 @@ const GitForNonDevs = () => {
 }
 
 export default GitForNonDevs
+
+export const query = graphql`
+    query gitForNonDevsQuery {
+        gitForNonDevsImage: file(
+            relativePath: {eq: "roksolana-zasiadko-30856-unsplash.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
