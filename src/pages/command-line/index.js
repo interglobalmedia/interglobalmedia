@@ -12,7 +12,6 @@ import {
     BackDiv,
     H1Style,
     H2Style,
-    IconSpan,
     ApproachDiv,
     ApproachSpan,
     IncludesSpan,
@@ -40,10 +39,7 @@ const CLI = props => {
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <H1Style>
-                    <IconSpan>{cli.icon}</IconSpan> {cli.title}
-                    <br />
-                </H1Style>
+                <H1Style>{cli.title}</H1Style>
                 <CLIDiv>
                     <Img
                         fluid={props.data.cliImage.childImageSharp.fluid}
