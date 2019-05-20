@@ -10,7 +10,6 @@ import {
     BackDiv,
     H1Style,
     H2Style,
-    IconSpan,
     ApproachDiv,
     ApproachSpan,
     IncludesSpan,
@@ -33,10 +32,7 @@ const GitForDevs = props => {
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <H1Style>
-                    <IconSpan>{gfd.icon}</IconSpan> {gfd.title}
-                    <br />
-                </H1Style>
+                <H1Style>{gfd.title}</H1Style>
                 <GitForDevsDiv>
                     <Img
                         fluid={props.data.gitForDevsImage.childImageSharp.fluid}
