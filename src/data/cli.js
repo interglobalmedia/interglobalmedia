@@ -1,6 +1,4 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTerminal} from '@fortawesome/free-solid-svg-icons'
 
 import control from '../images/rohan-makhecha-408608-unsplash.jpg'
 
@@ -18,7 +16,6 @@ const cli = {
     infoUrl3: 'https://en.wikipedia.org/wiki/Shell_(computing)',
     infoUrl4:
         'https://www.quora.com/What-are-the-advantages-and-disadvantages-of-Command-Line-Interface',
-    icon: <FontAwesomeIcon icon={faTerminal} />,
 }
 
 export default cli
