@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faLink} from '@fortawesome/free-solid-svg-icons'
+import {Link, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import gfnd from '../../data/gfnd'
 
@@ -11,7 +10,6 @@ import {
     BackDiv,
     H1Style,
     H2Style,
-    IconSpan,
     ApproachDiv,
     ApproachSpan,
     IncludesSpan,
@@ -35,7 +33,7 @@ export const ATagStyle = styled.a`
     }
 `
 
-const GitForNonDevs = () => {
+const GitForNonDevs = props => {
     return (
         <Layout>
             <WrapperDiv>
@@ -43,11 +41,17 @@ const GitForNonDevs = () => {
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
                 <H1Style>
-                    <IconSpan>{gfnd.icon}</IconSpan> {gfnd.title}
+                    {gfnd.title}
                     <br />
                 </H1Style>
                 <GitForNonDevsDiv>
-                    <img src={gfnd.image} alt={gfnd.title} />
+                    <Img
+                        fluid={
+                            props.data.gitForNonDevsImage.childImageSharp.fluid
+                        }
+                        style={{marginBottom: '1.5rem'}}
+                        alt={gfnd.title}
+                    />
                     <H2Style>{gfnd.shortDescription}</H2Style>
                     <ApproachDiv>
                         <ApproachSpan>background:</ApproachSpan>{' '}
@@ -63,8 +67,7 @@ const GitForNonDevs = () => {
                     <ApproachDiv>
                         <IncludesSpan>more info:</IncludesSpan>{' '}
                         <ATagStyle href={gfnd.infoUrl} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> Git Page on
-                            Wikipedia
+                            Git Page on Wikipedia
                         </ATagStyle>
                     </ApproachDiv>
                 </GitForNonDevsDiv>
@@ -74,3 +77,17 @@ const GitForNonDevs = () => {
 }
 
 export default GitForNonDevs
+
+export const query = graphql`
+    query gitForNonDevsQuery {
+        gitForNonDevsImage: file(
+            relativePath: {eq: "roksolana-zasiadko-30856-unsplash.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

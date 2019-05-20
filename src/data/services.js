@@ -8,7 +8,7 @@ const data = [
         title: 'Full Stack JavaScript',
         shortDescription:
             'Development Tools, Frameworks, and Services Related To Full Stack Javascript',
-        path: '../fsjs',
+        path: '/fsjs',
         tags: [
             'atlassian bitbucket',
             ', ',
@@ -46,7 +46,7 @@ const data = [
         title: 'Development Workflows',
         shortDescription:
             'Development Workflows Related to Full Stack Javascript',
-        path: '../dev-flows',
+        path: '/dev-workflows',
         tags: [
             'react workflows',
             ', ',
@@ -65,7 +65,7 @@ const data = [
     {
         title: 'Git for Developers',
         shortDescription: 'Git Distributed Version Control For Developers',
-        path: '../git-for-devs',
+        path: '/git-for-devs',
         tags: [
             'using the command line with git',
             ', ',
@@ -96,7 +96,7 @@ const data = [
     {
         title: 'Git For Non-Developers',
         shortDescription: 'Git Distributed Version Control For Non-Developers',
-        path: '../git-for-non-devs',
+        path: '/git-for-non-devs',
         tags: [
             'using the command line with git',
             ', ',
@@ -126,7 +126,7 @@ const data = [
     },
     {
         id: 5,
-        path: '../command-line',
+        path: '/command-line',
         title: 'The Command Line Interface',
         shortDescription:
             'Getting To Know Your Computer Better via The Command Line Interface (CLI) aka Terminal Program on OSX',

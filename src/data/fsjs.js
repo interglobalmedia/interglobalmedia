@@ -1,6 +1,4 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faNodeJs} from '@fortawesome/free-brands-svg-icons'
 
 import fullstack from '../images/fullstack.jpg'
 
@@ -96,7 +94,6 @@ const fsjs = {
         ', ',
         'web speech api',
     ],
-    icon: <FontAwesomeIcon icon={faNodeJs} />,
 }
 
 export default fsjs

@@ -34,6 +34,10 @@ export const ProjectUl = styled.div`
     }
 `
 
+const ProjectTitleLi = styled.li`
+    font-size: 1.1rem;
+`
+
 export const ImgStyle = styled.img`
     max-width: 800px;
     width: 100%;
@@ -54,6 +58,10 @@ export const SpanStyle = styled.span`
     color: rgb(216, 132, 46);
 `
 
+const MoreP = styled.p`
+    font-size: 1.1rem;
+`
+
 const PortfolioIndex = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
@@ -64,7 +72,7 @@ const PortfolioIndex = props => {
             <ColumnsDiv>
                 {portfolioData.map((project, index) => (
                     <ProjectUl key={index}>
-                        <li>
+                        <ProjectTitleLi>
                             <Link
                                 to={'/portfolio/portfolio-view'}
                                 state={project}
@@ -72,7 +80,7 @@ const PortfolioIndex = props => {
                             >
                                 {project.title}
                             </Link>
-                        </li>
+                        </ProjectTitleLi>
                         <ImgStyle src={project.image} alt={project.title} />
                         <ParaStyle>{project.shortDescription}</ParaStyle>
                         <SpanStyle>{project.tags}</SpanStyle>
@@ -83,7 +91,7 @@ const PortfolioIndex = props => {
                                 state={project}
                                 key={project.title}
                             >
-                                <p>view more</p>
+                                <MoreP>view more</MoreP>
                             </Link>
                         </li>
                     </ProjectUl>

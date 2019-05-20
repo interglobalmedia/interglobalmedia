@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
+import {Link, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import FSJSLiveSites from '../../components/FSJS/FSJSLiveSites'
 import fsjs from '../../data/fsjs'
@@ -15,6 +16,7 @@ export const BackDiv = styled.div`
     margin-top: 1.5rem;
     & a {
         box-shadow: none;
+        font-size: 1.3rem;
     }
     & a:hover {
         text-decoration: underline;
@@ -26,10 +28,6 @@ export const H1Style = styled.h1`
     text-align: center;
     margin-top: 3rem;
     color: rgb(216, 132, 46);
-`
-
-export const IconSpan = styled.span`
-    color: #2f0000;
 `
 
 const FullStackDiv = styled.div`
@@ -88,11 +86,14 @@ const FullStackSJS = props => {
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <H1Style>
-                    <IconSpan>{fsjs.icon}</IconSpan> {fsjs.title}
-                </H1Style>
+                <H1Style>{fsjs.title}</H1Style>
                 <FullStackDiv>
-                    <img src={fsjs.image} alt={fsjs.title} />
+                    <Img
+                        fluid={props.data.fullstackImage.childImageSharp.fluid}
+                        style={{marginBottom: '1.5rem'}}
+                        alt={fsjs.title}
+                    />
+                    <H2Style>{fsjs.shortDescription}</H2Style>
                     <ApproachDiv>
                         <ApproachSpan>approach: </ApproachSpan>
                         {fsjs.approach}
@@ -113,3 +114,15 @@ const FullStackSJS = props => {
 }
 
 export default FullStackSJS
+
+export const query = graphql`
+    query fullstackQuery {
+        fullstackImage: file(relativePath: {eq: "fullstack.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
