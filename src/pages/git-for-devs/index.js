@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
+import {Link, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 
 import gfd from '../../data/gfd'
@@ -25,7 +26,7 @@ export const GFDTagsDiv = styled.div`
     margin-bottom: 3rem;
 `
 
-const GitForDevs = () => {
+const GitForDevs = props => {
     return (
         <Layout>
             <WrapperDiv>
@@ -37,7 +38,11 @@ const GitForDevs = () => {
                     <br />
                 </H1Style>
                 <GitForDevsDiv>
-                    <img src={gfd.image} alt={gfd.title} />
+                    <Img
+                        fluid={props.data.gitForDevsImage.childImageSharp.fluid}
+                        style={{marginBottom: '1.5rem'}}
+                        alt={gfd.title}
+                    />
                     <H2Style>{gfd.shortDescription}</H2Style>
                     <ApproachDiv>
                         <ApproachSpan>background:</ApproachSpan>{' '}
@@ -57,3 +62,17 @@ const GitForDevs = () => {
 }
 
 export default GitForDevs
+
+export const query = graphql`
+    query gitForDevsQuery {
+        gitForDevsImage: file(
+            relativePath: {eq: "mimi-thian-737711-unsplash.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
