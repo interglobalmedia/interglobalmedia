@@ -1,6 +1,4 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faGitSquare} from '@fortawesome/free-brands-svg-icons'
 
 import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
 
@@ -35,7 +33,6 @@ const gfd = {
         ', ',
         'creating the gh-pages branch on the remote repository for free static site hosting on github',
     ],
-    icon: <FontAwesomeIcon icon={faGitSquare} />,
 }
 
 export default gfd

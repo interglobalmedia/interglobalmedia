@@ -9,7 +9,6 @@ import {
     BackDiv,
     H1Style,
     H2Style,
-    IconSpan,
     ApproachDiv,
     ApproachSpan,
     AllTagsDiv,
@@ -32,11 +31,7 @@ const DevWorkFlows = props => {
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
-                <H1Style>
-                    <IconSpan>{devFlowStrats.icon}</IconSpan>{' '}
-                    {devFlowStrats.title}
-                    <br />
-                </H1Style>
+                <H1Style>{devFlowStrats.title}</H1Style>
                 <WorkflowDiv>
                     <Img
                         fluid={props.data.cliImage.childImageSharp.fluid}
