@@ -2,8 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faLink} from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/Layout/Layout'
 import gfnd from '../../data/gfnd'
 
@@ -69,8 +67,7 @@ const GitForNonDevs = props => {
                     <ApproachDiv>
                         <IncludesSpan>more info:</IncludesSpan>{' '}
                         <ATagStyle href={gfnd.infoUrl} target="_new">
-                            <FontAwesomeIcon icon={faLink} /> Git Page on
-                            Wikipedia
+                            Git Page on Wikipedia
                         </ATagStyle>
                     </ApproachDiv>
                 </GitForNonDevsDiv>
