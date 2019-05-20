@@ -12,7 +12,6 @@ import {
     BackDiv,
     H1Style,
     H2Style,
-    IconSpan,
     ApproachDiv,
     ApproachSpan,
     IncludesSpan,
@@ -44,7 +43,7 @@ const GitForNonDevs = props => {
                     <Link to="/services">&larr; back</Link>
                 </BackDiv>
                 <H1Style>
-                    <IconSpan>{gfnd.icon}</IconSpan> {gfnd.title}
+                    {gfnd.title}
                     <br />
                 </H1Style>
                 <GitForNonDevsDiv>
