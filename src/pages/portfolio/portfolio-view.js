@@ -24,6 +24,7 @@ export const PortfolioViewDiv = styled.div`
 `
 
 const PortfolioBackDiv = styled.div`
+    margin-top: -1.5rem;
     margin-bottom: 3rem;
     & a {
         box-shadow: none;
