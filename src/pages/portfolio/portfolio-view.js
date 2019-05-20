@@ -3,6 +3,7 @@ import {Helmet} from 'react-helmet'
 import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
 import Layout from '../../components/Layout/Layout'
+import {BackDiv} from '../fsjs'
 
 export const PortfolioViewDiv = styled.div`
     display: flex;
@@ -22,7 +23,18 @@ export const PortfolioViewDiv = styled.div`
     }
 `
 
-export const PortfolioViewH2Style = styled.h2`
+const PortfolioBackDiv = styled.div`
+    margin-bottom: 3rem;
+    & a {
+        box-shadow: none;
+        font-size: 1.2rem;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+`
+
+export const PortfolioViewH1Style = styled.h1`
     text-align: center;
     font-weight: 400;
     color: rgb(216, 132, 46);
@@ -69,10 +81,12 @@ class PortfolioView extends Component {
                     <meta name="more" content={more} />
                 </Helmet>
                 <PortfolioViewDiv>
-                    <Link to="/portfolio">&larr; back</Link>
-                    <PortfolioViewH2Style data-testid="project-title">
+                    <PortfolioBackDiv>
+                        <Link to="/portfolio">&larr; back</Link>
+                    </PortfolioBackDiv>
+                    <PortfolioViewH1Style data-testid="project-title">
                         {title}
-                    </PortfolioViewH2Style>
+                    </PortfolioViewH1Style>
                     <img data-testid="project-image" src={image} alt={title} />
                     <ShortDescDiv data-testid="project-shortDesc">
                         {shortDescription}
