@@ -1,7 +1,6 @@
 module.exports = {
     siteMetadata: {
         title: `Inter 🌐 Media`,
-        seoTitle: `Inter-Global Media Netwowrk, Inc.`,
         titleTemplate: `Inter-Global Media Network, Inc. is where we design, develop, and teach experiences that make people's lives simpler.`,
         description: `The Business Website for Inter-Global Media Network, Inc.`,
         siteUrl: `https://www.interglobalmedianetwork.com/`,
