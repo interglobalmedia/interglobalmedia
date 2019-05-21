@@ -53,6 +53,7 @@ const FeaturedPosts = () => {
                 ', ',
                 'dns information groping',
             ],
+            catNames: ['web hosting', ', ', 'changing web hosts'],
             path: `${blogSlug}/why-your-computer-may-not-point-to-newly-propagated-site/`,
             title:
                 'Why Your Local Machine (Computer) May Not be Pointing to Your Newly Propagated Site',
@@ -75,6 +76,12 @@ const FeaturedPosts = () => {
                         <span>tagged in:</span>
                     </Link>{' '}
                     {FeaturedPost.tagNames}
+                </li>
+                <li>
+                    <Link to="/categories">
+                        <span>categorized under:</span>
+                    </Link>{' '}
+                    {FeaturedPost.catNames}
                 </li>
             </PostsUl>
         </PostsDiv>
