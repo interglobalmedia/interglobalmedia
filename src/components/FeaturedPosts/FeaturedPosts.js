@@ -25,11 +25,11 @@ const PostsUl = styled.ul`
     & h3 {
         font-weight: normal;
     }
+    & li:last-of-type {
+        margin-bottom: 0;
+    }
     & a {
         box-shadow: none;
-    }
-    & > li {
-        padding: 10px 10px 0;
     }
     @media (min-width: 990px) {
         display: grid;
