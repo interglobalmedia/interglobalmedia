@@ -18,6 +18,7 @@ import {
     faFacebookF,
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
+import CookieConsent, {Cookies} from 'react-cookie-consent'
 import IndexHeader from '../components/IndexHeader/IndexHeader'
 import servicesData from '../data/services'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
@@ -33,12 +34,21 @@ const IndexFooterStyle = styled.footer`
     padding-bottom: 0.5rem;
     letter-spacing: 0.07em;
     color: rgb(47, 0, 0);
-    left: 0;
-    right: 0;
-    bottom: 3rem;
     height: 30px;
     width: 100%;
-    background: rgb(255, 227, 159);
+    margin: 0 auto;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    & a {
+        box-shadow: none;
+        margin-bottom: 3rem;
+        & :hover {
+            text-decoration: underline;
+        }
+    }
 `
 
 const AnchorDiv = styled.div`
@@ -210,6 +220,29 @@ const IndexPage = props => {
                         {` `}
                         Inter-Global Media Network, Inc.
                     </SiteCredsDiv>
+                    <CookieConsent
+                        location="bottom"
+                        buttonText="Accept"
+                        declineButtonText="Decline"
+                        cookieName="MDCDevBlogCookieConsent"
+                        style={{background: 'rgba(0,0,0,1)', paddingTop: '5px'}}
+                        buttonStyle={{color: '#4e503b', fontSize: '1rem'}}
+                        declineButtonStyle={{fontSize: '1rem'}}
+                        expires={150}
+                        onAccept={() => {
+                            alert('Great!')
+                        }}
+                        enableDeclineButton
+                        onDecline={() => {
+                            alert('Sorry to hear that!')
+                        }}
+                    >
+                        This website uses cookies to enhance the user
+                        experience.{' '}
+                        <a href="https://cookiesandyou.com/" target="_new">
+                            Learn more
+                        </a>
+                    </CookieConsent>
                 </IndexFooterStyle>
             </div>
         </Container>
