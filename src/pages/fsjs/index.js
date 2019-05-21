@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import FSJSLiveSites from '../../components/FSJS/FSJSLiveSites'
 import fsjs from '../../data/fsjs'
+import SEO from '../../components/Seo/Seo'
 
 export const WrapperDiv = styled.div`
     margin: 0 auto;
@@ -80,8 +81,12 @@ export const LiveSitesSpan = styled.div`
 `
 
 const FullStackSJS = props => {
+    const {data} = props
+    const title = data.site.siteMetadata.title
+    const keywords = data.site.siteMetadata.keywords
     return (
         <Layout>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
@@ -122,6 +127,11 @@ export const query = graphql`
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
             }
         }
     }
