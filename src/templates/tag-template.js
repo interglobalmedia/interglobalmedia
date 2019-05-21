@@ -4,30 +4,34 @@ import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 
-const TagsDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+const TagWrapper = styled.div`
+    width: 90%;
     margin: 3rem auto;
+`
+
+const TagsH1 = styled.h1`
+    margin: 0 auto;
+    letter-spacing: 0.07em;
+`
+
+const TagsDiv = styled.div`
+    margin: 0.75rem auto 4rem;
+    width: 100%;
     & h1 {
         color: rgb(47, 0, 0);
-    }
-    & ul {
-        margin-left: -8rem;
     }
     & li {
         list-style-type: square;
         color: rgb(47, 0, 0);
     }
-    & span {
-        color: rgba(88, 86, 86, 0.7);
+    & a {
+        box-shadow: none;
     }
-`
-
-const TagDiv = styled.div`
     & a:hover {
         text-decoration: underline;
+    }
+    & span {
+        color: rgba(88, 86, 86, 0.7);
     }
 `
 
@@ -39,20 +43,18 @@ const Tags = props => {
             <Helmet>
                 <title>Categories Page</title>
             </Helmet>
-            <TagsDiv>
-                <h1>{`posts in: ${tag}`}</h1>
-                <TagDiv>
+            <TagWrapper>
+                <TagsH1>{`posts in: ${tag}`}</TagsH1>
+                <TagsDiv>
                     {posts.map(({node}, i) => (
-                        <Link to={node.fields.slug} key={i}>
-                            <ul>
-                                <li>
-                                    <span>{node.frontmatter.title}</span>
-                                </li>
-                            </ul>
-                        </Link>
+                        <li key={i}>
+                            <Link to={node.fields.slug} key={i}>
+                                <span>{node.frontmatter.title}</span>
+                            </Link>
+                        </li>
                     ))}
-                </TagDiv>
-            </TagsDiv>
+                </TagsDiv>
+            </TagWrapper>
         </Layout>
     )
 }
