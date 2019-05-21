@@ -41,7 +41,7 @@ const Tags = props => {
     return (
         <Layout>
             <Helmet>
-                <title>Categories Page</title>
+                <title>Tags Page</title>
             </Helmet>
             <TagWrapper>
                 <TagsH1>{`posts in: ${tag}`}</TagsH1>

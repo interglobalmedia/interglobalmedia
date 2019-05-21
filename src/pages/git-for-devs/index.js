@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-
+import SEO from '../../components/Seo/Seo'
 import gfd from '../../data/gfd'
 import {
     WrapperDiv,
@@ -26,8 +26,12 @@ export const GFDTagsDiv = styled.div`
 `
 
 const GitForDevs = props => {
+    const {data} = props
+    const title = data.site.siteMetadata.title
+    const keywords = data.site.siteMetadata.keywords
     return (
         <Layout>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
@@ -68,6 +72,11 @@ export const query = graphql`
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
             }
         }
     }
