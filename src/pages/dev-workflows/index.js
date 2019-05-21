@@ -17,6 +17,7 @@ import {
     LiveSitesSpan,
 } from '../fsjs'
 import WFLiveSites from '../../components/WFLiveSites/WFLiveSites'
+import SEO from '../../components/Seo/Seo'
 
 const WorkflowDiv = styled.div`
     & img {
@@ -25,8 +26,12 @@ const WorkflowDiv = styled.div`
 `
 
 const DevWorkFlows = props => {
+    const {data} = props
+    const title = data.site.siteMetadata.title
+    const keywords = data.site.siteMetadata.keywords
     return (
         <Layout>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
                     <Link to="/services">&larr; back</Link>
@@ -73,6 +78,11 @@ export const query = graphql`
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
             }
         }
     }
