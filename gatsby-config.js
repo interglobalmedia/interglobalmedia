@@ -126,9 +126,14 @@ module.exports = {
         },
         `gatsby-plugin-sharp`,
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: `gatsby-plugin-gtag`,
             options: {
-                //trackingId: `ADD YOUR TRACKING ID HERE`,
+                // your google analytics tracking id
+                trackingId: `UA-32260397-3`,
+                // Puts tracking script in the head instead of the body if true
+                head: false,
+                // enable ip anonymization
+                anonymize: true,
             },
         },
         {
