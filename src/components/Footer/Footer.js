@@ -13,6 +13,7 @@ import {
     faFacebookF,
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
+import CookieConsent, {Cookies} from 'react-cookie-consent'
 import styled from '@emotion/styled'
 
 const FooterStyle = styled.footer`
@@ -23,6 +24,19 @@ const FooterStyle = styled.footer`
     margin-bottom: -1.5rem;
     overflow: hidden;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    & a {
+        box-shadow: none;
+        margin-bottom: 3rem;
+        & :hover {
+            text-decoration: underline;
+        }
+    }
 `
 
 const BizHoursUl = styled.div`
@@ -194,6 +208,28 @@ const Footer = () => {
                 {` `}
                 Inter-Global Media Network, Inc.
             </SiteCredsDiv>
+            <CookieConsent
+                location="bottom"
+                buttonText="Accept"
+                declineButtonText="Decline"
+                cookieName="MDCDevBlogCookieConsent"
+                style={{background: 'rgba(0,0,0,1)', paddingTop: '5px'}}
+                buttonStyle={{color: '#4e503b', fontSize: '1rem'}}
+                declineButtonStyle={{fontSize: '1rem'}}
+                expires={150}
+                onAccept={() => {
+                    alert('Great!')
+                }}
+                enableDeclineButton
+                onDecline={() => {
+                    alert('Sorry to hear that!')
+                }}
+            >
+                This website uses cookies to enhance the user experience.{' '}
+                <a href="https://cookiesandyou.com/" target="_new">
+                    Learn more
+                </a>
+            </CookieConsent>
         </FooterStyle>
     )
 }
