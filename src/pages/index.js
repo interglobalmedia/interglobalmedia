@@ -20,6 +20,8 @@ import {
 import ScrollUpButton from 'react-scroll-up-button'
 import IndexHeader from '../components/IndexHeader/IndexHeader'
 import servicesData from '../data/services'
+import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
+import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -65,21 +67,56 @@ const AnchorDiv = styled.div`
     }
 `
 
+const H1Style = styled.h1`
+    text-align: center;
+    font-weight: 400;
+    color: rgb(235, 140, 0);
+    &:first-of-type {
+        margin: 3rem auto;
+    }
+    &:nth-of-type(2) {
+        margin: 1.5rem auto;
+    }
+    &:nth-of-type(3) {
+        margin: 0 auto;
+        width: 97.5%;
+        @media (min-width: 990px) {
+            width: 90%;
+        }
+    }
+`
+
 const ServicesDiv = styled.div`
-margin: 3rem auto 3rem;
+    margin: 1.5rem auto;
     @media (min-width: 990px) {
         display: grid;
         width: 90%;
-        // max-width: 1026px;
         grid-template-columns: repeat(3, 1fr);
-        // grid-column-gap: 1%;
+        padding; 0;
+    }
+`
+
+const AppsDiv = styled.div`
+    margin: 3rem auto 1.5rem;
+    @media (min-width: 990px) {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        padding; 0;
+    }
+`
+
+const PostsDiv = styled.div`
+    margin: 3rem auto 4.5rem;
+    @media (min-width: 990px) {
+        display: grid;
+        width: 90%;
         padding; 0;
     }
 `
 
 const ServicesUl = styled.ul`
     width: 97.5%;
-    // max-width: 1026px;
     margin: 0 auto;
     display: grid;
     list-style-type: none;
@@ -90,7 +127,7 @@ const ServicesUl = styled.ul`
         cursor: pointer;
     }
     & h3 {
-        font-weight: normal;
+        font-weight: 400;
     }
     & a {
         box-shadow: none;
@@ -99,10 +136,6 @@ const ServicesUl = styled.ul`
         background-color: rgba(255, 153, 0, 0.5);
     }
 `
-
-const AppsDiv = styled.div``
-
-const AppsUl = styled.ul``
 
 const AnchorStyle = styled.a`
     box-shadow: none;
@@ -126,6 +159,7 @@ const IndexPage = props => {
                 <IndexHeader />
                 <Search />
                 <div className="Site-content">
+                    <H1Style>Services</H1Style>
                     <ServicesDiv>
                         {servicesData.map((service, index) => (
                             <ServicesUl key={index}>
@@ -143,7 +177,14 @@ const IndexPage = props => {
                             </ServicesUl>
                         ))}
                     </ServicesDiv>
-                    <AppsDiv />
+                    <H1Style>Apps</H1Style>
+                    <AppsDiv>
+                        <FeaturedProjects />
+                    </AppsDiv>
+                    <H1Style>Posts</H1Style>
+                    <PostsDiv>
+                        <FeaturedPosts />
+                    </PostsDiv>
                 </div>
                 <IndexFooterStyle>
                     <AnchorDiv>
