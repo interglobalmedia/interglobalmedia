@@ -173,6 +173,8 @@ const FSJSLiveSites = () => {
                 'expressjs',
                 ', ',
                 'node canvas',
+                ', ',
+                'collaboration',
             ],
             liveSiteUrl:
                 'https://node-collaborative-drawing-app.herokuapp.com/',
