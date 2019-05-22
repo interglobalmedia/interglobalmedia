@@ -237,11 +237,18 @@ const IndexPage = props => {
                             alert('Sorry to hear that!')
                         }}
                     >
-                        This website uses cookies to enhance the user
-                        experience.{' '}
-                        <a href="https://cookiesandyou.com/" target="_new">
-                            Learn more
-                        </a>
+                        <div style={{textAlign: 'left'}}>
+                            <p>
+                                This website uses cookies to enhance the user
+                                experience.{' '}
+                                <a
+                                    href="https://cookiesandyou.com/"
+                                    target="_new"
+                                >
+                                    Learn more
+                                </a>
+                            </p>
+                        </div>
                     </CookieConsent>
                 </IndexFooterStyle>
             </div>
