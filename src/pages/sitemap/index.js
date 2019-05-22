@@ -87,13 +87,12 @@ const SiteMapPage = props => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/rss.xml">
+                        <a href="http://www.interglobalmedianetwork.com/rss.xml">
                             <SitemapSpan>RSS</SitemapSpan>
-                        </Link>
+                        </a>
                     </li>
                 </SitemapUl>
                 <h2>Posts</h2>
-
                 {postList.edges.map(({node}, i) => (
                     <Link to={node.fields.slug} key={i}>
                         <h3>{node.frontmatter.title}</h3>
