@@ -109,7 +109,6 @@ const ColumnsDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    // display: block;
     & ul {
         list-style-type: none;
     }
@@ -224,10 +223,20 @@ const Footer = () => {
                     alert('Sorry to hear that!')
                 }}
             >
-                This website uses cookies to enhance the user experience.{' '}
-                <a href="https://cookiesandyou.com/" target="_new">
-                    Learn more
-                </a>
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(1, 1fr)',
+                    }}
+                >
+                    <p>
+                        This website uses cookies to enhance the user
+                        experience.{' '}
+                        <a href="https://cookiesandyou.com/" target="_new">
+                            Learn more
+                        </a>
+                    </p>
+                </div>
             </CookieConsent>
         </FooterStyle>
     )
