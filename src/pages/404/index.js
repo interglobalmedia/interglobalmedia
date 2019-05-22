@@ -37,7 +37,7 @@ export const pageQuery = graphql`
     query {
         site {
             siteMetadata {
-                siteTitle
+                title
             }
         }
     }

@@ -53,7 +53,7 @@ export const SpanStyle = styled.span`
 
 const PortfolioIndex = props => {
     const {data} = props
-    const title = data.site.siteMetadata.siteTitle
+    const title = data.site.siteMetadata.title
     const keywords = data.site.siteMetadata.keywords
     return (
         <>
@@ -92,7 +92,7 @@ export const indexQuery = graphql`
     query indexQuery {
         site {
             siteMetadata {
-                siteTitle
+                title
                 keywords
             }
         }

@@ -126,7 +126,7 @@ export const viewQuery = graphql`
     query viewQuery {
         site {
             siteMetadata {
-                siteTitle
+                title
                 keywords
             }
         }
