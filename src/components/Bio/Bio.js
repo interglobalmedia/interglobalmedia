@@ -52,8 +52,16 @@ function Bio() {
                             works in New York City building useful things.
                             {` `}
                             <a href={`https://twitter.com/${social.twitter}`}>
-                                You should follow her on Twitter.
+                                You should follow her on Twitter
                             </a>
+                            . She also has a developer blog{' '}
+                            <a
+                                href="https://www.mariadcampbell.com"
+                                target="_new"
+                            >
+                                mariadcampbell.com
+                            </a>{' '}
+                            you may want to check out!
                         </p>
                     </BioDiv>
                 )
