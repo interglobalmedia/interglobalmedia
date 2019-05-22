@@ -9,10 +9,11 @@ import {burgerToggle} from '../../lib/navHelpers'
 
 const IndexNavContainerDiv = styled.div`
     margin-top: -2.25rem;
+    width: 100%;
 `
 
 const IndexHeaderStyle = styled.header`
-    padding: 1.5rem 0 0 1rem;
+    padding: 1.5rem 0 0 1.5rem;
 `
 
 const IndexResponsiveHeading1 = styled.h1`
