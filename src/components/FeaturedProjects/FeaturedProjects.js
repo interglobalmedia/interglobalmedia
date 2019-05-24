@@ -6,16 +6,6 @@ import chatApp from '../../images/chatterbox.jpg'
 import speechToText from '../../images/speech-to-text.jpg'
 import nodeDrawingApp from '../../images/node-collaborative-drawing-app.jpg'
 
-const AppsDiv = styled.div`
-    margin: 3rem auto;
-    @media (min-width: 990px) {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-        padding; 0;
-    }
-`
-
 const AppsUl = styled.ul`
     width: 97.5%;
     margin: 0 auto;

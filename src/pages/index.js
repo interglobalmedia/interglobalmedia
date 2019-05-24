@@ -117,11 +117,12 @@ const AppsDiv = styled.div`
 `
 
 const PostsDiv = styled.div`
-    margin: 3rem auto 4.5rem;
+    margin: 1.5rem auto;
     @media (min-width: 990px) {
         display: grid;
         width: 90%;
-        padding; 0;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
     }
 `
 
