@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import styled from '@emotion/styled'
 
 import propagationImg from '../../images/mael-balland-1157034-unsplash.jpg'
+import outdatedContent from '../../images/fredy-jacob-764477-unsplash.jpg'
 
 const PostsDiv = styled.div`
     @media (min-width: 990px) {
@@ -31,6 +32,10 @@ const PostsUl = styled.ul`
     & a {
         box-shadow: none;
     }
+    & img {
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+    }
     @media (min-width: 990px) {
         display: grid;
     }
@@ -38,10 +43,31 @@ const PostsUl = styled.ul`
 
 const blogSlug = '/blog'
 
+const id1Slug = '/why-your-computer-may-not-point-to-newly-propagated-site/'
+const id2Slug = '/outdated-content-and-google-custom-search/'
+
 const FeaturedPosts = () => {
     return [
         {
             id: 1,
+            tagNames: [
+                'google search',
+                ', ',
+                'google custom search',
+                ', ',
+                'outdated content',
+                ', ',
+                'seo',
+            ],
+            catNames: ['outdated content'],
+            path: `${blogSlug}${id2Slug}`,
+            title: 'Outdated Content And Google Custom Search',
+            src: outdatedContent,
+            excerpt:
+                "Yesterday I pretty much completed this site ... But there was still one very important thing I hadn't addressed",
+        },
+        {
+            id: 2,
             tagNames: [
                 'dns',
                 ', ',
@@ -54,7 +80,7 @@ const FeaturedPosts = () => {
                 'dns information groping',
             ],
             catNames: ['web hosting', ', ', 'changing web hosts'],
-            path: `${blogSlug}/why-your-computer-may-not-point-to-newly-propagated-site/`,
+            path: `${blogSlug}${id1Slug}`,
             title:
                 'Why Your Local Machine (Computer) May Not be Pointing to Your Newly Propagated Site',
             src: propagationImg,
@@ -62,7 +88,7 @@ const FeaturedPosts = () => {
                 'The other day I moved my business site, interglobalmedianetwork.com, from Github gh-pages to Netlify, where this site resides as well',
         },
     ].map(FeaturedPost => (
-        <PostsDiv key={FeaturedPost.id}>
+        <div key={FeaturedPost.id}>
             <PostsUl>
                 <li>
                     <a href={FeaturedPost.path} target="_new">
@@ -84,7 +110,7 @@ const FeaturedPosts = () => {
                     {FeaturedPost.catNames}
                 </li>
             </PostsUl>
-        </PostsDiv>
+        </div>
     ))
 }
 
