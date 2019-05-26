@@ -60,7 +60,7 @@ const FeaturedProjects = () => {
             ],
             liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
             image: chatApp,
-            projectName: 'chattrbox',
+            title: 'Node Chat',
             more: '/portfolio/portfolio-view',
         },
         {
@@ -114,7 +114,7 @@ const FeaturedProjects = () => {
             liveSiteUrl:
                 'https://interglobalmedia.github.io/speech-to-text-app/',
             image: speechToText,
-            projectName: 'speech to text',
+            title: 'Speech to Text',
             more: '',
         },
         {
@@ -138,7 +138,7 @@ const FeaturedProjects = () => {
             liveSiteUrl:
                 'https://node-collaborative-drawing-app.herokuapp.com/',
             image: nodeDrawingApp,
-            projectName: 'node drawing',
+            title: 'Node Drawing',
         },
     ].map(FeaturedProject => (
         <div key={FeaturedProject.id}>
@@ -146,12 +146,12 @@ const FeaturedProjects = () => {
                 <li>
                     <h3>
                         <a href={FeaturedProject.liveSiteUrl}>
-                            {FeaturedProject.projectName} app
+                            {FeaturedProject.title} app
                         </a>
                     </h3>
                     <img
                         src={FeaturedProject.image}
-                        alt={FeaturedProject.projectName}
+                        alt={FeaturedProject.title}
                     />
                     <UsesSpan>application uses:</UsesSpan>{' '}
                     {FeaturedProject.tagNames}
