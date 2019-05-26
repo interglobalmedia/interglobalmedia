@@ -36,6 +36,7 @@ const FeaturedProjects = () => {
     return [
         {
             id: 1,
+            shortDescription: `A real time communications app built with websockets/socket.io websocket library, Node.js, and Express. What is it for? For friends, family, and/or colleagues to connect in real time and communicate with each other. messages are timestamped. chattrbox also uses the geolocation API and Google Maps API Maps Url.`,
             tagNames: [
                 'nodejs',
                 ', ',
@@ -58,12 +59,15 @@ const FeaturedProjects = () => {
                 'google maps url api',
             ],
             liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
-            src: chatApp,
+            image: chatApp,
             projectName: 'chattrbox',
             more: '/portfolio/portfolio-view',
         },
         {
             id: 2,
+            shortDescription: `A voice controlled notes app using the Speech Recognition Api and React.
+    
+            This little app was built with React, Webpack, The Web Speech Recognition Api, and Session Storage. I also use Babel 7 for JS compilation and Jest for testing.`,
             tagNames: [
                 'code refactoring',
                 ', ',
@@ -109,12 +113,13 @@ const FeaturedProjects = () => {
             ],
             liveSiteUrl:
                 'https://interglobalmedia.github.io/speech-to-text-app/',
-            src: speechToText,
+            image: speechToText,
             projectName: 'speech to text',
             more: '',
         },
         {
             id: 3,
+            shortDescription: `A real time collaborative drawing app built with websockets/socket.io websocket library, express, and node canvas. What is it for? For friends and family or colleagues to connect in real time and draw collaboratively with each other.`,
             tagNames: [
                 'nodejs',
                 ', ',
@@ -132,7 +137,7 @@ const FeaturedProjects = () => {
             ],
             liveSiteUrl:
                 'https://node-collaborative-drawing-app.herokuapp.com/',
-            src: nodeDrawingApp,
+            image: nodeDrawingApp,
             projectName: 'node drawing',
         },
     ].map(FeaturedProject => (
@@ -145,13 +150,18 @@ const FeaturedProjects = () => {
                         </a>
                     </h3>
                     <img
-                        src={FeaturedProject.src}
+                        src={FeaturedProject.image}
                         alt={FeaturedProject.projectName}
                     />
                     <UsesSpan>application uses:</UsesSpan>{' '}
                     {FeaturedProject.tagNames}
                     <br />
-                    <Link to="/portfolio/portfolio-view">learn more</Link>
+                    <Link
+                        state={FeaturedProject}
+                        to="/portfolio/portfolio-view"
+                    >
+                        learn more
+                    </Link>
                 </li>
             </AppsUl>
         </div>
