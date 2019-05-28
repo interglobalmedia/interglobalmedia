@@ -23,6 +23,9 @@ const AppsUl = styled.ul`
     & a {
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
     & li:hover {
         background-color: rgba(255, 153, 0, 0.5);
     }
