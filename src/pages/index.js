@@ -1,28 +1,26 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
-import Bio from '../components/Bio/Bio'
 import Search from '../components/Search/Search'
 import SEO from '../components/Seo/Seo'
-import {rhythm} from '../utils/typography'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faRss,
     faDirections,
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
-import {
-    faGithub,
-    faLinkedinIn,
-    faTwitter,
-    faFacebookF,
-} from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent, {Cookies} from 'react-cookie-consent'
 import IndexHeader from '../components/IndexHeader/IndexHeader'
 import servicesData from '../data/services'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
+import ServicesSlider from '../components/ServicesSlider/ServicesSlider'
+
+import appImage from '../images/tim-van-der-kuip-1398896-unsplash.jpg'
+import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
+import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
+import gitForNonDevs from '../images/eddy-klaus-33079-unsplash.jpg'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -58,7 +56,7 @@ const AnchorDiv = styled.div`
     font-size: 0.9rem;
     & a {
         box-shadow: none;
-        color: rgb(47, 0, 0);
+        color: rgb(0, 122, 204);
     }
     & a:nth-of-type(2) {
         margin-right: 1rem;
@@ -80,7 +78,6 @@ const AnchorDiv = styled.div`
 const H1Style = styled.h1`
     text-align: center;
     font-weight: 400;
-    color: rgb(235, 140, 0);
     &:first-of-type {
         margin: 3rem auto;
     }
@@ -93,6 +90,13 @@ const H1Style = styled.h1`
         @media (min-width: 990px) {
             width: 90%;
         }
+    }
+    & a {
+        box-shadow: none;
+        color: rgb(235, 140, 0);
+    }
+    & a:hover {
+        text-decoration: underline;
     }
 `
 
@@ -107,7 +111,7 @@ const ServicesDiv = styled.div`
 `
 
 const AppsDiv = styled.div`
-    margin: 3rem auto 1.5rem;
+    margin: 3rem auto 2rem;
     @media (min-width: 990px) {
         display: grid;
         width: 90%;
@@ -117,7 +121,7 @@ const AppsDiv = styled.div`
 `
 
 const PostsDiv = styled.div`
-    margin: 1.5rem auto;
+    margin: 3rem auto 6rem;
     @media (min-width: 990px) {
         display: grid;
         width: 90%;
@@ -159,6 +163,38 @@ export const SiteCredsDiv = styled.div`
     text-align: center;
 `
 
+const SliderStyle = styled.div`
+    width: 100%;
+    margin: 0 auto 2rem;
+    @media (min-width: 990px) {
+        width: 90%;
+    }
+`
+
+const sliderData = [
+    {
+        title: 'Full Stack JavaScript',
+        shortDescription: `Development Tools, Frameworks, and Services Related To Full Stack Javascript`,
+        image: appImage,
+    },
+    {
+        title: 'Development Workflows',
+        shortDescription:
+            'Development Workflows Related to Full Stack Javascript',
+        image: workflowStrategies,
+    },
+    {
+        title: 'Git For Developers',
+        shortDescription: 'Git Distributed Version Control For Developers',
+        image: gitDevs,
+    },
+    {
+        title: 'Git For Non-Developers',
+        shortDescription: 'Git Distributed Version Control For Non-Developers',
+        image: gitForNonDevs,
+    },
+]
+
 const IndexPage = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
@@ -170,29 +206,21 @@ const IndexPage = props => {
                 <IndexHeader />
                 <Search />
                 <div className="Site-content">
-                    <H1Style>Services</H1Style>
-                    <ServicesDiv>
-                        {servicesData.map((service, index) => (
-                            <ServicesUl key={index}>
-                                <li>
-                                    <h3>
-                                        <a href={service.path} target="_new">
-                                            {service.title} Services
-                                        </a>
-                                    </h3>
-                                    <p>{service.shortDescription}</p>
-                                    <a href={service.path} target="_new">
-                                        learn more
-                                    </a>
-                                </li>{' '}
-                            </ServicesUl>
-                        ))}
-                    </ServicesDiv>
-                    <H1Style>Apps</H1Style>
+                    <H1Style>
+                        <Link to="/services">Services</Link>
+                    </H1Style>
+                    <SliderStyle>
+                        <ServicesSlider slides={sliderData} />
+                    </SliderStyle>
+                    <H1Style>
+                        <Link to="/portfolio">Portfolio</Link>
+                    </H1Style>
                     <AppsDiv>
                         <FeaturedProjects />
                     </AppsDiv>
-                    <H1Style>Posts</H1Style>
+                    <H1Style>
+                        <Link to="/blog">Blog</Link>
+                    </H1Style>
                     <PostsDiv>
                         <FeaturedPosts />
                     </PostsDiv>

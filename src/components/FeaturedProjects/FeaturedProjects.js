@@ -23,6 +23,9 @@ const AppsUl = styled.ul`
     & a {
         box-shadow: none;
     }
+    & a:hover {
+        text-decoration: underline;
+    }
     & li:hover {
         background-color: rgba(255, 153, 0, 0.5);
     }
@@ -36,6 +39,7 @@ const FeaturedProjects = () => {
     return [
         {
             id: 1,
+            shortDescription: `A real time communications app built with websockets/socket.io websocket library, Node.js, and Express. What is it for? For friends, family, and/or colleagues to connect in real time and communicate with each other. messages are timestamped. chattrbox also uses the geolocation API and Google Maps API Maps Url.`,
             tagNames: [
                 'nodejs',
                 ', ',
@@ -58,12 +62,15 @@ const FeaturedProjects = () => {
                 'google maps url api',
             ],
             liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
-            src: chatApp,
-            projectName: 'chattrbox',
+            image: chatApp,
+            title: 'Node Chat',
             more: '/portfolio/portfolio-view',
         },
         {
             id: 2,
+            shortDescription: `A voice controlled notes app using the Speech Recognition Api and React.
+    
+            This little app was built with React, Webpack, The Web Speech Recognition Api, and Session Storage. I also use Babel 7 for JS compilation and Jest for testing.`,
             tagNames: [
                 'code refactoring',
                 ', ',
@@ -109,12 +116,13 @@ const FeaturedProjects = () => {
             ],
             liveSiteUrl:
                 'https://interglobalmedia.github.io/speech-to-text-app/',
-            src: speechToText,
-            projectName: 'speech to text',
+            image: speechToText,
+            title: 'Speech to Text',
             more: '',
         },
         {
             id: 3,
+            shortDescription: `A real time collaborative drawing app built with websockets/socket.io websocket library, express, and node canvas. What is it for? For friends and family or colleagues to connect in real time and draw collaboratively with each other.`,
             tagNames: [
                 'nodejs',
                 ', ',
@@ -132,8 +140,8 @@ const FeaturedProjects = () => {
             ],
             liveSiteUrl:
                 'https://node-collaborative-drawing-app.herokuapp.com/',
-            src: nodeDrawingApp,
-            projectName: 'node drawing',
+            image: nodeDrawingApp,
+            title: 'Node Drawing',
         },
     ].map(FeaturedProject => (
         <div key={FeaturedProject.id}>
@@ -141,17 +149,22 @@ const FeaturedProjects = () => {
                 <li>
                     <h3>
                         <a href={FeaturedProject.liveSiteUrl}>
-                            {FeaturedProject.projectName} app
+                            {FeaturedProject.title} app
                         </a>
                     </h3>
                     <img
-                        src={FeaturedProject.src}
-                        alt={FeaturedProject.projectName}
+                        src={FeaturedProject.image}
+                        alt={FeaturedProject.title}
                     />
                     <UsesSpan>application uses:</UsesSpan>{' '}
                     {FeaturedProject.tagNames}
                     <br />
-                    <Link to="/portfolio/portfolio-view">learn more</Link>
+                    <Link
+                        state={FeaturedProject}
+                        to="/portfolio/portfolio-view"
+                    >
+                        learn more
+                    </Link>
                 </li>
             </AppsUl>
         </div>
