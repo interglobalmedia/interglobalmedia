@@ -14,13 +14,15 @@ const PostsDiv = styled.div`
 
 const PostsUl = styled.ul`
     width: 97.5%;
-    margin: 0 auto;
+    margin: 0 auto 0.75rem;
     list-style-type: none;
-    padding: 5px 10px;
-    border: 1px solid gainsboro;
-    box-shadow: 0 -1px 4px #ede7e7;
-    cursor: pointer;
-    & :hover {
+    & > li {
+        padding: 5px 10px;
+        border: 1px solid gainsboro;
+        box-shadow: 0 -1px 4px #ede7e7;
+        cursor: pointer;
+    }
+    & li:hover {
         background-color: rgba(255, 153, 0, 0.5);
     }
     & h3 {
@@ -31,6 +33,9 @@ const PostsUl = styled.ul`
     }
     & a {
         box-shadow: none;
+    }
+    & a:hover {
+        text-decoration: underline;
     }
     & img {
         margin-bottom: 1rem;
@@ -94,16 +99,14 @@ const FeaturedPosts = () => {
                     <a href={FeaturedPost.path} target="_new">
                         {FeaturedPost.title}
                     </a>
-                </li>
-                <img src={FeaturedPost.src} alt={FeaturedPost.title} />
-                <li>{FeaturedPost.excerpt} ...</li>
-                <li>
+                    <img src={FeaturedPost.src} alt={FeaturedPost.title} />
+                    {FeaturedPost.excerpt} ...
+                    <br />
                     <Link to="/tags">
                         <span>tagged in:</span>
                     </Link>{' '}
                     {FeaturedPost.tagNames}
-                </li>
-                <li>
+                    <br />
                     <Link to="/categories">
                         <span>categorized under:</span>
                     </Link>{' '}

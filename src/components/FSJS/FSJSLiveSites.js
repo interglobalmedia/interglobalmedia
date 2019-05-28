@@ -81,7 +81,7 @@ const FSJSLiveSites = () => {
             liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
             siteRepoUrl: 'https://github.com/interglobalmedia/node-chat-app',
             src: chatApp,
-            projectName: 'chattrbox',
+            projectName: 'chattrbox app',
         },
         {
             id: 2,
