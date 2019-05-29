@@ -63,7 +63,7 @@ nav.responsive-menu {
 
 nav.responsive-menu.show {
     opacity: 1;
-    z-index: 2;
+    z-index: 9999;
     transition: height 0.5s ease, visibility 1s;
     height: 100vh;
     position: fixed;

@@ -119,6 +119,19 @@ const IndexHeader = () => {
                                 Services
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to="/contact"
+                                style={{
+                                    marginRight: '1.5rem',
+                                    boxShadow: 'none',
+                                    color: 'rgb(47,0,0)',
+                                }}
+                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                            >
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
                 <nav className="top">
@@ -182,6 +195,19 @@ const IndexHeader = () => {
                                 activeStyle={{color: 'rgba(190,138,96,1)'}}
                             >
                                 Services
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/contact"
+                                style={{
+                                    marginRight: '1.5rem',
+                                    boxShadow: 'none',
+                                    color: 'rgb(47,0,0)',
+                                }}
+                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                            >
+                                Contact
                             </Link>
                         </li>
                     </ul>
