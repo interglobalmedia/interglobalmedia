@@ -69,10 +69,17 @@ const FollowHoursUl = styled.div`
     color: rgb(216, 132, 46);
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     & li {
         margin-right: 1rem;
         font-size: 1.3rem;
+        & a {
+            color: #007acc;
+        }
+        & a:hover {
+            color: white;
+            transition: 1s ease-out;
+        }
     }
     @media (min-width: 990px) {
         margin-top: 0;
@@ -86,6 +93,9 @@ const AnchorDiv = styled.div`
     font-size: 0.9rem;
     & a {
         box-shadow: none;
+    }
+    & a:nth-of-type(1) {
+        margin-right: 1rem;
     }
     & a:nth-of-type(2) {
         margin-right: 1rem;
@@ -147,38 +157,55 @@ const Footer = () => {
                     <li>Sunday: Closed</li>
                     <li>And By Appointment</li>
                 </BizHoursUl>
-                <RelatedHoursUl>
-                    {/* <li>Related</li>
-                    <li style={{ fontStyle: 'normal' }}>
-                        <a style={{ boxShadow: 'none' }} href="https://www.mariadcampbell.com">Developer Blog</a>
-                    </li> */}
-                </RelatedHoursUl>
+                <RelatedHoursUl />
                 <FollowHoursUl>
-                    {/* <li>Follow</li> */}
-                    {/* <div style={{ display: 'flex' }}> */}
                     <li>
-                        <FontAwesomeIcon
-                            style={{color: '#007acc'}}
-                            icon={faGithub}
-                        />
+                        <a
+                            className="github"
+                            href="https://github.com/interglobalmedia"
+                            target="_new"
+                        >
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                transform="rotate--30 flip-h flip-v left-8 up-6"
+                            />
+                        </a>
                     </li>
                     <li>
-                        <FontAwesomeIcon
-                            style={{color: '#007acc'}}
-                            icon={faTwitter}
-                        />
+                        <a
+                            className="twitter"
+                            href="https://twitter.com/letsbsocial1"
+                            target="_new"
+                        >
+                            <FontAwesomeIcon
+                                icon={faTwitter}
+                                transform="flip-v flip-h down-12 right-2 rotate--180"
+                            />
+                        </a>
                     </li>
                     <li>
-                        <FontAwesomeIcon
-                            style={{color: '#007acc'}}
-                            icon={faFacebookF}
-                        />
+                        <a
+                            className="facebook"
+                            href="https://www.facebook.com/mariador62"
+                            target="_new"
+                        >
+                            <FontAwesomeIcon
+                                icon={faFacebookF}
+                                transform="rotate-20 up-16 right-2 flip-h"
+                            />
+                        </a>
                     </li>
                     <li>
-                        <FontAwesomeIcon
-                            style={{color: '#007acc'}}
-                            icon={faLinkedinIn}
-                        />
+                        <a
+                            className="linkedin"
+                            href="https://www.linkedin.com/in/mariacampbell/"
+                            target="_new"
+                        >
+                            <FontAwesomeIcon
+                                icon={faLinkedinIn}
+                                transform="rotate-60 up-2 right-12 flip-v"
+                            />
+                        </a>
                     </li>
                     {/* </div> */}
                 </FollowHoursUl>
@@ -187,16 +214,16 @@ const Footer = () => {
                 <ScrollUpButton
                     style={{background: 'transparent', outline: 'none'}}
                 />
-                <AnchorStyle href="mailto:interglobalmedia@gmail.com">
+                <Link to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} />
                     Contact
-                </AnchorStyle>
+                </Link>
                 <Link to="/sitemap">
-                    <FontAwesomeIcon icon={faDirections} />
+                    <FontAwesomeIcon icon={faDirections} transform="flip-h" />
                     Sitemap
                 </Link>
                 <a href="http://www.interglobalmedianetwork.com/rss.xml">
-                    <FontAwesomeIcon icon={faRss} />
+                    <FontAwesomeIcon icon={faRss} transform="flip-h" />
                     RSS
                 </a>
                 <br />

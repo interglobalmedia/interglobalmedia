@@ -44,6 +44,7 @@ function CategoriesPage(props) {
                         <FontAwesomeIcon
                             icon={faFolder}
                             style={{color: '#268bd2', marginRight: '0.5rem'}}
+                            transform="flip-h"
                         />
                         {category.fieldValue} {`(${category.totalCount})`}
                     </Link>

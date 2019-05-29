@@ -6,7 +6,7 @@ description:
     gh-pages.'
 date: '2017-06-03T01:22:22'
 tags: ['hugo', 'gh-pages', 'toml']
-categories: [gh-pages']
+categories: ['gh-pages']
 author: 'Maria D. Campbell'
 ---
 

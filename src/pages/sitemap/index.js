@@ -67,6 +67,11 @@ const SiteMapPage = props => {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/contact">
+                            <SitemapSpan>Contact</SitemapSpan>
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/portfolio">
                             <SitemapSpan>Portfolio</SitemapSpan>
                         </Link>
