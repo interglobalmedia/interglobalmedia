@@ -233,7 +233,10 @@ const IndexPage = props => {
                             Contact
                         </Link>
                         <Link to="/sitemap">
-                            <FontAwesomeIcon icon={faDirections} />
+                            <FontAwesomeIcon
+                                icon={faDirections}
+                                transform="flip-v flip-h"
+                            />
                             Sitemap
                         </Link>
                         <a href="http://www.interglobalmedianetwork.com/rss.xml">
