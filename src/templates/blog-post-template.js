@@ -201,8 +201,13 @@ const BlogPostTemplate = props => {
                                 <Link to={`/tags/${tag}`} key={i}>
                                     <FontAwesomeIcon
                                         icon={faTag}
-                                        style={{color: '#268bd2'}}
-                                    />{' '}
+                                        style={{
+                                            color: '#268bd2',
+                                            marginLeft: '0.25rem',
+                                            marginRight: '0.125rem',
+                                        }}
+                                        transform="rotate--30"
+                                    />
                                     {tag}{' '}
                                 </Link>
                             ))}
@@ -234,8 +239,11 @@ const BlogPostTemplate = props => {
                                 blogPostUrl,
                             )}`}
                         >
-                            <FontAwesomeIcon icon={faComment} /> Discuss On
-                            Twitter
+                            <FontAwesomeIcon
+                                icon={faComment}
+                                transform="flip-v rotate--180"
+                            />{' '}
+                            Discuss On Twitter
                         </a>
                     </DiscussTwitter>
                     <div className="post-social-share">

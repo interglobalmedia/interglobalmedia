@@ -26,7 +26,7 @@ const RightArrow = props => {
             onClick={props.onClick}
             className="slider-right-arrow"
         >
-            <FontAwesomeIcon icon={faChevronCircleRight} />
+            <FontAwesomeIcon icon={faChevronCircleRight} className="fa-spin" />
         </SliderRightArrowStyle>
     )
 }

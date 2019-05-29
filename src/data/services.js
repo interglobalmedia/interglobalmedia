@@ -40,7 +40,7 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faNodeJs} />,
+        icon: <FontAwesomeIcon icon={faNodeJs} className="fa-pulse" />,
     },
     {
         title: 'Development Workflows',
@@ -60,7 +60,7 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faJira} />,
+        icon: <FontAwesomeIcon icon={faJira} className="fa-pulse" />,
     },
     {
         title: 'Git for Developers',
@@ -91,7 +91,7 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faGitSquare} />,
+        icon: <FontAwesomeIcon icon={faGitSquare} className="fa-pulse" />,
     },
     {
         title: 'Git For Non-Developers',
@@ -122,7 +122,7 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+        icon: <FontAwesomeIcon icon={faCodeBranch} className="fa-pulse" />,
     },
     {
         id: 5,
@@ -130,7 +130,7 @@ const data = [
         title: 'The Command Line Interface',
         shortDescription:
             'Getting To Know Your Computer Better via The Command Line Interface (CLI) aka Terminal Program on OSX',
-        icon: <FontAwesomeIcon icon={faTerminal} />,
+        icon: <FontAwesomeIcon icon={faTerminal} className="fa-pulse" />,
     },
 ]
 
