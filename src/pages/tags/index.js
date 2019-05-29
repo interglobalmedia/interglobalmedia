@@ -44,6 +44,7 @@ function TagsPage(props) {
                         <FontAwesomeIcon
                             icon={faTag}
                             style={{color: '#268bd2'}}
+                            transform="rotate--30"
                         />{' '}
                         {tag.fieldValue} {`(${tag.totalCount})`}
                     </Link>

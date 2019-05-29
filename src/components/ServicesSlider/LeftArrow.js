@@ -26,7 +26,7 @@ const LeftArrow = props => {
             className="slider-left-arrow"
             onClick={props.onClick}
         >
-            <FontAwesomeIcon icon={faChevronCircleLeft} />
+            <FontAwesomeIcon icon={faChevronCircleLeft} className="fa-spin" />
         </SliderLeftArrowStyle>
     )
 }
