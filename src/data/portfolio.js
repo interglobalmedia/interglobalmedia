@@ -4,6 +4,7 @@ import rockinSynth from '../images/rockin-synth.jpg'
 import catWhisperer from '../images/cat-whisperer-app.jpg'
 import trumpTalks from '../images/trump-talks.jpg'
 import chatterbox from '../images/chatterbox.jpg'
+import nodeDrawingApp from '../images/node-collaborative-drawing-app.jpg'
 
 const data = [
     {
@@ -128,6 +129,29 @@ const data = [
             'geolocation api',
             ', ',
             'google maps api maps url',
+        ],
+    },
+    {
+        title: 'Node Collaborative Drawing App',
+        repository:
+            'https://github.com/interglobalmedia/node-collaborative-drawing-app',
+        website: 'https://node-collaborative-drawing-app.herokuapp.com/',
+        image: nodeDrawingApp,
+        shortDescription: `A real time collaborative drawing app built with websockets and the socket.io websocket library, express, and node canvas. What is it for? For friends and family or colleagues to connect in real time and draw collaboratively with each other.`,
+        tags: [
+            'nodejs',
+            ', ',
+            'serve favicon',
+            ', ',
+            'socket.io',
+            ', ',
+            'websockets',
+            ', ',
+            'expressjs',
+            ', ',
+            'node canvas',
+            ', ',
+            'collaboration',
         ],
     },
 ]
