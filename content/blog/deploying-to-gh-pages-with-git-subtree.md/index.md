@@ -6,7 +6,7 @@ description:
     gh-pages with git subtree.'
 date: '2017-08-29T23:28:48-04:00'
 author: 'Maria D. Campbell'
-tags: ['git', 'git subtree', 'gh-pages', 'react-workflows']
+tags: ['git', 'git-subtree', 'gh-pages', 'react-workflows']
 categories: ['git']
 ---
 
