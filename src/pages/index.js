@@ -58,6 +58,9 @@ const AnchorDiv = styled.div`
         box-shadow: none;
         color: rgb(0, 122, 204);
     }
+    a:nth-of-type(1) {
+        margin-right: 1rem;
+    }
     & a:nth-of-type(2) {
         margin-right: 1rem;
     }
@@ -152,11 +155,6 @@ const ServicesUl = styled.ul`
     }
 `
 
-const AnchorStyle = styled.a`
-    box-shadow: none;
-    margin-right: 1rem;
-`
-
 export const SiteCredsDiv = styled.div`
     color: rgb(216, 132, 46);
     margin-top: 1rem;
@@ -230,10 +228,10 @@ const IndexPage = props => {
                         <ScrollUpButton
                             style={{background: 'transparent', outline: 'none'}}
                         />
-                        <AnchorStyle href="mailto:interglobalmedia@gmail.com">
+                        <Link to="/contact">
                             <FontAwesomeIcon icon={faEnvelope} />
                             Contact
-                        </AnchorStyle>
+                        </Link>
                         <Link to="/sitemap">
                             <FontAwesomeIcon icon={faDirections} />
                             Sitemap
