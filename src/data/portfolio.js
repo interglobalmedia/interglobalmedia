@@ -8,6 +8,7 @@ import nodeDrawingApp from '../images/node-collaborative-drawing-app.jpg'
 
 const data = [
     {
+        id: 1,
         title: 'Speech To Text',
         repository: 'https://github.com/interglobalmedia/speech-to-text-app',
         website: 'https://interglobalmedia.github.io/speech-to-text-app/',
@@ -31,6 +32,7 @@ const data = [
         more: `https://interglobalmedia.github.io/portfolio/#/work/speech-to-text-app`,
     },
     {
+        id: 2,
         title: 'Welcome To The Groove',
         repository: 'https://github.com/interglobalmedia/jukebox',
         website: 'https://interglobalmedia.github.io/jukebox/',
@@ -52,6 +54,7 @@ const data = [
         more: `https://interglobalmedia.github.io/portfolio/#/work/welcome-to-the-groove`,
     },
     {
+        id: 3,
         title: 'Rockin Synth',
         repository: `https://github.com/interglobalmedia/rockin-synth`,
         website: `https://interglobalmedia.github.io/rockin-synth/`,
@@ -74,6 +77,7 @@ const data = [
         more: `https://interglobalmedia.github.io/portfolio/#/work/rockin-synth`,
     },
     {
+        id: 4,
         title: 'Cat Whisperer App',
         repository: `https://github.com/interglobalmedia/the-cat-whisperer`,
         website: `https://interglobalmedia.github.io/the-cat-whisperer/`,
@@ -93,6 +97,7 @@ const data = [
         more: `https://interglobalmedia.github.io/portfolio/#/work/cat-whisperer-app`,
     },
     {
+        id: 5,
         title: `Trump Talks Trash`,
         repository: `https://github.com/interglobalmedia/trump-talks`,
         website: `https://trump-talks-trash.herokuapp.com/`,
@@ -112,6 +117,7 @@ const data = [
         more: `https://interglobalmedia.github.io/portfolio/#/work/trump-talks`,
     },
     {
+        id: 6,
         title: `Node Chat App`,
         respository: `https://github.com/interglobalmedia/node-chat-app`,
         website: `https://pacific-savannah-76659.herokuapp.com/`,
@@ -132,6 +138,7 @@ const data = [
         ],
     },
     {
+        id: 7,
         title: 'Node Collaborative Drawing App',
         repository:
             'https://github.com/interglobalmedia/node-collaborative-drawing-app',
