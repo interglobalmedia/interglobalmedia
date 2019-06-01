@@ -1,8 +1,10 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
+import Image from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import portfolioData from '../../data/portfolio'
 import styled from '@emotion/styled'
+import Img from 'gatsby-image'
 import SEO from '../../components/Seo/Seo'
 
 export const ColumnsDiv = styled.div`
@@ -64,14 +66,14 @@ const MoreP = styled.p`
 
 const PortfolioIndex = props => {
     const {data} = props
-    const title = data.site.siteMetadata.title
-    const keywords = data.site.siteMetadata.keywords
+    const title = props.data.site.siteMetadata.title
+    const keywords = props.data.site.siteMetadata.keywords
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv>
-                {portfolioData.map((project, index) => (
-                    <ProjectUl key={index}>
+                {portfolioData.map(project => (
+                    <ProjectUl key={project.id}>
                         <ProjectTitleLi>
                             <Link
                                 to={'/portfolio/portfolio-view'}
@@ -81,7 +83,11 @@ const PortfolioIndex = props => {
                                 {project.title}
                             </Link>
                         </ProjectTitleLi>
-                        <ImgStyle src={project.image} alt={project.title} />
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            key={project.id}
+                        />
                         <ParaStyle>{project.shortDescription}</ParaStyle>
                         <SpanStyle>{project.tags}</SpanStyle>
                         <br />

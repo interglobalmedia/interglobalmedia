@@ -15,12 +15,12 @@ import IndexHeader from '../components/IndexHeader/IndexHeader'
 import servicesData from '../data/services'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
-import ServicesSlider from '../components/ServicesSlider/ServicesSlider'
+import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
 
-import appImage from '../images/tim-van-der-kuip-1398896-unsplash.jpg'
-import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
-import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
-import gitForNonDevs from '../images/eddy-klaus-33079-unsplash.jpg'
+// import appImage from '../images/tim-van-der-kuip-1398896-unsplash.jpg'
+// import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
+// import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
+// import gitForNonDevs from '../images/eddy-klaus-33079-unsplash.jpg'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -85,7 +85,7 @@ const H1Style = styled.h1`
         margin: 3rem auto;
     }
     &:nth-of-type(2) {
-        margin: 1.5rem auto;
+        margin: 3rem auto;
     }
     &:nth-of-type(3) {
         margin: 0 auto;
@@ -115,22 +115,10 @@ const ServicesDiv = styled.div`
 
 const AppsDiv = styled.div`
     margin: 3rem auto 2rem;
-    @media (min-width: 990px) {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-        padding; 0;
-    }
 `
 
 const PostsDiv = styled.div`
     margin: 3rem auto 6rem;
-    @media (min-width: 990px) {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0;
-    }
 `
 
 const ServicesUl = styled.ul`
@@ -161,38 +149,6 @@ export const SiteCredsDiv = styled.div`
     text-align: center;
 `
 
-const SliderStyle = styled.div`
-    width: 100%;
-    margin: 0 auto 2rem;
-    @media (min-width: 990px) {
-        width: 90%;
-    }
-`
-
-const sliderData = [
-    {
-        title: 'Full Stack JavaScript',
-        shortDescription: `Development Tools, Frameworks, and Services Related To Full Stack Javascript`,
-        image: appImage,
-    },
-    {
-        title: 'Development Workflows',
-        shortDescription:
-            'Development Workflows Related to Full Stack Javascript',
-        image: workflowStrategies,
-    },
-    {
-        title: 'Git For Developers',
-        shortDescription: 'Git Distributed Version Control For Developers',
-        image: gitDevs,
-    },
-    {
-        title: 'Git For Non-Developers',
-        shortDescription: 'Git Distributed Version Control For Non-Developers',
-        image: gitForNonDevs,
-    },
-]
-
 const IndexPage = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
@@ -207,9 +163,7 @@ const IndexPage = props => {
                     <H1Style>
                         <Link to="/services">Services</Link>
                     </H1Style>
-                    <SliderStyle>
-                        <ServicesSlider slides={sliderData} />
-                    </SliderStyle>
+                    <ServicesCarousel />
                     <H1Style>
                         <Link to="/portfolio">Portfolio</Link>
                     </H1Style>
