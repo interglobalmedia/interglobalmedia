@@ -12,15 +12,9 @@ import {
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent, {Cookies} from 'react-cookie-consent'
 import IndexHeader from '../components/IndexHeader/IndexHeader'
-import servicesData from '../data/services'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
-
-// import appImage from '../images/tim-van-der-kuip-1398896-unsplash.jpg'
-// import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
-// import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
-// import gitForNonDevs from '../images/eddy-klaus-33079-unsplash.jpg'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -103,44 +97,12 @@ const H1Style = styled.h1`
     }
 `
 
-const ServicesDiv = styled.div`
-    margin: 1.5rem auto;
-    @media (min-width: 990px) {
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-        padding; 0;
-    }
-`
-
 const AppsDiv = styled.div`
     margin: 3rem auto 2rem;
 `
 
 const PostsDiv = styled.div`
     margin: 3rem auto 6rem;
-`
-
-const ServicesUl = styled.ul`
-    width: 97.5%;
-    margin: 0 auto;
-    display: grid;
-    list-style-type: none;
-    & > li {
-        padding: 5px 10px;
-        border: 1px solid gainsboro;
-        box-shadow: 0 -1px 4px #ede7e7;
-        cursor: pointer;
-    }
-    & h3 {
-        font-weight: 400;
-    }
-    & a {
-        box-shadow: none;
-    }
-    & li:hover {
-        background-color: rgba(255, 153, 0, 0.5);
-    }
 `
 
 export const SiteCredsDiv = styled.div`
