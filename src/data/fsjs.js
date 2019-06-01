@@ -3,7 +3,7 @@ import React from 'react'
 import fullstack from '../images/fullstack.jpg'
 
 const fsjs = {
-    title: 'Full Stack Javascript Services',
+    title: 'Full Stack Javascript',
     image: fullstack,
     shortDescription:
         'Development Tools, Frameworks, and Services Related To Full Stack Javascript',
