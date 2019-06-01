@@ -1,7 +1,7 @@
 ---
 title: 'Adapting your gatsby site to the limitations of gatsby-image'
 image: nathan-dumlao-553945-unsplash.jpg
-description: ''
+description: 'Adapting your gatsby site to the limitations of gatsby-image.'
 date: '2019-06-01'
 tags: ['site-performance', 'lighthouse-audits', 'gatsby-image', 'gatsbyjs']
 categories: ['image-optimization']
