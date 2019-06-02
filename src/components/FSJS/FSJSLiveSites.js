@@ -28,6 +28,12 @@ export const SiteWrapperDiv = styled.div`
     }
 `
 
+export const SiteLi = styled.li`
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+`
+
 export const SpanStyle = styled.span`
     font-weight: bold;
 `

@@ -3,16 +3,7 @@ import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 import styled from '@emotion/styled'
 import fsjsLiveSite1Data from '../../data/fsjs-live-sites/fsjs-live-site-1'
-
-export const SiteLi = styled.li`
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-`
-
-export const SpanStyle = styled.span`
-    font-weight: bold;
-`
+import {SiteLi, SpanStyle} from './FSJSLiveSites'
 
 const FSJSLiveSite1 = () => {
     return (
