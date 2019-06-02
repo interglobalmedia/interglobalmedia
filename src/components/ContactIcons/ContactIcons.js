@@ -56,7 +56,7 @@ const ContactIcons = () => {
                         icon={faFacebookF}
                         transform="rotate--30 flip-v up-10"
                     />{' '}
-                </a>{' '}
+                </a>
             </li>
             <li className="linkedin">
                 <a
