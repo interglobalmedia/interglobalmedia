@@ -7,7 +7,7 @@ import {
     faPhone,
     faPencilAlt,
 } from '@fortawesome/free-solid-svg-icons'
-import {Link, graphql} from 'gatsby'
+import {graphql} from 'gatsby'
 import {Helmet} from 'react-helmet'
 import get from 'lodash/get'
 import Layout from '../../components/Layout/Layout'
@@ -62,7 +62,6 @@ class Contact extends Component {
                                         marginBottom: '40px',
                                     }}
                                     transform="rotate-30"
-                                    className="fa-pulse"
                                 />
                                 <Email />
                             </H2Style>
@@ -76,7 +75,6 @@ class Contact extends Component {
                                         marginBottom: '40px',
                                     }}
                                     transform="rotate-180"
-                                    className="fa-pulse"
                                 />
                                 <Phone />
                             </H2Style>
@@ -90,7 +88,6 @@ class Contact extends Component {
                                         marginBottom: '40px',
                                     }}
                                     transform="rotate-90"
-                                    className="fa-pulse"
                                 />
                                 <Contribute />
                             </H2Style>
