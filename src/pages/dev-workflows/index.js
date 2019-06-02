@@ -39,7 +39,7 @@ const DevWorkFlows = props => {
                 <H1Style>{devFlowStrats.title}</H1Style>
                 <WorkflowDiv>
                     <Img
-                        fluid={props.data.cliImage.childImageSharp.fluid}
+                        fluid={props.data.workflowImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
                         alt={devFlowStrats.title}
                     />
@@ -83,6 +83,7 @@ export const query = graphql`
         site {
             siteMetadata {
                 title
+                keywords
             }
         }
     }
