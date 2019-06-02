@@ -45,9 +45,7 @@ const FeaturedProjects = () => {
     return (
         <AppsUl>
             <FeaturedProject1 />
-
             <FeaturedProject2 />
-
             <FeaturedProject3 />
         </AppsUl>
     )
