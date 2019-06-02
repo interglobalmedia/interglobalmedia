@@ -61,14 +61,7 @@ export const AllTagsDiv = styled.div`
 `
 
 export const LiveSitesDiv = styled.div`
-    margin-bottom: 1rem;
     margin: 0 auto 3rem;
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 800px) {
-        display: flex;
-        flex-direction: row;
-    }
 `
 
 export const IncludesSpan = styled.span`
