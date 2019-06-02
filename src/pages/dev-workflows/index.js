@@ -71,7 +71,7 @@ export default DevWorkFlows
 
 export const query = graphql`
     query workflowQuery {
-        cliImage: file(
+        workflowImage: file(
             relativePath: {eq: "martin-w-kirst-1175656-unsplash.jpg"}
         ) {
             childImageSharp {
