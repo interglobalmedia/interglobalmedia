@@ -1,8 +1,6 @@
-import React from 'react'
-
 import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
 
-const devWorkflows = {
+const devWorkflowStrats = {
     title: 'Development Workflows',
     image: workflowStrategies,
     shortDescription: 'Development Workflows Related to Full Stack Javascript',
@@ -23,4 +21,4 @@ const devWorkflows = {
     ],
 }
 
-export default devWorkflows
+export default devWorkflowStrats
