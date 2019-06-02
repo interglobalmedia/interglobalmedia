@@ -2,7 +2,7 @@ import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 import fsjsLiveSite4Data from '../../data/fsjs-live-sites/fsjs-live-site-4'
-import {SiteLi, SpanStyle} from './FSJSLiveSite1'
+import {SiteLi, SpanStyle} from './FSJSLiveSites'
 
 const FSJSLiveSite4 = () => {
     return (
