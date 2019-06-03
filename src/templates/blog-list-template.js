@@ -37,7 +37,7 @@ export const PostListTitle = styled.h1`
     font-weight: normal;
     margin-bottom: 0.25rem;
     line-height: 1.3;
-    color: #007acc;
+    color: rgb(39, 74, 169);
     & :hover {
         text-decoration: underline;
     }
@@ -50,6 +50,7 @@ export const ExcerptWrapUl = styled.ul`
     color: rgb(161, 141, 104);
     & li {
         list-style-type: none;
+        color: rgba(88, 86, 86, 1);
     }
     & img {
         padding-right: ${rhythm(1 / 2)};
