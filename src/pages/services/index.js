@@ -33,6 +33,7 @@ const ServicesUl = styled.ul`
     padding: 1.5rem 1rem 0;
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
         @media (min-width: 400px) {
             font-size: 1.2rem;
         }
