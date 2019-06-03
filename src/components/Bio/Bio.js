@@ -17,6 +17,7 @@ const BioDiv = styled.div`
     color: rgba(88, 86, 86, 1);
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;

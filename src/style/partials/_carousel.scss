@@ -54,7 +54,7 @@
 .carousel .control-prev.control-arrow:before {
     // border-right: 10px solid #000;
     content: '\2B16';
-    color: rgb(227, 71, 153);
+    color: rgb(167, 19, 138);
     font-weight: normal;
     font-size: 2rem;
 
@@ -78,7 +78,7 @@
 .carousel .control-next.control-arrow:before {
     // border-left: 10px solid #000;
     content: '\2B17';
-    color: rgb(227, 71, 153);
+    color: rgb(167, 19, 138);
     font-size: 2rem;
 
     @media #{$min-480} {

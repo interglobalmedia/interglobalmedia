@@ -31,6 +31,7 @@ const PostsUl = styled.ul`
     }
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
@@ -38,6 +39,9 @@ const PostsUl = styled.ul`
     & img {
         margin-bottom: 1rem;
         margin-top: 0.25rem;
+    }
+    & span {
+        color: rgb(39, 74, 169);
     }
     @media (min-width: 990px) {
         width: 90%;

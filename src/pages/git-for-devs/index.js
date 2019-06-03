@@ -21,7 +21,7 @@ const GitForDevsDiv = styled.div`
     }
 `
 export const GFDTagsDiv = styled.div`
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
     margin-bottom: 3rem;
 `
 

@@ -37,11 +37,11 @@ const SitemapUl = styled.ul`
 
 const MetaDiv = styled.div`
     box-shadow: none;
-    color: rgba(153, 170, 181, 1);
+    color: #a7138a;
 `
 
 const SitemapSpan = styled.span`
-    color: rgba(88, 86, 86, 0.7);
+    color: rgba(88, 86, 86, 1);
 `
 
 const SiteMapPage = props => {

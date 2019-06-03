@@ -31,7 +31,7 @@ const ServicesCarousel = () => {
                             <SlideDiv>
                                 <h2
                                     style={{
-                                        color: 'rgb(93,20,14)',
+                                        color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
                                 >
@@ -46,7 +46,7 @@ const ServicesCarousel = () => {
                                 />
                                 <p
                                     style={{
-                                        color: 'rgb(227,71,153)',
+                                        color: 'rgb(167,19,138)',
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
                                     }}
@@ -57,7 +57,7 @@ const ServicesCarousel = () => {
                             <SlideDiv>
                                 <h2
                                     style={{
-                                        color: 'rgb(93,20,14)',
+                                        color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
                                 >
@@ -73,7 +73,7 @@ const ServicesCarousel = () => {
                                     style={{
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
-                                        color: 'rgb(227,71,153)',
+                                        color: 'rgb(167,19,138)',
                                     }}
                                 >
                                     {devWorkflows.shortDescription}
@@ -82,7 +82,7 @@ const ServicesCarousel = () => {
                             <SlideDiv>
                                 <h2
                                     style={{
-                                        color: 'rgb(93,20,14)',
+                                        color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
                                 >
@@ -100,7 +100,7 @@ const ServicesCarousel = () => {
                                     style={{
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
-                                        color: 'rgb(227,71,153)',
+                                        color: 'rgb(167,19,138)',
                                     }}
                                 >
                                     {gitForDevs.shortDescription}
@@ -109,7 +109,7 @@ const ServicesCarousel = () => {
                             <SlideDiv>
                                 <h2
                                     style={{
-                                        color: 'rgb(93,20,14)',
+                                        color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
                                 >
@@ -125,7 +125,7 @@ const ServicesCarousel = () => {
                                     style={{
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
-                                        color: 'rgb(227,71,153)',
+                                        color: 'rgb(167,19,138)',
                                     }}
                                 >
                                     {gitForNonDevs.shortDescription}
@@ -134,7 +134,7 @@ const ServicesCarousel = () => {
                             <SlideDiv>
                                 <h2
                                     style={{
-                                        color: 'rgb(93,20,14)',
+                                        color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
                                 >
@@ -150,7 +150,7 @@ const ServicesCarousel = () => {
                                     style={{
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
-                                        color: 'rgb(227,71,153)',
+                                        color: 'rgb(167,19,138)',
                                     }}
                                 >
                                     {commandControl.shortDescription}
