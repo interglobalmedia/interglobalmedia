@@ -77,7 +77,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Home
                             </Link>
@@ -90,7 +90,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Blog
                             </Link>
@@ -102,7 +102,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Portfolio
                             </Link>
@@ -114,7 +114,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Services
                             </Link>
@@ -127,7 +127,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Contact
                             </Link>
@@ -153,7 +153,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Home
                             </Link>
@@ -166,7 +166,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Blog
                             </Link>
@@ -179,7 +179,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Portfolio
                             </Link>
@@ -192,7 +192,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Services
                             </Link>
@@ -205,7 +205,7 @@ const IndexHeader = () => {
                                     boxShadow: 'none',
                                     color: 'rgb(47,0,0)',
                                 }}
-                                activeStyle={{color: 'rgba(190,138,96,1)'}}
+                                activeStyle={{color: 'rgb(148,75,43)'}}
                             >
                                 Contact
                             </Link>
