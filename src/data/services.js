@@ -40,7 +40,13 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faNodeJs} className="fa-pulse" />,
+        icon: (
+            <FontAwesomeIcon
+                icon={faNodeJs}
+                className="fa-pulse"
+                title={`the Nodejs JavaScript run-time environment animated brand icon from fontawesome`}
+            />
+        ),
     },
     {
         title: 'Development Workflows',
@@ -60,7 +66,13 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faJira} className="fa-pulse" />,
+        icon: (
+            <FontAwesomeIcon
+                icon={faJira}
+                className="fa-pulse"
+                title={`The Jira project management tool animated brand icon from fontawesome`}
+            />
+        ),
     },
     {
         title: 'Git for Developers',
@@ -91,7 +103,13 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faGitSquare} className="fa-pulse" />,
+        icon: (
+            <FontAwesomeIcon
+                icon={faGitSquare}
+                className="fa-pulse"
+                title={`The Git distributed version control system square animated brand icon from fontawesome`}
+            />
+        ),
     },
     {
         title: 'Git For Non-Developers',
@@ -122,7 +140,13 @@ const data = [
             ', ',
             'and more',
         ],
-        icon: <FontAwesomeIcon icon={faCodeBranch} className="fa-pulse" />,
+        icon: (
+            <FontAwesomeIcon
+                icon={faCodeBranch}
+                className="fa-pulse"
+                title={`The Git distributed version control system code branch animated solid icon from fontawesome`}
+            />
+        ),
     },
     {
         id: 5,
@@ -130,7 +154,13 @@ const data = [
         title: 'The Command Line Interface',
         shortDescription:
             'Getting To Know Your Computer Better via The Command Line Interface (CLI) aka Terminal Program on OSX',
-        icon: <FontAwesomeIcon icon={faTerminal} className="fa-pulse" />,
+        icon: (
+            <FontAwesomeIcon
+                icon={faTerminal}
+                className="fa-pulse"
+                title={`The Command Line Interface animated solid icon from fontawesome`}
+            />
+        ),
     },
 ]
 

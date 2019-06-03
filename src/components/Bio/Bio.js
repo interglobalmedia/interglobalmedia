@@ -52,12 +52,16 @@ function Bio() {
                             Created by <strong>{author}</strong> who lives and
                             works in New York City building useful things.
                             {` `}
-                            <a href={`https://twitter.com/${social.twitter}`}>
+                            <a
+                                href={`https://twitter.com/${social.twitter}`}
+                                title={`visit this Twitter link to follow Maria`}
+                            >
                                 You should follow her on Twitter
                             </a>
                             . She also has a developer blog{' '}
                             <a
                                 href="https://www.mariadcampbell.com"
+                                title={`visit this link to Maria\'s developer blog to read her posts there`}
                                 target="_new"
                             >
                                 mariadcampbell.com

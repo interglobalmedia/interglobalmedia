@@ -80,6 +80,9 @@ const PortfolioIndex = props => {
                                 to={'/portfolio/portfolio-view'}
                                 state={project}
                                 key={project.title}
+                                title={`visit the ${
+                                    project.title
+                                } page to learn more about the app`}
                             >
                                 {project.title}
                             </Link>
@@ -97,6 +100,9 @@ const PortfolioIndex = props => {
                                 to={'/portfolio/portfolio-view'}
                                 state={project}
                                 key={project.title}
+                                title={`visit the ${
+                                    project.title
+                                } page to view more about the app`}
                             >
                                 <MoreP>view more</MoreP>
                             </Link>

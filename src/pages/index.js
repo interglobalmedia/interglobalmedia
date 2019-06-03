@@ -123,17 +123,32 @@ const IndexPage = props => {
                 <Search />
                 <div className="Site-content">
                     <H1Style>
-                        <Link to="/services">Services</Link>
+                        <Link
+                            to="/services"
+                            title={`visit the main Services page to learn more about the various services offered`}
+                        >
+                            Services
+                        </Link>
                     </H1Style>
                     <ServicesCarousel />
                     <H1Style>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link
+                            to="/portfolio"
+                            title={`visit the main Portfolio page to learn more about various apps which have been built`}
+                        >
+                            Portfolio
+                        </Link>
                     </H1Style>
                     <AppsDiv>
                         <FeaturedProjects />
                     </AppsDiv>
                     <H1Style>
-                        <Link to="/blog">Blog</Link>
+                        <Link
+                            to="/blog"
+                            title={`visit the main Blog page to read the various posts which have been published`}
+                        >
+                            Blog
+                        </Link>
                     </H1Style>
                     <PostsDiv>
                         <FeaturedPosts />
@@ -144,18 +159,27 @@ const IndexPage = props => {
                         <ScrollUpButton
                             style={{background: 'transparent', outline: 'none'}}
                         />
-                        <Link to="/contact">
+                        <Link
+                            to="/contact"
+                            title={`visit the main Contact page to learn how to connect with us`}
+                        >
                             <FontAwesomeIcon icon={faEnvelope} />
                             Contact
                         </Link>
-                        <Link to="/sitemap">
+                        <Link
+                            to="/sitemap"
+                            title={`visit the Sitemap page to get an overview of the entire site`}
+                        >
                             <FontAwesomeIcon
                                 icon={faDirections}
                                 transform="flip-v flip-h"
                             />
                             Sitemap
                         </Link>
-                        <a href="http://www.interglobalmedianetwork.com/rss.xml">
+                        <a
+                            href="http://www.interglobalmedianetwork.com/rss.xml"
+                            title={`visit the RSS Feed page to view or subscribe to our RSS Feed`}
+                        >
                             <FontAwesomeIcon icon={faRss} />
                             RSS
                         </a>

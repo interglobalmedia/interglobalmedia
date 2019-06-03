@@ -55,7 +55,9 @@ const IndexHeader = () => {
             </div>
             <IndexHeaderStyle>
                 <nav className="responsive-menu">
-                    <IndexResponsiveHeading1>
+                    <IndexResponsiveHeading1
+                        title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
+                    >
                         <Link
                             className="menu-item"
                             to="/"
@@ -78,6 +80,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Home Page of Inter-Global Media Network, Inc.`}
                             >
                                 Home
                             </Link>
@@ -91,6 +94,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Blog Page of Inter-Global Media Network, Inc.`}
                             >
                                 Blog
                             </Link>
@@ -103,6 +107,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Portfolio Page of Inter-Global Media Network, Inc.`}
                             >
                                 Portfolio
                             </Link>
@@ -115,6 +120,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Services Page of Inter-Global Media Network, Inc.`}
                             >
                                 Services
                             </Link>
@@ -128,6 +134,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Contact Page of Inter-Global Media Network, Inc.`}
                             >
                                 Contact
                             </Link>
@@ -135,7 +142,9 @@ const IndexHeader = () => {
                     </ul>
                 </nav>
                 <nav className="top">
-                    <IndexTopHeading1>
+                    <IndexTopHeading1
+                        title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
+                    >
                         <Link to="/" style={{color: 'rgba(47,0,0)'}}>
                             Inter{' '}
                             <span role="img" aria-label="global">
@@ -154,6 +163,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Home Page of Inter-Global Media Network, Inc.`}
                             >
                                 Home
                             </Link>
@@ -167,6 +177,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Blog Page of Inter-Global Media Network, Inc.`}
                             >
                                 Blog
                             </Link>
@@ -180,6 +191,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Portfolio Page of Inter-Global Media Network, Inc.`}
                             >
                                 Portfolio
                             </Link>
@@ -193,6 +205,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Services Page of Inter-Global Media Network, Inc.`}
                             >
                                 Services
                             </Link>
@@ -206,6 +219,7 @@ const IndexHeader = () => {
                                     color: 'rgb(47,0,0)',
                                 }}
                                 activeStyle={{color: 'rgb(148,75,43)'}}
+                                title={`link to the Contact Page of Inter-Global Media Network, Inc.`}
                             >
                                 Contact
                             </Link>

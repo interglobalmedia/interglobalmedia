@@ -87,7 +87,12 @@ class PortfolioView extends Component {
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
-                        <Link to="/portfolio">&larr; back</Link>
+                        <Link
+                            to="/portfolio"
+                            title={`go back to the main Portfolio page`}
+                        >
+                            &larr; back
+                        </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
                         {title}
@@ -102,6 +107,7 @@ class PortfolioView extends Component {
                                 href={more}
                                 target="_new"
                                 data-testid="project-more"
+                                title={`visit link to read more about the ${title} app`}
                             >
                                 Read More About {title}
                             </a>
@@ -111,6 +117,7 @@ class PortfolioView extends Component {
                                 href={repository}
                                 target="_new"
                                 data-testid="project-repository"
+                                title={`visit link to view ${title} app source code on Github`}
                             >
                                 {title} Source Code
                             </a>
@@ -120,6 +127,7 @@ class PortfolioView extends Component {
                                 href={website}
                                 target="_new"
                                 data-testid="project-website"
+                                title={`visit link to view ${title} app live site`}
                             >
                                 {title} Live Site
                             </a>

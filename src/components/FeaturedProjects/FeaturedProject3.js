@@ -13,7 +13,12 @@ const FeaturedProject3 = () => {
                 return (
                     <li>
                         <h3>
-                            <a href={nodeDrawingData.liveSiteUrl}>
+                            <a
+                                href={nodeDrawingData.liveSiteUrl}
+                                title={`visit the ${
+                                    nodeDrawingData.title
+                                } app live site to view  on Heroku`}
+                            >
                                 {nodeDrawingData.title} app
                             </a>
                         </h3>
@@ -27,6 +32,9 @@ const FeaturedProject3 = () => {
                         <Link
                             state={nodeDrawingData}
                             to="/portfolio/portfolio-view"
+                            title={`visit the ${
+                                nodeDrawingData.title
+                            } app main page to learn more`}
                         >
                             learn more
                         </Link>

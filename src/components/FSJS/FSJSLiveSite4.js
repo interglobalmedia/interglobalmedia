@@ -12,7 +12,13 @@ const FSJSLiveSite4 = () => {
                 return (
                     <SiteLi>
                         <SpanStyle>url: </SpanStyle>
-                        <a href={fsjsLiveSite4Data.liveSiteUrl} target="_new">
+                        <a
+                            href={fsjsLiveSite4Data.liveSiteUrl}
+                            title={`visit the ${
+                                fsjsLiveSite4Data.projectName
+                            } live site to view on Heroku`}
+                            target="_new"
+                        >
                             {fsjsLiveSite4Data.projectName} live site
                         </a>
                         <br />
@@ -25,7 +31,13 @@ const FSJSLiveSite4 = () => {
                         />
                         <br />
                         <SpanStyle>repository: </SpanStyle>
-                        <a href={fsjsLiveSite4Data.siteRepoUrl} target="_new">
+                        <a
+                            href={fsjsLiveSite4Data.siteRepoUrl}
+                            title={`visit the ${
+                                fsjsLiveSite4Data.projectName
+                            } repository to view on Github`}
+                            target="_new"
+                        >
                             {fsjsLiveSite4Data.projectName} on github
                         </a>
                         <br />

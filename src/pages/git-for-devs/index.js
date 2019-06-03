@@ -34,7 +34,12 @@ const GitForDevs = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
-                    <Link to="/services">&larr; back</Link>
+                    <Link
+                        to="/services"
+                        title={`go back to the main Services page`}
+                    >
+                        &larr; back
+                    </Link>
                 </BackDiv>
                 <H1Style>{gfd.title}</H1Style>
                 <GitForDevsDiv>

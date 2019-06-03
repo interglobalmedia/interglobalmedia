@@ -14,8 +14,15 @@ const ContactIconsStyle = styled.ul`
     width: 100%;
     max-width: 250px;
     margin: 40px auto;
+    cursor: pointer;
     & li:nth-of-type(1) {
         margin-left: -0.25rem;
+    }
+    & li {
+        cursor: pointer;
+    }
+    & a {
+        cursor: pointer;
     }
 `
 
@@ -31,6 +38,8 @@ const ContactIcons = () => {
                     <FontAwesomeIcon
                         icon={faGithub}
                         transform="rotate-30 flip-v right-8"
+                        style={{cursor: 'pointer'}}
+                        title={`follow us on Github`}
                     />{' '}
                 </a>{' '}
             </li>
@@ -43,6 +52,8 @@ const ContactIcons = () => {
                     <FontAwesomeIcon
                         icon={faTwitter}
                         transform="flip-h down-8"
+                        style={{cursor: 'pointer'}}
+                        title={`follow us on Twitter`}
                     />{' '}
                 </a>{' '}
             </li>
@@ -55,6 +66,8 @@ const ContactIcons = () => {
                     <FontAwesomeIcon
                         icon={faFacebookF}
                         transform="rotate--30 flip-v up-10"
+                        style={{cursor: 'pointer'}}
+                        title={`connect with us on Facebook`}
                     />{' '}
                 </a>
             </li>
@@ -67,6 +80,8 @@ const ContactIcons = () => {
                     <FontAwesomeIcon
                         icon={faLinkedinIn}
                         transform="rotate-60 up-2 left-8"
+                        style={{cursor: 'pointer'}}
+                        title={`connect with us on Linkedin`}
                     />{' '}
                 </a>{' '}
             </li>

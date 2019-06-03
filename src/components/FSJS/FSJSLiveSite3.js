@@ -12,7 +12,13 @@ const FSJSLiveSite3 = () => {
                 return (
                     <SiteLi>
                         <SpanStyle>url: </SpanStyle>
-                        <a href={fsjsLiveSite3Data.liveSiteUrl} target="_new">
+                        <a
+                            href={fsjsLiveSite3Data.liveSiteUrl}
+                            title={`visit the ${
+                                fsjsLiveSite3Data.projectName
+                            } live site to view on Github gh-pages`}
+                            target="_new"
+                        >
                             {fsjsLiveSite3Data.projectName} live site
                         </a>
                         <br />
@@ -25,7 +31,13 @@ const FSJSLiveSite3 = () => {
                         />
                         <br />
                         <SpanStyle>repository: </SpanStyle>
-                        <a href={fsjsLiveSite3Data.siteRepoUrl} target="_new">
+                        <a
+                            href={fsjsLiveSite3Data.siteRepoUrl}
+                            title={`visit the ${
+                                fsjsLiveSite3Data.projectName
+                            } repository to view on Github`}
+                            target="_new"
+                        >
                             {fsjsLiveSite3Data.projectName} on github
                         </a>
                         <br />
