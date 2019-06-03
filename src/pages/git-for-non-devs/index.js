@@ -23,12 +23,13 @@ const GitForNonDevsDiv = styled.div`
     margin-bottom: 3rem;
 `
 export const GFNDTagsDiv = styled.div`
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
     margin-bottom: 1rem;
 `
 
 export const ATagStyle = styled.a`
     box-shadow: none;
+    color: rgb(39, 74, 169);
     & :hover {
         text-decoration: underline;
     }
