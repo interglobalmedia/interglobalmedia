@@ -24,6 +24,7 @@ export const ProjectUl = styled.div`
     list-style-type: none;
     & a {
         box-shadow: none !important;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
@@ -57,7 +58,7 @@ export const ParaStyle = styled.p`
 `
 
 export const SpanStyle = styled.span`
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
 `
 
 const MoreP = styled.p`
