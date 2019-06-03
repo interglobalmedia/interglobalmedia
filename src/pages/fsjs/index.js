@@ -18,6 +18,7 @@ export const BackDiv = styled.div`
     & a {
         box-shadow: none;
         font-size: 1.3rem;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
@@ -28,7 +29,7 @@ export const H1Style = styled.h1`
     font-weight: normal;
     text-align: center;
     margin-top: 3rem;
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
 `
 
 const FullStackDiv = styled.div`
@@ -40,7 +41,7 @@ const FullStackDiv = styled.div`
 export const H2Style = styled.h2`
     font-weight: normal;
     text-align: center;
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
 `
 
 export const ApproachDiv = styled.div`
@@ -56,7 +57,7 @@ export const ApproachSpan = styled.span`
 `
 
 export const AllTagsDiv = styled.div`
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
     margin-bottom: 1rem;
 `
 
