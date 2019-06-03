@@ -83,7 +83,12 @@ const FullStackSJS = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
-                    <Link to="/services">&larr; back</Link>
+                    <Link
+                        to="/services"
+                        title={`go back to the main Services page`}
+                    >
+                        &larr; back
+                    </Link>
                 </BackDiv>
                 <H1Style>{fsjs.title}</H1Style>
                 <FullStackDiv>
