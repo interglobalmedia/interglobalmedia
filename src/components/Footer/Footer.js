@@ -40,7 +40,7 @@ const FooterStyle = styled.footer`
 
 const BizHoursUl = styled.div`
     list-style-type: none;
-    color: rgb(216, 132, 46);
+    color: rgb(255, 227, 159);
     & li:first-of-type {
         color: whitesmoke;
         font-style: italic;
@@ -74,7 +74,7 @@ const FollowHoursUl = styled.div`
         margin-right: 1rem;
         font-size: 1.3rem;
         & a {
-            color: #007acc;
+            color: rgb(255, 165, 79);
         }
         & a:hover {
             color: white;
@@ -93,6 +93,7 @@ const AnchorDiv = styled.div`
     font-size: 0.9rem;
     & a {
         box-shadow: none;
+        color: rgb(255, 165, 79);
     }
     & a:nth-of-type(1) {
         margin-right: 1rem;
@@ -137,7 +138,7 @@ const AnchorStyle = styled.a`
 `
 
 export const SiteCredsDiv = styled.div`
-    color: rgb(216, 132, 46);
+    color: rgb(255, 227, 159);
     margin-top: 1rem;
     text-align: center;
 `
