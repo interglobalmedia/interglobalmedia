@@ -11,7 +11,13 @@ const FeaturedPost2 = () => {
             render={data => {
                 return (
                     <li>
-                        <a href={featuredPost2Data.path} target="_new">
+                        <a
+                            href={featuredPost2Data.path}
+                            title={`visit the post entitled "${
+                                featuredPost2Data.title
+                            }" to read more`}
+                            target="_new"
+                        >
                             {featuredPost2Data.title}
                         </a>
                         <Image
@@ -20,12 +26,22 @@ const FeaturedPost2 = () => {
                         />
                         {featuredPost2Data.excerpt} ...
                         <br />
-                        <Link to="/tags">
+                        <Link
+                            to="/tags"
+                            title={`view the tags page for the post "${
+                                featuredPost2Data.title
+                            }" to view more`}
+                        >
                             <span>tagged in:</span>
                         </Link>{' '}
                         {featuredPost2Data.tagNames}
                         <br />
-                        <Link to="/categories">
+                        <Link
+                            to="/categories"
+                            title={`view the categories page for the post "${
+                                featuredPost2Data.title
+                            }" to view more`}
+                        >
                             <span>categorized under:</span>
                         </Link>{' '}
                         {featuredPost2Data.catNames}
