@@ -29,6 +29,7 @@ const PortfolioBackDiv = styled.div`
     & a {
         box-shadow: none;
         font-size: 1.2rem;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
@@ -38,7 +39,7 @@ const PortfolioBackDiv = styled.div`
 export const PortfolioViewH1Style = styled.h1`
     text-align: center;
     font-weight: 400;
-    color: rgb(216, 132, 46);
+    color: rgb(148, 75, 43);
 `
 
 export const ShortDescDiv = styled.div`
@@ -49,6 +50,9 @@ export const AnchorsUl = styled.ul`
     display: grid;
     margin-top: 1.5rem;
     list-style-type: square;
+    & a {
+        color: rgb(39, 74, 169);
+    }
 `
 
 class PortfolioView extends Component {

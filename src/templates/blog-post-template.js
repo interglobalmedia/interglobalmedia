@@ -46,7 +46,7 @@ const DangerousHTMLDiv = styled.div`
         margin: 0 auto;
     }
     & p {
-        color: rgba(88,86,86,1);
+        color: rgb(47,0,0);
     }
     & blockquote p {
         color: rebeccapurple;
@@ -91,6 +91,7 @@ const DangerousHTMLDiv = styled.div`
     }
     & a {
         box-shadow: none;
+        color: rgb(39,74,169);
     }
     & a:hover {
         text-decoration: underline;
@@ -113,6 +114,7 @@ const TagDiv = styled.div`
     margin-bottom: 0.25rem;
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
@@ -128,6 +130,7 @@ const CatDiv = styled.div`
   margin-bottom 2rem;
   & a {
       box-shadow: none;
+      color: rgb(39,74,169);
   }
   & a:hover {
       text-decoration: underline;
@@ -141,6 +144,7 @@ export const DiscussTwitter = styled.div`
     margin: 1.5rem auto 0;
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
     }
     & :hover {
         text-decoration: underline;
@@ -202,7 +206,7 @@ const BlogPostTemplate = props => {
                                     <FontAwesomeIcon
                                         icon={faTag}
                                         style={{
-                                            color: '#268bd2',
+                                            color: 'rgb(39,74,169)',
                                             marginLeft: '0.25rem',
                                             marginRight: '0.125rem',
                                         }}
@@ -221,7 +225,7 @@ const BlogPostTemplate = props => {
                                     <FontAwesomeIcon
                                         icon={faFolder}
                                         style={{
-                                            color: '#268bd2',
+                                            color: 'rgb(39,74,169)',
                                             marginRight: '0.25rem',
                                         }}
                                     />

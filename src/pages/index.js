@@ -50,7 +50,7 @@ const AnchorDiv = styled.div`
     font-size: 0.9rem;
     & a {
         box-shadow: none;
-        color: rgb(0, 122, 204);
+        color: rgb(39, 74, 169);
     }
     a:nth-of-type(1) {
         margin-right: 1rem;
@@ -90,7 +90,7 @@ const H1Style = styled.h1`
     }
     & a {
         box-shadow: none;
-        color: rgb(235, 140, 0);
+        color: rgb(148, 75, 43);
     }
     & a:hover {
         text-decoration: underline;
@@ -106,7 +106,7 @@ const PostsDiv = styled.div`
 `
 
 export const SiteCredsDiv = styled.div`
-    color: rgb(216, 132, 46);
+    color: rgb(255, 165, 79);
     margin-top: 1rem;
     text-align: center;
 `
