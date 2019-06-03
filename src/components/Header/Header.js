@@ -40,7 +40,9 @@ const Header = ({siteTitle}) => (
         </div>
         <HeaderStyle>
             <nav className="responsive-menu">
-                <ResponsiveHeading1>
+                <ResponsiveHeading1
+                    title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
+                >
                     <Link
                         to="/"
                         style={{boxShadow: 'none', color: 'rgb(47,0,0)'}}
@@ -58,6 +60,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Home Page of Inter-Global Media Network, Inc.`}
                         >
                             Home
                         </Link>
@@ -71,6 +74,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Blog Page of Inter-Global Media Network, Inc.`}
                         >
                             Blog
                         </Link>
@@ -83,6 +87,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Portfolio Page of Inter-Global Media Network, Inc.`}
                         >
                             Portfolio
                         </Link>
@@ -95,6 +100,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Services Page of Inter-Global Media Network, Inc.`}
                         >
                             Services
                         </Link>
@@ -108,6 +114,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Contact Page of Inter-Global Media Network, Inc.`}
                         >
                             Contact
                         </Link>
@@ -115,7 +122,9 @@ const Header = ({siteTitle}) => (
                 </ul>
             </nav>
             <nav className="top">
-                <TopHeading1>
+                <TopHeading1
+                    title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
+                >
                     <Link
                         to="/"
                         style={{boxShadow: 'none', color: 'rgba(47,0,0)'}}
@@ -133,6 +142,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Home Page of Inter-Global Media Network, Inc.`}
                         >
                             Home
                         </Link>
@@ -146,6 +156,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Blog Page of Inter-Global Media Network, Inc.`}
                         >
                             Blog
                         </Link>
@@ -159,6 +170,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Portfolio Page of Inter-Global Media Network, Inc.`}
                         >
                             Portfolio
                         </Link>
@@ -172,6 +184,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Services Page of Inter-Global Media Network, Inc.`}
                         >
                             Services
                         </Link>
@@ -185,6 +198,7 @@ const Header = ({siteTitle}) => (
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
+                            title={`link to the Contact Page of Inter-Global Media Network, Inc.`}
                         >
                             Contact
                         </Link>
