@@ -105,7 +105,13 @@ const BlogPage = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <PostDiv>
                 {postList.edges.map(({node}, i) => (
-                    <Link to={node.fields.slug} key={i}>
+                    <Link
+                        to={node.fields.slug}
+                        key={i}
+                        title={`visit link to the post entitled "${
+                            node.frontmatter.title
+                        }" to read more`}
+                    >
                         <PostListDiv>
                             <PostListTitle>
                                 {node.frontmatter.title}
@@ -141,6 +147,7 @@ const BlogPage = props => {
                                 letterSpacing: '0.07em',
                                 marginLeft: '0.25rem',
                             }}
+                            title={`go to previous ${prevPage} blog page to view newer posts`}
                         >
                             ← Newer
                         </Link>
@@ -157,6 +164,7 @@ const BlogPage = props => {
                                 letterSpacing: '0.07em',
                                 marginLeft: '0.5rem',
                             }}
+                            title={`go to next ${nextPage} blog page to view older posts`}
                         >
                             Older →
                         </Link>
