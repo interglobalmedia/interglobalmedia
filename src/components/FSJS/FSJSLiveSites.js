@@ -15,6 +15,7 @@ export const SiteWrapperDiv = styled.div`
     }
     & a {
         box-shadow: none;
+        color: rgb(39, 74, 169);
     }
     & a:hover {
         text-decoration: underline;
