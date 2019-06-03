@@ -13,7 +13,12 @@ const FeaturedProject2 = () => {
                 return (
                     <li>
                         <h3>
-                            <a href={speechToTextData.liveSiteUrl}>
+                            <a
+                                href={speechToTextData.liveSiteUrl}
+                                title={`visit the ${
+                                    speechToTextData.title
+                                } app live site to view on Github gh-pages`}
+                            >
                                 {speechToTextData.title} app
                             </a>
                         </h3>
@@ -27,6 +32,9 @@ const FeaturedProject2 = () => {
                         <Link
                             state={speechToTextData}
                             to="/portfolio/portfolio-view"
+                            title={`visit the ${
+                                speechToTextData.title
+                            } app main page to learn more`}
                         >
                             learn more
                         </Link>

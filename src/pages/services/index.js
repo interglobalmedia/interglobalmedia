@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link, graphql} from 'gatsby'
+import {graphql} from 'gatsby'
 import styled from '@emotion/styled'
 import get from 'lodash/get'
 import {Helmet} from 'react-helmet'
@@ -77,7 +77,13 @@ class ServicesIndex extends Component {
                     {servicesData.map((service, index) => (
                         <ServicesUl key={index}>
                             <li>
-                                <a href={service.path} key={service.title}>
+                                <a
+                                    href={service.path}
+                                    key={service.title}
+                                    title={`visit the ${
+                                        service.title
+                                    } Services page to learn more`}
+                                >
                                     {service.icon} {service.title}
                                 </a>
                             </li>
@@ -85,7 +91,15 @@ class ServicesIndex extends Component {
                             {service.tags}
                             <br />
                             <MoreLi>
-                                <a href={service.path} key={service.title}>
+                                <a
+                                    href={service.path}
+                                    key={service.title}
+                                    title={`view more about ${
+                                        service.title
+                                    } Services on the ${
+                                        service.title
+                                    } Services page`}
+                                >
                                     <p>view more</p>
                                 </a>
                             </MoreLi>

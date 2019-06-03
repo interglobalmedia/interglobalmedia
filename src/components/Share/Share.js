@@ -43,7 +43,11 @@ const Share = props => {
     return (
         <SocialUl>
             <li>
-                <a href={fb} target="blank">
+                <a
+                    href={fb}
+                    target="blank"
+                    title={`if you like this post share it on Facebook with your friends!`}
+                >
                     <FontAwesomeIcon
                         icon={faFacebookF}
                         size="2x"
@@ -57,7 +61,11 @@ const Share = props => {
                 </a>
             </li>
             <li>
-                <a href={twitter} target="blank">
+                <a
+                    href={twitter}
+                    target="blank"
+                    title={`if you like this post share it on Twitter with your friends!`}
+                >
                     <FontAwesomeIcon
                         icon={faTwitter}
                         size="2x"
@@ -71,7 +79,11 @@ const Share = props => {
                 </a>
             </li>
             <li>
-                <a href={linkedin} target="blank">
+                <a
+                    href={linkedin}
+                    target="blank"
+                    title={`if you like this post share it on Linkedin with your connections!`}
+                >
                     <FontAwesomeIcon
                         icon={faLinkedinIn}
                         size="2x"

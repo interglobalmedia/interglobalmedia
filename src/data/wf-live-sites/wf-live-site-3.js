@@ -46,7 +46,7 @@ const wfLiveSite3Data = {
     liveSiteUrl: 'https://www.mariadcampbell.com/',
     liveRepoUrl: 'https://github.com/interglobalmedia/mariadcampbell',
     src: mariadcampbell,
-    projectName: 'maria d campbell',
+    projectName: 'mariadcampbell',
 }
 
 export default wfLiveSite3Data

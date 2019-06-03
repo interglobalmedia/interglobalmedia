@@ -202,7 +202,11 @@ const BlogPostTemplate = props => {
                         <TagDiv>
                             <TaggedInSpan>Tagged in: </TaggedInSpan>
                             {tags.map((tag, i) => (
-                                <Link to={`/tags/${tag}`} key={i}>
+                                <Link
+                                    to={`/tags/${tag}`}
+                                    key={i}
+                                    title={`visit the "${tag}" tag page listing the posts tagged in "${tag}"`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faTag}
                                         style={{
@@ -221,7 +225,11 @@ const BlogPostTemplate = props => {
                                 Categorized under:{' '}
                             </CagtegorizedInSpan>
                             {categories.map((category, i) => (
-                                <Link to={`/categories/${category}`} key={i}>
+                                <Link
+                                    to={`/categories/${category}`}
+                                    key={i}
+                                    title={`visit the "${category}" category page listing the posts categorized under "${category}"`}
+                                >
                                     <FontAwesomeIcon
                                         icon={faFolder}
                                         style={{
@@ -242,6 +250,7 @@ const BlogPostTemplate = props => {
                             href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
                                 blogPostUrl,
                             )}`}
+                            title={`visit this shared post on Twitter to discuss it there`}
                         >
                             <FontAwesomeIcon
                                 icon={faComment}

@@ -24,7 +24,6 @@ class Search extends Component {
             parsetags: 'explicit',
             callback: myCallback,
         }
-
         ;(function() {
             var cx = '012416285473482070682:wbcp7aypprq'
             var gcse = document.createElement('script')

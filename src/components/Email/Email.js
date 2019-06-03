@@ -18,7 +18,9 @@ const Email = () => {
     ].map(email => {
         return (
             <li key={email.id}>
-                <EmailStyle href={email.link}>{email.text}</EmailStyle>
+                <EmailStyle href={email.link} title={`email us`}>
+                    {email.text}
+                </EmailStyle>
             </li>
         )
     })
