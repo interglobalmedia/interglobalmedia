@@ -169,6 +169,7 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={faGithub}
                                 transform="rotate--30 flip-h flip-v left-8 up-6"
+                                title={`follow us on Github`}
                             />
                         </a>
                     </li>
@@ -181,6 +182,7 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={faTwitter}
                                 transform="flip-v flip-h down-12 right-2 rotate--180"
+                                title={`follow us on Twitter`}
                             />
                         </a>
                     </li>
@@ -193,6 +195,7 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={faFacebookF}
                                 transform="rotate-20 up-16 right-2 flip-h"
+                                title={`connect with us on Facebook`}
                             />
                         </a>
                     </li>
@@ -205,6 +208,7 @@ const Footer = () => {
                             <FontAwesomeIcon
                                 icon={faLinkedinIn}
                                 transform="rotate-60 up-2 right-12 flip-v"
+                                title={`connect with us on Linkedin`}
                             />
                         </a>
                     </li>
@@ -215,15 +219,24 @@ const Footer = () => {
                 <ScrollUpButton
                     style={{background: 'transparent', outline: 'none'}}
                 />
-                <Link to="/contact">
+                <Link
+                    to="/contact"
+                    title={`visit the main Contact page to learn how to connect with us`}
+                >
                     <FontAwesomeIcon icon={faEnvelope} />
                     Contact
                 </Link>
-                <Link to="/sitemap">
+                <Link
+                    to="/sitemap"
+                    title={`visit the Sitemap page to get an overview of the entire site`}
+                >
                     <FontAwesomeIcon icon={faDirections} transform="flip-h" />
                     Sitemap
                 </Link>
-                <a href="http://www.interglobalmedianetwork.com/rss.xml">
+                <a
+                    href="http://www.interglobalmedianetwork.com/rss.xml"
+                    title={`visit the RSS Feed page to view or subscribe to our RSS Feed`}
+                >
                     <FontAwesomeIcon icon={faRss} transform="flip-h" />
                     RSS
                 </a>
