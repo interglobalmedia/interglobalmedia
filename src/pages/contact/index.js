@@ -19,7 +19,7 @@ import '../../style/style.scss'
 
 const H2Style = styled.h2`
     text-align: center;
-    color: rgb(163, 74, 40);
+    color: rgb(148, 75, 43);
     font-size: 1.8rem;
     cursor: pointer;
 `
