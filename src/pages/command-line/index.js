@@ -40,7 +40,12 @@ const CLI = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
-                    <Link to="/services">&larr; back</Link>
+                    <Link
+                        to="/services"
+                        title={`go back to the main Services page`}
+                    >
+                        &larr; back
+                    </Link>
                 </BackDiv>
                 <H1Style>{cli.title}</H1Style>
                 <CLIDiv>
@@ -59,19 +64,35 @@ const CLI = props => {
                     </ApproachDiv>
                     <CLIApproachDiv>
                         <IncludesSpan>more info:</IncludesSpan>{' '}
-                        <ATagStyle href={cli.infoUrl1} target="_new">
+                        <ATagStyle
+                            href={cli.infoUrl1}
+                            title={`visit the Command Line Interface page on Wikipedia to learn more about the Command Line Interface`}
+                            target="_new"
+                        >
                             Command Line Interface on Wikipedia
                         </ATagStyle>
                         ,{' '}
-                        <ATagStyle href={cli.infoUrl2} target="_new">
+                        <ATagStyle
+                            href={cli.infoUrl2}
+                            title={`visit the Refreshable Braille Display page on Wikipedia to learn more about the Refreshable Braille Display`}
+                            target="_new"
+                        >
                             Refreshable Braille Display on Wikipedia
                         </ATagStyle>
                         ,{' '}
-                        <ATagStyle href={cli.infoUrl3} target="_new">
+                        <ATagStyle
+                            href={cli.infoUrl3}
+                            title={`visit the Shell Computing page on Wikipedia to learn more about Shell Computing`}
+                            target="_new"
+                        >
                             Shell Computing On Wikipedia
                         </ATagStyle>
                         ,{' '}
-                        <ATagStyle href={cli.infoUrl4} target="_new">
+                        <ATagStyle
+                            href={cli.infoUrl4}
+                            title={`visit the Advantages and Disadvantages of the Command Line Interface thread on Quora to learn more about the Command Line Interface`}
+                            target="_new"
+                        >
                             What are the advantages and disadvantages of Command
                             Line Interface? on Quora
                         </ATagStyle>

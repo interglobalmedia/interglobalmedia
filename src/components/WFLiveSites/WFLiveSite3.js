@@ -15,6 +15,9 @@ const WFLiveSite3 = () => {
                         <a
                             href={wfSite3Data.liveSiteUrl}
                             alt={wfSite3Data.projectName}
+                            title={`visit the ${
+                                wfSite3Data.projectName
+                            }.com developer blog live site to view on Netlify`}
                             target="_new"
                         >
                             {wfSite3Data.projectName}
@@ -27,7 +30,13 @@ const WFLiveSite3 = () => {
                         />
                         <br />
                         <SpanStyle>repository: </SpanStyle>
-                        <a href={wfSite3Data.siteRepoUrl} target="_new">
+                        <a
+                            href={wfSite3Data.siteRepoUrl}
+                            title={`visit the ${
+                                wfSite3Data.projectName
+                            }.com repository to view on Github`}
+                            target="_new"
+                        >
                             {wfSite3Data.projectName} on github
                         </a>
                         <br />

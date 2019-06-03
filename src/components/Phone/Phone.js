@@ -18,7 +18,9 @@ const Phone = () => {
     ].map(phone => {
         return (
             <li key={phone.id}>
-                <PhoneStyle href={phone.link}>{phone.text}</PhoneStyle>
+                <PhoneStyle href={phone.link} title={`call us`}>
+                    {phone.text}
+                </PhoneStyle>
             </li>
         )
     })

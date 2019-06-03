@@ -24,14 +24,20 @@ const PrevNext = props => {
         <PrevNextUl>
             {prev && (
                 <li>
-                    <Link to={prev.fields.slug}>
+                    <Link
+                        to={prev.fields.slug}
+                        title={`visit link to newer post to read more recent content`}
+                    >
                         ← Newer <br />
                     </Link>
                 </li>
             )}
             {next && (
                 <li>
-                    <Link to={next.fields.slug}>
+                    <Link
+                        to={next.fields.slug}
+                        title={`visit link to older post to read older content`}
+                    >
                         Older → <br />
                     </Link>
                 </li>

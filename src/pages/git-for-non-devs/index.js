@@ -44,7 +44,12 @@ const GitForNonDevs = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <WrapperDiv>
                 <BackDiv>
-                    <Link to="/services">&larr; back</Link>
+                    <Link
+                        to="/services"
+                        title={`go back to the main Services page`}
+                    >
+                        &larr; back
+                    </Link>
                 </BackDiv>
                 <H1Style>
                     {gfnd.title}
@@ -72,7 +77,11 @@ const GitForNonDevs = props => {
                     </GFNDTagsDiv>
                     <ApproachDiv>
                         <IncludesSpan>more info:</IncludesSpan>{' '}
-                        <ATagStyle href={gfnd.infoUrl} target="_new">
+                        <ATagStyle
+                            href={gfnd.infoUrl}
+                            title={`visit the Git Page on Wikipedia to learn more about Git`}
+                            target="_new"
+                        >
                             Git Page on Wikipedia
                         </ATagStyle>
                     </ApproachDiv>

@@ -36,7 +36,10 @@ const Contact = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <div className="contact-content">
                 <div className="contact-social">
-                    <H2Style className="title-social">
+                    <H2Style
+                        className="title-social"
+                        title={`connect with us on Github, Facebook, Twitter, or Linkedin`}
+                    >
                         <FontAwesomeIcon
                             icon={faPlus}
                             style={{fontSize: '1.8rem'}}
@@ -46,7 +49,7 @@ const Contact = props => {
                     <ContactIcons />
                     <div className="follow" />
                     <div className="email">
-                        <H2Style className="title-social">
+                        <H2Style className="title-social" title={`email us`}>
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 style={{
@@ -59,7 +62,7 @@ const Contact = props => {
                         </H2Style>
                     </div>
                     <div className="phone">
-                        <H2Style className="title-social">
+                        <H2Style className="title-social" title={`call us`}>
                             <FontAwesomeIcon
                                 icon={faPhone}
                                 style={{
@@ -72,7 +75,10 @@ const Contact = props => {
                         </H2Style>
                     </div>
                     <div className="contribute">
-                        <H2Style className="social">
+                        <H2Style
+                            className="social"
+                            title={`read our posts on our Developer Blog or The Practical Dev`}
+                        >
                             <FontAwesomeIcon
                                 icon={faPencilAlt}
                                 style={{
