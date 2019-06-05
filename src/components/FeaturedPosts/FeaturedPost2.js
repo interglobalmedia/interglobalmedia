@@ -18,12 +18,15 @@ const FeaturedPost2 = () => {
                             fluid={data.imageTwo.childImageSharp.fluid}
                             alt={featuredPost2Data.title}
                         />
+                        <br />
                         {featuredPost2Data.excerpt} ...
+                        <br />
                         <br />
                         <Link to="/tags">
                             <span>tagged in:</span>
                         </Link>{' '}
                         {featuredPost2Data.tagNames}
+                        <br />
                         <br />
                         <Link to="/categories">
                             <span>categorized under:</span>
@@ -41,7 +44,7 @@ export default FeaturedPost2
 export const featuredPost2Query = graphql`
     query featuredPost2Query {
         imageTwo: file(
-            relativePath: {eq: "mael-balland-1157034-unsplash.jpg"}
+            relativePath: {eq: "posts/mael-balland-1157034-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
