@@ -1,4 +1,4 @@
-import mariadcampbell from '../../images/mariadcampbell.jpg'
+import mariadcampbell from '../../images/sites/mariadcampbell.jpg'
 
 const wfLiveSite3Data = {
     id: 3,
