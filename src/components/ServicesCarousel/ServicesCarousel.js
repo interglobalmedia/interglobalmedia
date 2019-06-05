@@ -5,11 +5,11 @@ import {StaticQuery, graphql} from 'gatsby'
 import {Carousel} from 'react-responsive-carousel'
 import styled from '@emotion/styled'
 import Image from 'gatsby-image'
-import fullStackJS from '../../data/fsjs'
-import devWorkflows from '../../data/dev-workflows'
-import gitForDevs from '../../data/gfd'
-import gitForNonDevs from '../../data/gfnd'
-import commandControl from '../../data/cli'
+import fullStackJS from '../../data/services/fsjs'
+import devWorkflows from '../../data/services/dev-workflows'
+import gitForDevs from '../../data/services/gfd'
+import gitForNonDevs from '../../data/services/gfnd'
+import commandControl from '../../data/services/cli'
 import '../../style/style.scss'
 
 const SlideDiv = styled.div`
@@ -168,7 +168,7 @@ export default ServicesCarousel
 
 export const carouselQuery = graphql`
     query carouselQuery {
-        imageOne: file(relativePath: {eq: "fullstack.jpg"}) {
+        imageOne: file(relativePath: {eq: "services/fullstack.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
@@ -176,7 +176,7 @@ export const carouselQuery = graphql`
             }
         }
         imageTwo: file(
-            relativePath: {eq: "martin-w-kirst-1175656-unsplash.jpg"}
+            relativePath: {eq: "services/martin-w-kirst-1175656-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
@@ -184,14 +184,18 @@ export const carouselQuery = graphql`
                 }
             }
         }
-        imageThree: file(relativePath: {eq: "mimi-thian-737711-unsplash.jpg"}) {
+        imageThree: file(
+            relativePath: {eq: "services/mimi-thian-737711-unsplash.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        imageFour: file(relativePath: {eq: "eddy-klaus-33079-unsplash.jpg"}) {
+        imageFour: file(
+            relativePath: {eq: "services/eddy-klaus-33079-unsplash.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
@@ -199,7 +203,7 @@ export const carouselQuery = graphql`
             }
         }
         imageFive: file(
-            relativePath: {eq: "austin-neill-189146-unsplash.jpg"}
+            relativePath: {eq: "services/austin-neill-189146-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
