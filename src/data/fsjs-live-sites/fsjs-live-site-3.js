@@ -1,4 +1,4 @@
-import canvasArt from '../../images/client-canvas-art.jpg'
+import canvasArt from '../../images/projects/client-canvas-art.jpg'
 
 const fsjsLiveSite3Data = {
     id: 3,

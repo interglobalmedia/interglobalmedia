@@ -1,4 +1,4 @@
-import speechToText from '../../images/speech-to-text.jpg'
+import speechToText from '../../images/projects/speech-to-text.jpg'
 
 const fsjsLiveSite2Data = {
     id: 2,
