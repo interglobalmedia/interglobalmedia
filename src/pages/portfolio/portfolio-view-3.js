@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Helmet} from 'react-helmet'
 import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import {BackDiv} from '../fsjs'
 
@@ -42,9 +43,7 @@ export const PortfolioViewH1Style = styled.h1`
     color: rgb(148, 75, 43);
 `
 
-export const ShortDescDiv = styled.div`
-    // display: flex;
-`
+export const ShortDescDiv = styled.div``
 
 export const AnchorsUl = styled.ul`
     display: grid;
@@ -55,19 +54,17 @@ export const AnchorsUl = styled.ul`
     }
 `
 
-class PortfolioView extends Component {
+class PortfolioView3 extends Component {
     render() {
         const passedPortfolioData = this.props.location.state || {
             title: 'default title',
             shortDescription: 'default description',
-            image: 'https://via.placeholder.com/350',
             website: 'https://via.placeholder.com',
         }
         const {
             title,
             repository,
             shortDescription,
-            image,
             website,
             more,
         } = passedPortfolioData
@@ -81,7 +78,6 @@ class PortfolioView extends Component {
                     <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
                     <meta name="repository" content={repository} />
                     <meta name="description" content={shortDescription} />
-                    <meta name="image" content={image} />
                     <meta name="website" content={website} />
                     <meta name="more" content={more} />
                 </Helmet>
@@ -92,7 +88,12 @@ class PortfolioView extends Component {
                     <PortfolioViewH1Style data-testid="project-title">
                         {title}
                     </PortfolioViewH1Style>
-                    <img data-testid="project-image" src={image} alt={title} />
+                    <Img
+                        data-testid="project-image"
+                        fluid={data.portfolioImageThree.childImageSharp.fluid}
+                        alt={title}
+                    />
+                    <br />
                     <ShortDescDiv data-testid="project-shortDesc">
                         {shortDescription}
                     </ShortDescDiv>
@@ -131,14 +132,23 @@ class PortfolioView extends Component {
     }
 }
 
-export default PortfolioView
+export default PortfolioView3
 
-export const portfolioViewQuery = graphql`
-    query portfolioViewQuery {
+export const portfolioView3Query = graphql`
+    query portfolioView3Query {
         site {
             siteMetadata {
                 title
                 keywords
+            }
+        }
+        portfolioImageThree: file(
+            relativePath: {eq: "projects/rockin-synth.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
             }
         }
     }
