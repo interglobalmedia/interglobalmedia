@@ -45,7 +45,7 @@ export default WFLiveSite1
 export const wfLiveSite1Query = graphql`
     query wfLiveSite1Query {
         wfLiveSiteImage1: file(
-            relativePath: {eq: "react-workflows-updated-2018.jpg"}
+            relativePath: {eq: "presentations/react-workflows-updated-2018.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

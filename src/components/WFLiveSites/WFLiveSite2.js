@@ -45,7 +45,9 @@ export default WFLiveSite2
 export const wfLiveSite2Query = graphql`
     query wfLiveSite2Query {
         wfLiveSiteImage2: file(
-            relativePath: {eq: "evolution-design-and-development.jpg"}
+            relativePath: {
+                eq: "presentations/evolution-design-and-development.jpg"
+            }
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

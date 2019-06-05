@@ -44,7 +44,9 @@ export default WFLiveSite4
 
 export const wfLiveSite4Query = graphql`
     query wfLiveSite4Query {
-        wfLiveSiteImage4: file(relativePath: {eq: "client-canvas-art.jpg"}) {
+        wfLiveSiteImage4: file(
+            relativePath: {eq: "projects/client-canvas-art.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
