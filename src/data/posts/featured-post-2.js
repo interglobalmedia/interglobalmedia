@@ -1,4 +1,4 @@
-import propagationImg from '../../images/mael-balland-1157034-unsplash.jpg'
+import propagationImg from '../../images/posts/mael-balland-1157034-unsplash.jpg'
 
 const blogSlug = '/blog'
 const id2Slug = '/why-your-computer-may-not-point-to-newly-propagated-site/'
