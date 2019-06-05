@@ -4,20 +4,13 @@ import Image from 'gatsby-image'
 import styled from '@emotion/styled'
 import featuredPost1Data from '../../data/posts/featured-post-1'
 
-const PostLi = styled.li`
-    & a:nth-of-type(2),
-    & a:nth-of-type(3) {
-        margin-top: 0.5rem;
-    }
-`
-
 const FeaturedPost1 = () => {
     return (
         <StaticQuery
             query={featuredPost1Query}
             render={data => {
                 return (
-                    <PostLi>
+                    <li>
                         <a href={featuredPost1Data.path} target="_new">
                             {featuredPost1Data.title}
                         </a>
@@ -39,7 +32,7 @@ const FeaturedPost1 = () => {
                             <span>categorized under:</span>
                         </Link>{' '}
                         {featuredPost1Data.catNames}
-                    </PostLi>
+                    </li>
                 )
             }}
         />
