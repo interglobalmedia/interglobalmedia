@@ -1,4 +1,4 @@
-import workflowStrategies from '../images/martin-w-kirst-1175656-unsplash.jpg'
+import workflowStrategies from '../../images/services/martin-w-kirst-1175656-unsplash.jpg'
 
 const devWorkflowStrats = {
     title: 'Development Workflows',

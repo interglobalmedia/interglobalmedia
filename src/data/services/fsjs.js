@@ -1,6 +1,6 @@
 import React from 'react'
 
-import fullstack from '../images/fullstack.jpg'
+import fullstack from '../../images/services/fullstack.jpg'
 
 const fsjs = {
     title: 'Full Stack Javascript',
