@@ -43,7 +43,9 @@ export default FSJSLiveSite1
 
 export const fsjsLiveSite1Query = graphql`
     query fsjsLiveSite1Query {
-        fsjsLiveSiteImage1: file(relativePath: {eq: "chatterbox.jpg"}) {
+        fsjsLiveSiteImage1: file(
+            relativePath: {eq: "projects/chatterbox.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
