@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-import cli from '../../data/cli'
+import cli from '../../data/services/cli'
 import SEO from '../../components/Seo/Seo'
 
 import {
@@ -87,7 +87,7 @@ export default CLI
 export const query = graphql`
     query cliQuery {
         cliImage: file(
-            relativePath: {eq: "rohan-makhecha-408608-unsplash.jpg"}
+            relativePath: {eq: "services/rohan-makhecha-408608-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

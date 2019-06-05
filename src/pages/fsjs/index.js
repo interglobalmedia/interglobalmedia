@@ -4,7 +4,7 @@ import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import FSJSLiveSites from '../../components/FSJS/FSJSLiveSites'
-import fsjs from '../../data/fsjs'
+import fsjs from '../../data/services/fsjs'
 import SEO from '../../components/Seo/Seo'
 
 export const WrapperDiv = styled.div`
@@ -116,7 +116,7 @@ export default FullStackSJS
 
 export const query = graphql`
     query fullstackQuery {
-        fullstackImage: file(relativePath: {eq: "fullstack.jpg"}) {
+        fullstackImage: file(relativePath: {eq: "services/fullstack.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-import devFlowStrats from '../../data/dev-workflows'
+import devFlowStrats from '../../data/services/dev-workflows'
 import {
     WrapperDiv,
     BackDiv,
@@ -72,7 +72,7 @@ export default DevWorkFlows
 export const query = graphql`
     query workflowQuery {
         workflowImage: file(
-            relativePath: {eq: "martin-w-kirst-1175656-unsplash.jpg"}
+            relativePath: {eq: "services/martin-w-kirst-1175656-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
