@@ -21,12 +21,14 @@ const FeaturedProject1 = () => {
                             fluid={data.imageOne.childImageSharp.fluid}
                             alt={nodeChatData.title}
                         />
+                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {nodeChatData.tagNames}
                         <br />
+                        <br />
                         <Link
                             state={nodeChatData}
-                            to="/portfolio/portfolio-view"
+                            to="/portfolio/portfolio-view-6"
                         >
                             learn more
                         </Link>
@@ -41,7 +43,7 @@ export default FeaturedProject1
 
 export const featuredProject1Query = graphql`
     query featuredProject1Query {
-        imageOne: file(relativePath: {eq: "chatterbox.jpg"}) {
+        imageOne: file(relativePath: {eq: "projects/chatterbox.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid

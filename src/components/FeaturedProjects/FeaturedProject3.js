@@ -21,12 +21,14 @@ const FeaturedProject3 = () => {
                             fluid={data.imageThree.childImageSharp.fluid}
                             alt={nodeDrawingData.title}
                         />
+                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {nodeDrawingData.tagNames}
                         <br />
+                        <br />
                         <Link
                             state={nodeDrawingData}
-                            to="/portfolio/portfolio-view"
+                            to="/portfolio/portfolio-view-7"
                         >
                             learn more
                         </Link>
@@ -42,7 +44,7 @@ export default FeaturedProject3
 export const featuredProject3Query = graphql`
     query featuredProject3Query {
         imageThree: file(
-            relativePath: {eq: "node-collaborative-drawing-app.jpg"}
+            relativePath: {eq: "projects/node-collaborative-drawing-app.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
