@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 
-const PortfolioViewDiv = styled.div`
+export const PortfolioViewDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
@@ -23,7 +23,7 @@ const PortfolioViewDiv = styled.div`
     }
 `
 
-const PortfolioBackDiv = styled.div`
+export const PortfolioBackDiv = styled.div`
     margin-top: -1.5rem;
     margin-bottom: 3rem;
     & a {
@@ -36,15 +36,17 @@ const PortfolioBackDiv = styled.div`
     }
 `
 
-const PortfolioViewH1Style = styled.h1`
+export const PortfolioViewH1Style = styled.h1`
     text-align: center;
     font-weight: 400;
     color: rgb(148, 75, 43);
 `
 
-const ShortDescDiv = styled.div``
+export const ShortDescDiv = styled.div`
+    color: red;
+`
 
-const AnchorsUl = styled.ul`
+export const AnchorsUl = styled.ul`
     display: grid;
     margin-top: 1.5rem;
     list-style-type: square;

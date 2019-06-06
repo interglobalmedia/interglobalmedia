@@ -7,8 +7,8 @@ import {
     AnchorsUl,
 } from '../../pages/portfolio/portfolio-view-1'
 
-describe('portfolio/portfolio-view', () => {
-    it(`should render a ViewDiv emotion styled component`, () => {
+describe('portfolio/portfolio-view-1', () => {
+    it(`should render a PortfolioViewDiv emotion styled component`, () => {
         const {container} = render(<PortfolioViewDiv />)
         expect(container).toBeInTheDocument()
     })
@@ -20,7 +20,7 @@ describe('portfolio/portfolio-view', () => {
         const {container} = render(<ShortDescDiv />)
         expect(container).toBeInTheDocument()
     })
-    it(`should render an AnchorsDiv emotion styled component`, () => {
+    it(`should render an AnchorsUl emotion styled component`, () => {
         const {container} = render(<AnchorsUl />)
         expect(container).toBeInTheDocument()
     })
