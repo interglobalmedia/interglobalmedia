@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import {Link} from 'gatsby'
 
 import FeaturedProject1 from './FeaturedProject1'
 import FeaturedProject2 from './FeaturedProject2'

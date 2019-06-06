@@ -54,7 +54,9 @@ export default FSJSLiveSite2
 
 export const fsjsLiveSite2Query = graphql`
     query fsjsLiveSite2Query {
-        fsjsLiveSiteImage2: file(relativePath: {eq: "speech-to-text.jpg"}) {
+        fsjsLiveSiteImage2: file(
+            relativePath: {eq: "projects/speech-to-text.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid
