@@ -1,6 +1,6 @@
 import React from 'react'
 
-import gitForNonDevs from '../images/roksolana-zasiadko-30856-unsplash.jpg'
+import gitForNonDevs from '../../images/services/roksolana-zasiadko-30856-unsplash.jpg'
 
 const gfnd = {
     title: 'Git For Non-Developers',

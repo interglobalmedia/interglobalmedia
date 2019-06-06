@@ -1,6 +1,6 @@
 import React from 'react'
 
-import control from '../images/rohan-makhecha-408608-unsplash.jpg'
+import control from '../../images/services/rohan-makhecha-408608-unsplash.jpg'
 
 const cli = {
     title: 'The Command Line Interface',

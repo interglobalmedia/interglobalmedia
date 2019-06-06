@@ -1,10 +1,10 @@
-import speechToText from '../images/speech-to-text.jpg'
-import theGroove from '../images/welcome-to-the-groove.jpg'
-import rockinSynth from '../images/rockin-synth.jpg'
-import catWhisperer from '../images/cat-whisperer-app.jpg'
-import trumpTalks from '../images/trump-talks.jpg'
-import chatterbox from '../images/chatterbox.jpg'
-import nodeDrawingApp from '../images/node-collaborative-drawing-app.jpg'
+import speechToText from '../images/projects/speech-to-text.jpg'
+import theGroove from '../images/projects/welcome-to-the-groove.jpg'
+import rockinSynth from '../images/projects/rockin-synth.jpg'
+import catWhisperer from '../images/projects/cat-whisperer-app.jpg'
+import trumpTalks from '../images/projects/trump-talks.jpg'
+import chatterbox from '../images/projects/chatterbox.jpg'
+import nodeDrawingApp from '../images/projects/node-collaborative-drawing-app.jpg'
 
 const data = [
     {
