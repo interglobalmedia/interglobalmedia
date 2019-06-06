@@ -26,12 +26,14 @@ const FeaturedProject2 = () => {
                             fluid={data.imageTwo.childImageSharp.fluid}
                             alt={speechToTextData.title}
                         />
+                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {speechToTextData.tagNames}
                         <br />
+                        <br />
                         <Link
                             state={speechToTextData}
-                            to="/portfolio/portfolio-view"
+                            to="/portfolio/portfolio-view-1"
                             title={`visit the ${
                                 speechToTextData.title
                             } app main page to learn more`}
@@ -49,7 +51,7 @@ export default FeaturedProject2
 
 export const featuredProject2Query = graphql`
     query featuredProject2Query {
-        imageTwo: file(relativePath: {eq: "speech-to-text.jpg"}) {
+        imageTwo: file(relativePath: {eq: "projects/speech-to-text.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid

@@ -24,8 +24,8 @@ const FeaturedPost1 = () => {
                             fluid={data.postImageOne.childImageSharp.fluid}
                             alt={featuredPost1Data.title}
                         />
-                        {featuredPost1Data.excerpt} ...
                         <br />
+                        {featuredPost1Data.excerpt} ...
                         <Link
                             to="/tags"
                             title={`visit the tags page for the post "${
@@ -57,7 +57,7 @@ export default FeaturedPost1
 export const featuredPost1Query = graphql`
     query featuredPost1Query {
         postImageOne: file(
-            relativePath: {eq: "fredy-jacob-764477-unsplash.jpg"}
+            relativePath: {eq: "posts/fredy-jacob-764477-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

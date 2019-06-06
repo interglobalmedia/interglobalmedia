@@ -1,6 +1,6 @@
 import React from 'react'
 
-import gitDevs from '../images/mimi-thian-737711-unsplash.jpg'
+import gitDevs from '../../images/services/mimi-thian-737711-unsplash.jpg'
 
 const gfd = {
     title: 'Git for Developers',

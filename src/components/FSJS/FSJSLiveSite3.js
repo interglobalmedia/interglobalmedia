@@ -54,7 +54,9 @@ export default FSJSLiveSite3
 
 export const fsjsLiveSite3Query = graphql`
     query fsjsLiveSite3Query {
-        fsjsLiveSiteImage3: file(relativePath: {eq: "client-canvas-art.jpg"}) {
+        fsjsLiveSiteImage3: file(
+            relativePath: {eq: "projects/client-canvas-art.jpg"}
+        ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid

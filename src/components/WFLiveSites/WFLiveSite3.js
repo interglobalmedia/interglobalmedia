@@ -53,7 +53,7 @@ export default WFLiveSite3
 
 export const wfLiveSite3Query = graphql`
     query wfLiveSite3Query {
-        wfLiveSiteImage3: file(relativePath: {eq: "mariadcampbell.jpg"}) {
+        wfLiveSiteImage3: file(relativePath: {eq: "sites/mariadcampbell.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
                     ...GatsbyImageSharpFluid

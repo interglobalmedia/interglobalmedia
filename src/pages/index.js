@@ -228,7 +228,7 @@ const IndexPage = props => {
 
 export default IndexPage
 
-export const indexQuery = graphql`
+export const indexPageQuery = graphql`
     query indexPageQuery {
         site {
             siteMetadata {

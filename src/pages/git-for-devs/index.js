@@ -4,7 +4,7 @@ import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import SEO from '../../components/Seo/Seo'
-import gfd from '../../data/gfd'
+import gfd from '../../data/services/gfd'
 import {
     WrapperDiv,
     BackDiv,
@@ -71,7 +71,7 @@ export default GitForDevs
 export const query = graphql`
     query gitForDevsQuery {
         gitForDevsImage: file(
-            relativePath: {eq: "mimi-thian-737711-unsplash.jpg"}
+            relativePath: {eq: "services/mimi-thian-737711-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

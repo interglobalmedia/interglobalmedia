@@ -1,4 +1,4 @@
-import outdatedContent from '../../images/fredy-jacob-764477-unsplash.jpg'
+import outdatedContent from '../../images/posts/fredy-jacob-764477-unsplash.jpg'
 
 const blogSlug = '/blog'
 const id1Slug = '/outdated-content-and-google-custom-search/'

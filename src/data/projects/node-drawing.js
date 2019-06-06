@@ -1,4 +1,4 @@
-import nodeDrawingApp from '../../images/node-collaborative-drawing-app.jpg'
+import nodeDrawingApp from '../../images/projects/node-collaborative-drawing-app.jpg'
 
 const nodeDrawingData = {
     id: 3,

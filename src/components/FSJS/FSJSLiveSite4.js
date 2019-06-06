@@ -55,7 +55,7 @@ export default FSJSLiveSite4
 export const fsjsLiveSite4Query = graphql`
     query fsjsLiveSite4Query {
         fsjsLiveSiteImage4: file(
-            relativePath: {eq: "node-collaborative-drawing-app.jpg"}
+            relativePath: {eq: "projects/node-collaborative-drawing-app.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

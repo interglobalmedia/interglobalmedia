@@ -3,13 +3,6 @@ import styled from '@emotion/styled'
 import FeaturedPost1 from './FeaturedPost1'
 import FeaturedPost2 from './FeaturedPost2'
 
-const PostsDiv = styled.div`
-    @media (min-width: 990px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-`
-
 const PostsUl = styled.ul`
     width: 97.5%;
     margin: 0 auto 0.75rem;

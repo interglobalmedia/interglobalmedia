@@ -1,4 +1,4 @@
-import reactFlowUpdated2018 from '../../images/react-workflows-updated-2018.jpg'
+import reactFlowUpdated2018 from '../../images/presentations/react-workflows-updated-2018.jpg'
 
 const wfLiveSite1Data = {
     id: 1,

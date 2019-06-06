@@ -1,4 +1,4 @@
-import chatApp from '../../images/chatterbox.jpg'
+import chatApp from '../../images/projects/chatterbox.jpg'
 
 const fsjsLiveSite1Data = {
     id: 1,

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-import gfnd from '../../data/gfnd'
+import gfnd from '../../data/services/gfnd'
 import SEO from '../../components/Seo/Seo'
 
 import {
@@ -96,7 +96,7 @@ export default GitForNonDevs
 export const query = graphql`
     query gitForNonDevsQuery {
         gitForNonDevsImage: file(
-            relativePath: {eq: "roksolana-zasiadko-30856-unsplash.jpg"}
+            relativePath: {eq: "services/roksolana-zasiadko-30856-unsplash.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {

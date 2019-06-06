@@ -5,7 +5,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from '../../pages/portfolio/portfolio-view'
+} from '../../pages/portfolio/portfolio-view-1'
 
 describe('portfolio/portfolio-view', () => {
     it(`should render a ViewDiv emotion styled component`, () => {

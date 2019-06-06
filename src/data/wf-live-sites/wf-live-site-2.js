@@ -1,4 +1,4 @@
-import evolutionDesignDev from '../../images/evolution-design-and-development.jpg'
+import evolutionDesignDev from '../../images/presentations/evolution-design-and-development.jpg'
 
 const wfLiveSite2Data = {
     id: 2,
