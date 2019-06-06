@@ -4,7 +4,6 @@ import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-import {BackDiv} from '../fsjs'
 
 export const PortfolioViewDiv = styled.div`
     display: flex;
@@ -24,7 +23,7 @@ export const PortfolioViewDiv = styled.div`
     }
 `
 
-const PortfolioBackDiv = styled.div`
+export const PortfolioBackDiv = styled.div`
     margin-top: -1.5rem;
     margin-bottom: 3rem;
     & a {
@@ -43,7 +42,9 @@ export const PortfolioViewH1Style = styled.h1`
     color: rgb(148, 75, 43);
 `
 
-export const ShortDescDiv = styled.div``
+export const ShortDescDiv = styled.div`
+    color: red;
+`
 
 export const AnchorsUl = styled.ul`
     display: grid;

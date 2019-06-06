@@ -12,7 +12,7 @@ import trumpTalksData from '../../data/portfolio/5_trump-talks-trash'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 
-export const ColumnsDiv = styled.div`
+const ColumnsDiv = styled.div`
     width: 90%;
     margin: 3rem auto;
     display: grid;
@@ -22,7 +22,7 @@ export const ColumnsDiv = styled.div`
     }
 `
 
-export const ProjectUl = styled.div`
+const ProjectUl = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 1rem auto;
@@ -42,16 +42,15 @@ export const ProjectUl = styled.div`
     }
 `
 
-export const ProjectTitleLi = styled.li`
+const ProjectTitleLi = styled.li`
     font-size: 1.1rem;
 `
-
-export const ImgStyle = styled.img`
+const ImgStyle = styled.img`
     max-width: 800px;
     width: 100%;
 `
 
-export const ParaStyle = styled.p`
+const ParaStyle = styled.p`
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -61,7 +60,7 @@ export const ParaStyle = styled.p`
     color: rgb(88, 86, 86);
 `
 
-export const SpanStyle = styled.span`
+const SpanStyle = styled.span`
     color: rgb(148, 75, 43);
 `
 
@@ -81,7 +80,6 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-1'}
                             state={speechToTextData}
-                            key={speechToTextData.id}
                         >
                             {speechToTextData.title}
                         </Link>
@@ -91,7 +89,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageOne.childImageSharp.fluid
                         }
                         alt={speechToTextData.title}
-                        key={speechToTextData.id}
                     />
                     <br />
                     <ParaStyle>{speechToTextData.shortDescription}</ParaStyle>
@@ -101,18 +98,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-1'}
                             state={speechToTextData}
-                            key={speechToTextData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={theGrooveData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             state={theGrooveData}
-                            key={theGrooveData.id}
                         >
                             {theGrooveData.title}
                         </Link>
@@ -122,7 +117,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageTwo.childImageSharp.fluid
                         }
                         alt={theGrooveData.title}
-                        key={theGrooveData.id}
                     />
                     <br />
                     <ParaStyle>{theGrooveData.shortDescription}</ParaStyle>
@@ -132,18 +126,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             state={theGrooveData}
-                            key={theGrooveData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={rockinSynthData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-3'}
                             state={rockinSynthData}
-                            key={theGrooveData.id}
                         >
                             {rockinSynthData.title}
                         </Link>
@@ -153,7 +145,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageThree.childImageSharp.fluid
                         }
                         alt={rockinSynthData.title}
-                        key={rockinSynthData.id}
                     />
                     <br />
                     <ParaStyle>{rockinSynthData.shortDescription}</ParaStyle>
@@ -163,18 +154,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-3'}
                             state={rockinSynthData}
-                            key={rockinSynthData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={catWhispererData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-4'}
                             state={catWhispererData}
-                            key={catWhispererData.id}
                         >
                             {catWhispererData.title}
                         </Link>
@@ -184,7 +173,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageFour.childImageSharp.fluid
                         }
                         alt={catWhispererData.title}
-                        key={catWhispererData.id}
                     />
                     <br />
                     <ParaStyle>{catWhispererData.shortDescription}</ParaStyle>
@@ -194,18 +182,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-4'}
                             state={catWhispererData}
-                            key={catWhispererData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={trumpTalksData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-5'}
                             state={trumpTalksData}
-                            key={trumpTalksData.id}
                         >
                             {trumpTalksData.title}
                         </Link>
@@ -215,7 +201,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageFive.childImageSharp.fluid
                         }
                         alt={trumpTalksData.title}
-                        key={trumpTalksData.id}
                     />
                     <br />
                     <ParaStyle>{trumpTalksData.shortDescription}</ParaStyle>
@@ -225,18 +210,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-5'}
                             state={trumpTalksData}
-                            key={trumpTalksData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={chattrboxData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-6'}
                             state={chattrboxData}
-                            key={chattrboxData.id}
                         >
                             {chattrboxData.title}
                         </Link>
@@ -246,7 +229,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageSix.childImageSharp.fluid
                         }
                         alt={chattrboxData.title}
-                        key={chattrboxData.id}
                     />
                     <br />
                     <ParaStyle>{chattrboxData.shortDescription}</ParaStyle>
@@ -256,18 +238,16 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-6'}
                             state={chattrboxData}
-                            key={chattrboxData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl>
+                <ProjectUl key={nodeDrawingData.id}>
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-7'}
                             state={nodeDrawingData}
-                            key={nodeDrawingData.id}
                         >
                             {nodeDrawingData.title}
                         </Link>
@@ -277,7 +257,6 @@ const PortfolioIndex = props => {
                             props.data.portfolioImageSeven.childImageSharp.fluid
                         }
                         alt={nodeDrawingData.title}
-                        key={nodeDrawingData.id}
                     />
                     <br />
                     <ParaStyle>{nodeDrawingData.shortDescription}</ParaStyle>
@@ -287,7 +266,6 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-7'}
                             state={nodeDrawingData}
-                            key={nodeDrawingData.title}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -300,8 +278,8 @@ const PortfolioIndex = props => {
 
 export default PortfolioIndex
 
-export const indexQuery = graphql`
-    query indexQuery {
+export const portfolioIndexQuery = graphql`
+    query portfolioIndexQuery {
         site {
             siteMetadata {
                 title
