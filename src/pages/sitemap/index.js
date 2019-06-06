@@ -57,49 +57,79 @@ const SiteMapPage = props => {
                 <h2>Pages</h2>
                 <SitemapUl>
                     <li>
-                        <Link to="/">
+                        <Link
+                            to="/"
+                            title={`visit the link to the Home Page to view our featured projects, posts, and an introduction to our services`}
+                        >
                             <SitemapSpan>Home</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/blog">
+                        <Link
+                            to="/blog"
+                            title={`visit the link to the Blog Page to read our posts`}
+                        >
                             <SitemapSpan>Blog</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact">
+                        <Link
+                            to="/contact"
+                            title={`visit the link to the Contact Page to connect with us`}
+                        >
                             <SitemapSpan>Contact</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/portfolio">
+                        <Link
+                            to="/portfolio"
+                            title={`visit the link to the Portfolio Page to view various projects we have built`}
+                        >
                             <SitemapSpan>Portfolio</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/services">
+                        <Link
+                            to="/services"
+                            title={`visit the link to the Services Page to learn about the various services we offer`}
+                        >
                             <SitemapSpan>Services</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/categories">
+                        <Link
+                            to="/categories"
+                            title={`visit the link to our Categories Page to view the various categories our Blog contains`}
+                        >
                             <SitemapSpan>Categories</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/tags">
+                        <Link
+                            to="/tags"
+                            title={`visit the link to our Tags Page to view the various tags our Blog contains`}
+                        >
                             <SitemapSpan>Tags</SitemapSpan>
                         </Link>
                     </li>
                     <li>
-                        <a href="http://www.interglobalmedianetwork.com/rss.xml">
+                        <a
+                            href="http://www.interglobalmedianetwork.com/rss.xml"
+                            title={`visit the link to our RSS Feed to view our complete site content`}
+                        >
                             <SitemapSpan>RSS</SitemapSpan>
                         </a>
                     </li>
                 </SitemapUl>
                 <h2>Posts</h2>
                 {postList.edges.map(({node}, i) => (
-                    <Link to={node.fields.slug} key={i}>
+                    <Link
+                        to={node.fields.slug}
+                        key={i}
+                        title={`visit the link to the post entitled "${
+                            node.frontmatter.title
+                        }" to read more`}
+                    >
                         <h3>{node.frontmatter.title}</h3>
                         <MetaDiv>
                             by {node.frontmatter.author} on{' '}
