@@ -14,7 +14,6 @@ import Email from '../../components/Email/Email'
 import Phone from '../../components/Phone/Phone'
 import Contribute from '../../components/Contribute/Contribute'
 import SEO from '../../components/Seo/Seo'
-import '../../style/style.scss'
 
 export const H2Style = styled.h2`
     text-align: center;
