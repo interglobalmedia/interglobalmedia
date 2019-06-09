@@ -6,16 +6,10 @@ const PrevNextUl = styled.ul`
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-right: 1rem;
     width: 100%;
+    margin-right: 1rem;
     margin-left: 0;
-    & a {
-        color: rgb(47, 0, 0);
-        box-shadow: none;
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
+    margin-top: 1.5rem;
 `
 
 const PrevNext = props => {
