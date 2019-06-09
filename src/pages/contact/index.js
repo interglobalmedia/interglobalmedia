@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
@@ -8,7 +8,6 @@ import {
     faPencilAlt,
 } from '@fortawesome/free-solid-svg-icons'
 import {graphql} from 'gatsby'
-import get from 'lodash/get'
 import Layout from '../../components/Layout/Layout'
 import ContactIcons from '../../components/ContactIcons/ContactIcons'
 import Email from '../../components/Email/Email'
@@ -17,7 +16,7 @@ import Contribute from '../../components/Contribute/Contribute'
 import SEO from '../../components/Seo/Seo'
 import '../../style/style.scss'
 
-const H2Style = styled.h2`
+export const H2Style = styled.h2`
     text-align: center;
     color: rgb(148, 75, 43);
     font-size: 1.8rem;
@@ -54,7 +53,8 @@ const Contact = props => {
                                 icon={faEnvelope}
                                 style={{
                                     fontSize: '1.8rem',
-                                    marginBottom: '40px',
+                                    marginBottom: '2rem',
+                                    marginTop: '1rem',
                                 }}
                                 transform="rotate-30"
                             />
@@ -67,7 +67,8 @@ const Contact = props => {
                                 icon={faPhone}
                                 style={{
                                     fontSize: '1.8rem',
-                                    marginBottom: '40px',
+                                    marginBottom: '2rem',
+                                    marginTop: '0.25rem',
                                 }}
                                 transform="rotate-180"
                             />
@@ -83,7 +84,8 @@ const Contact = props => {
                                 icon={faPencilAlt}
                                 style={{
                                     fontSize: '1.8rem',
-                                    marginBottom: '40px',
+                                    marginBottom: '2rem',
+                                    marginTop: '0.25rem',
                                 }}
                                 transform="rotate-90"
                             />
