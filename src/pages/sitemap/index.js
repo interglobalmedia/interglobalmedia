@@ -11,15 +11,19 @@ const SitemapDiv = styled.div`
     background: rgba(235, 181, 135, 0.7);
     padding: 1.5rem;
     letter-spacing: 0.07em;
+    & h1 {
+        font-weight: 600;
+    }
     & h1,
     h2,
-    h3 {
+    h4 {
         color: rgb(133, 68, 66);
     }
-    & ul li a {
-        box-shadow: none;
+    & h4 {
+        text-transform: capitalize;
+        font-size: 1.2rem;
     }
-    & a:hover h3 {
+    & a:hover h4 {
         text-decoration: underline;
     }
 `
@@ -30,18 +34,14 @@ const SitemapUl = styled.ul`
     & li {
         color: rgb(133, 68, 66);
     }
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 const MetaDiv = styled.div`
-    box-shadow: none;
     color: #a7138a;
 `
 
 const SitemapSpan = styled.span`
-    color: rgba(88, 86, 86, 1);
+    color: rgb(88, 86, 86);
 `
 
 const SiteMapPage = props => {
@@ -123,14 +123,16 @@ const SiteMapPage = props => {
                 </SitemapUl>
                 <h2>Posts</h2>
                 {postList.edges.map(({node}, i) => (
-                    <Link
-                        to={node.fields.slug}
-                        key={i}
-                        title={`visit the link to the post entitled "${
-                            node.frontmatter.title
-                        }" to read more`}
-                    >
-                        <h3>{node.frontmatter.title}</h3>
+                    <div key={i}>
+                        <Link
+                            to={node.fields.slug}
+                            key={i}
+                            title={`visit the link to the post entitled "${
+                                node.frontmatter.title
+                            }" to read more`}
+                        >
+                            <h4>{node.frontmatter.title}</h4>
+                        </Link>
                         <MetaDiv>
                             by {node.frontmatter.author} on{' '}
                             {node.frontmatter.date}
@@ -140,7 +142,7 @@ const SiteMapPage = props => {
                                 <SitemapSpan>{node.excerpt}</SitemapSpan>
                             </li>
                         </SitemapUl>
-                    </Link>
+                    </div>
                 ))}
             </SitemapDiv>
         </Layout>
