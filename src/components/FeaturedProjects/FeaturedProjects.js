@@ -5,7 +5,7 @@ import FeaturedProject1 from './FeaturedProject1'
 import FeaturedProject2 from './FeaturedProject2'
 import FeaturedProject3 from './FeaturedProject3'
 
-const AppsUl = styled.ul`
+export const AppsUl = styled.ul`
     width: 97.5%;
     margin: 0 auto;
     display: grid;
@@ -19,15 +19,11 @@ const AppsUl = styled.ul`
     & h3 {
         font-weight: normal;
     }
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
     & li:hover {
         background-color: rgba(255, 153, 0, 0.5);
+    }
+    & br {
+        line-height: 2.5;
     }
     @media (min-width: 990px) {
         width: 90%;
