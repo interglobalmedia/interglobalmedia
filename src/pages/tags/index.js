@@ -3,28 +3,8 @@ import {Link, graphql} from 'gatsby'
 import Layout from '../../components/Layout/Layout'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTag} from '@fortawesome/free-solid-svg-icons'
-import styled from '@emotion/styled'
 import {Helmet} from 'react-helmet'
-
-const TagsDiv = styled.div`
-    width: 90%;
-    max-width: 960px;
-    margin: 3rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    & a {
-        margin-bottom: 1.5rem;
-        list-style-type: none;
-        background: #fdf6e3;
-        color: rgb(131, 70, 68);
-        width: 100%;
-        padding: 1rem;
-        tex-decoration: none;
-        font-size: 1.1rem;
-        letter-spacing: 0.07em;
-    }
-`
+import {TagsCategoriesDiv} from '../categories'
 
 function TagsPage(props) {
     const data = props.data.allMarkdownRemark.group
@@ -38,7 +18,7 @@ function TagsPage(props) {
                     href="https://www.docscorneronline.com/tags/tags"
                 />
             </Helmet>
-            <TagsDiv>
+            <TagsCategoriesDiv>
                 {data.map((tag, i) => (
                     <Link to={`/tags/${tag.fieldValue}`} key={i}>
                         <FontAwesomeIcon
@@ -49,7 +29,7 @@ function TagsPage(props) {
                         {tag.fieldValue} {`(${tag.totalCount})`}
                     </Link>
                 ))}
-            </TagsDiv>
+            </TagsCategoriesDiv>
         </Layout>
     )
 }
