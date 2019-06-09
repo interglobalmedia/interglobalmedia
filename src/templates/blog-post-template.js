@@ -10,7 +10,6 @@ import Layout from '../components/Layout/Layout'
 import Bio from '../components/Bio/Bio'
 import PrevNext from '../components/PrevNext/PrevNext'
 import Share from '../components/Share/Share'
-import SEO from '../components/Seo/Seo'
 import '../components/Layout/Layout.scss'
 
 const PostWrapperDiv = styled.div`
@@ -27,6 +26,8 @@ const PostMetaDiv = styled.div`
 
 const MetaH1Title = styled.h1`
     text-align: center;
+    font-weight: 600;
+    margin-top: -1.5rem;
 `
 
 const MetaPDate = styled.div`
@@ -89,13 +90,6 @@ const DangerousHTMLDiv = styled.div`
     & li {
         color: rgba(88, 86, 86, 0.7);
     }
-    & a {
-        box-shadow: none;
-        color: rgb(39,74,169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 const TagCatWrapperDiv = styled.div`
@@ -105,36 +99,17 @@ const TagCatWrapperDiv = styled.div`
     flex-direction: column;
 `
 
-export const TaggedInSpan = styled.span`
-    letter-spacing: 0.07em;
-    font-weight: bold;
-`
-
 const TagDiv = styled.div`
     margin-bottom: 0.25rem;
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
-export const CagtegorizedInSpan = styled.span`
+export const TagCatInSpan = styled.span`
     letter-spacing: 0.07em;
     font-weight: bold;
 `
 
 const CatDiv = styled.div`
   margin-bottom 2rem;
-  & a {
-      box-shadow: none;
-      color: rgb(39,74,169);
-  }
-  & a:hover {
-      text-decoration: underline;
-  }
 `
 
 export const DiscussTwitter = styled.div`
@@ -142,13 +117,6 @@ export const DiscussTwitter = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     margin: 1.5rem auto 0;
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & :hover {
-        text-decoration: underline;
-    }
 `
 
 const BlogPostTemplate = props => {
@@ -200,7 +168,7 @@ const BlogPostTemplate = props => {
 
                     <TagCatWrapperDiv>
                         <TagDiv>
-                            <TaggedInSpan>Tagged in: </TaggedInSpan>
+                            <TagCatInSpan>Tagged in: </TagCatInSpan>
                             {tags.map((tag, i) => (
                                 <Link
                                     to={`/tags/${tag}`}
@@ -221,9 +189,7 @@ const BlogPostTemplate = props => {
                             ))}
                         </TagDiv>
                         <CatDiv>
-                            <CagtegorizedInSpan>
-                                Categorized under:{' '}
-                            </CagtegorizedInSpan>
+                            <TagCatInSpan>Categorized under: </TagCatInSpan>
                             {categories.map((category, i) => (
                                 <Link
                                     to={`/categories/${category}`}

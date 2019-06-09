@@ -44,7 +44,7 @@ const wfLiveSite3Data = {
         'gatsbyjs blog',
     ],
     liveSiteUrl: 'https://www.mariadcampbell.com/',
-    liveRepoUrl: 'https://github.com/interglobalmedia/mariadcampbell',
+    siteRepoUrl: 'https://github.com/interglobalmedia/mariadcampbell',
     src: mariadcampbell,
     projectName: 'mariadcampbell',
 }

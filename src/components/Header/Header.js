@@ -4,11 +4,10 @@ import React from 'react'
 import {Link} from 'gatsby'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
-import '../../style/style.scss'
 import {burgerToggle} from '../../lib/navHelpers'
 
 export const NavContainerDiv = styled.div`
-    margin-top: -2.25rem;
+    margin-top: -2rem;
 `
 export const HeaderStyle = styled.header`
     padding: 1.5rem 0 0 1.5rem;
@@ -17,9 +16,6 @@ export const ResponsiveHeading1 = styled.h1`
     font-size: 2rem;
     font-weight: normal;
     margin-top: 2.25rem;
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 export const TopHeading1 = styled.h1`
@@ -43,10 +39,7 @@ const Header = ({siteTitle}) => (
                 <ResponsiveHeading1
                     title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
                 >
-                    <Link
-                        to="/"
-                        style={{boxShadow: 'none', color: 'rgb(47,0,0)'}}
-                    >
+                    <Link to="/" style={{color: 'rgb(47,0,0)'}}>
                         {siteTitle}
                     </Link>
                 </ResponsiveHeading1>
@@ -56,7 +49,6 @@ const Header = ({siteTitle}) => (
                             to="/"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -70,7 +62,6 @@ const Header = ({siteTitle}) => (
                             to="/blog"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -83,7 +74,6 @@ const Header = ({siteTitle}) => (
                         <Link
                             to="/portfolio"
                             style={{
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -96,7 +86,6 @@ const Header = ({siteTitle}) => (
                         <Link
                             to="/services"
                             style={{
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -110,7 +99,6 @@ const Header = ({siteTitle}) => (
                             to="/contact"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -125,10 +113,7 @@ const Header = ({siteTitle}) => (
                 <TopHeading1
                     title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
                 >
-                    <Link
-                        to="/"
-                        style={{boxShadow: 'none', color: 'rgba(47,0,0)'}}
-                    >
+                    <Link to="/" style={{color: 'rgba(47,0,0)'}}>
                         {siteTitle}
                     </Link>
                 </TopHeading1>
@@ -138,7 +123,6 @@ const Header = ({siteTitle}) => (
                             to="/"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -152,7 +136,6 @@ const Header = ({siteTitle}) => (
                             to="/blog"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -166,7 +149,6 @@ const Header = ({siteTitle}) => (
                             to="/portfolio"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -180,7 +162,6 @@ const Header = ({siteTitle}) => (
                             to="/services"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}
@@ -194,7 +175,6 @@ const Header = ({siteTitle}) => (
                             to="/contact"
                             style={{
                                 marginRight: '1.5rem',
-                                boxShadow: 'none',
                                 color: 'rgb(47,0,0)',
                             }}
                             activeStyle={{color: 'rgb(148,75,43)'}}

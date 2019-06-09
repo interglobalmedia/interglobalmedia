@@ -13,10 +13,10 @@ import {
     faFacebookF,
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
-import CookieConsent, {Cookies} from 'react-cookie-consent'
+import CookieConsent from 'react-cookie-consent'
 import styled from '@emotion/styled'
 
-const FooterStyle = styled.footer`
+export const FooterStyle = styled.footer`
     background: rgb(98, 22, 69);
     padding-top: 2rem;
     padding-left: 2rem;
@@ -30,15 +30,11 @@ const FooterStyle = styled.footer`
     align-items: center;
     justify-content: space-around;
     & a {
-        box-shadow: none;
         margin-bottom: 3rem;
-        & :hover {
-            text-decoration: underline;
-        }
     }
 `
 
-const BizHoursUl = styled.div`
+export const BizHoursUl = styled.div`
     list-style-type: none;
     color: rgb(255, 227, 159);
     & li:first-of-type {
@@ -51,7 +47,7 @@ const BizHoursUl = styled.div`
     }
 `
 
-const RelatedHoursUl = styled.div`
+export const RelatedHoursUl = styled.div`
     list-style-type: none;
     color: rgb(216, 132, 46);
     & li:first-of-type {
@@ -64,7 +60,7 @@ const RelatedHoursUl = styled.div`
     }
 `
 
-const FollowHoursUl = styled.div`
+export const FollowHoursUl = styled.div`
     list-style-type: none;
     color: rgb(216, 132, 46);
     display: flex;
@@ -86,36 +82,22 @@ const FollowHoursUl = styled.div`
     }
 `
 
-const AnchorDiv = styled.div`
+export const AnchorDiv = styled.div`
     text-align: center;
     margin-bottom: 1.5rem;
-    color: rgb(216, 132, 46);
     font-size: 0.9rem;
-    & a {
-        box-shadow: none;
-        color: rgb(255, 165, 79);
-    }
     & a:nth-of-type(1) {
         margin-right: 1rem;
     }
     & a:nth-of-type(2) {
         margin-right: 1rem;
     }
-    & a:hover {
-        text-decoration: underline;
-    }
     @media (min-width: 375px) {
         font-size: 1.2rem;
     }
-    & ul:last-of-type {
-        color: rgb(216, 132, 46);
-        & li:last-of-type {
-            font-style: normal;
-        }
-    }
 `
 
-const ColumnsDiv = styled.div`
+export const ColumnsDiv = styled.div`
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -130,11 +112,6 @@ const ColumnsDiv = styled.div`
         margin-left: auto;
         margin-right: auto;
     }
-`
-
-const AnchorStyle = styled.a`
-    box-shadow: none;
-    margin-right: 1rem;
 `
 
 export const SiteCredsDiv = styled.div`
@@ -165,6 +142,7 @@ const Footer = () => {
                             className="github"
                             href="https://github.com/interglobalmedia"
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon
                                 icon={faGithub}
@@ -178,6 +156,7 @@ const Footer = () => {
                             className="twitter"
                             href="https://twitter.com/letsbsocial1"
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon
                                 icon={faTwitter}
@@ -191,6 +170,7 @@ const Footer = () => {
                             className="facebook"
                             href="https://www.facebook.com/mariador62"
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon
                                 icon={faFacebookF}
@@ -204,6 +184,7 @@ const Footer = () => {
                             className="linkedin"
                             href="https://www.linkedin.com/in/mariacampbell/"
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon
                                 icon={faLinkedinIn}
@@ -212,7 +193,6 @@ const Footer = () => {
                             />
                         </a>
                     </li>
-                    {/* </div> */}
                 </FollowHoursUl>
             </ColumnsDiv>
             <AnchorDiv>
@@ -221,6 +201,7 @@ const Footer = () => {
                 />
                 <Link
                     to="/contact"
+                    style={{color: 'rgb(255, 165, 79)'}}
                     title={`visit the main Contact page to learn how to connect with us`}
                 >
                     <FontAwesomeIcon icon={faEnvelope} />
@@ -228,12 +209,14 @@ const Footer = () => {
                 </Link>
                 <Link
                     to="/sitemap"
+                    style={{color: 'rgb(255, 165, 79)'}}
                     title={`visit the Sitemap page to get an overview of the entire site`}
                 >
                     <FontAwesomeIcon icon={faDirections} transform="flip-h" />
                     Sitemap
                 </Link>
                 <a
+                    style={{color: 'rgb(255, 165, 79)'}}
                     href="http://www.interglobalmedianetwork.com/rss.xml"
                     title={`visit the RSS Feed page to view or subscribe to our RSS Feed`}
                 >
@@ -273,7 +256,11 @@ const Footer = () => {
                     <p>
                         This website uses cookies to enhance the user
                         experience.{' '}
-                        <a href="https://cookiesandyou.com/" target="_new">
+                        <a
+                            href="https://cookiesandyou.com/"
+                            target="_new"
+                            rel="noopener noreferrer"
+                        >
                             Learn more
                         </a>
                     </p>

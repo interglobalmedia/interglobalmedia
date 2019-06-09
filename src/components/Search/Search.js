@@ -41,7 +41,7 @@ class Search extends Component {
             <div id="search" className={classes.Search}>
                 <div
                     className="gcse-search-box"
-                    data-resultsurl="http://www.interglobalmedianetwork.com"
+                    data-resultsurl="https://www.interglobalmedianetwork.com"
                     data-newwindow="true"
                     queryparametername="search"
                 />

@@ -22,19 +22,8 @@ const PostsUl = styled.ul`
     & li:last-of-type {
         margin-bottom: 0;
     }
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
-    & img {
-        margin-bottom: 1rem;
-        margin-top: 0.25rem;
-    }
-    & span {
-        color: rgb(39, 74, 169);
+    br {
+        line-height: 2.5;
     }
     @media (min-width: 990px) {
         width: 90%;

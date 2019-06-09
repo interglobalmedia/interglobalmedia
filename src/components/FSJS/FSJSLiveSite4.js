@@ -18,8 +18,9 @@ const FSJSLiveSite4 = () => {
                                 fsjsLiveSite4Data.projectName
                             } live site to view on Heroku`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
-                            {fsjsLiveSite4Data.projectName} live site
+                            {fsjsLiveSite4Data.projectName}
                         </a>
                         <br />
                         <br />

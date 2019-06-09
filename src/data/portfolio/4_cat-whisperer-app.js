@@ -2,7 +2,7 @@ import catWhisperer from '../../images/projects/cat-whisperer-app.jpg'
 
 const catWhispererData = {
     id: 4,
-    title: 'Cat Whisperer App',
+    title: 'Cat Whisperer',
     repository: `https://github.com/interglobalmedia/the-cat-whisperer`,
     website: `https://interglobalmedia.github.io/the-cat-whisperer/`,
     image: catWhisperer,

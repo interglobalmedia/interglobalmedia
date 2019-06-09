@@ -10,11 +10,12 @@ import {
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
-import CookieConsent, {Cookies} from 'react-cookie-consent'
-import IndexHeader from '../components/IndexHeader/IndexHeader'
+import CookieConsent from 'react-cookie-consent'
+import Header from '../components/Header/Header'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
+import {SiteCredsDiv, AnchorDiv} from '../components/Footer/Footer'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -23,9 +24,8 @@ const Container = styled.div`
 
 const IndexFooterStyle = styled.footer`
     text-align: center;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.7rem;
     letter-spacing: 0.07em;
-    color: rgb(47, 0, 0);
     height: 30px;
     width: 100%;
     margin: 0 auto;
@@ -35,40 +35,7 @@ const IndexFooterStyle = styled.footer`
     align-items: center;
     justify-content: space-around;
     & a {
-        box-shadow: none;
         margin-bottom: 3rem;
-        & :hover {
-            text-decoration: underline;
-        }
-    }
-`
-
-const AnchorDiv = styled.div`
-    text-align: center;
-    margin-bottom: 1rem;
-    color: rgb(216, 132, 46);
-    font-size: 0.9rem;
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    a:nth-of-type(1) {
-        margin-right: 1rem;
-    }
-    & a:nth-of-type(2) {
-        margin-right: 1rem;
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
-    @media (min-width: 375px) {
-        font-size: 1.2rem;
-    }
-    & ul:last-of-type {
-        color: rgb(216, 132, 46);
-        & li:last-of-type {
-            font-style: normal;
-        }
     }
 `
 
@@ -89,11 +56,7 @@ const H1Style = styled.h1`
         }
     }
     & a {
-        box-shadow: none;
         color: rgb(148, 75, 43);
-    }
-    & a:hover {
-        text-decoration: underline;
     }
 `
 
@@ -105,12 +68,6 @@ const PostsDiv = styled.div`
     margin: 3rem auto 6rem;
 `
 
-export const SiteCredsDiv = styled.div`
-    color: rgb(255, 165, 79);
-    margin-top: 1rem;
-    text-align: center;
-`
-
 const IndexPage = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
@@ -119,7 +76,7 @@ const IndexPage = props => {
         <Container>
             <SEO location={props.location} title={title} keywords={keywords} />
             <div className="Site">
-                <IndexHeader />
+                <Header />
                 <Search />
                 <div className="Site-content">
                     <H1Style>
@@ -179,6 +136,8 @@ const IndexPage = props => {
                         <a
                             href="http://www.interglobalmedianetwork.com/rss.xml"
                             title={`visit the RSS Feed page to view or subscribe to our RSS Feed`}
+                            target="_new"
+                            rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon icon={faRss} />
                             RSS
@@ -214,6 +173,7 @@ const IndexPage = props => {
                                 <a
                                     href="https://cookiesandyou.com/"
                                     target="_new"
+                                    rel="noopener noreferrer"
                                 >
                                     Learn more
                                 </a>

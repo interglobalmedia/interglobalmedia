@@ -25,7 +25,7 @@ const fsjsLiveSite1Data = {
     liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
     siteRepoUrl: 'https://github.com/interglobalmedia/node-chat-app',
     src: chatApp,
-    projectName: 'chattrbox app',
+    projectName: 'chattrbox',
 }
 
 export default fsjsLiveSite1Data

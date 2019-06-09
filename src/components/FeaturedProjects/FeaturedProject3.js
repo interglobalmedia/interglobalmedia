@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import nodeDrawingData from '../../data/projects/node-drawing'
 import {UsesSpan} from './FeaturedProjects'
 
@@ -17,7 +16,9 @@ const FeaturedProject3 = () => {
                                 href={nodeDrawingData.liveSiteUrl}
                                 title={`visit the ${
                                     nodeDrawingData.title
-                                } app live site to view  on Heroku`}
+                                } app live site to view on Heroku`}
+                                target="_new"
+                                rel="noopener noreferrer"
                             >
                                 {nodeDrawingData.title} app
                             </a>
@@ -25,11 +26,10 @@ const FeaturedProject3 = () => {
                         <Image
                             fluid={data.imageThree.childImageSharp.fluid}
                             alt={nodeDrawingData.title}
+                            style={{marginBottom: '1.5rem'}}
                         />
-                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {nodeDrawingData.tagNames}
-                        <br />
                         <br />
                         <Link
                             state={nodeDrawingData}

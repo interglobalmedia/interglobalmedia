@@ -4,17 +4,17 @@ import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 
-const CategoryWrapper = styled.div`
+export const TagCategoryWrapper = styled.div`
     width: 90%;
     margin: 3rem auto;
 `
 
-const CategoriesH1 = styled.h1`
+export const TagsCategoriesH1 = styled.h1`
     margin: 0 auto;
     letter-spacing: 0.07em;
 `
 
-const CategoriesDiv = styled.div`
+export const TagsCategoriesDiv = styled.div`
     margin: 0.75rem auto 4rem;
     width: 100%;
     & h1 {
@@ -24,14 +24,8 @@ const CategoriesDiv = styled.div`
         list-style-type: square;
         color: rgb(47, 0, 0);
     }
-    & a {
-        box-shadow: none;
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
     & span {
-        color: rgba(88, 86, 86, 0.7);
+        color: rgb(88, 86, 86);
     }
 `
 
@@ -43,9 +37,9 @@ const Categories = props => {
             <Helmet>
                 <title>Categories Page</title>
             </Helmet>
-            <CategoryWrapper>
-                <CategoriesH1>{`posts in: ${category}`}</CategoriesH1>
-                <CategoriesDiv>
+            <TagCategoryWrapper>
+                <TagsCategoriesH1>{`posts in: ${category}`}</TagsCategoriesH1>
+                <TagsCategoriesDiv>
                     {posts.map(({node}, i) => (
                         <Link to={node.fields.slug} key={i}>
                             <li key={i}>
@@ -53,8 +47,8 @@ const Categories = props => {
                             </li>
                         </Link>
                     ))}
-                </CategoriesDiv>
-            </CategoryWrapper>
+                </TagsCategoriesDiv>
+            </TagCategoryWrapper>
         </Layout>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import featuredPost2Data from '../../data/posts/featured-post-2'
 
 const FeaturedPost2 = () => {
@@ -17,14 +16,15 @@ const FeaturedPost2 = () => {
                                 featuredPost2Data.title
                             }" to read more`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {featuredPost2Data.title}
                         </a>
                         <Image
                             fluid={data.imageTwo.childImageSharp.fluid}
                             alt={featuredPost2Data.title}
+                            style={{marginBottom: '1rem', marginTop: '1rem'}}
                         />
-                        <br />
                         {featuredPost2Data.excerpt} ...
                         <br />
                         <Link
@@ -33,10 +33,9 @@ const FeaturedPost2 = () => {
                                 featuredPost2Data.title
                             }" to view more`}
                         >
-                            <span>tagged in:</span>
+                            tagged in:
                         </Link>{' '}
                         {featuredPost2Data.tagNames}
-                        <br />
                         <br />
                         <Link
                             to="/categories"
@@ -44,7 +43,7 @@ const FeaturedPost2 = () => {
                                 featuredPost2Data.title
                             }" to view more`}
                         >
-                            <span>categorized under:</span>
+                            categorized under:
                         </Link>{' '}
                         {featuredPost2Data.catNames}
                     </li>

@@ -26,7 +26,7 @@ const nodeChatData = {
     ],
     liveSiteUrl: 'https://pacific-savannah-76659.herokuapp.com/',
     image: chatApp,
-    title: 'Node Chat',
+    title: 'Chattrbox',
     more: '/portfolio/portfolio-view',
 }
 export default nodeChatData
