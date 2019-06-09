@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-
-const PhoneStyle = styled.a`
-    font-weight: 400;
-    & :hover {
-        text-decoration: underline;
-    }
-`
+import {ContributeStyle} from '../Contribute/Contribute'
 
 const Phone = () => {
     return [
@@ -18,9 +12,9 @@ const Phone = () => {
     ].map(phone => {
         return (
             <li key={phone.id}>
-                <PhoneStyle href={phone.link} title={`call us`}>
+                <ContributeStyle href={phone.link} title={`call us`}>
                     {phone.text}
-                </PhoneStyle>
+                </ContributeStyle>
             </li>
         )
     })

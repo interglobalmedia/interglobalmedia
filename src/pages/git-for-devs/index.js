@@ -11,15 +11,10 @@ import {
     H1Style,
     H2Style,
     ApproachDiv,
-    ApproachSpan,
-    IncludesSpan,
+    ApproachIncludesSpan,
+    ServiceDiv,
 } from '../fsjs'
 
-const GitForDevsDiv = styled.div`
-    & img {
-        width: 100%;
-    }
-`
 export const GFDTagsDiv = styled.div`
     color: rgb(148, 75, 43);
     margin-bottom: 3rem;
@@ -42,7 +37,7 @@ const GitForDevs = props => {
                     </Link>
                 </BackDiv>
                 <H1Style>{gfd.title}</H1Style>
-                <GitForDevsDiv>
+                <ServiceDiv>
                     <Img
                         fluid={props.data.gitForDevsImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
@@ -50,17 +45,18 @@ const GitForDevs = props => {
                     />
                     <H2Style>{gfd.shortDescription}</H2Style>
                     <ApproachDiv>
-                        <ApproachSpan>background:</ApproachSpan>{' '}
+                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
                         {gfd.background}
                     </ApproachDiv>
                     <ApproachDiv>
-                        <ApproachSpan>approach:</ApproachSpan> {gfd.approach}
+                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                        {gfd.approach}
                     </ApproachDiv>
                     <GFDTagsDiv>
-                        <IncludesSpan>includes:</IncludesSpan> {gfd.tags} and
-                        more
+                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                        {gfd.tags} and more
                     </GFDTagsDiv>
-                </GitForDevsDiv>
+                </ServiceDiv>
             </WrapperDiv>
         </Layout>
     )

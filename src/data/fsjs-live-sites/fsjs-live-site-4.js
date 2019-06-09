@@ -21,7 +21,7 @@ const fsjsLiveSite4Data = {
     siteRepoUrl:
         'https://github.com/interglobalmedia/node-collaborative-drawing-app',
     src: nodeDrawingApp,
-    projectName: 'node drawing app',
+    projectName: 'node drawing',
 }
 
 export default fsjsLiveSite4Data

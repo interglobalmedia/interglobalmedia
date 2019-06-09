@@ -19,6 +19,7 @@ const WFLiveSite3 = () => {
                                 wfSite3Data.projectName
                             }.com developer blog live site to view on Netlify`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {wfSite3Data.projectName}
                         </a>
@@ -34,8 +35,9 @@ const WFLiveSite3 = () => {
                             href={wfSite3Data.siteRepoUrl}
                             title={`visit the ${
                                 wfSite3Data.projectName
-                            }.com repository to view on Github`}
+                            } repository to view on Github`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {wfSite3Data.projectName} on github
                         </a>

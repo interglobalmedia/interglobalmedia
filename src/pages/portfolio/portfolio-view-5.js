@@ -4,54 +4,13 @@ import {Link, graphql} from 'gatsby'
 import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
-
-export const PortfolioViewDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 3rem auto;
-    width: 90%;
-    color: rgb(88, 86, 86);
-    & a {
-        box-shadow: none;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto 1rem;
-        cursor: pointer;
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
-`
-
-const PortfolioBackDiv = styled.div`
-    margin-top: -1.5rem;
-    margin-bottom: 3rem;
-    & a {
-        box-shadow: none;
-        font-size: 1.2rem;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
-`
-
-export const PortfolioViewH1Style = styled.h1`
-    text-align: center;
-    font-weight: 400;
-    color: rgb(148, 75, 43);
-`
-
-export const ShortDescDiv = styled.div``
-
-export const AnchorsUl = styled.ul`
-    display: grid;
-    margin-top: 1.5rem;
-    list-style-type: square;
-    & a {
-        color: rgb(39, 74, 169);
-    }
-`
+import {
+    PortfolioViewDiv,
+    PortfolioBackDiv,
+    PortfolioViewH1Style,
+    ShortDescDiv,
+    AnchorsUl,
+} from './index.js'
 
 class PortfolioView5 extends Component {
     render() {
@@ -82,7 +41,12 @@ class PortfolioView5 extends Component {
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
-                        <Link to="/portfolio">&larr; back</Link>
+                        <Link
+                            to="/portfolio"
+                            title={`go back to main Portfolio page`}
+                        >
+                            &larr; back
+                        </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
                         {title}
@@ -101,7 +65,9 @@ class PortfolioView5 extends Component {
                             <a
                                 href={more}
                                 target="_new"
+                                rel="noopener noreferrer"
                                 data-testid="project-more"
+                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
                             >
                                 Read More About {title}
                             </a>
@@ -110,7 +76,9 @@ class PortfolioView5 extends Component {
                             <a
                                 href={repository}
                                 target="_new"
+                                rel="noopener noreferrer"
                                 data-testid="project-repository"
+                                title={`visit the link to the ${title} source code on Github to learn more`}
                             >
                                 {title} Source Code
                             </a>
@@ -119,7 +87,9 @@ class PortfolioView5 extends Component {
                             <a
                                 href={website}
                                 target="_new"
+                                rel="noopener noreferrer"
                                 data-testid="project-website"
+                                title={`visit the link to the ${title} live site to view more`}
                             >
                                 {title} Live Site
                             </a>

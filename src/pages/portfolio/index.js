@@ -12,28 +12,20 @@ import trumpTalksData from '../../data/portfolio/5_trump-talks-trash'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 
-const ColumnsDiv = styled.div`
+export const ColumnsDiv = styled.div`
     width: 90%;
     margin: 3rem auto;
     display: grid;
     @media (min-width: 990px) {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 `
 
-const ProjectUl = styled.div`
+export const ProjectUl = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 1rem auto;
     list-style-type: none;
-    & a {
-        box-shadow: none !important;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
     & li:last-child {
         margin-top: 0.5rem;
     }
@@ -42,15 +34,10 @@ const ProjectUl = styled.div`
     }
 `
 
-const ProjectTitleLi = styled.li`
-    font-size: 1.1rem;
+export const ProjectTitleLi = styled.li`
+    font-size: 1.2rem;
 `
-const ImgStyle = styled.img`
-    max-width: 800px;
-    width: 100%;
-`
-
-const ParaStyle = styled.p`
+export const ParaStyle = styled.p`
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -60,12 +47,49 @@ const ParaStyle = styled.p`
     color: rgb(88, 86, 86);
 `
 
-const SpanStyle = styled.span`
+export const SpanStyle = styled.span`
     color: rgb(148, 75, 43);
 `
 
-const MoreP = styled.p`
+export const MoreP = styled.p`
     font-size: 1.1rem;
+`
+// views styling
+export const PortfolioViewDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    width: 90%;
+    color: rgb(88, 86, 86);
+    & a {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto 1rem;
+        cursor: pointer;
+    }
+`
+
+export const PortfolioBackDiv = styled.div`
+    margin-bottom: 3rem;
+    & a {
+        font-size: 1.3rem;
+    }
+`
+
+export const PortfolioViewH1Style = styled.h1`
+    text-align: center;
+    font-weight: 400;
+    color: rgb(148, 75, 43);
+`
+
+export const ShortDescDiv = styled.div`
+    color: rgb(88, 86, 86);
+`
+
+export const AnchorsUl = styled.ul`
+    display: grid;
+    margin-top: 1.5rem;
+    list-style-type: square;
 `
 
 const PortfolioIndex = props => {
@@ -80,6 +104,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-1'}
                             state={speechToTextData}
+                            title={`visit the link to the ${
+                                speechToTextData.title
+                            } app page to learn more`}
                         >
                             {speechToTextData.title}
                         </Link>
@@ -98,6 +125,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-1'}
                             state={speechToTextData}
+                            title={`visit the link to the ${
+                                speechToTextData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -108,6 +138,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             state={theGrooveData}
+                            title={`visit the link to the ${
+                                theGrooveData.title
+                            } app page to learn more`}
                         >
                             {theGrooveData.title}
                         </Link>
@@ -126,6 +159,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             state={theGrooveData}
+                            title={`visit the link to the ${
+                                theGrooveData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -136,6 +172,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-3'}
                             state={rockinSynthData}
+                            title={`visit the link to the ${
+                                rockinSynthData.title
+                            } app page to learn more`}
                         >
                             {rockinSynthData.title}
                         </Link>
@@ -154,6 +193,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-3'}
                             state={rockinSynthData}
+                            title={`visit the link to the ${
+                                rockinSynthData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -164,6 +206,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-4'}
                             state={catWhispererData}
+                            title={`visit the link to the ${
+                                catWhispererData.title
+                            } app page to learn more`}
                         >
                             {catWhispererData.title}
                         </Link>
@@ -182,6 +227,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-4'}
                             state={catWhispererData}
+                            title={`visit the link to the ${
+                                catWhispererData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -192,6 +240,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-5'}
                             state={trumpTalksData}
+                            title={`visit the link to the ${
+                                trumpTalksData.title
+                            } app page to learn more`}
                         >
                             {trumpTalksData.title}
                         </Link>
@@ -210,6 +261,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-5'}
                             state={trumpTalksData}
+                            title={`visit the link to the ${
+                                trumpTalksData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -220,6 +274,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-6'}
                             state={chattrboxData}
+                            title={`visit the link to the ${
+                                chattrboxData.title
+                            } app page to learn more`}
                         >
                             {chattrboxData.title}
                         </Link>
@@ -238,6 +295,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-6'}
                             state={chattrboxData}
+                            title={`visit the link to the ${
+                                chattrboxData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -248,6 +308,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-7'}
                             state={nodeDrawingData}
+                            title={`visit the link to the ${
+                                nodeDrawingData.title
+                            } app page to learn more`}
                         >
                             {nodeDrawingData.title}
                         </Link>
@@ -266,6 +329,9 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-7'}
                             state={nodeDrawingData}
+                            title={`visit the link to the ${
+                                nodeDrawingData.title
+                            } app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -278,8 +344,8 @@ const PortfolioIndex = props => {
 
 export default PortfolioIndex
 
-export const portfolioIndexQuery = graphql`
-    query portfolioIndexQuery {
+export const indexQuery = graphql`
+    query indexQuery {
         site {
             siteMetadata {
                 title

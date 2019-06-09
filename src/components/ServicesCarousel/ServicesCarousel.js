@@ -10,7 +10,6 @@ import devWorkflows from '../../data/services/dev-workflows'
 import gitForDevs from '../../data/services/gfd'
 import gitForNonDevs from '../../data/services/gfnd'
 import commandControl from '../../data/services/cli'
-import '../../style/style.scss'
 
 const SlideDiv = styled.div`
     width: 97.5%;

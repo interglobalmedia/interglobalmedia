@@ -18,8 +18,9 @@ const FSJSLiveSite3 = () => {
                                 fsjsLiveSite3Data.projectName
                             } live site to view on Github gh-pages`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
-                            {fsjsLiveSite3Data.projectName} live site
+                            {fsjsLiveSite3Data.projectName}
                         </a>
                         <br />
                         <br />
@@ -37,6 +38,7 @@ const FSJSLiveSite3 = () => {
                                 fsjsLiveSite3Data.projectName
                             } repository to view on Github`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {fsjsLiveSite3Data.projectName} on github
                         </a>

@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-const ContributeStyle = styled.a`
+export const ContributeStyle = styled.a`
     font-weight: 400;
-    & :hover {
-        text-decoration: underline;
-    }
 `
 
 const Contribute = () => {
@@ -14,6 +11,7 @@ const Contribute = () => {
             id: 1,
             url: `https://www.mariadcampbell.com`,
             targetContent: '_new',
+            relContent: 'noopener noreferrer',
             text: `My Dev Blog`,
             title: `read our posts on our Developer Blog`,
         },
@@ -28,8 +26,9 @@ const Contribute = () => {
         return (
             <li key={contribute.id}>
                 <ContributeStyle
-                    href={contribute.link}
+                    href={contribute.url}
                     target={contribute.targetContent}
+                    rel={contribute.relContent}
                     title={contribute.title}
                 >
                     {' '}

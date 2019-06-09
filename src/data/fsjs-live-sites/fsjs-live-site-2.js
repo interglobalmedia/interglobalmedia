@@ -48,7 +48,7 @@ const fsjsLiveSite2Data = {
     liveSiteUrl: 'https://interglobalmedia.github.io/speech-to-text-app/',
     siteRepoUrl: 'https://github.com/interglobalmedia/speech-to-text-app',
     src: speechToText,
-    projectName: 'speech to text app',
+    projectName: 'speech to text',
 }
 
 export default fsjsLiveSite2Data

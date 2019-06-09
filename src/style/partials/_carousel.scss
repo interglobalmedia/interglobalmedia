@@ -1,12 +1,3 @@
-/********************************************
-	BREAKPOINT WIDTHS
-********************************************/
-/********************************************
-	FONTS
-********************************************/
-/********************************************
-	COLOURS
-********************************************/
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
     -webkit-transition: all 0.25s ease-in;
@@ -73,9 +64,6 @@
 
 .carousel .control-next.control-arrow:before {
     border-left: 18px solid rgb(167, 19, 138);
-    // content: '\2B17';
-    // color: rgb(167, 19, 138);
-    // font-size: 2rem;
 
     @media #{$min-480} {
         font-size: 2.5rem;
@@ -278,7 +266,6 @@
     left: 50%;
     margin-left: -50%;
     width: 100%;
-    // border-radius: 10px;
     background: #000;
     color: #fff;
     padding: 10px;

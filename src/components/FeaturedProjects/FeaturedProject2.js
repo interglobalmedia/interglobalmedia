@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import speechToTextData from '../../data/projects/speech-to-text'
 import {UsesSpan} from './FeaturedProjects'
 
@@ -18,6 +17,8 @@ const FeaturedProject2 = () => {
                                 title={`visit the ${
                                     speechToTextData.title
                                 } app live site to view on Github gh-pages`}
+                                target="_new"
+                                rel="noopener noreferrer"
                             >
                                 {speechToTextData.title} app
                             </a>
@@ -25,11 +26,10 @@ const FeaturedProject2 = () => {
                         <Image
                             fluid={data.imageTwo.childImageSharp.fluid}
                             alt={speechToTextData.title}
+                            style={{marginBottom: '1.5rem'}}
                         />
-                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {speechToTextData.tagNames}
-                        <br />
                         <br />
                         <Link
                             state={speechToTextData}
