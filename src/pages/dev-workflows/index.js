@@ -10,20 +10,14 @@ import {
     H1Style,
     H2Style,
     ApproachDiv,
-    ApproachSpan,
+    ApproachIncludesSpan,
     AllTagsDiv,
-    IncludesSpan,
     LiveSitesDiv,
     LiveSitesSpan,
+    ServiceDiv,
 } from '../fsjs'
 import WFLiveSites from '../../components/WFLiveSites/WFLiveSites'
 import SEO from '../../components/Seo/Seo'
-
-const WorkflowDiv = styled.div`
-    & img {
-        width: 100%;
-    }
-`
 
 const DevWorkFlows = props => {
     const {data} = props
@@ -42,7 +36,7 @@ const DevWorkFlows = props => {
                     </Link>
                 </BackDiv>
                 <H1Style>{devFlowStrats.title}</H1Style>
-                <WorkflowDiv>
+                <ServiceDiv>
                     <Img
                         fluid={props.data.workflowImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
@@ -50,15 +44,15 @@ const DevWorkFlows = props => {
                     />
                     <H2Style>{devFlowStrats.shortDescription}</H2Style>
                     <ApproachDiv>
-                        <ApproachSpan>background:</ApproachSpan>{' '}
+                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
                         {devFlowStrats.background}
                     </ApproachDiv>
                     <ApproachDiv>
-                        <ApproachSpan>approach:</ApproachSpan>{' '}
+                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
                         {devFlowStrats.approach}
                     </ApproachDiv>
                     <AllTagsDiv>
-                        <IncludesSpan>includes:</IncludesSpan>{' '}
+                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
                         {devFlowStrats.tags} and more
                     </AllTagsDiv>
                     <LiveSitesSpan>sites:</LiveSitesSpan>
@@ -66,7 +60,7 @@ const DevWorkFlows = props => {
                     <LiveSitesDiv>
                         <WFLiveSites />
                     </LiveSitesDiv>
-                </WorkflowDiv>
+                </ServiceDiv>
             </WrapperDiv>
         </Layout>
     )
