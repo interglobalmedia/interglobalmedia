@@ -6,15 +6,15 @@ import {faFolder} from '@fortawesome/free-solid-svg-icons'
 import styled from '@emotion/styled'
 import {Helmet} from 'react-helmet'
 
-const CategoriesDiv = styled.div`
+export const TagsCategoriesDiv = styled.div`
     width: 90%;
     max-width: 960px;
-    margin: 3rem auto;
+    margin: 3rem auto 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     & a {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         list-style-type: none;
         background: #fdf6e3;
         color: rgb(131, 70, 68);
@@ -23,6 +23,10 @@ const CategoriesDiv = styled.div`
         tex-decoration: none;
         font-size: 1.1rem;
         letter-spacing: 0.07em;
+        border-bottom: 1px solid rgb(131, 70, 68);
+        & :hover {
+            border-bottom: 0;
+        }
     }
 `
 
@@ -38,7 +42,7 @@ function CategoriesPage(props) {
                     href="https://www.docscorneronline.com/categories/categories"
                 />
             </Helmet>
-            <CategoriesDiv>
+            <TagsCategoriesDiv>
                 {data.map((category, i) => (
                     <Link to={`/categories/${category.fieldValue}`} key={i}>
                         <FontAwesomeIcon
@@ -49,7 +53,7 @@ function CategoriesPage(props) {
                         {category.fieldValue} {`(${category.totalCount})`}
                     </Link>
                 ))}
-            </CategoriesDiv>
+            </TagsCategoriesDiv>
         </Layout>
     )
 }
