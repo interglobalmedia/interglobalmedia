@@ -8,31 +8,25 @@ import fsjs from '../../data/services/fsjs'
 import SEO from '../../components/Seo/Seo'
 
 export const WrapperDiv = styled.div`
-    margin: 0 auto;
+    margin: 3rem auto;
     width: 90%;
     max-width: 1026px;
 `
 
 export const BackDiv = styled.div`
-    margin-top: 1.5rem;
+    margin-bottom: 3rem;
     & a {
-        box-shadow: none;
         font-size: 1.3rem;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
     }
 `
 
 export const H1Style = styled.h1`
     font-weight: normal;
     text-align: center;
-    margin-top: 3rem;
     color: rgb(148, 75, 43);
 `
 
-const FullStackDiv = styled.div`
+export const ServiceDiv = styled.div`
     & img {
         width: 100%;
     }
@@ -51,7 +45,7 @@ export const ApproachDiv = styled.div`
     color: rgb(88, 86, 86);
 `
 
-export const ApproachSpan = styled.span`
+export const ApproachIncludesSpan = styled.span`
     font-weight: bold;
     color: #2f0000;
 `
@@ -63,11 +57,6 @@ export const AllTagsDiv = styled.div`
 
 export const LiveSitesDiv = styled.div`
     margin: 0 auto 3rem;
-`
-
-export const IncludesSpan = styled.span`
-    font-weight: bold;
-    color: #2f0000;
 `
 
 export const LiveSitesSpan = styled.div`
@@ -91,7 +80,7 @@ const FullStackSJS = props => {
                     </Link>
                 </BackDiv>
                 <H1Style>{fsjs.title}</H1Style>
-                <FullStackDiv>
+                <ServiceDiv>
                     <Img
                         fluid={props.data.fullstackImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
@@ -99,19 +88,19 @@ const FullStackSJS = props => {
                     />
                     <H2Style>{fsjs.shortDescription}</H2Style>
                     <ApproachDiv>
-                        <ApproachSpan>approach: </ApproachSpan>
+                        <ApproachIncludesSpan>approach: </ApproachIncludesSpan>
                         {fsjs.approach}
                     </ApproachDiv>
                     <AllTagsDiv>
-                        <IncludesSpan>includes:</IncludesSpan> {fsjs.allTags}{' '}
-                        and more
+                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                        {fsjs.allTags} and more
                     </AllTagsDiv>
                     <LiveSitesSpan>sites:</LiveSitesSpan>
                     <br />
                     <LiveSitesDiv>
                         <FSJSLiveSites />
                     </LiveSitesDiv>
-                </FullStackDiv>
+                </ServiceDiv>
             </WrapperDiv>
         </Layout>
     )

@@ -8,7 +8,6 @@ import {
 import styled from '@emotion/styled'
 
 export const SocialUl = styled.ul`
-    box-shadow: none;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 3rem;
@@ -20,11 +19,7 @@ export const SocialUl = styled.ul`
         list-style-type: none;
         & a {
             color: rgb(98, 22, 69);
-            box-shadow: none;
-            padding-top: 17px;
-            padding-bottom: 8px;
-            padding-left: 8px;
-            padding-right: 8px;
+            padding: 17px 8px 8px 8px;
             & :nth-of-type(2) {
                 padding-top: 20px;
                 padding-bottom: 5px;
@@ -45,7 +40,8 @@ const Share = props => {
             <li>
                 <a
                     href={fb}
-                    target="blank"
+                    target="_new"
+                    rel="noopener noreferrer"
                     title={`if you like this post share it on Facebook with your friends!`}
                 >
                     <FontAwesomeIcon
@@ -63,7 +59,7 @@ const Share = props => {
             <li>
                 <a
                     href={twitter}
-                    target="blank"
+                    target="_new"
                     title={`if you like this post share it on Twitter with your friends!`}
                 >
                     <FontAwesomeIcon
@@ -81,7 +77,7 @@ const Share = props => {
             <li>
                 <a
                     href={linkedin}
-                    target="blank"
+                    target="_new"
                     title={`if you like this post share it on Linkedin with your connections!`}
                 >
                     <FontAwesomeIcon

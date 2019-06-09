@@ -19,6 +19,7 @@ const WFLiveSite1 = () => {
                                 wfSite1Data.projectName
                             } live site to view on Github gh-pages`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {wfSite1Data.projectName}
                         </a>
@@ -36,6 +37,7 @@ const WFLiveSite1 = () => {
                                 wfSite1Data.projectName
                             } repository to view on Github`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {wfSite1Data.projectName} on github
                         </a>

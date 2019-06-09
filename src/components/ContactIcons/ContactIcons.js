@@ -7,7 +7,6 @@ import {
     faTwitter,
     faFacebookF,
 } from '@fortawesome/free-brands-svg-icons'
-import '../../style/style.scss'
 
 const ContactIconsStyle = styled.ul`
     display: flex;
@@ -15,15 +14,6 @@ const ContactIconsStyle = styled.ul`
     max-width: 250px;
     margin: 40px auto;
     cursor: pointer;
-    & li:nth-of-type(1) {
-        margin-left: -0.25rem;
-    }
-    & li {
-        cursor: pointer;
-    }
-    & a {
-        cursor: pointer;
-    }
 `
 
 const ContactIcons = () => {
@@ -34,6 +24,7 @@ const ContactIcons = () => {
                     className="github"
                     href="https://github.com/interglobalmedia"
                     target="_new"
+                    rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
                         icon={faGithub}
@@ -48,6 +39,7 @@ const ContactIcons = () => {
                     className="twitter"
                     href="https://twitter.com/letsbsocial1"
                     target="_new"
+                    rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
                         icon={faTwitter}
@@ -62,6 +54,7 @@ const ContactIcons = () => {
                     className="facebook"
                     href="https://www.facebook.com/mariador62"
                     target="_new"
+                    rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
                         icon={faFacebookF}
@@ -76,6 +69,7 @@ const ContactIcons = () => {
                     className="linkedin"
                     href="https://www.linkedin.com/in/mariacampbell/"
                     target="_new"
+                    rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon
                         icon={faLinkedinIn}

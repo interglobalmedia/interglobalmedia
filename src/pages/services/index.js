@@ -17,11 +17,6 @@ const ServicesWrapperDiv = styled.div`
         grid-column-gap: 1rem;
     }
 `
-const ServicesH1 = styled.h1`
-    text-align: center;
-    margin-top: 1.5rem;
-    font-weight: normal;
-`
 
 const ServicesUl = styled.ul`
     list-style-type: none;
@@ -32,14 +27,11 @@ const ServicesUl = styled.ul`
     box-shadow: 0 -1px 4px #ede7e7;
     padding: 1.5rem 1rem 0;
     & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
         @media (min-width: 400px) {
             font-size: 1.2rem;
         }
     }
-    & :hover,
-    & :focus {
+    & :hover {
         background: rgba(255, 153, 0, 0.5);
         cursor: pointer;
     }
@@ -49,14 +41,9 @@ const ServicesUl = styled.ul`
 `
 
 const MoreLi = styled.li`
-    margin-top: 1.5rem;
     width: 100%;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-`
-
-const MoreSpan = styled.span`
-    font-style: italic;
-    color: rgb(216, 132, 46);
 `
 
 class ServicesIndex extends Component {

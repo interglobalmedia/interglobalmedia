@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import featuredPost1Data from '../../data/posts/featured-post-1'
 
 const FeaturedPost1 = () => {
@@ -17,15 +16,17 @@ const FeaturedPost1 = () => {
                                 featuredPost1Data.title
                             }" to read more`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {featuredPost1Data.title}
                         </a>
                         <Image
                             fluid={data.postImageOne.childImageSharp.fluid}
                             alt={featuredPost1Data.title}
+                            style={{marginBottom: '1rem', marginTop: '1rem'}}
                         />
-                        <br />
                         {featuredPost1Data.excerpt} ...
+                        <br />
                         <Link
                             to="/tags"
                             title={`visit the tags page for the post "${

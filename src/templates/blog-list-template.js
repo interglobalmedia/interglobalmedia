@@ -5,15 +5,11 @@ import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import SEO from '../components/Seo/Seo'
-// import { OutboundLink } from 'gatsby-plugin-gtag'
 
 export const PostDiv = styled.div`
     width: 90%;
     max-width: 1026px;
     margin: 3rem auto 0;
-    & a {
-        box-shadow: none;
-    }
 `
 
 export const PostListDiv = styled.div`
@@ -38,9 +34,6 @@ export const PostListTitle = styled.h1`
     margin-bottom: 0.25rem;
     line-height: 1.3;
     color: rgb(39, 74, 169);
-    & :hover {
-        text-decoration: underline;
-    }
 `
 
 export const ExcerptWrapUl = styled.ul`
@@ -82,9 +75,6 @@ export const PrevNextUl = styled.ul`
     max-width: 1026px;
     margin: 1.5rem auto;
     padding: 0 0.5rem 0;
-    & a:hover {
-        text-decoration: underline;
-    }
 `
 
 const BlogPage = props => {
@@ -105,34 +95,34 @@ const BlogPage = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <PostDiv>
                 {postList.edges.map(({node}, i) => (
-                    <Link
-                        to={node.fields.slug}
-                        key={i}
-                        title={`visit link to the post entitled "${
-                            node.frontmatter.title
-                        }" to read more`}
-                    >
-                        <PostListDiv>
+                    <PostListDiv key={i}>
+                        <Link
+                            to={node.fields.slug}
+                            key={i}
+                            title={`visit link to the post entitled "${
+                                node.frontmatter.title
+                            }" to read more`}
+                        >
                             <PostListTitle>
                                 {node.frontmatter.title}
                             </PostListTitle>
-                            <PostListMetaDiv>
-                                by {node.frontmatter.author} on{' '}
-                                {node.frontmatter.date}
-                            </PostListMetaDiv>
-                            <ExcerptWrapUl>
-                                <li>
-                                    <Img
-                                        fixed={
-                                            node.frontmatter.image
-                                                .childImageSharp.fixed
-                                        }
-                                    />
-                                </li>
-                                <li>{node.excerpt}</li>
-                            </ExcerptWrapUl>
-                        </PostListDiv>
-                    </Link>
+                        </Link>
+                        <PostListMetaDiv>
+                            by {node.frontmatter.author} on{' '}
+                            {node.frontmatter.date}
+                        </PostListMetaDiv>
+                        <ExcerptWrapUl>
+                            <li>
+                                <Img
+                                    fixed={
+                                        node.frontmatter.image.childImageSharp
+                                            .fixed
+                                    }
+                                />
+                            </li>
+                            <li>{node.excerpt}</li>
+                        </ExcerptWrapUl>
+                    </PostListDiv>
                 ))}
                 <PrevNextUl>
                     {!isFirst && (
@@ -143,7 +133,6 @@ const BlogPage = props => {
                                 color: prevPage
                                     ? 'color: rgb(47, 0, 0);'
                                     : 'color: rgb(47, 0, 0)',
-                                boxShadow: 'none',
                                 letterSpacing: '0.07em',
                                 marginLeft: '0.25rem',
                             }}
@@ -160,7 +149,6 @@ const BlogPage = props => {
                                 color: nextPage
                                     ? 'color: rgb(47, 0, 0);'
                                     : 'color: rgb(47, 0, 0)',
-                                boxShadow: 'none',
                                 letterSpacing: '0.07em',
                                 marginLeft: '0.5rem',
                             }}

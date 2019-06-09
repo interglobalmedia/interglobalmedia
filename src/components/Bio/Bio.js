@@ -15,13 +15,6 @@ const BioDiv = styled.div`
     display: flex;
     margin-bottom: rhythm(2.5);
     color: rgba(88, 86, 86, 1);
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
     & strong {
         color: rgb(47, 0, 0);
     }
@@ -55,6 +48,8 @@ function Bio() {
                             <a
                                 href={`https://twitter.com/${social.twitter}`}
                                 title={`visit this Twitter link to follow Maria`}
+                                target="_new"
+                                rel="noopener noreferrer"
                             >
                                 You should follow her on Twitter
                             </a>
@@ -63,6 +58,7 @@ function Bio() {
                                 href="https://www.mariadcampbell.com"
                                 title={`visit this link to Maria\'s developer blog to read her posts there`}
                                 target="_new"
+                                rel="noopener noreferrer"
                             >
                                 mariadcampbell.com
                             </a>{' '}

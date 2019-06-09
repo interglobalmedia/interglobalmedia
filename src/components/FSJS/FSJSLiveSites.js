@@ -13,18 +13,10 @@ export const SiteWrapperDiv = styled.div`
     & li {
         list-style-type: none;
     }
-    & a {
-        box-shadow: none;
-        color: rgb(39, 74, 169);
-    }
-    & a:hover {
-        text-decoration: underline;
-    }
     @media (min-width: 800px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1.25%;
-        width: 100%;
         max-width: 1026px;
     }
 `
@@ -32,7 +24,10 @@ export const SiteWrapperDiv = styled.div`
 export const SiteLi = styled.li`
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto 1.5rem;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 `
 
 export const SpanStyle = styled.span`

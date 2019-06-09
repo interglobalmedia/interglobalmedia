@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
 import PropTypes from 'prop-types'
-import classes from './components/Search/Search.scss'
+// import classes from './components/Search/Search.scss'
 
 export default function HTML(props) {
     return (

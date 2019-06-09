@@ -12,8 +12,7 @@ import {
     H1Style,
     H2Style,
     ApproachDiv,
-    ApproachSpan,
-    IncludesSpan,
+    ApproachIncludesSpan,
 } from '../fsjs'
 
 const GitForNonDevsDiv = styled.div`
@@ -25,14 +24,6 @@ const GitForNonDevsDiv = styled.div`
 export const GFNDTagsDiv = styled.div`
     color: rgb(148, 75, 43);
     margin-bottom: 1rem;
-`
-
-export const ATagStyle = styled.a`
-    box-shadow: none;
-    color: rgb(39, 74, 169);
-    & :hover {
-        text-decoration: underline;
-    }
 `
 
 const GitForNonDevs = props => {
@@ -65,25 +56,27 @@ const GitForNonDevs = props => {
                     />
                     <H2Style>{gfnd.shortDescription}</H2Style>
                     <ApproachDiv>
-                        <ApproachSpan>background:</ApproachSpan>{' '}
+                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
                         {gfnd.background}
                     </ApproachDiv>
                     <ApproachDiv>
-                        <ApproachSpan>approach:</ApproachSpan> {gfnd.approach}
+                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                        {gfnd.approach}
                     </ApproachDiv>
                     <GFNDTagsDiv>
-                        <IncludesSpan>includes:</IncludesSpan> {gfnd.tags} and
-                        more
+                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                        {gfnd.tags} and more
                     </GFNDTagsDiv>
                     <ApproachDiv>
-                        <IncludesSpan>more info:</IncludesSpan>{' '}
-                        <ATagStyle
+                        <ApproachIncludesSpan>more info:</ApproachIncludesSpan>{' '}
+                        <a
                             href={gfnd.infoUrl}
                             title={`visit the Git Page on Wikipedia to learn more about Git`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             Git Page on Wikipedia
-                        </ATagStyle>
+                        </a>
                     </ApproachDiv>
                 </GitForNonDevsDiv>
             </WrapperDiv>

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import nodeChatData from '../../data/projects/node-chat'
 import {UsesSpan} from './FeaturedProjects'
 
@@ -18,6 +17,8 @@ const FeaturedProject1 = () => {
                                 title={`visit the ${
                                     nodeChatData.title
                                 } app live site to view on Heroku`}
+                                target="_new"
+                                rel="noopener noreferrer"
                             >
                                 {nodeChatData.title} app
                             </a>
@@ -25,11 +26,10 @@ const FeaturedProject1 = () => {
                         <Image
                             fluid={data.imageOne.childImageSharp.fluid}
                             alt={nodeChatData.title}
+                            style={{marginBottom: '1.5rem'}}
                         />
-                        <br />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {nodeChatData.tagNames}
-                        <br />
                         <br />
                         <Link
                             state={nodeChatData}

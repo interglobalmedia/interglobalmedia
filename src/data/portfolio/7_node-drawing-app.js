@@ -2,7 +2,7 @@ import nodeDrawingApp from '../../images/projects/node-collaborative-drawing-app
 
 const nodeDrawingData = {
     id: 7,
-    title: 'Node Collaborative Drawing App',
+    title: 'Node Collaborative Drawing',
     repository:
         'https://github.com/interglobalmedia/node-collaborative-drawing-app',
     website: 'https://node-collaborative-drawing-app.herokuapp.com/',
@@ -23,6 +23,7 @@ const nodeDrawingData = {
         ', ',
         'collaboration',
     ],
+    more: 'https://github.com/interglobalmedia/node-collaborative-drawing-app',
 }
 
 export default nodeDrawingData

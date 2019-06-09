@@ -1,7 +1,6 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from '@emotion/styled'
 import fsjsLiveSite1Data from '../../data/fsjs-live-sites/fsjs-live-site-1'
 import {SiteLi, SpanStyle} from './FSJSLiveSites'
 
@@ -19,8 +18,9 @@ const FSJSLiveSite1 = () => {
                                 fsjsLiveSite1Data.projectName
                             } live site to view on Heroku`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
-                            {fsjsLiveSite1Data.projectName} live site
+                            {fsjsLiveSite1Data.projectName}
                         </a>
                         <br />
                         <br />
@@ -38,6 +38,7 @@ const FSJSLiveSite1 = () => {
                                 fsjsLiveSite1Data.projectName
                             } repository to view on Github`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             {fsjsLiveSite1Data.projectName} on github
                         </a>

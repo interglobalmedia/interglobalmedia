@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-
-const EmailStyle = styled.a`
-    font-weight: 400;
-    & :hover {
-        text-decoration: underline;
-    }
-`
+import {ContributeStyle} from '../Contribute/Contribute'
 
 const Email = () => {
     return [
@@ -18,9 +12,9 @@ const Email = () => {
     ].map(email => {
         return (
             <li key={email.id}>
-                <EmailStyle href={email.link} title={`email us`}>
+                <ContributeStyle href={email.link} title={`email us`}>
                     {email.text}
-                </EmailStyle>
+                </ContributeStyle>
             </li>
         )
     })

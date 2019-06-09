@@ -12,20 +12,12 @@ import {
     H1Style,
     H2Style,
     ApproachDiv,
-    ApproachSpan,
-    IncludesSpan,
+    ApproachIncludesSpan,
+    ServiceDiv,
 } from '../fsjs'
 
-import {ATagStyle} from '../git-for-non-devs'
-
-const CLIDiv = styled.div`
-    & img {
-        width: 100%;
-    }
-`
-
-const CLIApproachDiv = styled.div`
-    width: 100 %;
+const CLIATagDiv = styled.div`
+    width: 100%;
     margin: 0 auto 3rem;
     max-width: 1026px;
     color: rgb(88, 86, 86);
@@ -48,7 +40,7 @@ const CLI = props => {
                     </Link>
                 </BackDiv>
                 <H1Style>{cli.title}</H1Style>
-                <CLIDiv>
+                <ServiceDiv>
                     <Img
                         fluid={props.data.cliImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
@@ -56,48 +48,53 @@ const CLI = props => {
                     />
                     <H2Style>{cli.shortDescription}</H2Style>
                     <ApproachDiv>
-                        <ApproachSpan>background:</ApproachSpan>{' '}
+                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
                         {cli.background}
                     </ApproachDiv>
                     <ApproachDiv>
-                        <ApproachSpan>approach:</ApproachSpan> {cli.approach}
+                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                        {cli.approach}
                     </ApproachDiv>
-                    <CLIApproachDiv>
-                        <IncludesSpan>more info:</IncludesSpan>{' '}
-                        <ATagStyle
+                    <CLIATagDiv>
+                        <ApproachIncludesSpan>more info:</ApproachIncludesSpan>{' '}
+                        <a
                             href={cli.infoUrl1}
                             title={`visit the Command Line Interface page on Wikipedia to learn more about the Command Line Interface`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             Command Line Interface on Wikipedia
-                        </ATagStyle>
+                        </a>
                         ,{' '}
-                        <ATagStyle
+                        <a
                             href={cli.infoUrl2}
                             title={`visit the Refreshable Braille Display page on Wikipedia to learn more about the Refreshable Braille Display`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             Refreshable Braille Display on Wikipedia
-                        </ATagStyle>
+                        </a>
                         ,{' '}
-                        <ATagStyle
+                        <a
                             href={cli.infoUrl3}
                             title={`visit the Shell Computing page on Wikipedia to learn more about Shell Computing`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             Shell Computing On Wikipedia
-                        </ATagStyle>
+                        </a>
                         ,{' '}
-                        <ATagStyle
+                        <a
                             href={cli.infoUrl4}
                             title={`visit the Advantages and Disadvantages of the Command Line Interface thread on Quora to learn more about the Command Line Interface`}
                             target="_new"
+                            rel="noopener noreferrer"
                         >
                             What are the advantages and disadvantages of Command
                             Line Interface? on Quora
-                        </ATagStyle>
-                    </CLIApproachDiv>
-                </CLIDiv>
+                        </a>
+                    </CLIATagDiv>
+                </ServiceDiv>
             </WrapperDiv>
         </Layout>
     )
