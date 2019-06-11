@@ -10,7 +10,7 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
-import nodeChatData from '../../data/projects/node-chat'
+import chattrboxData from '../../data/portfolio/6_node-chat-app'
 class PortfolioView6 extends Component {
     render() {
         const {data} = this.props
@@ -21,15 +21,18 @@ class PortfolioView6 extends Component {
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
                     <title>{`${
-                        nodeChatData.title
+                        chattrboxData.title
                     } | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={nodeChatData.repository} />
+                    <meta
+                        name="repository"
+                        content={chattrboxData.repository}
+                    />
                     <meta
                         name="description"
-                        content={nodeChatData.shortDescription}
+                        content={chattrboxData.shortDescription}
                     />
-                    <meta name="website" content={nodeChatData.website} />
-                    <meta name="more" content={nodeChatData.more} />
+                    <meta name="website" content={chattrboxData.website} />
+                    <meta name="more" content={chattrboxData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -41,57 +44,57 @@ class PortfolioView6 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {nodeChatData.title}
+                        {chattrboxData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageSix.childImageSharp.fluid}
-                        alt={nodeChatData.title}
+                        alt={chattrboxData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {nodeChatData.shortDescription}
+                        {chattrboxData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={nodeChatData.more}
+                                href={chattrboxData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
                                 title={`visit the link to the ${
-                                    nodeChatData.title
+                                    chattrboxData.title
                                 } write up on the ${
-                                    nodeChatData.title
+                                    chattrboxData.title
                                 } Github repository README.md to read more`}
                             >
-                                Read More About {nodeChatData.title}
+                                Read More About {chattrboxData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={nodeChatData.repository}
+                                href={chattrboxData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
                                 title={`visit link to view ${
-                                    nodeChatData.title
+                                    chattrboxData.title
                                 } app source code on Github to learn more`}
                             >
-                                {nodeChatData.title} Source Code
+                                {chattrboxData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={nodeChatData.website}
+                                href={chattrboxData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
                                 title={`visit link to the ${
-                                    nodeChatData.title
+                                    chattrboxData.title
                                 } live site to view more`}
                             >
-                                {nodeChatData.title} Live Site
+                                {chattrboxData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>
