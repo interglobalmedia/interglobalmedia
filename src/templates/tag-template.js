@@ -1,21 +1,21 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import {
     TagCategoryWrapper,
     TagsCategoriesH1,
     TagsCategoriesDiv,
 } from './category-template'
+import SEO from '../components/Seo/Seo'
 
 const Tags = props => {
     const posts = props.data.allMarkdownRemark.edges
     const {tag} = props.pageContext
+    const title = props.data.site.siteMetadata.title
+    const keywords = props.data.site.siteMetadata.keywords
     return (
         <Layout>
-            <Helmet>
-                <title>Tags Page</title>
-            </Helmet>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <TagCategoryWrapper>
                 <TagsCategoriesH1>{`posts in: ${tag}`}</TagsCategoriesH1>
                 <TagsCategoriesDiv>
