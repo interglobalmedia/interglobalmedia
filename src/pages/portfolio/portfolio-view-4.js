@@ -11,20 +11,9 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import catWhispererData from '../../data/portfolio/4_cat-whisperer-app'
 class PortfolioView4 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -32,11 +21,19 @@ class PortfolioView4 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        catWhispererData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={catWhispererData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={catWhispererData.shortDescription}
+                    />
+                    <meta name="website" content={catWhispererData.website} />
+                    <meta name="more" content={catWhispererData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -48,49 +45,55 @@ class PortfolioView4 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {catWhispererData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageFour.childImageSharp.fluid}
-                        alt={title}
+                        alt={catWhispererData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {catWhispererData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={catWhispererData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${
+                                    catWhispererData.title
+                                } write up on our portfolio site built with React to read more`}
                             >
-                                Read More About {title}
+                                Read More About {catWhispererData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={catWhispererData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${title} source code on Github to learn more`}
+                                title={`visit the link to the ${
+                                    catWhispererData.title
+                                } source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {catWhispererData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={catWhispererData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${title} live site to view more`}
+                                title={`visit the ${
+                                    catWhispererData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {catWhispererData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>
