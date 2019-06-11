@@ -30,6 +30,15 @@ const FeaturedProject2 = () => {
                         />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {speechToTextData.tagNames}
+                        <br />
+                        <Link
+                            to="/portfolio/portfolio-view-1"
+                            title={`visit the ${
+                                speechToTextData.title
+                            } app main page to learn more`}
+                        >
+                            learn more
+                        </Link>
                     </li>
                 )
             }}
