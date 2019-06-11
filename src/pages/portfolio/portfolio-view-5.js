@@ -11,21 +11,10 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import trumpTalksData from '../../data/portfolio/5_trump-talks-trash'
 
 class PortfolioView5 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -33,11 +22,19 @@ class PortfolioView5 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        trumpTalksData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={trumpTalksData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={trumpTalksData.shortDescription}
+                    />
+                    <meta name="website" content={trumpTalksData.website} />
+                    <meta name="more" content={trumpTalksData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -49,49 +46,55 @@ class PortfolioView5 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {trumpTalksData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageFive.childImageSharp.fluid}
-                        alt={title}
+                        alt={trumpTalksData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {trumpTalksData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={trumpTalksData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${
+                                    trumpTalksData.title
+                                } write up on our portfolio site built with React to read more`}
                             >
-                                Read More About {title}
+                                Read More About {trumpTalksData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={trumpTalksData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${title} source code on Github to learn more`}
+                                title={`visit the link to the ${
+                                    trumpTalksData.title
+                                } source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {trumpTalksData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={trumpTalksData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the link to the ${title} live site to view more`}
+                                title={`visit the link to the ${
+                                    trumpTalksData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {trumpTalksData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>

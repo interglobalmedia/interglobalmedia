@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Helmet} from 'react-helmet'
 import {Link, graphql} from 'gatsby'
-import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import {
@@ -11,20 +10,9 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import chattrboxData from '../../data/portfolio/6_node-chat-app'
 class PortfolioView6 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -32,11 +20,19 @@ class PortfolioView6 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        chattrboxData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={chattrboxData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={chattrboxData.shortDescription}
+                    />
+                    <meta name="website" content={chattrboxData.website} />
+                    <meta name="more" content={chattrboxData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -48,49 +44,57 @@ class PortfolioView6 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {chattrboxData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageSix.childImageSharp.fluid}
-                        alt={title}
+                        alt={chattrboxData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {chattrboxData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={chattrboxData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on the ${title} Github repository README.md to read more`}
+                                title={`visit the link to the ${
+                                    chattrboxData.title
+                                } write up on the ${
+                                    chattrboxData.title
+                                } Github repository README.md to read more`}
                             >
-                                Read More About {title}
+                                Read More About {chattrboxData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={chattrboxData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit link to view ${title} app source code on Github to learn more`}
+                                title={`visit link to view ${
+                                    chattrboxData.title
+                                } app source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {chattrboxData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={chattrboxData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit link to the ${title} live site to view more`}
+                                title={`visit link to the ${
+                                    chattrboxData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {chattrboxData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>

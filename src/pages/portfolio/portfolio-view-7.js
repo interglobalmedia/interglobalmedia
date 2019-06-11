@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Helmet} from 'react-helmet'
 import {Link, graphql} from 'gatsby'
-import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import {
@@ -11,20 +10,9 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 class PortfolioView7 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -32,11 +20,19 @@ class PortfolioView7 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter - Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        nodeDrawingData.title
+                    } | Inter - Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={nodeDrawingData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={nodeDrawingData.shortDescription}
+                    />
+                    <meta name="website" content={nodeDrawingData.website} />
+                    <meta name="more" content={nodeDrawingData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -48,49 +44,57 @@ class PortfolioView7 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {nodeDrawingData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageSeven.childImageSharp.fluid}
-                        alt={title}
+                        alt={nodeDrawingData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {nodeDrawingData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={nodeDrawingData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on the ${title} Github repository README.md to read more`}
+                                title={`visit the link to the ${
+                                    nodeDrawingData.title
+                                } write up on the ${
+                                    nodeDrawingData.title
+                                } Github repository README.md to read more`}
                             >
-                                Read More About {title}
+                                Read More About {nodeDrawingData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={nodeDrawingData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit link to view ${title} app source code on Github to learn more`}
+                                title={`visit link to view ${
+                                    nodeDrawingData.title
+                                } app source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {nodeDrawingData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={nodeDrawingData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit link to view ${title} app live site to view more`}
+                                title={`visit link to view ${
+                                    nodeDrawingData.title
+                                } app live site to view more`}
                             >
-                                {title} Live Site
+                                {nodeDrawingData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>

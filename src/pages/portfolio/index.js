@@ -103,7 +103,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-1'}
-                            state={speechToTextData}
                             title={`visit the link to the ${
                                 speechToTextData.title
                             } app page to learn more`}
@@ -124,7 +123,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-1'}
-                            state={speechToTextData}
                             title={`visit the link to the ${
                                 speechToTextData.title
                             } app page to learn more`}
@@ -137,7 +135,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-2'}
-                            state={theGrooveData}
                             title={`visit the link to the ${
                                 theGrooveData.title
                             } app page to learn more`}
@@ -171,7 +168,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-3'}
-                            state={rockinSynthData}
                             title={`visit the link to the ${
                                 rockinSynthData.title
                             } app page to learn more`}
@@ -192,7 +188,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-3'}
-                            state={rockinSynthData}
                             title={`visit the link to the ${
                                 rockinSynthData.title
                             } app page to learn more`}
@@ -205,7 +200,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-4'}
-                            state={catWhispererData}
                             title={`visit the link to the ${
                                 catWhispererData.title
                             } app page to learn more`}
@@ -226,7 +220,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-4'}
-                            state={catWhispererData}
                             title={`visit the link to the ${
                                 catWhispererData.title
                             } app page to learn more`}
@@ -239,7 +232,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-5'}
-                            state={trumpTalksData}
                             title={`visit the link to the ${
                                 trumpTalksData.title
                             } app page to learn more`}
@@ -260,7 +252,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-5'}
-                            state={trumpTalksData}
                             title={`visit the link to the ${
                                 trumpTalksData.title
                             } app page to learn more`}
@@ -273,7 +264,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-6'}
-                            state={chattrboxData}
                             title={`visit the link to the ${
                                 chattrboxData.title
                             } app page to learn more`}
@@ -294,7 +284,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-6'}
-                            state={chattrboxData}
                             title={`visit the link to the ${
                                 chattrboxData.title
                             } app page to learn more`}
@@ -307,7 +296,6 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi>
                         <Link
                             to={'/portfolio/portfolio-view-7'}
-                            state={nodeDrawingData}
                             title={`visit the link to the ${
                                 nodeDrawingData.title
                             } app page to learn more`}
@@ -328,7 +316,6 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-7'}
-                            state={nodeDrawingData}
                             title={`visit the link to the ${
                                 nodeDrawingData.title
                             } app page to learn more`}
