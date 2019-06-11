@@ -51,7 +51,7 @@ const speechToTextData = {
     liveSiteUrl: 'https://interglobalmedia.github.io/speech-to-text-app/',
     image: speechToText,
     title: 'Speech to Text',
-    more: '/portfolio/portfolio-view',
+    more: '/portfolio/portfolio-view-1',
 }
 
 export default speechToTextData

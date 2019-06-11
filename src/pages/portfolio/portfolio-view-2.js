@@ -11,21 +11,10 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import theGrooveData from '../../data/portfolio/2_welcome-to-the-groove'
 
 class PortfolioView2 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -33,11 +22,19 @@ class PortfolioView2 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        theGrooveData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={theGrooveData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={theGrooveData.shortDescription}
+                    />
+                    <meta name="website" content={theGrooveData.website} />
+                    <meta name="more" content={theGrooveData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -49,49 +46,55 @@ class PortfolioView2 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {theGrooveData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageTwo.childImageSharp.fluid}
-                        alt={title}
+                        alt={theGrooveData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {theGrooveData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={theGrooveData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${
+                                    theGrooveData.title
+                                } write up on our portfolio site built with React to read more`}
                             >
-                                Read More About {title}
+                                Read More About {theGrooveData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={theGrooveData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${title} source code on Github to learn more`}
+                                title={`visit the link to the ${
+                                    theGrooveData.title
+                                } source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {theGrooveData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={theGrooveData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${title} live site to view more`}
+                                title={`visit the ${
+                                    theGrooveData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {theGrooveData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>
