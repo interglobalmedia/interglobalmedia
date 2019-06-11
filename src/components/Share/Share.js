@@ -60,6 +60,7 @@ const Share = props => {
                 <a
                     href={twitter}
                     target="_new"
+                    rel="noopener noreferrer"
                     title={`if you like this post share it on Twitter with your friends!`}
                 >
                     <FontAwesomeIcon
@@ -78,6 +79,7 @@ const Share = props => {
                 <a
                     href={linkedin}
                     target="_new"
+                    rel="noopener noreferrer"
                     title={`if you like this post share it on Linkedin with your connections!`}
                 >
                     <FontAwesomeIcon
