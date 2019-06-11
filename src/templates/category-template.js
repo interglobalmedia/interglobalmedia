@@ -76,5 +76,11 @@ export const categoriesQuery = graphql`
                 }
             }
         }
+        site {
+            siteMetadata {
+                title
+                keywords
+            }
+        }
     }
 `
