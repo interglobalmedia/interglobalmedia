@@ -32,7 +32,6 @@ const FeaturedProject3 = () => {
                         {nodeDrawingData.tagNames}
                         <br />
                         <Link
-                            state={nodeDrawingData}
                             to="/portfolio/portfolio-view-7"
                             title={`visit the ${
                                 nodeDrawingData.title

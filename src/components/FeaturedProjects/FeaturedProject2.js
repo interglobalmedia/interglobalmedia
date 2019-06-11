@@ -32,7 +32,6 @@ const FeaturedProject2 = () => {
                         {speechToTextData.tagNames}
                         <br />
                         <Link
-                            state={speechToTextData}
                             to="/portfolio/portfolio-view-1"
                             title={`visit the ${
                                 speechToTextData.title

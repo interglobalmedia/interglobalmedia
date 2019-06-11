@@ -11,21 +11,10 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import rockinSynthData from '../../data/portfolio/3_rockin-synth'
 
 class PortfolioView3 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -33,11 +22,19 @@ class PortfolioView3 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        rockinSynthData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={rockinSynthData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={rockinSynthData.shortDescription}
+                    />
+                    <meta name="website" content={rockinSynthData.website} />
+                    <meta name="more" content={rockinSynthData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -49,49 +46,55 @@ class PortfolioView3 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {rockinSynthData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageThree.childImageSharp.fluid}
-                        alt={title}
+                        alt={rockinSynthData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {rockinSynthData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={rockinSynthData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${
+                                    rockinSynthData.title
+                                } write up on our portfolio site built with React to read more`}
                             >
-                                Read More About {title}
+                                Read More About {rockinSynthData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={rockinSynthData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${title} source code on Github to learn more`}
+                                title={`visit the link to the ${
+                                    rockinSynthData.title
+                                } source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {rockinSynthData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={rockinSynthData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${title} live site to view more`}
+                                title={`visit the ${
+                                    rockinSynthData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {rockinSynthData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>

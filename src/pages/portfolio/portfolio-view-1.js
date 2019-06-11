@@ -11,21 +11,10 @@ import {
     ShortDescDiv,
     AnchorsUl,
 } from './index.js'
+import speechToTextData from '../../data/portfolio/1_speech-to-text'
 
 class PortfolioView1 extends Component {
     render() {
-        const passedPortfolioData = this.props.location.state || {
-            title: 'default title',
-            shortDescription: 'default description',
-            website: 'https://via.placeholder.com',
-        }
-        const {
-            title,
-            repository,
-            shortDescription,
-            website,
-            more,
-        } = passedPortfolioData
         const {data} = this.props
         const keywords = data.site.siteMetadata.keywords
         return (
@@ -33,11 +22,19 @@ class PortfolioView1 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${title} | Inter-Global Media Network, Inc.`}</title>
-                    <meta name="repository" content={repository} />
-                    <meta name="description" content={shortDescription} />
-                    <meta name="website" content={website} />
-                    <meta name="more" content={more} />
+                    <title>{`${
+                        speechToTextData.title
+                    } | Inter-Global Media Network, Inc.`}</title>
+                    <meta
+                        name="repository"
+                        content={speechToTextData.repository}
+                    />
+                    <meta
+                        name="description"
+                        content={speechToTextData.shortDescription}
+                    />
+                    <meta name="website" content={speechToTextData.website} />
+                    <meta name="more" content={speechToTextData.more} />
                 </Helmet>
                 <PortfolioViewDiv>
                     <PortfolioBackDiv>
@@ -49,49 +46,55 @@ class PortfolioView1 extends Component {
                         </Link>
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style data-testid="project-title">
-                        {title}
+                        {speechToTextData.title}
                     </PortfolioViewH1Style>
                     <Img
                         data-testid="project-image"
                         fluid={data.portfolioImageOne.childImageSharp.fluid}
-                        alt={title}
+                        alt={speechToTextData.title}
                     />
                     <br />
                     <ShortDescDiv data-testid="project-shortDesc">
-                        {shortDescription}
+                        {speechToTextData.shortDescription}
                     </ShortDescDiv>
                     <AnchorsUl>
                         <li>
                             <a
-                                href={more}
+                                href={speechToTextData.more}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${title} write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${
+                                    speechToTextData.title
+                                } write up on our portfolio site built with React to read more`}
                             >
-                                Read More About {title}
+                                Read More About {speechToTextData.title}
                             </a>
                         </li>
                         <li>
                             <a
-                                href={repository}
+                                href={speechToTextData.repository}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${title} source code on Github to learn more`}
+                                title={`visit the link to the ${
+                                    speechToTextData.title
+                                } source code on Github to learn more`}
                             >
-                                {title} Source Code
+                                {speechToTextData.title} Source Code
                             </a>
                         </li>
                         <li>
                             <a
-                                href={website}
+                                href={speechToTextData.website}
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${title} live site to view more`}
+                                title={`visit the ${
+                                    speechToTextData.title
+                                } live site to view more`}
                             >
-                                {title} Live Site
+                                {speechToTextData.title} Live Site
                             </a>
                         </li>
                     </AnchorsUl>

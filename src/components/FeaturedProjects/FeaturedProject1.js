@@ -32,7 +32,6 @@ const FeaturedProject1 = () => {
                         {nodeChatData.tagNames}
                         <br />
                         <Link
-                            state={nodeChatData}
                             to="/portfolio/portfolio-view-6"
                             title={`visit the ${
                                 nodeChatData.title
