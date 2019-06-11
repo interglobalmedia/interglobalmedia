@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import styled from '@emotion/styled'
+import SEO from '../components/Seo/Seo'
 
 export const TagCategoryWrapper = styled.div`
     width: 90%;
@@ -32,11 +32,11 @@ export const TagsCategoriesDiv = styled.div`
 const Categories = props => {
     const posts = props.data.allMarkdownRemark.edges
     const {category} = props.pageContext
+    const title = props.data.site.siteMetadata.title
+    const keywords = props.data.site.siteMetadata.keywords
     return (
         <Layout>
-            <Helmet>
-                <title>Categories Page</title>
-            </Helmet>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <TagCategoryWrapper>
                 <TagsCategoriesH1>{`posts in: ${category}`}</TagsCategoriesH1>
                 <TagsCategoriesDiv>
@@ -74,6 +74,12 @@ export const categoriesQuery = graphql`
                         categories
                     }
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
+                keywords
             }
         }
     }
