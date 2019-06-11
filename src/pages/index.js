@@ -16,6 +16,7 @@ import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
 import {SiteCredsDiv, AnchorDiv} from '../components/Footer/Footer'
+import TipCarousel from '../components/TipCarousel/TipCarousel'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -65,7 +66,11 @@ const AppsDiv = styled.div`
 `
 
 const PostsDiv = styled.div`
-    margin: 3rem auto 6rem;
+    margin: 3rem auto;
+`
+
+const CarouselDiv = styled.div`
+    margin: 0 3rem;
 `
 
 const IndexPage = props => {
@@ -110,6 +115,9 @@ const IndexPage = props => {
                     <PostsDiv>
                         <FeaturedPosts />
                     </PostsDiv>
+                    <CarouselDiv>
+                        <TipCarousel />
+                    </CarouselDiv>
                 </div>
                 <IndexFooterStyle>
                     <AnchorDiv>
