@@ -3,21 +3,16 @@ import {Link, graphql} from 'gatsby'
 import Layout from '../../components/Layout/Layout'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTag} from '@fortawesome/free-solid-svg-icons'
-import {Helmet} from 'react-helmet'
 import {TagsCategoriesDiv} from '../categories'
+import SEO from '../../components/Seo/Seo'
 
-function TagsPage(props) {
+const TagsPage = props => {
     const data = props.data.allMarkdownRemark.group
+    const title = props.data.site.siteMetadata.title
+    const keywords = props.data.site.siteMetadata.keywords
     return (
         <Layout>
-            <Helmet>
-                <meta charset="utf-8" />
-                <title>Tags Page</title>
-                <Link
-                    rel="canonical"
-                    href="https://www.docscorneronline.com/tags/tags"
-                />
-            </Helmet>
+            <SEO location={props.location} title={title} keywords={keywords} />
             <TagsCategoriesDiv>
                 {data.map((tag, i) => (
                     <Link to={`/tags/${tag.fieldValue}`} key={i}>
