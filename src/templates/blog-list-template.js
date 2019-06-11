@@ -196,6 +196,7 @@ export const blogListQuery = graphql`
         site {
             siteMetadata {
                 title
+                keywords
             }
         }
     }
