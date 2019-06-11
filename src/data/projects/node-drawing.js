@@ -21,6 +21,7 @@ const nodeDrawingData = {
     liveSiteUrl: 'https://node-collaborative-drawing-app.herokuapp.com/',
     image: nodeDrawingApp,
     title: 'Node Drawing',
+    more: '/portfolio/portfolio-view-7',
 }
 
 export default nodeDrawingData

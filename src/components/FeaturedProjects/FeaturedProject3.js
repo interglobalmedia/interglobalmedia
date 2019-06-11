@@ -30,16 +30,6 @@ const FeaturedProject3 = () => {
                         />
                         <UsesSpan>application uses:</UsesSpan>{' '}
                         {nodeDrawingData.tagNames}
-                        <br />
-                        <Link
-                            state={nodeDrawingData}
-                            to="/portfolio/portfolio-view-7"
-                            title={`visit the ${
-                                nodeDrawingData.title
-                            } app main page to learn more`}
-                        >
-                            learn more
-                        </Link>
                     </li>
                 )
             }}
