@@ -21,6 +21,10 @@ const TipDiv = styled.div`
     }
 `
 
+const DevStrong = styled.strong`
+    color: rgb(25, 13, 8);
+`
+
 const TipCarousel = () => {
     return (
         <div style={{margin: '0 auto 6rem'}}>
@@ -28,6 +32,7 @@ const TipCarousel = () => {
                 <TipDiv>
                     <h2>Tip of the Day #1</h2>
                     <p>
+                        <DevStrong>GatsbyJS Devs:</DevStrong>{' '}
                         <strong>
                             <i>Don't use</i>
                         </strong>{' '}
@@ -47,6 +52,19 @@ const TipCarousel = () => {
                             <i>kill</i>
                         </strong>{' '}
                         you in <strong>Search</strong>.
+                    </p>
+                </TipDiv>
+                <TipDiv>
+                    <h2>Tip of the Day #2</h2>
+                    <p>
+                        If you are{' '}
+                        <strong>
+                            <i>offering a course</i>
+                        </strong>
+                        , make sure that it is <strong>updated</strong> to the{' '}
+                        <strong>latest</strong> of whatever. Don't just create
+                        it and then forget about it while still offering it (for
+                        a hefty price).
                     </p>
                 </TipDiv>
             </Carousel>
