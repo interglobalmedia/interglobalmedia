@@ -83,6 +83,8 @@ module.exports = {
     },
     pathPrefix: '/',
     plugins: [
+        `gatsby-plugin-twitter`,
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-emotion`,
         {
