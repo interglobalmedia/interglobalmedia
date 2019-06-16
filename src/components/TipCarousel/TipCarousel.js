@@ -92,7 +92,7 @@ const TipCarousel = () => {
                         <strong>
                             are <i>not</i>
                         </strong>{' '}
-                        <srong>completely compatible</srong> with{' '}
+                        <strong>completely compatible</strong> with{' '}
                         <strong>GatsbyJS 2</strong>. A source-map{' '}
                         <strong>
                             <i>hack</i>
