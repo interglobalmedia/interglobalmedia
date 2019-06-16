@@ -189,6 +189,7 @@ const IndexPage = props => {
                                     href="https://cookiesandyou.com/"
                                     target="_new"
                                     rel="noopener noreferrer"
+                                    style={{color: 'rgb(200,32,32)'}}
                                 >
                                     Learn more
                                 </a>
