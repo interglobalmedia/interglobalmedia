@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Helmet} from 'react-helmet'
 import {Link, graphql} from 'gatsby'
-import styled from '@emotion/styled'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
 import {

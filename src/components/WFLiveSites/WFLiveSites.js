@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 import WFLiveSite1 from '../WFLiveSites/WFLiveSite1'
 import WFLiveSite2 from '../WFLiveSites/WFLiveSite2'
 import WFLiveSite3 from '../WFLiveSites/WFLiveSite3'
