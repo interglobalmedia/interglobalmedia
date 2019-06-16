@@ -67,6 +67,39 @@ const TipCarousel = () => {
                         a hefty price).
                     </p>
                 </TipDiv>
+                <TipDiv>
+                    <h2>Tip of the Day #3</h2>
+                    <p>
+                        <strong>Gatsby Devs:</strong> don't use{' '}
+                        <strong>
+                            <i>@emotion/core,</i>
+                        </strong>{' '}
+                        <strong>
+                            <i>@emotion/styled 10+</i>
+                        </strong>{' '}
+                        with <strong>GatsbyJs 2</strong>. Too many breaking
+                        changes that only complicate matters and also
+                        incompatible out of the box. Use{' '}
+                        <strong>styled-components</strong> instead. However,{' '}
+                        <strong>styled-components 4+</strong>{' '}
+                        <strong>
+                            <i>not</i>
+                        </strong>{' '}
+                        <srong>completely compatible</srong> with{' '}
+                        <strong>GatsbyJS 2</strong> either. A source-map{' '}
+                        <strong>
+                            <i>hack</i>
+                        </strong>{' '}
+                        is needed in <strong>gatsby-node.js</strong>.{' '}
+                        <strong>
+                            <i>Not</i>
+                        </strong>{' '}
+                        completely <strong>cross-browser compatible</strong>{' '}
+                        either. <strong>HMR</strong>(or perhaps source maps, or
+                        both) does not seem to work in{' '}
+                        <strong>Google Chrome</strong>.
+                    </p>
+                </TipDiv>
             </Carousel>
         </div>
     )
