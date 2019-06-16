@@ -11,13 +11,13 @@ const TipDiv = styled.div`
     background: rgba(235, 181, 135, 0.7);
     padding: 1.5rem;
     border: 6px solid rgba(235, 181, 135, 0.7);
-    & h2 {
+    & h2,
+    & p {
         color: rgb(25, 13, 8);
     }
     & p {
         margin-top: 0.5rem;
         margin-bottom: 1.75rem;
-        color: #a7138a;
     }
 `
 

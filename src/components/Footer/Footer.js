@@ -21,10 +21,9 @@ export const FooterStyle = styled.footer`
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: -1.5rem;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto -1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

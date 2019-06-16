@@ -20,7 +20,7 @@ export const TagsCategoriesDiv = styled.div`
         color: rgb(131, 70, 68);
         width: 100%;
         padding: 1rem;
-        tex-decoration: none;
+        text-decoration: none;
         font-size: 1.1rem;
         letter-spacing: 0.07em;
         border-bottom: 1px solid rgb(131, 70, 68);
