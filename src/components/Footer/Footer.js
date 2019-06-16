@@ -279,7 +279,9 @@ const Footer = () => {
                             href="https://cookiesandyou.com/"
                             target="_new"
                             rel="noopener noreferrer"
-                            style={{color: 'rgb(200,32,32)'}}
+                            style={{
+                                color: 'rgb(255,187,187)',
+                            }}
                         >
                             Learn more
                         </a>
