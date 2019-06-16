@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 import Search from '../components/Search/Search'
 import SEO from '../components/Seo/Seo'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'

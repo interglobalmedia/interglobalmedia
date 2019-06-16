@@ -3,7 +3,7 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import {Carousel} from 'react-responsive-carousel'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 import Image from 'gatsby-image'
 import fullStackJS from '../../data/services/fsjs'
 import devWorkflows from '../../data/services/dev-workflows'

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Layout from '../../components/Layout/Layout'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 import Img from 'gatsby-image'
 import SEO from '../../components/Seo/Seo'
 import speechToTextData from '../../data/portfolio/1_speech-to-text'
