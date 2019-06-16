@@ -86,7 +86,9 @@ module.exports = {
         `gatsby-plugin-twitter`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-sass`,
-        `gatsby-plugin-styled-components`,
+        {
+            resolve: `gatsby-plugin-styled-components`,
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {

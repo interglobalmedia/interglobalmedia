@@ -21,7 +21,6 @@ export const FooterStyle = styled.footer`
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: -1.5rem;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -197,14 +196,22 @@ const Footer = () => {
             </ColumnsDiv>
             <AnchorDiv>
                 <ScrollUpButton
-                    style={{background: 'transparent', outline: 'none'}}
+                    style={{
+                        background: 'transparent',
+                        outline: 'none',
+                    }}
                 />
                 <Link
                     to="/contact"
                     style={{color: 'rgb(255, 165, 79)'}}
                     title={`visit the main Contact page to learn how to connect with us`}
                 >
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon
+                        icon={faEnvelope}
+                        style={{
+                            marginRight: '0.25rem',
+                        }}
+                    />
                     Contact
                 </Link>
                 <Link
@@ -212,7 +219,13 @@ const Footer = () => {
                     style={{color: 'rgb(255, 165, 79)'}}
                     title={`visit the Sitemap page to get an overview of the entire site`}
                 >
-                    <FontAwesomeIcon icon={faDirections} transform="flip-h" />
+                    <FontAwesomeIcon
+                        icon={faDirections}
+                        transform="flip-h"
+                        style={{
+                            marginRight: '0.25rem',
+                        }}
+                    />
                     Sitemap
                 </Link>
                 <a
@@ -220,7 +233,13 @@ const Footer = () => {
                     href="http://www.interglobalmedianetwork.com/rss.xml"
                     title={`visit the RSS Feed page to view or subscribe to our RSS Feed`}
                 >
-                    <FontAwesomeIcon icon={faRss} transform="flip-h" />
+                    <FontAwesomeIcon
+                        icon={faRss}
+                        transform="flip-h"
+                        style={{
+                            marginRight: '0.25rem',
+                        }}
+                    />
                     RSS
                 </a>
                 <br />

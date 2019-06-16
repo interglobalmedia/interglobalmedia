@@ -23,23 +23,6 @@ const Container = styled.div`
     width: 100%;
 `
 
-const IndexFooterStyle = styled.footer`
-    text-align: center;
-    padding-bottom: 0.7rem;
-    letter-spacing: 0.07em;
-    height: 30px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    & a {
-        margin-bottom: 3rem;
-    }
-`
-
 const H1Style = styled.h1`
     text-align: center;
     font-weight: 400;
@@ -71,6 +54,23 @@ const PostsDiv = styled.div`
 
 const CarouselDiv = styled.div`
     margin: 0 3rem;
+`
+
+const IndexFooterStyle = styled.footer`
+    text-align: center;
+    padding-bottom: 0.7rem;
+    letter-spacing: 0.07em;
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    & a {
+        margin-bottom: 3rem;
+    }
 `
 
 const IndexPage = props => {
@@ -128,7 +128,10 @@ const IndexPage = props => {
                             to="/contact"
                             title={`visit the main Contact page to learn how to connect with us`}
                         >
-                            <FontAwesomeIcon icon={faEnvelope} />
+                            <FontAwesomeIcon
+                                icon={faEnvelope}
+                                style={{marginRight: '0.25rem'}}
+                            />
                             Contact
                         </Link>
                         <Link
@@ -138,6 +141,7 @@ const IndexPage = props => {
                             <FontAwesomeIcon
                                 icon={faDirections}
                                 transform="flip-v flip-h"
+                                style={{marginRight: '0.25rem'}}
                             />
                             Sitemap
                         </Link>
@@ -147,7 +151,10 @@ const IndexPage = props => {
                             target="_new"
                             rel="noopener noreferrer"
                         >
-                            <FontAwesomeIcon icon={faRss} />
+                            <FontAwesomeIcon
+                                icon={faRss}
+                                style={{marginRight: '0.25rem'}}
+                            />
                             RSS
                         </a>
                         <br />
