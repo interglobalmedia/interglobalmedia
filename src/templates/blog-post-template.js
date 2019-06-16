@@ -13,9 +13,9 @@ import Share from '../components/Share/Share'
 import '../components/Layout/Layout.scss'
 
 const PostWrapperDiv = styled.div`
-  margin; 0 auto;
-  color: rgb(47,0,0);
-  text-align: left;
+    margin: 0 auto;
+    color: rgb(47, 0, 0);
+    text-align: left;
 `
 
 const PostMetaDiv = styled.div`
@@ -47,7 +47,7 @@ const DangerousHTMLDiv = styled.div`
         margin: 0 auto;
     }
     & p {
-        color: rgb(47,0,0);
+        color: rgb(47, 0, 0);
     }
     & blockquote p {
         color: rebeccapurple;
@@ -57,7 +57,7 @@ const DangerousHTMLDiv = styled.div`
     }
     & ul li:before {
         color: rgb(47, 0, 0);
-        content: content: '▪ ';
+        content: '▪ ';
         left: -32px;
         position: absolute;
         text-align: right;
@@ -68,7 +68,7 @@ const DangerousHTMLDiv = styled.div`
         list-style-type: none;
         position: relative;
     }
-    & ul li:before  {
+    & ul li:before {
         content: '▪ ';
         color: rgb(47, 0, 0);
         display: inline-block;
@@ -109,7 +109,7 @@ export const TagCatInSpan = styled.span`
 `
 
 const CatDiv = styled.div`
-  margin-bottom 2rem;
+    margin-bottom: 2rem;
 `
 
 export const DiscussTwitter = styled.div`
