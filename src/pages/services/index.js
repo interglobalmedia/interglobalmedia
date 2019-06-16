@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {graphql} from 'gatsby'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 import get from 'lodash/get'
 import {Helmet} from 'react-helmet'
 import Layout from '../../components/Layout/Layout'

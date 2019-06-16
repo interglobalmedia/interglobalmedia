@@ -5,7 +5,7 @@ import {
     faFacebookF,
     faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const SocialUl = styled.ul`
     display: flex;

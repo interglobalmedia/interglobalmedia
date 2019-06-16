@@ -14,7 +14,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 export const FooterStyle = styled.footer`
     background: rgb(98, 22, 69);

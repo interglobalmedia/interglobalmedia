@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 import FeaturedProject1 from './FeaturedProject1'
 import FeaturedProject2 from './FeaturedProject2'
