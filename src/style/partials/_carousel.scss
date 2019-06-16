@@ -38,8 +38,8 @@
 }
 
 .carousel .control-prev.control-arrow {
-    left: 0;
     top: 0;
+    left: 0;
 }
 
 .carousel .control-prev.control-arrow:before {
@@ -59,6 +59,7 @@
 }
 
 .carousel .control-next.control-arrow {
+    top: 0;
     right: 0;
 }
 
