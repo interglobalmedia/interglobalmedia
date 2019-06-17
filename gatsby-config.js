@@ -88,6 +88,9 @@ module.exports = {
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-styled-components`,
+            options: {
+                pure: true,
+            },
         },
         {
             resolve: `gatsby-source-filesystem`,
