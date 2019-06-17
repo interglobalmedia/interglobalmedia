@@ -34,8 +34,8 @@ class PortfolioView6 extends Component {
                     <meta name="website" content={chattrboxData.website} />
                     <meta name="more" content={chattrboxData.more} />
                 </Helmet>
-                <PortfolioViewDiv>
-                    <PortfolioBackDiv>
+                <PortfolioViewDiv as="div">
+                    <PortfolioBackDiv as="div">
                         <Link
                             to="/portfolio"
                             title={`go back to main Portfolio page`}
@@ -43,7 +43,11 @@ class PortfolioView6 extends Component {
                             &larr; back
                         </Link>
                     </PortfolioBackDiv>
-                    <PortfolioViewH1Style data-testid="project-title">
+                    <PortfolioViewH1Style
+                        as="h1"
+                        as="h1"
+                        data-testid="project-title"
+                    >
                         {chattrboxData.title}
                     </PortfolioViewH1Style>
                     <Img
@@ -52,10 +56,10 @@ class PortfolioView6 extends Component {
                         alt={chattrboxData.title}
                     />
                     <br />
-                    <ShortDescDiv data-testid="project-shortDesc">
+                    <ShortDescDiv as="div" data-testid="project-shortDesc">
                         {chattrboxData.shortDescription}
                     </ShortDescDiv>
-                    <AnchorsUl>
+                    <AnchorsUl as="ul">
                         <li>
                             <a
                                 href={chattrboxData.more}

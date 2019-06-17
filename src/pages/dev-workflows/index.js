@@ -25,8 +25,8 @@ const DevWorkFlows = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <WrapperDiv>
-                <BackDiv>
+            <WrapperDiv as="div">
+                <BackDiv as="div">
                     <Link
                         to="/services"
                         title={`go back to the main Services page`}
@@ -34,7 +34,7 @@ const DevWorkFlows = props => {
                         &larr; back
                     </Link>
                 </BackDiv>
-                <H1Style>{devFlowStrats.title}</H1Style>
+                <H1Style as="h1">{devFlowStrats.title}</H1Style>
                 <ServiceDiv>
                     <Img
                         fluid={props.data.workflowImage.childImageSharp.fluid}

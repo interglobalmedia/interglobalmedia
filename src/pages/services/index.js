@@ -14,7 +14,7 @@ const ServicesWrapperDiv = styled.div`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: fit-content(40%);
-        grid-column-gap: 1rem;
+        column-gap: 1rem;
     }
 `
 
@@ -26,14 +26,13 @@ const ServicesUl = styled.ul`
     border: 1px solid gainsboro;
     box-shadow: 0 -1px 4px #ede7e7;
     padding: 1.5rem 1rem 0;
+    &:hover {
+        background-color: rgba(255, 153, 0, 0.5);
+    }
     & a {
         @media (min-width: 400px) {
             font-size: 1.2rem;
         }
-    }
-    & :hover {
-        background: rgba(255, 153, 0, 0.5);
-        cursor: pointer;
     }
     @media (min-width: 800px) {
         display: grid;
@@ -60,9 +59,9 @@ class ServicesIndex extends Component {
                     meta={[{name: 'description', content: siteDescription}]}
                     title={`Services | ${siteTitle}`}
                 />
-                <ServicesWrapperDiv>
+                <ServicesWrapperDiv as="div">
                     {servicesData.map((service, index) => (
-                        <ServicesUl key={index}>
+                        <ServicesUl as="ul" key={index}>
                             <li>
                                 <a
                                     href={service.path}
@@ -77,7 +76,7 @@ class ServicesIndex extends Component {
                             <p>{service.shortDescription}</p>
                             {service.tags}
                             <br />
-                            <MoreLi>
+                            <MoreLi as="li">
                                 <a
                                     href={service.path}
                                     key={service.title}

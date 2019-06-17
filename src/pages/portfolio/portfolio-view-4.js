@@ -34,8 +34,8 @@ class PortfolioView4 extends Component {
                     <meta name="website" content={catWhispererData.website} />
                     <meta name="more" content={catWhispererData.more} />
                 </Helmet>
-                <PortfolioViewDiv>
-                    <PortfolioBackDiv>
+                <PortfolioViewDiv as="div">
+                    <PortfolioBackDiv as="div">
                         <Link
                             to="/portfolio"
                             title={`go back to main Portfolio page`}
@@ -43,7 +43,7 @@ class PortfolioView4 extends Component {
                             &larr; back
                         </Link>
                     </PortfolioBackDiv>
-                    <PortfolioViewH1Style data-testid="project-title">
+                    <PortfolioViewH1Style as="h1" data-testid="project-title">
                         {catWhispererData.title}
                     </PortfolioViewH1Style>
                     <Img
@@ -52,10 +52,10 @@ class PortfolioView4 extends Component {
                         alt={catWhispererData.title}
                     />
                     <br />
-                    <ShortDescDiv data-testid="project-shortDesc">
+                    <ShortDescDiv as="div" data-testid="project-shortDesc">
                         {catWhispererData.shortDescription}
                     </ShortDescDiv>
-                    <AnchorsUl>
+                    <AnchorsUl as="ul">
                         <li>
                             <a
                                 href={catWhispererData.more}

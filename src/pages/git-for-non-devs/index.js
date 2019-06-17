@@ -33,8 +33,8 @@ const GitForNonDevs = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <WrapperDiv>
-                <BackDiv>
+            <WrapperDiv as="div">
+                <BackDiv as="div">
                     <Link
                         to="/services"
                         title={`go back to the main Services page`}
@@ -42,11 +42,11 @@ const GitForNonDevs = props => {
                         &larr; back
                     </Link>
                 </BackDiv>
-                <H1Style>
+                <H1Style as="h1">
                     {gfnd.title}
                     <br />
                 </H1Style>
-                <GitForNonDevsDiv>
+                <GitForNonDevsDiv as="div">
                     <Img
                         fluid={
                             props.data.gitForNonDevsImage.childImageSharp.fluid
@@ -54,21 +54,29 @@ const GitForNonDevs = props => {
                         style={{marginBottom: '1.5rem'}}
                         alt={gfnd.title}
                     />
-                    <H2Style>{gfnd.shortDescription}</H2Style>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
+                    <H2Style as="h2">{gfnd.shortDescription}</H2Style>
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            background:
+                        </ApproachIncludesSpan>{' '}
                         {gfnd.background}
                     </ApproachDiv>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            approach:
+                        </ApproachIncludesSpan>{' '}
                         {gfnd.approach}
                     </ApproachDiv>
-                    <GFNDTagsDiv>
-                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                    <GFNDTagsDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            includes:
+                        </ApproachIncludesSpan>{' '}
                         {gfnd.tags} and more
                     </GFNDTagsDiv>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>more info:</ApproachIncludesSpan>{' '}
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            more info:
+                        </ApproachIncludesSpan>{' '}
                         <a
                             href={gfnd.infoUrl}
                             title={`visit the Git Page on Wikipedia to learn more about Git`}

@@ -10,8 +10,8 @@ const WFLiveSite1 = () => {
             query={wfLiveSite1Query}
             render={data => {
                 return (
-                    <SiteLi>
-                        <SpanStyle>site url: </SpanStyle>
+                    <SiteLi as="li">
+                        <SpanStyle as="span">site url: </SpanStyle>
                         <a
                             href={wfSite1Data.liveSiteUrl}
                             alt={wfSite1Data.projectName}
@@ -30,7 +30,7 @@ const WFLiveSite1 = () => {
                             alt={wfSite1Data.projectName}
                         />
                         <br />
-                        <SpanStyle>repository: </SpanStyle>
+                        <SpanStyle as="span">repository: </SpanStyle>
                         <a
                             href={wfSite1Data.siteRepoUrl}
                             title={`visit the React ${
@@ -42,7 +42,7 @@ const WFLiveSite1 = () => {
                             {wfSite1Data.projectName} on github
                         </a>
                         <br />
-                        <SpanStyle>uses: </SpanStyle>
+                        <SpanStyle as="span">uses: </SpanStyle>
                         {wfSite1Data.tagNames}
                     </SiteLi>
                 )

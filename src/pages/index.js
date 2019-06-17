@@ -78,13 +78,13 @@ const IndexPage = props => {
     const title = data.site.siteMetadata.title
     const keywords = data.site.siteMetadata.keywords
     return (
-        <Container>
+        <Container as="div">
             <SEO location={props.location} title={title} keywords={keywords} />
             <div className="Site">
                 <Header />
                 <Search />
                 <div className="Site-content">
-                    <H1Style>
+                    <H1Style as="h1">
                         <Link
                             to="/services"
                             title={`visit the main Services page to learn more about the various services offered`}
@@ -93,7 +93,7 @@ const IndexPage = props => {
                         </Link>
                     </H1Style>
                     <ServicesCarousel />
-                    <H1Style>
+                    <H1Style as="h1">
                         <Link
                             to="/portfolio"
                             title={`visit the main Portfolio page to learn more about various apps which have been built`}
@@ -101,10 +101,10 @@ const IndexPage = props => {
                             Portfolio
                         </Link>
                     </H1Style>
-                    <AppsDiv>
+                    <AppsDiv as="div">
                         <FeaturedProjects />
                     </AppsDiv>
-                    <H1Style>
+                    <H1Style as="h1">
                         <Link
                             to="/blog"
                             title={`visit the main Blog page to read the various posts which have been published`}
@@ -112,15 +112,15 @@ const IndexPage = props => {
                             Blog
                         </Link>
                     </H1Style>
-                    <PostsDiv>
+                    <PostsDiv as="div">
                         <FeaturedPosts />
                     </PostsDiv>
-                    <CarouselDiv>
+                    <CarouselDiv as="div">
                         <TipCarousel />
                     </CarouselDiv>
                 </div>
-                <IndexFooterStyle>
-                    <AnchorDiv>
+                <IndexFooterStyle as="footer">
+                    <AnchorDiv as="div">
                         <ScrollUpButton
                             style={{background: 'transparent', outline: 'none'}}
                         />
@@ -159,7 +159,7 @@ const IndexPage = props => {
                         </a>
                         <br />
                     </AnchorDiv>
-                    <SiteCredsDiv>
+                    <SiteCredsDiv as="div">
                         © {new Date().getFullYear()}
                         {` `}
                         Inter-Global Media Network, Inc.
