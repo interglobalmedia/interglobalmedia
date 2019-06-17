@@ -37,7 +37,7 @@ const CategoriesPage = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <TagsCategoriesDiv>
+            <TagsCategoriesDiv as="div">
                 {data.map((category, i) => (
                     <Link to={`/categories/${category.fieldValue}`} key={i}>
                         <FontAwesomeIcon

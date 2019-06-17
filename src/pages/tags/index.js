@@ -13,7 +13,7 @@ const TagsPage = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <TagsCategoriesDiv>
+            <TagsCategoriesDiv as="div">
                 {data.map((tag, i) => (
                     <Link to={`/tags/${tag.fieldValue}`} key={i}>
                         <FontAwesomeIcon

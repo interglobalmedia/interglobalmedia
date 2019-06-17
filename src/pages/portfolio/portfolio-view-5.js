@@ -35,8 +35,8 @@ class PortfolioView5 extends Component {
                     <meta name="website" content={trumpTalksData.website} />
                     <meta name="more" content={trumpTalksData.more} />
                 </Helmet>
-                <PortfolioViewDiv>
-                    <PortfolioBackDiv>
+                <PortfolioViewDiv as="div">
+                    <PortfolioBackDiv as="div">
                         <Link
                             to="/portfolio"
                             title={`go back to main Portfolio page`}
@@ -44,7 +44,7 @@ class PortfolioView5 extends Component {
                             &larr; back
                         </Link>
                     </PortfolioBackDiv>
-                    <PortfolioViewH1Style data-testid="project-title">
+                    <PortfolioViewH1Style as="h1" data-testid="project-title">
                         {trumpTalksData.title}
                     </PortfolioViewH1Style>
                     <Img
@@ -53,10 +53,10 @@ class PortfolioView5 extends Component {
                         alt={trumpTalksData.title}
                     />
                     <br />
-                    <ShortDescDiv data-testid="project-shortDesc">
+                    <ShortDescDiv as="div" data-testid="project-shortDesc">
                         {trumpTalksData.shortDescription}
                     </ShortDescDiv>
-                    <AnchorsUl>
+                    <AnchorsUl as="ul">
                         <li>
                             <a
                                 href={trumpTalksData.more}

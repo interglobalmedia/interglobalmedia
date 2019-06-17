@@ -36,7 +36,7 @@ const Share = props => {
     const linkedin = `https://www.linkedin.com/shareArticle?mini=true&url=${props.url +
         props.pathname}&text=${props.title}`
     return (
-        <SocialUl>
+        <SocialUl as="ul">
             <li>
                 <a
                     href={fb}

@@ -52,16 +52,16 @@ const SiteMapPage = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <SitemapDiv>
+            <SitemapDiv as="div">
                 <h1>Sitemap</h1>
                 <h2>Pages</h2>
-                <SitemapUl>
+                <SitemapUl as="ul">
                     <li>
                         <Link
                             to="/"
                             title={`visit the link to the Home Page to view our featured projects, posts, and an introduction to our services`}
                         >
-                            <SitemapSpan>Home</SitemapSpan>
+                            <SitemapSpan as="span">Home</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -69,7 +69,7 @@ const SiteMapPage = props => {
                             to="/blog"
                             title={`visit the link to the Blog Page to read our posts`}
                         >
-                            <SitemapSpan>Blog</SitemapSpan>
+                            <SitemapSpan as="span">Blog</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -77,7 +77,7 @@ const SiteMapPage = props => {
                             to="/contact"
                             title={`visit the link to the Contact Page to connect with us`}
                         >
-                            <SitemapSpan>Contact</SitemapSpan>
+                            <SitemapSpan as="span">Contact</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -85,7 +85,7 @@ const SiteMapPage = props => {
                             to="/portfolio"
                             title={`visit the link to the Portfolio Page to view various projects we have built`}
                         >
-                            <SitemapSpan>Portfolio</SitemapSpan>
+                            <SitemapSpan as="span">Portfolio</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -93,7 +93,7 @@ const SiteMapPage = props => {
                             to="/services"
                             title={`visit the link to the Services Page to learn about the various services we offer`}
                         >
-                            <SitemapSpan>Services</SitemapSpan>
+                            <SitemapSpan as="span">Services</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -101,7 +101,7 @@ const SiteMapPage = props => {
                             to="/categories"
                             title={`visit the link to our Categories Page to view the various categories our Blog contains`}
                         >
-                            <SitemapSpan>Categories</SitemapSpan>
+                            <SitemapSpan as="span">Categories</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -109,7 +109,7 @@ const SiteMapPage = props => {
                             to="/tags"
                             title={`visit the link to our Tags Page to view the various tags our Blog contains`}
                         >
-                            <SitemapSpan>Tags</SitemapSpan>
+                            <SitemapSpan as="span">Tags</SitemapSpan>
                         </Link>
                     </li>
                     <li>
@@ -117,7 +117,7 @@ const SiteMapPage = props => {
                             href="http://www.interglobalmedianetwork.com/rss.xml"
                             title={`visit the link to our RSS Feed to view our complete site content`}
                         >
-                            <SitemapSpan>RSS</SitemapSpan>
+                            <SitemapSpan as="span">RSS</SitemapSpan>
                         </a>
                     </li>
                 </SitemapUl>
@@ -133,13 +133,15 @@ const SiteMapPage = props => {
                         >
                             <h4>{node.frontmatter.title}</h4>
                         </Link>
-                        <MetaDiv>
+                        <MetaDiv as="div">
                             by {node.frontmatter.author} on{' '}
                             {node.frontmatter.date}
                         </MetaDiv>
-                        <SitemapUl>
+                        <SitemapUl as="ul">
                             <li>
-                                <SitemapSpan>{node.excerpt}</SitemapSpan>
+                                <SitemapSpan as="span">
+                                    {node.excerpt}
+                                </SitemapSpan>
                             </li>
                         </SitemapUl>
                     </div>

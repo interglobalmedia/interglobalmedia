@@ -27,8 +27,8 @@ const GitForDevs = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <WrapperDiv>
-                <BackDiv>
+            <WrapperDiv as="div">
+                <BackDiv as="div">
                     <Link
                         to="/services"
                         title={`go back to the main Services page`}
@@ -36,24 +36,30 @@ const GitForDevs = props => {
                         &larr; back
                     </Link>
                 </BackDiv>
-                <H1Style>{gfd.title}</H1Style>
-                <ServiceDiv>
+                <H1Style as="h1">{gfd.title}</H1Style>
+                <ServiceDiv as="div">
                     <Img
                         fluid={props.data.gitForDevsImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
                         alt={gfd.title}
                     />
                     <H2Style>{gfd.shortDescription}</H2Style>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            background:
+                        </ApproachIncludesSpan>{' '}
                         {gfd.background}
                     </ApproachDiv>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            approach:
+                        </ApproachIncludesSpan>{' '}
                         {gfd.approach}
                     </ApproachDiv>
-                    <GFDTagsDiv>
-                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                    <GFDTagsDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            includes:
+                        </ApproachIncludesSpan>{' '}
                         {gfd.tags} and more
                     </GFDTagsDiv>
                 </ServiceDiv>

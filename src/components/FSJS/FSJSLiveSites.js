@@ -36,7 +36,7 @@ export const SpanStyle = styled.span`
 
 const FSJSLiveSites = () => {
     return (
-        <SiteWrapperDiv>
+        <SiteWrapperDiv as="div">
             <FSJSLiveSite1 />
             <FSJSLiveSite2 />
             <FSJSLiveSite3 />

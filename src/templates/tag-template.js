@@ -4,7 +4,7 @@ import Layout from '../components/Layout/Layout'
 import {
     TagCategoryWrapper,
     TagsCategoriesH1,
-    TagsCategoriesDiv,
+    TagCategoryDiv,
 } from './category-template'
 import SEO from '../components/Seo/Seo'
 
@@ -16,9 +16,9 @@ const Tags = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <TagCategoryWrapper>
-                <TagsCategoriesH1>{`posts in: ${tag}`}</TagsCategoriesH1>
-                <TagsCategoriesDiv>
+            <TagCategoryWrapper as="div">
+                <TagsCategoriesH1 as="h1">{`posts in: ${tag}`}</TagsCategoriesH1>
+                <TagCategoryDiv as="div">
                     {posts.map(({node}, i) => (
                         <li key={i}>
                             <Link to={node.fields.slug} key={i}>
@@ -26,7 +26,7 @@ const Tags = props => {
                             </Link>
                         </li>
                     ))}
-                </TagsCategoriesDiv>
+                </TagCategoryDiv>
             </TagCategoryWrapper>
         </Layout>
     )

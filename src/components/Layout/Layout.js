@@ -22,7 +22,7 @@ const Layout = ({children}) => (
             }
         `}
         render={data => (
-            <LayoutContainer>
+            <LayoutContainer as="div">
                 <Header title={data.site.siteMetadata.title} />
                 <div className="Site">
                     <Search />

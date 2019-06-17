@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import {Carousel} from 'react-responsive-carousel'
 
+const CarouselWrapper = styled.div`
+    margin: 0 auto 6rem;
+`
+
 const TipDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,18 +25,14 @@ const TipDiv = styled.div`
     }
 `
 
-const DevStrong = styled.strong`
-    color: rgb(25, 13, 8);
-`
-
 const TipCarousel = () => {
     return (
-        <div style={{margin: '0 auto 6rem'}}>
+        <CarouselWrapper as="div">
             <Carousel showThumbs={false} showIndicators={false}>
-                <TipDiv>
+                <TipDiv as="div">
                     <h2>Tip of the Day #1</h2>
                     <p>
-                        <DevStrong>GatsbyJS Devs:</DevStrong>{' '}
+                        <strong>GatsbyJS Devs:</strong>{' '}
                         <strong>
                             <i>Don't use</i>
                         </strong>{' '}
@@ -54,7 +54,7 @@ const TipCarousel = () => {
                         you in <strong>Search</strong>.
                     </p>
                 </TipDiv>
-                <TipDiv>
+                <TipDiv as="div">
                     <h2>Tip of the Day #2</h2>
                     <p>
                         If you are{' '}
@@ -67,7 +67,7 @@ const TipCarousel = () => {
                         a hefty price).
                     </p>
                 </TipDiv>
-                <TipDiv>
+                <TipDiv as="div">
                     <h2>Tip of the Day #3</h2>
                     <p>
                         <strong>Gatsby Devs:</strong> don't use{' '}
@@ -85,28 +85,8 @@ const TipCarousel = () => {
                         <strong>styled-components</strong> instead.
                     </p>
                 </TipDiv>
-                <TipDiv>
-                    <h2>Tip of the Day #4</h2>
-                    <p>
-                        <strong>styled-components 4+</strong>{' '}
-                        <strong>
-                            are <i>not</i>
-                        </strong>{' '}
-                        <strong>completely compatible</strong> with{' '}
-                        <strong>GatsbyJS 2</strong>. A source-map{' '}
-                        <strong>
-                            <i>hack</i>
-                        </strong>{' '}
-                        is needed in <strong>gatsby-node.js</strong>.{' '}
-                        <strong>
-                            <i>Not</i>
-                        </strong>{' '}
-                        completely <strong>cross-browser compatible</strong>{' '}
-                        either.
-                    </p>
-                </TipDiv>
             </Carousel>
-        </div>
+        </CarouselWrapper>
     )
 }
 

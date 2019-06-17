@@ -28,7 +28,7 @@ const FeaturedProject2 = () => {
                             alt={speechToTextData.title}
                             style={{marginBottom: '1.5rem'}}
                         />
-                        <UsesSpan>application uses:</UsesSpan>{' '}
+                        <UsesSpan as="span">application uses:</UsesSpan>{' '}
                         {speechToTextData.tagNames}
                         <br />
                         <Link

@@ -70,8 +70,8 @@ const FullStackSJS = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <WrapperDiv>
-                <BackDiv>
+            <WrapperDiv as="div">
+                <BackDiv as="div">
                     <Link
                         to="/services"
                         title={`go back to the main Services page`}
@@ -79,25 +79,29 @@ const FullStackSJS = props => {
                         &larr; back
                     </Link>
                 </BackDiv>
-                <H1Style>{fsjs.title}</H1Style>
-                <ServiceDiv>
+                <H1Style as="h1">{fsjs.title}</H1Style>
+                <ServiceDiv as="div">
                     <Img
                         fluid={props.data.fullstackImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
                         alt={fsjs.title}
                     />
                     <H2Style>{fsjs.shortDescription}</H2Style>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>approach: </ApproachIncludesSpan>
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            approach:{' '}
+                        </ApproachIncludesSpan>
                         {fsjs.approach}
                     </ApproachDiv>
-                    <AllTagsDiv>
-                        <ApproachIncludesSpan>includes:</ApproachIncludesSpan>{' '}
+                    <AllTagsDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            includes:
+                        </ApproachIncludesSpan>{' '}
                         {fsjs.allTags} and more
                     </AllTagsDiv>
-                    <LiveSitesSpan>sites:</LiveSitesSpan>
+                    <LiveSitesSpan as="span">sites:</LiveSitesSpan>
                     <br />
-                    <LiveSitesDiv>
+                    <LiveSitesDiv as="div">
                         <FSJSLiveSites />
                     </LiveSitesDiv>
                 </ServiceDiv>

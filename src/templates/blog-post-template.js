@@ -61,18 +61,15 @@ const DangerousHTMLDiv = styled.div`
         left: -32px;
         position: absolute;
         text-align: right;
-        width: 26px;
+        width: 1em;
+    }
+    & li {
+        color: rgba(88, 86, 86, 0.7);
     }
     & ul li {
         counter-increment: list;
         list-style-type: none;
         position: relative;
-    }
-    & ul li:before {
-        content: '▪ ';
-        color: rgb(47, 0, 0);
-        display: inline-block;
-        width: 1em;
     }
     & ol li {
         counter-increment: list;
@@ -86,9 +83,6 @@ const DangerousHTMLDiv = styled.div`
         position: absolute;
         text-align: right;
         width: 26px;
-    }
-    & li {
-        color: rgba(88, 86, 86, 0.7);
     }
 `
 
@@ -144,7 +138,7 @@ const BlogPostTemplate = props => {
                 <meta name="categories" content={categories} />
                 <meta name="tags" content={tags} />
             </Helmet>
-            <PostWrapperDiv>
+            <PostWrapperDiv as="div">
                 <div>
                     {image && (
                         <Img
@@ -157,18 +151,19 @@ const BlogPostTemplate = props => {
                         />
                     )}
                 </div>
-                <PostMetaDiv>
-                    <MetaH1Title>{title}</MetaH1Title>
-                    <MetaPDate>{date}</MetaPDate>
+                <PostMetaDiv as="div">
+                    <MetaH1Title as="h1">{title}</MetaH1Title>
+                    <MetaPDate as="p">{date}</MetaPDate>
                     <DangerousHTMLDiv
+                        as="div"
                         dangerouslySetInnerHTML={{
                             __html: props.data.markdownRemark.html,
                         }}
                     />
 
-                    <TagCatWrapperDiv>
-                        <TagDiv>
-                            <TagCatInSpan>Tagged in: </TagCatInSpan>
+                    <TagCatWrapperDiv as="div">
+                        <TagDiv a="div">
+                            <TagCatInSpan as="span">Tagged in: </TagCatInSpan>
                             {tags.map((tag, i) => (
                                 <Link
                                     to={`/tags/${tag}`}
@@ -188,8 +183,10 @@ const BlogPostTemplate = props => {
                                 </Link>
                             ))}
                         </TagDiv>
-                        <CatDiv>
-                            <TagCatInSpan>Categorized under: </TagCatInSpan>
+                        <CatDiv as="div">
+                            <TagCatInSpan as="span">
+                                Categorized under:{' '}
+                            </TagCatInSpan>
                             {categories.map((category, i) => (
                                 <Link
                                     to={`/categories/${category}`}
@@ -208,7 +205,7 @@ const BlogPostTemplate = props => {
                             ))}
                         </CatDiv>
                     </TagCatWrapperDiv>
-                    <DiscussTwitter>
+                    <DiscussTwitter as="div">
                         <a
                             target="_new"
                             rel="noopener noreferrer"
