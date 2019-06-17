@@ -22,6 +22,8 @@ export const TagCategoryDiv = styled.div`
     }
     & li {
         list-style-type: square;
+        list-style-position: outside;
+        margin-left: 1rem;
         color: rgb(47, 0, 0);
     }
     & span {
@@ -39,7 +41,7 @@ const Categories = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <TagCategoryWrapper as="div">
                 <TagsCategoriesH1 as="h1">{`posts in: ${category}`}</TagsCategoriesH1>
-                <TagCategoryDiv as="div">
+                <TagCategoryDiv as="ul">
                     {posts.map(({node}, i) => (
                         <Link to={node.fields.slug} key={i}>
                             <li key={i}>
