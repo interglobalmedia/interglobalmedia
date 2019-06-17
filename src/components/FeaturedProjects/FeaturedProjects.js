@@ -20,7 +20,7 @@ export const AppsUl = styled.ul`
         font-weight: normal;
     }
     & li:hover {
-        background-color: rgba(255, 153, 0, 0.5);
+        background: rgba(255, 153, 0, 0.5);
     }
     & br {
         line-height: 2.5;
@@ -39,7 +39,7 @@ export const UsesSpan = styled.span`
 
 const FeaturedProjects = () => {
     return (
-        <AppsUl>
+        <AppsUl as="ul">
             <FeaturedProject1 />
             <FeaturedProject2 />
             <FeaturedProject3 />

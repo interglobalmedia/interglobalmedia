@@ -28,7 +28,7 @@ const FeaturedProject3 = () => {
                             alt={nodeDrawingData.title}
                             style={{marginBottom: '1.5rem'}}
                         />
-                        <UsesSpan>application uses:</UsesSpan>{' '}
+                        <UsesSpan as="span">application uses:</UsesSpan>{' '}
                         {nodeDrawingData.tagNames}
                         <br />
                         <Link

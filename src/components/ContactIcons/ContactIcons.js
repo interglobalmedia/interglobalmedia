@@ -18,7 +18,7 @@ const ContactIconsStyle = styled.ul`
 
 const ContactIcons = () => {
     return (
-        <ContactIconsStyle className="contact-icons">
+        <ContactIconsStyle as="ul" className="contact-icons">
             <li>
                 <a
                     className="github"

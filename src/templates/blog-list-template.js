@@ -9,7 +9,7 @@ import SEO from '../components/Seo/Seo'
 export const PostDiv = styled.div`
     width: 90%;
     max-width: 1026px;
-    margin: 3rem auto 0;
+    margin: 3rem auto;
 `
 
 export const PostListDiv = styled.div`
@@ -24,7 +24,7 @@ export const PostListDiv = styled.div`
     color: rgba(0, 0, 0, 0.8);
     letter-spacing: 0.07em;
     &:hover {
-        background-color: rgba(255, 153, 0, 0.5);
+        background: rgba(255, 153, 0, 0.5);
     }
 `
 
@@ -93,9 +93,9 @@ const BlogPage = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <PostDiv>
+            <PostDiv as="div">
                 {postList.edges.map(({node}, i) => (
-                    <PostListDiv key={i}>
+                    <PostListDiv key={i} as="div">
                         <Link
                             to={node.fields.slug}
                             key={i}
@@ -103,15 +103,15 @@ const BlogPage = props => {
                                 node.frontmatter.title
                             }" to read more`}
                         >
-                            <PostListTitle>
+                            <PostListTitle as="h1">
                                 {node.frontmatter.title}
                             </PostListTitle>
                         </Link>
-                        <PostListMetaDiv>
+                        <PostListMetaDiv as="div">
                             by {node.frontmatter.author} on{' '}
                             {node.frontmatter.date}
                         </PostListMetaDiv>
-                        <ExcerptWrapUl>
+                        <ExcerptWrapUl as="ul">
                             <li>
                                 <Img
                                     fixed={
@@ -124,7 +124,7 @@ const BlogPage = props => {
                         </ExcerptWrapUl>
                     </PostListDiv>
                 ))}
-                <PrevNextUl>
+                <PrevNextUl as="ul">
                     {!isFirst && (
                         <Link
                             to={prevPage}

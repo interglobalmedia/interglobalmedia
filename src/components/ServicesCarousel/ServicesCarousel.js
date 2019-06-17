@@ -32,6 +32,7 @@ const ServicesCarousel = () => {
                     <div>
                         <Carousel showArrows={true} showThumbs={false}>
                             <SlideDiv
+                                as="div"
                                 title={`A visualization of various ${
                                     fullStackJS.title
                                 } Services offered by us to make the visit to this site more fun!`}
@@ -68,6 +69,7 @@ const ServicesCarousel = () => {
                                 </p>
                             </SlideDiv>
                             <SlideDiv
+                                as="div"
                                 title={`A visualization of various ${
                                     devWorkflows.title
                                 } Services offered by us to make the visit to this site more fun!`}
@@ -103,6 +105,7 @@ const ServicesCarousel = () => {
                                 </p>
                             </SlideDiv>
                             <SlideDiv
+                                as="div"
                                 title={`A visualization of various ${
                                     gitForDevs.title
                                 } Services offered by us to make the visit to this site more fun!`}
@@ -140,6 +143,7 @@ const ServicesCarousel = () => {
                                 </p>
                             </SlideDiv>
                             <SlideDiv
+                                as="div"
                                 title={`A visualization of various ${
                                     gitForNonDevs.title
                                 } Services offered by us to make the visit to this site more fun!`}
@@ -175,6 +179,7 @@ const ServicesCarousel = () => {
                                 </p>
                             </SlideDiv>
                             <SlideDiv
+                                as="div"
                                 title={`A visualization of ${
                                     commandControl.title
                                 } Services offered by us to make the visit to this site more fun!`}

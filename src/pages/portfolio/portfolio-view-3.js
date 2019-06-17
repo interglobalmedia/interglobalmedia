@@ -35,8 +35,8 @@ class PortfolioView3 extends Component {
                     <meta name="website" content={rockinSynthData.website} />
                     <meta name="more" content={rockinSynthData.more} />
                 </Helmet>
-                <PortfolioViewDiv>
-                    <PortfolioBackDiv>
+                <PortfolioViewDiv as="div">
+                    <PortfolioBackDiv as="div">
                         <Link
                             to="/portfolio"
                             title={`go back to main Portfolio page`}
@@ -44,7 +44,7 @@ class PortfolioView3 extends Component {
                             &larr; back
                         </Link>
                     </PortfolioBackDiv>
-                    <PortfolioViewH1Style data-testid="project-title">
+                    <PortfolioViewH1Style as="h1" data-testid="project-title">
                         {rockinSynthData.title}
                     </PortfolioViewH1Style>
                     <Img
@@ -53,10 +53,10 @@ class PortfolioView3 extends Component {
                         alt={rockinSynthData.title}
                     />
                     <br />
-                    <ShortDescDiv data-testid="project-shortDesc">
+                    <ShortDescDiv as="div" data-testid="project-shortDesc">
                         {rockinSynthData.shortDescription}
                     </ShortDescDiv>
-                    <AnchorsUl>
+                    <AnchorsUl as="ul">
                         <li>
                             <a
                                 href={rockinSynthData.more}

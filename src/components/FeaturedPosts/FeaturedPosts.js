@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import FeaturedPost1 from './FeaturedPost1'
 import FeaturedPost2 from './FeaturedPost2'
 
-const PostsUl = styled.ul`
+export const PostsUl = styled.ul`
     width: 97.5%;
     margin: 0 auto 0.75rem;
     list-style-type: none;
@@ -14,7 +14,7 @@ const PostsUl = styled.ul`
         cursor: pointer;
     }
     & li:hover {
-        background-color: rgba(255, 153, 0, 0.5);
+        background: rgba(255, 153, 0, 0.5);
     }
     & h3 {
         font-weight: normal;
@@ -35,7 +35,7 @@ const PostsUl = styled.ul`
 
 const FeaturedPosts = () => {
     return (
-        <PostsUl>
+        <PostsUl as="ul">
             <FeaturedPost1 />
             <FeaturedPost2 />
         </PostsUl>

@@ -11,7 +11,7 @@ const Phone = () => {
     ].map(phone => {
         return (
             <li key={phone.id}>
-                <ContributeStyle href={phone.link} title={`call us`}>
+                <ContributeStyle as="a" href={phone.link} title={`call us`}>
                     {phone.text}
                 </ContributeStyle>
             </li>

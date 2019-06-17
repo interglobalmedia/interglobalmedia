@@ -10,8 +10,8 @@ const FSJSLiveSite3 = () => {
             query={fsjsLiveSite3Query}
             render={data => {
                 return (
-                    <SiteLi>
-                        <SpanStyle>url: </SpanStyle>
+                    <SiteLi as="li">
+                        <SpanStyle as="span">url: </SpanStyle>
                         <a
                             href={fsjsLiveSite3Data.liveSiteUrl}
                             title={`visit the ${
@@ -31,7 +31,7 @@ const FSJSLiveSite3 = () => {
                             alt={fsjsLiveSite3Data.projectName}
                         />
                         <br />
-                        <SpanStyle>repository: </SpanStyle>
+                        <SpanStyle as="span">repository: </SpanStyle>
                         <a
                             href={fsjsLiveSite3Data.siteRepoUrl}
                             title={`visit the ${
@@ -43,7 +43,7 @@ const FSJSLiveSite3 = () => {
                             {fsjsLiveSite3Data.projectName} on github
                         </a>
                         <br />
-                        <SpanStyle>uses: </SpanStyle>
+                        <SpanStyle as="span">uses: </SpanStyle>
                         {fsjsLiveSite3Data.tagNames}
                     </SiteLi>
                 )
