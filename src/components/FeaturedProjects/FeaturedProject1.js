@@ -28,7 +28,7 @@ const FeaturedProject1 = () => {
                             alt={nodeChatData.title}
                             style={{marginBottom: '1.5rem'}}
                         />
-                        <UsesSpan>application uses:</UsesSpan>{' '}
+                        <UsesSpan as="span">application uses:</UsesSpan>{' '}
                         {nodeChatData.tagNames}
                         <br />
                         <Link

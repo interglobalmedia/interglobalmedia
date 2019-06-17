@@ -35,6 +35,7 @@ const Contact = props => {
             <div className="contact-content">
                 <div className="contact-social">
                     <H2Style
+                        as="h2"
                         className="title-social"
                         title={`connect with us on Github, Facebook, Twitter, or Linkedin`}
                     >
@@ -47,7 +48,11 @@ const Contact = props => {
                     <ContactIcons />
                     <div className="follow" />
                     <div className="email">
-                        <H2Style className="title-social" title={`email us`}>
+                        <H2Style
+                            as="h2"
+                            className="title-social"
+                            title={`email us`}
+                        >
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 style={{
@@ -61,7 +66,11 @@ const Contact = props => {
                         </H2Style>
                     </div>
                     <div className="phone">
-                        <H2Style className="title-social" title={`call us`}>
+                        <H2Style
+                            as="h2"
+                            className="title-social"
+                            title={`call us`}
+                        >
                             <FontAwesomeIcon
                                 icon={faPhone}
                                 style={{
@@ -76,6 +85,7 @@ const Contact = props => {
                     </div>
                     <div className="contribute">
                         <H2Style
+                            as="h2"
                             className="social"
                             title={`read our posts on our Developer Blog or The Practical Dev`}
                         >

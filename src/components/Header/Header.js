@@ -28,15 +28,16 @@ export const TopHeading1 = styled.h1`
 `
 
 const Header = ({siteTitle}) => (
-    <NavContainerDiv>
+    <NavContainerDiv as="div">
         <div className="hamburger" onClick={burgerToggle}>
             <div className="line" />
             <div className="line" />
             <div className="line" />
         </div>
-        <HeaderStyle>
+        <HeaderStyle as="header">
             <nav className="responsive-menu">
                 <ResponsiveHeading1
+                    as="h1"
                     title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
                 >
                     <Link to="/" style={{color: 'rgb(47,0,0)'}}>
@@ -111,6 +112,7 @@ const Header = ({siteTitle}) => (
             </nav>
             <nav className="top">
                 <TopHeading1
+                    as="h1"
                     title={`link to the Home Page containing the name of the business site of Inter-Global Media (Network, Inc.)`}
                 >
                     <Link to="/" style={{color: 'rgba(47,0,0)'}}>

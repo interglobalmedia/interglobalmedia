@@ -35,8 +35,8 @@ class PortfolioView1 extends Component {
                     <meta name="website" content={speechToTextData.website} />
                     <meta name="more" content={speechToTextData.more} />
                 </Helmet>
-                <PortfolioViewDiv>
-                    <PortfolioBackDiv>
+                <PortfolioViewDiv as="div">
+                    <PortfolioBackDiv as="div">
                         <Link
                             to="/portfolio"
                             title={`go back to main Portfolio page`}
@@ -44,7 +44,7 @@ class PortfolioView1 extends Component {
                             &larr; back
                         </Link>
                     </PortfolioBackDiv>
-                    <PortfolioViewH1Style data-testid="project-title">
+                    <PortfolioViewH1Style as="h1" data-testid="project-title">
                         {speechToTextData.title}
                     </PortfolioViewH1Style>
                     <Img
@@ -53,10 +53,10 @@ class PortfolioView1 extends Component {
                         alt={speechToTextData.title}
                     />
                     <br />
-                    <ShortDescDiv data-testid="project-shortDesc">
+                    <ShortDescDiv as="div" data-testid="project-shortDesc">
                         {speechToTextData.shortDescription}
                     </ShortDescDiv>
-                    <AnchorsUl>
+                    <AnchorsUl as="ul">
                         <li>
                             <a
                                 href={speechToTextData.more}

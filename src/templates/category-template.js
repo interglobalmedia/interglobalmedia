@@ -14,7 +14,7 @@ export const TagsCategoriesH1 = styled.h1`
     letter-spacing: 0.07em;
 `
 
-export const TagsCategoriesDiv = styled.div`
+export const TagCategoryDiv = styled.div`
     margin: 0.75rem auto 4rem;
     width: 100%;
     & h1 {
@@ -37,9 +37,9 @@ const Categories = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <TagCategoryWrapper>
-                <TagsCategoriesH1>{`posts in: ${category}`}</TagsCategoriesH1>
-                <TagsCategoriesDiv>
+            <TagCategoryWrapper as="div">
+                <TagsCategoriesH1 as="h1">{`posts in: ${category}`}</TagsCategoriesH1>
+                <TagCategoryDiv as="div">
                     {posts.map(({node}, i) => (
                         <Link to={node.fields.slug} key={i}>
                             <li key={i}>
@@ -47,7 +47,7 @@ const Categories = props => {
                             </li>
                         </Link>
                     ))}
-                </TagsCategoriesDiv>
+                </TagCategoryDiv>
             </TagCategoryWrapper>
         </Layout>
     )

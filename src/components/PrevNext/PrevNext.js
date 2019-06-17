@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'gatsby'
 
-const PrevNextUl = styled.ul`
+export const PrevNextUl = styled.ul`
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -15,7 +15,7 @@ const PrevNextUl = styled.ul`
 const PrevNext = props => {
     const {prev, next} = props
     return (
-        <PrevNextUl>
+        <PrevNextUl as="ul">
             {prev && (
                 <li>
                     <Link

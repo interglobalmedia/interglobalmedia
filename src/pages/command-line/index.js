@@ -30,8 +30,8 @@ const CLI = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <WrapperDiv>
-                <BackDiv>
+            <WrapperDiv as="div">
+                <BackDiv as="div">
                     <Link
                         to="/services"
                         title={`go back to the main Services page`}
@@ -39,24 +39,30 @@ const CLI = props => {
                         &larr; back
                     </Link>
                 </BackDiv>
-                <H1Style>{cli.title}</H1Style>
-                <ServiceDiv>
+                <H1Style as="h1">{cli.title}</H1Style>
+                <ServiceDiv as="div">
                     <Img
                         fluid={props.data.cliImage.childImageSharp.fluid}
                         style={{marginBottom: '1.5rem'}}
                         alt={cli.title}
                     />
-                    <H2Style>{cli.shortDescription}</H2Style>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>background:</ApproachIncludesSpan>{' '}
+                    <H2Style as="h2">{cli.shortDescription}</H2Style>
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            background:
+                        </ApproachIncludesSpan>{' '}
                         {cli.background}
                     </ApproachDiv>
-                    <ApproachDiv>
-                        <ApproachIncludesSpan>approach:</ApproachIncludesSpan>{' '}
+                    <ApproachDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            approach:
+                        </ApproachIncludesSpan>{' '}
                         {cli.approach}
                     </ApproachDiv>
-                    <CLIATagDiv>
-                        <ApproachIncludesSpan>more info:</ApproachIncludesSpan>{' '}
+                    <CLIATagDiv as="div">
+                        <ApproachIncludesSpan as="span">
+                            more info:
+                        </ApproachIncludesSpan>{' '}
                         <a
                             href={cli.infoUrl1}
                             title={`visit the Command Line Interface page on Wikipedia to learn more about the Command Line Interface`}

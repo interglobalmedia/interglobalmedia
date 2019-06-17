@@ -26,6 +26,7 @@ const Contribute = () => {
         return (
             <li key={contribute.id}>
                 <ContributeStyle
+                    as="a"
                     href={contribute.url}
                     target={contribute.targetContent}
                     rel={contribute.relContent}

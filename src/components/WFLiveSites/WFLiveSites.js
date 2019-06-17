@@ -26,7 +26,7 @@ export const SiteLi = styled.li`
     width: 100%;
     display: block;
     margin: 0.5rem auto 1.5rem;
-    &:last-of-type {
+    & :last-of-type {
         margin-bottom: 0;
     }
 `
@@ -37,7 +37,7 @@ export const SpanStyle = styled.span`
 
 const WFLiveSites = () => {
     return (
-        <SiteWrapperDiv>
+        <SiteWrapperDiv as="div">
             <WFLiveSite1 />
             <WFLiveSite2 />
             <WFLiveSite3 />

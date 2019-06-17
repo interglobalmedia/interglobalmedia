@@ -98,9 +98,9 @@ const PortfolioIndex = props => {
     return (
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
-            <ColumnsDiv>
-                <ProjectUl key={speechToTextData.id}>
-                    <ProjectTitleLi>
+            <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={speechToTextData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-1'}
                             title={`visit the link to the ${
@@ -117,8 +117,10 @@ const PortfolioIndex = props => {
                         alt={speechToTextData.title}
                     />
                     <br />
-                    <ParaStyle>{speechToTextData.shortDescription}</ParaStyle>
-                    <SpanStyle>{speechToTextData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {speechToTextData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{speechToTextData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -131,8 +133,8 @@ const PortfolioIndex = props => {
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={theGrooveData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={theGrooveData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             title={`visit the link to the ${
@@ -149,8 +151,10 @@ const PortfolioIndex = props => {
                         alt={theGrooveData.title}
                     />
                     <br />
-                    <ParaStyle>{theGrooveData.shortDescription}</ParaStyle>
-                    <SpanStyle>{theGrooveData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {theGrooveData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{theGrooveData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -160,12 +164,12 @@ const PortfolioIndex = props => {
                                 theGrooveData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={rockinSynthData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={rockinSynthData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-3'}
                             title={`visit the link to the ${
@@ -182,8 +186,10 @@ const PortfolioIndex = props => {
                         alt={rockinSynthData.title}
                     />
                     <br />
-                    <ParaStyle>{rockinSynthData.shortDescription}</ParaStyle>
-                    <SpanStyle>{rockinSynthData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {rockinSynthData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{rockinSynthData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -192,12 +198,12 @@ const PortfolioIndex = props => {
                                 rockinSynthData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={catWhispererData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={catWhispererData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-4'}
                             title={`visit the link to the ${
@@ -214,8 +220,10 @@ const PortfolioIndex = props => {
                         alt={catWhispererData.title}
                     />
                     <br />
-                    <ParaStyle>{catWhispererData.shortDescription}</ParaStyle>
-                    <SpanStyle>{catWhispererData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {catWhispererData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{catWhispererData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -224,12 +232,12 @@ const PortfolioIndex = props => {
                                 catWhispererData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={trumpTalksData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={trumpTalksData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-5'}
                             title={`visit the link to the ${
@@ -246,8 +254,10 @@ const PortfolioIndex = props => {
                         alt={trumpTalksData.title}
                     />
                     <br />
-                    <ParaStyle>{trumpTalksData.shortDescription}</ParaStyle>
-                    <SpanStyle>{trumpTalksData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {trumpTalksData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{trumpTalksData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -256,12 +266,12 @@ const PortfolioIndex = props => {
                                 trumpTalksData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={chattrboxData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={chattrboxData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-6'}
                             title={`visit the link to the ${
@@ -278,8 +288,10 @@ const PortfolioIndex = props => {
                         alt={chattrboxData.title}
                     />
                     <br />
-                    <ParaStyle>{chattrboxData.shortDescription}</ParaStyle>
-                    <SpanStyle>{chattrboxData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {chattrboxData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{chattrboxData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -288,12 +300,12 @@ const PortfolioIndex = props => {
                                 chattrboxData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>
-                <ProjectUl key={nodeDrawingData.id}>
-                    <ProjectTitleLi>
+                <ProjectUl as="ul" key={nodeDrawingData.id}>
+                    <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-7'}
                             title={`visit the link to the ${
@@ -310,8 +322,10 @@ const PortfolioIndex = props => {
                         alt={nodeDrawingData.title}
                     />
                     <br />
-                    <ParaStyle>{nodeDrawingData.shortDescription}</ParaStyle>
-                    <SpanStyle>{nodeDrawingData.tags}</SpanStyle>
+                    <ParaStyle as="p">
+                        {nodeDrawingData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{nodeDrawingData.tags}</SpanStyle>
                     <br />
                     <li>
                         <Link
@@ -320,7 +334,7 @@ const PortfolioIndex = props => {
                                 nodeDrawingData.title
                             } app page to learn more`}
                         >
-                            <MoreP>view more</MoreP>
+                            <MoreP as="p">view more</MoreP>
                         </Link>
                     </li>
                 </ProjectUl>

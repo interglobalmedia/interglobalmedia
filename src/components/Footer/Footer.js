@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 import React from 'react'
 import {Link} from 'gatsby'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -33,38 +34,47 @@ export const FooterStyle = styled.footer`
     }
 `
 
-export const BizHoursUl = styled.div`
-    list-style-type: none;
-    color: rgb(255, 227, 159);
-    & li:first-of-type {
-        color: whitesmoke;
-        font-style: italic;
-    }
-    & li:last-of-type {
-        color: whitesmoke;
-        font-style: italic;
-    }
-`
-
-export const RelatedHoursUl = styled.div`
-    list-style-type: none;
-    color: rgb(216, 132, 46);
-    & li:first-of-type {
-        color: whitesmoke;
-        font-style: italic;
-    }
-    & li:last-of-type {
-        color: whitesmoke;
-        font-style: italic;
-    }
-`
-
-export const FollowHoursUl = styled.div`
-    list-style-type: none;
-    color: rgb(216, 132, 46);
+export const ColumnsDiv = styled.div`
+    width: 90%;
     display: flex;
-    justify-content: center;
-    margin-top: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+    & ul {
+        list-style-type: none;
+    }
+    @media (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        column-gap: 2.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+`
+
+export const ColumnsUl = styled.div`
+    & :nth-of-type(1) {
+        & li {
+            color: rgb(255, 227, 159);
+            font-size: 1.1rem;
+        }
+        & li:first-of-type {
+            color: whitesmoke;
+            font-style: italic;
+        }
+        & li:last-of-type {
+            color: whitesmoke;
+            font-style: italic;
+        }
+    }
+    & :nth-of-type(2) {
+        list-style-type: none;
+        color: rgb(216, 132, 46);
+        display: flex;
+        justify-content: center;
+        flex-direction: columns;
+        margin-top: 2.5rem;
+    }
     & li {
         margin-right: 1rem;
         font-size: 1.3rem;
@@ -91,25 +101,14 @@ export const AnchorDiv = styled.div`
     & a:nth-of-type(2) {
         margin-right: 1rem;
     }
+    @media (min-width: 360px) {
+        font-size: 1rem;
+    }
     @media (min-width: 375px) {
+        font-size: 1.1rem;
+    }
+    @media (min-width: 411px) {
         font-size: 1.2rem;
-    }
-`
-
-export const ColumnsDiv = styled.div`
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    & ul {
-        list-style-type: none;
-    }
-    @media (min-width: 990px) {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-column-gap: 2.5%;
-        margin-left: auto;
-        margin-right: auto;
     }
 `
 
@@ -119,11 +118,11 @@ export const SiteCredsDiv = styled.div`
     text-align: center;
 `
 
-const Footer = () => {
+export const Footer = () => {
     return (
-        <FooterStyle>
-            <ColumnsDiv>
-                <BizHoursUl>
+        <FooterStyle as="footer">
+            <ColumnsDiv as="div">
+                <ColumnsUl as="ul">
                     <li>Business Hours</li>
                     <li>Monday: 9:00am - 5:00pm</li>
                     <li>Tuesday: 9:00am - 5:00pm</li>
@@ -133,9 +132,9 @@ const Footer = () => {
                     <li>Saturday: Closed</li>
                     <li>Sunday: Closed</li>
                     <li>And By Appointment</li>
-                </BizHoursUl>
-                <RelatedHoursUl />
-                <FollowHoursUl>
+                </ColumnsUl>
+                {/* <RelatedHoursUl as='ul' /> */}
+                <ColumnsUl as="ul">
                     <li>
                         <a
                             className="github"
@@ -192,9 +191,9 @@ const Footer = () => {
                             />
                         </a>
                     </li>
-                </FollowHoursUl>
+                </ColumnsUl>
             </ColumnsDiv>
-            <AnchorDiv>
+            <AnchorDiv as="div">
                 <ScrollUpButton
                     style={{
                         background: 'transparent',
@@ -244,7 +243,7 @@ const Footer = () => {
                 </a>
                 <br />
             </AnchorDiv>
-            <SiteCredsDiv>
+            <SiteCredsDiv as="div">
                 © {new Date().getFullYear()}
                 {` `}
                 Inter-Global Media Network, Inc.
