@@ -23,8 +23,8 @@ export const TagCategoryDiv = styled.div`
     & li {
         list-style-type: square;
         list-style-position: inside;
-        text-indent: -1em;
-        margin-left: 1em;
+        text-indent: -1.5em;
+        margin-left: 1.5em;
         color: rgb(47, 0, 0);
     }
     & span {
