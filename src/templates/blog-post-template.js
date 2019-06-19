@@ -84,6 +84,13 @@ const DangerousHTMLDiv = styled.div`
         text-align: right;
         width: 26px;
     }
+    & iframe {
+        margin: 3rem auto;
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        height: 102px;
+    }
 `
 
 const TagCatWrapperDiv = styled.div`
