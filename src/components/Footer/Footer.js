@@ -199,6 +199,7 @@ export const Footer = () => {
                         background: 'transparent',
                         outline: 'none',
                     }}
+                    ContainerClassName="ScrollUpButton__Container"
                 />
                 <Link
                     to="/contact"
