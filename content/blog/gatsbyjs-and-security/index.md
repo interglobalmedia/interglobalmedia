@@ -151,8 +151,9 @@ from you. Feel free to **_email_** me or **leave** me a **voice message** on the
 [Plugging In The Holes public page](https://anchor.fm/maria-campbell) on
 [anchor.fm](https://anchor.fm/).
 
-I will be embedding this episode of[] Plugging in The Holes]() along with a
-transcript in the form of a post on
+I will be embedding this episode of
+[Plugging in The Holes](https://anchor.fm/maria-campbell/episodes/GatsbyJS-and-Security-e4d5ms)
+along with a transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
