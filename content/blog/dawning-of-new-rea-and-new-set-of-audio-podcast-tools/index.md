@@ -14,7 +14,6 @@ author: 'Maria D. Campbell'
 src="https://anchor.fm/maria-campbell/embed/episodes/The-Dawning-of-a-New-Era-and-a-new-set-of-Audio-Podcast-Tools-e4crl0" 
 frameborder="0" 
 scrolling="no"
-sandbox=""
 title="The Dawning of a New Era and a new set of Audio Podcast Tools">
 </iframe>
 
