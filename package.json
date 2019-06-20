@@ -43,6 +43,7 @@
         "react": "^16.8.6",
         "react-cookie-consent": "^2.3.1",
         "react-dom": "^16.8.6",
+        "react-headroom": "^2.2.8",
         "react-helmet": "^5.2.0",
         "react-responsive-carousel": "^3.1.49",
         "react-scroll-up-button": "^1.6.4",
