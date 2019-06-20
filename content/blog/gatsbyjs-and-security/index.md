@@ -12,7 +12,7 @@ tags:
         'technology',
         'web-security',
         'official-aws-meetup',
-        'armor-security',
+        'armor-defense',
         'owasp',
         'gatsbyjs',
     ]
