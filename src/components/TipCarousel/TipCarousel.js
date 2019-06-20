@@ -12,9 +12,9 @@ const TipDiv = styled.div`
     width: 100%;
     max-width: 600px;
     margin: 3rem auto;
-    background: rgba(235, 181, 135, 0.7);
+    background: rgb(207, 203, 177);
     padding: 1.5rem;
-    border: 6px solid rgba(235, 181, 135, 0.7);
+    border: 6px solid rgba(207, 203, 177, 0.07);
     & h2,
     & p {
         color: rgb(25, 13, 8);
