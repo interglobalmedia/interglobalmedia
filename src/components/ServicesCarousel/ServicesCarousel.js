@@ -30,7 +30,11 @@ const ServicesCarousel = () => {
             render={data => {
                 return (
                     <div>
-                        <Carousel showArrows={true} showThumbs={false}>
+                        <Carousel
+                            showArrows={true}
+                            showThumbs={false}
+                            showStatus={true}
+                        >
                             <SlideDiv
                                 as="div"
                                 title={`A visualization of various ${
