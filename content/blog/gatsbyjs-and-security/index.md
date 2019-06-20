@@ -50,9 +50,8 @@ it was a good demonstration. I just wish it had taken place in an environment
 more conducive to presentations. It would have been nice if it took place at the
 AWS Loft downtown, but they close at 6pm. Hopefully the next event will take
 place at a better location. On a more positive note, the hors d'hoeuvres and the
-wait staff upstairs were super nice, and
-[Armor Security](https://www.armor.com/) were very generous with the drink
-tickets.
+wait staff upstairs were super nice, and [Armor Defense](https://www.armor.com/)
+were very generous with the drink tickets.
 
 The event did get me curious about how GatsbyJs rated security-wise. I came
 across the following post entitled Security For Modern Web Frameworks on their
