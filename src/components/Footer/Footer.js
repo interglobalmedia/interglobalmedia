@@ -6,6 +6,7 @@ import {
     faRss,
     faDirections,
     faEnvelope,
+    faPodcast,
 } from '@fortawesome/free-solid-svg-icons'
 import {
     faGithub,
@@ -68,6 +69,15 @@ export const ColumnsUl = styled.div`
         }
     }
     & :nth-of-type(2) {
+        & li {
+            font-size: 1.1rem;
+        }
+        & li:first-of-type {
+            color: whitesmoke;
+            font-style: italic;
+        }
+    }
+    & :nth-of-type(3) {
         list-style-type: none;
         color: rgb(216, 132, 46);
         display: flex;
@@ -95,6 +105,15 @@ export const AnchorDiv = styled.div`
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
+    & li {
+        list-style-type: none;
+        margin-bottom: 3rem;
+        text-align: center;
+        & a {
+            color: rgb(255, 227, 159);
+            letter-spacing: 0.07em;
+        }
+    }
     & a:nth-of-type(1) {
         margin-right: 1rem;
     }
@@ -133,7 +152,25 @@ export const Footer = () => {
                     <li>Sunday: Closed</li>
                     <li>And By Appointment</li>
                 </ColumnsUl>
-                {/* <RelatedHoursUl as='ul' /> */}
+                <ColumnsUl as="ul">
+                    <li>Podast</li>
+                    <li>
+                        <a
+                            href="https://anchor.fm/maria-campbell"
+                            target="_new"
+                            rel="noopener noreferrer"
+                            title="visit link to view public Plugging in the Holes public site"
+                        >
+                            <FontAwesomeIcon
+                                icon={faPodcast}
+                                style={{
+                                    marginRight: '0.25rem',
+                                }}
+                            />
+                            Plugging In The Holes
+                        </a>
+                    </li>
+                </ColumnsUl>
                 <ColumnsUl as="ul">
                     <li>
                         <a
