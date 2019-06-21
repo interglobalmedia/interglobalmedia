@@ -112,7 +112,7 @@ const IndexPage = props => {
                             src="https://anchor.fm/maria-campbell/embed/episodes/GatsbyJS-and-Security-e4d5ms"
                             height="102px"
                             width="400px"
-                            frameborder="0"
+                            frameBorder="0"
                             scrolling="no"
                             title="GatsbyJS and Security"
                         />
