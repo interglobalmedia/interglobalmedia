@@ -2,9 +2,9 @@
 title: 'The Apple dictation and text editors bug'
 image: luke-chesser-49-unsplash.jpg
 description:
-    'The past couple of days(and later tonight) has been all about web security,
-    so in this episode of Plugging In The Holes podcast I talk about web
-    security and why one would choose GatsbyJS over other static frameworks.'
+    'In this episode, I discuss the bug I encountered when typing non-alpha
+    numeric characters in a text editor on my Mac, and how I came to fix the
+    issue.'
 date: '2019-06-21'
 tags:
     [
