@@ -147,7 +147,7 @@ const BlogPage = props => {
                             rel="next"
                             style={{
                                 color: nextPage
-                                    ? 'color: rgb(47, 0, 0);'
+                                    ? 'color: rgb(47, 0, 0)'
                                     : 'color: rgb(47, 0, 0)',
                                 letterSpacing: '0.07em',
                                 marginLeft: '0.5rem',
