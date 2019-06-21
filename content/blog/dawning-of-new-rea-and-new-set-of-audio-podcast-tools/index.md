@@ -5,7 +5,7 @@ image: stanislav-kondratiev-123540-unsplash.jpg
 description:
     'In this premier episode of Plugging in The Holes, I discuss why I decided to create this podcast.'
 date: '2019-06-19'
-tags: ['podcasting', 'technology', 'javascript', 'full-stack-development', 'leadership', 'community', 'women-in-tech']
+tags: ['podcasting', 'technology', 'javascript', 'full-stack-development', 'leadership', 'community', 'women-in-technology']
 categories: ['podcasting']
 author: 'Maria D. Campbell'
 ---
