@@ -181,7 +181,7 @@ const BlogPostTemplate = props => {
                                         icon={faTag}
                                         style={{
                                             color: 'rgb(39,74,169)',
-                                            marginLeft: '0.25rem',
+                                            marginLeft: '0.5rem',
                                             marginRight: '0.125rem',
                                         }}
                                         transform="rotate--30"
@@ -204,6 +204,7 @@ const BlogPostTemplate = props => {
                                         icon={faFolder}
                                         style={{
                                             color: 'rgb(39,74,169)',
+                                            marginLeft: '0.5rem',
                                             marginRight: '0.25rem',
                                         }}
                                     />
