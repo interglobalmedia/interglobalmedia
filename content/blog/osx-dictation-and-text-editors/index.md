@@ -1,5 +1,5 @@
 ---
-title: 'OSX dictation and text editors on Mojave'
+title: 'The Apple dictation and text editors bug'
 image: luke-chesser-49-unsplash.jpg
 description:
     'The past couple of days(and later tonight) has been all about web security,
