@@ -10,7 +10,7 @@ categories: ['podcasting']
 author: 'Maria D. Campbell'
 ---
 
-[Link to The Dawning of a New Era and a new set of Audio Podcast Tools podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/The-Dawning-of-a-New-Era-and-a-new-set-of-Audio-Podcast-Tools-e4crl0)
+-   [Link to The Dawning of a New Era and a new set of Audio Podcast Tools podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/The-Dawning-of-a-New-Era-and-a-new-set-of-Audio-Podcast-Tools-e4crl0)
 
 I just recently revamped the
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) website
