@@ -12,7 +12,7 @@ tags:
         'technology',
         'web-security',
         'official-aws-meetup',
-        'armor-security',
+        'armor-defense',
         'owasp',
         'gatsbyjs',
     ]
@@ -48,15 +48,14 @@ It was a bit difficult to follow the hacking demonstration from where I was
 sitting, so at one point I moved much closer in order see and hear better. But
 it was a good demonstration. I just wish it had taken place in an environment
 more conducive to presentations. It would have been nice if it took place at the
-AWS Loft downtown, but they close at 6pm. Hopefully the next event will take
+**AWS Loft** downtown, but they close at 6pm. Hopefully the next event will take
 place at a better location. On a more positive note, the hors d'hoeuvres and the
-wait staff upstairs were super nice, and
-[Armor Security](https://www.armor.com/) were very generous with the drink
-tickets.
+wait staff upstairs were super nice, and [Armor Defense](https://www.armor.com/)
+were very generous with the drink tickets.
 
-The event did get me curious about how GatsbyJs rated security-wise. I came
-across the following post entitled Security For Modern Web Frameworks on their
-website:
+The event did get me curious about how **GatsbyJS** rated security-wise. I came
+across the following post entitled **Security For Modern Web Frameworks** on
+their website:
 
 [Security for Modern Web Frameworks](https://www.gatsbyjs.org/blog/2019-04-06-security-for-modern-web-frameworks/)
 
@@ -64,8 +63,8 @@ It contained a link to an article entitled
 [Security for Static Websites](https://blog.sqreen.com/static-websites-security/).
 It's perhaps a bit outdated by now, but it definitely gets you thinking.
 
-Then I wanted to find out more about why one would choose Gatsbyjs over other
-frameworks when it comes to security. I found a list of reasons on the
+Then I wanted to find out more about why one would choose **GatsbyJS** over
+other frameworks when it comes to security. I found a list of reasons on the
 [GatsbjJS repository on Github](https://github.com/gatsbyjs/gatsby) entitled
 [Answering IT and Security Questions](https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/answering-it-security.md).
 It stated the following:
@@ -94,7 +93,9 @@ It stated the following:
 >     docs. Find
 >     out [how to contribute](https://www.gatsbyjs.org/contributing/how-to-contribute/).
 
-Other links in the Security For Modern Web Frameworks article are
+Other links in the [Security For Modern Web
+Frameworks]([Security For Modern Web Frameworks](https://www.gatsbyjs.org/blog/2019-04-06-security-for-modern-web-frameworks/#reach-skip-nav))
+article are
 [The OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project),
 listing top website security vulnerabilities.
 [OWASP](https://www.owasp.org/index.php/Main_Page), aka **Open Web Application
@@ -152,8 +153,9 @@ from you. Feel free to **_email_** me or **leave** me a **voice message** on the
 [Plugging In The Holes public page](https://anchor.fm/maria-campbell) on
 [anchor.fm](https://anchor.fm/).
 
-I will be embedding this episode of[] Plugging in The Holes]() along with a
-transcript in the form of a post on
+I will be embedding this episode of
+[Plugging in The Holes](https://anchor.fm/maria-campbell/episodes/GatsbyJS-and-Security-e4d5ms)
+along with a transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
