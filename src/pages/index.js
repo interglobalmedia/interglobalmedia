@@ -109,12 +109,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Firefox-0-Day-Flaw-Update-e4dk2m"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/The-Browser-War-Chrome-vs-Firefox-e4doks"
                             height="102px"
                             width="400px"
                             frameborder="0"
                             scrolling="no"
-                            title="Firefox 0 Day Flaw Update"
+                            title="The Browser War: Chrome vs Firefox"
                         />
                     </PodDiv>
                     <H1Style as="h1">
