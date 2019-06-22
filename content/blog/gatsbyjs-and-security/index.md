@@ -20,12 +20,7 @@ categories: ['podcasting']
 author: 'Maria D. Campbell'
 ---
 
-<iframe 
-src="https://anchor.fm/maria-campbell/embed/episodes/GatsbyJS-and-Security-e4d5ms" 
-frameborder="0" 
-scrolling="no"
-title="GatsbyJS and Security"
-></iframe>
+-   [Link to GatsbyJS and Security podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/GatsbyJS-and-Security-e4d5ms)
 
 The past couple of days(and later tonight) has been all about web security.
 
@@ -161,4 +156,4 @@ hearing and reading pleasure. Bye for now!
 
 ## Related Resources:
 
-[The Hacker News](https://thehackernews.com/)
+-   [The Hacker News](https://thehackernews.com/)

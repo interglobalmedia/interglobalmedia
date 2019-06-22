@@ -85,6 +85,28 @@ const TipCarousel = () => {
                         <strong>styled-components</strong> instead.
                     </p>
                 </TipDiv>
+                <TipDiv as="div">
+                    <h2>Tip of the Day #4</h2>
+                    <p>
+                        <strong>Gatsby Devs:</strong> don't use the
+                        <strong>
+                            <i> iframe tag</i>
+                        </strong>{' '}
+                        in your
+                        <strong>
+                            {' '}
+                            <i>
+                                <strong>dangerouslySetInnerHTML</strong>
+                            </i>
+                        </strong>{' '}
+                        with <strong>GatsbyJS</strong>. It won't work, and
+                        probably a bad idea anyway. Use it in your{' '}
+                        <strong>
+                            <i>component</i>
+                        </strong>
+                        .
+                    </p>
+                </TipDiv>
             </Carousel>
         </CarouselWrapper>
     )
