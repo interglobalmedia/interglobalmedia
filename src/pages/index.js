@@ -112,7 +112,7 @@ const IndexPage = props => {
                             src="https://anchor.fm/maria-campbell/embed/episodes/The-Browser-War-Chrome-vs-Firefox-e4doks"
                             height="102px"
                             width="400px"
-                            frameborder="0"
+                            frameBorder="0"
                             scrolling="no"
                             title="The Browser War: Chrome vs Firefox"
                         />
