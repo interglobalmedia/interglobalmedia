@@ -6,6 +6,7 @@ import {
     faLinkedinIn,
     faTwitter,
     faFacebookF,
+    faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 
 const ContactIconsStyle = styled.ul`
@@ -61,6 +62,21 @@ const ContactIcons = () => {
                         transform="rotate--30 flip-v up-10"
                         style={{cursor: 'pointer'}}
                         title={`connect with us on Facebook`}
+                    />{' '}
+                </a>
+            </li>
+            <li className="facebook">
+                <a
+                    className="instagram"
+                    href="https://www.instagram.com/letsbsocial/"
+                    target="_new"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon={faInstagram}
+                        transform="rotate--20 left-4 flip-v up-16"
+                        style={{cursor: 'pointer'}}
+                        title={`connect with us on Instagram`}
                     />{' '}
                 </a>
             </li>
