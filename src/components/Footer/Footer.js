@@ -13,6 +13,7 @@ import {
     faLinkedinIn,
     faTwitter,
     faFacebookF,
+    faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
@@ -79,7 +80,7 @@ export const ColumnsUl = styled.div`
     }
     & :nth-of-type(3) {
         list-style-type: none;
-        color: rgb(216, 132, 46);
+        // color: rgb(216, 132, 46);
         display: flex;
         justify-content: center;
         flex-direction: columns;
@@ -195,7 +196,7 @@ export const Footer = () => {
                         >
                             <FontAwesomeIcon
                                 icon={faTwitter}
-                                transform="flip-v flip-h down-12 right-2 rotate--180"
+                                transform="flip-v flip-h down-2 left-2 rotate--180"
                                 title={`follow us on Twitter`}
                             />
                         </a>
@@ -209,9 +210,24 @@ export const Footer = () => {
                         >
                             <FontAwesomeIcon
                                 icon={faFacebookF}
-                                transform="rotate-20 up-16 right-2 flip-h"
+                                transform="rotate-20 up-16 left-2 flip-h"
                                 title={`connect with us on Facebook`}
                             />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="instagram"
+                            href="https://www.instagram.com/letsbsocial/"
+                            target="_new"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                icon={faInstagram}
+                                transform="rotate--20 right-8 flip-v up-16"
+                                style={{cursor: 'pointer'}}
+                                title={`connect with us on Instagram`}
+                            />{' '}
                         </a>
                     </li>
                     <li>
