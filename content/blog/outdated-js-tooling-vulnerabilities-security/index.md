@@ -19,7 +19,7 @@ categories: ['outdated-tooling']
 author: 'Maria D. Campbell'
 ---
 
-[Link to Outdated JavaScript tooling, vulnerabilities and security podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Outdated-JavaScript-tooling--vulnerabilities-and-security-e4fsi9)
+-   [Link to Outdated JavaScript tooling, vulnerabilities and security podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Outdated-JavaScript-tooling--vulnerabilities-and-security-e4fsi9)
 
 I have spoken or written about this topic before, but feel the need to
 re-address it.
@@ -93,11 +93,11 @@ If, when you clone or download something from a repository, and then run `npm i`
 vulnerabilities in your package(s), follow their instructions to **_run_**
 `npm audit`.
 
-Oftentimes, there is already a remediation/patch/package update that will remove
-the vulnerabilities. Follow the instructions you receive in Terminal after
-running `npm audit`. Sometimes there is no remediation yet, or it might be
-difficult for you to do manually. That's when you should contact the
-creator/maintainer of the repository or package.
+Oftentimes, there is already a **remediation/patch/package** update that will
+**_remove_** the **vulnerabilities**. Follow the instructions you **_receive_**
+in **Terminal** after running `npm audit`. Sometimes there is no remediation
+yet, or it might be difficult for you to do manually. That's when you should
+contact the creator/maintainer of the repository or package.
 
 Sometimes things take a little while. After all, these packages are open source.
 Sometimes, however, it is not a matter of fixing the vulnerabilities in a
@@ -115,8 +115,8 @@ making your final decision. Of course, sometimes we don't have access to this
 information until we have actually paid for it. I don't have an answer for that.
 
 **Note:** Be sure to do the same in your own open source repositories. It is
-hard to keep up with Github security alerts, but just do your best to do so as
-you can. The longer you wait, the more complicated the remediation.
+hard to keep up with **Github** **_security alerts_**, but just do your best to
+do so as you can. The longer you wait, the more complicated the remediation.
 
 I will be embedding this episode of **Plugging in The Holes** along with a
 transcript in the form of a post on
