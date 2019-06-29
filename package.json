@@ -91,6 +91,7 @@
         "url": "git+https://github.com/interglobalmedia/interglobalmedia.git"
     },
     "scripts": {
+        "snyk": "snyk test",
         "lint:css": "stylelint './src/**/*.js'",
         "lint": "eslint src",
         "format": "npm run prettier -- --write",
