@@ -19,6 +19,8 @@ categories: ['outdated-tooling']
 author: 'Maria D. Campbell'
 ---
 
+[Link to Outdated JavaScript tooling, vulnerabilities and security podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Outdated-JavaScript-tooling--vulnerabilities-and-security-e4fsi9)
+
 I have spoken or written about this topic before, but feel the need to
 re-address it.
 
