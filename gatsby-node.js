@@ -141,12 +141,13 @@ exports.onCreateNode = ({node, getNode, actions}) => {
         })
     }
 }
-
-// added for styled components 4+
-exports.onCreateWebpackConfig = ({stage, actions}) => {
-    if (stage === 'develop') {
+// turn off sourcemaps in production build no longer works
+exports.onCreateWebpackConfig = ({actions, stage}) => {
+    // If production JavaScript and CSS build
+    if (stage === 'build-javascript') {
+        // Turn off source maps
         actions.setWebpackConfig({
-            devtool: 'cheap-module-source-map',
+            devtool: false,
         })
     }
 }
