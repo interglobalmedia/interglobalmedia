@@ -104,9 +104,6 @@
         "build": "gatsby build",
         "develop": "gatsby develop",
         "start": "npm run develop",
-        "serve": "gatsby serve",
-        "snyk-protect": "snyk protect",
-        "prepare": "npm run snyk-protect"
-    },
-    "snyk": true
+        "serve": "gatsby serve"
+    }
 }
