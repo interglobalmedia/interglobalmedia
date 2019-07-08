@@ -99,7 +99,7 @@
         "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
         "validate": "npm run lint && npm run prettier -- --list-different",
         "precommit": "lint-staged & npm test",
-        "test": "snyk test && jest",
+        "test": "jest",
         "clearCache": "jest --clearCache",
         "build": "gatsby build",
         "develop": "gatsby develop",
