@@ -16,7 +16,7 @@
         "babel-plugin-styled-components": "^1.10.1",
         "gatsby": "^2.10.0",
         "gatsby-image": "^2.1.4",
-        "gatsby-plugin-feed": "^2.3.0",
+        "gatsby-plugin-feed": "^2.3.1",
         "gatsby-plugin-google-analytics": "^2.0.21",
         "gatsby-plugin-gtag": "^1.0.11",
         "gatsby-plugin-manifest": "^2.1.1",
@@ -48,6 +48,7 @@
         "react-responsive-carousel": "^3.1.49",
         "react-scroll-up-button": "^1.6.4",
         "react-typography": "^0.16.19",
+        "snyk": "^1.192.3",
         "styled-components": "^4.3.2",
         "typeface-merriweather": "0.0.72",
         "typeface-montserrat": "0.0.54",
@@ -98,11 +99,14 @@
         "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
         "validate": "npm run lint && npm run prettier -- --list-different",
         "precommit": "lint-staged & npm test",
-        "test": "jest",
+        "test": "snyk test && jest",
         "clearCache": "jest --clearCache",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "start": "npm run develop",
-        "serve": "gatsby serve"
-    }
+        "serve": "gatsby serve",
+        "snyk-protect": "snyk protect",
+        "prepare": "npm run snyk-protect"
+    },
+    "snyk": true
 }
