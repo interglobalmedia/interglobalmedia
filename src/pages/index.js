@@ -8,6 +8,7 @@ import {
     faRss,
     faDirections,
     faEnvelope,
+    faPodcast,
 } from '@fortawesome/free-solid-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
@@ -71,18 +72,27 @@ const CarouselDiv = styled.div`
 
 const IndexFooterStyle = styled.footer`
     text-align: center;
-    padding-bottom: 0.7rem;
     letter-spacing: 0.07em;
-    height: 30px;
+    height: 250px;
     width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: #621645;
+    & li {
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: whitesmoke;
+    }
     & a {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: rgb(255, 165, 79);
     }
 `
 
@@ -109,13 +119,13 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Outdated-JavaScript-tooling--vulnerabilities-and-security-e4fsi9"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Gatsby--terser--and-source-maps-e4ip7k"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="Outdated JavaScript tooling, vulnerabilities and security"
-                        />
+                            title="Gatsby, terser, and source-maps"
+                        ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
                         <Link
@@ -189,6 +199,22 @@ const IndexPage = props => {
                                 style={{marginRight: '0.25rem'}}
                             />
                             RSS
+                        </a>
+                        <br />
+                        <li>Podcast</li>
+                        <a
+                            href="https://anchor.fm/maria-campbell"
+                            target="_new"
+                            rel="noopener noreferrer"
+                            title="visit link to view public Plugging in the Holes public site"
+                        >
+                            <FontAwesomeIcon
+                                icon={faPodcast}
+                                style={{
+                                    marginRight: '0.25rem',
+                                }}
+                            />
+                            Plugging In The Holes
                         </a>
                         <br />
                     </AnchorDiv>
