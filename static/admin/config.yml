@@ -1,0 +1,20 @@
+backend:
+    name: github
+    repo: interglobalmedia/interglobalmedia
+
+media_folder: /static/assets
+public_folder: assets
+
+collections:
+    - name: blog
+      label: Blog
+      folder: content/blog
+      create: true
+      fields:
+          - {label: Title, name: title}
+          - {label: Date, name: date, widget: date}
+          - {label: Description, name: description, widget: description}
+          - {label: Image, name: image, widget: image}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Tags, name: tags, widget: list}
+          - {label: Categories, name: categories, widget: list}
