@@ -9,6 +9,7 @@ import {
     faDirections,
     faEnvelope,
     faPodcast,
+    faSignInAlt,
 } from '@fortawesome/free-solid-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
@@ -73,11 +74,10 @@ const CarouselDiv = styled.div`
 const IndexFooterStyle = styled.footer`
     text-align: center;
     letter-spacing: 0.07em;
-    height: 250px;
     width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
-    padding-bottom: 0;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,6 +199,19 @@ const IndexPage = props => {
                                 style={{marginRight: '0.25rem'}}
                             />
                             RSS
+                        </a>
+                        <br />
+                        <a
+                            style={{lineHeight: '2.5'}}
+                            href="https://www.interglobalmedianetwork.com/admin/#/"
+                        >
+                            <FontAwesomeIcon
+                                icon={faSignInAlt}
+                                style={{
+                                    marginRight: '0.25rem',
+                                }}
+                            />
+                            Admin Login
                         </a>
                         <br />
                         <li>Podcast</li>
