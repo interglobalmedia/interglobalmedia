@@ -1,6 +1,6 @@
 ---
 title: 'Outdated JavaScript tooling, vulnerabilities and security'
-image: spenser-OxJxV4qakx0-unsplash.jpg
+image: /img/spenser-OxJxV4qakx0-unsplash.jpg
 description:
     'Node Security/npm audit appeared for the first time in my Terminal window
     in March of last year (2018).'
