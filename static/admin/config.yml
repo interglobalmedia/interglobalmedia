@@ -2,21 +2,21 @@ backend:
     name: git-gateway
     branch: master
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/assets
+public_folder: /assets
 
 collections:
     - name: 'blog'
       label: 'Blog'
-      folder: '/content/blog'
+      folder: 'content/blog'
       create: true
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       editor:
           preview: false
       fields:
           - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-          - {label: 'Featured image', name: 'image', widget: 'string'}
+          - {label: 'Publish Date', name: 'date', widget: 'date'}
+          - {label: 'Featured Image', name: 'image', widget: 'image'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
           - {label: 'Tags', name: 'tags', widget: 'list'}
           - {label: 'Categories', name: 'categories', widget: 'list'}
