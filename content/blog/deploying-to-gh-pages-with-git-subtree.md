@@ -1,6 +1,6 @@
 ---
 title: 'Deploying to gh-pages with git subtree'
-image: faye-cornish-512495-unsplash.jpg
+image: /img/faye-cornish-512495-unsplash.jpg
 description:
     'How to deploy an app or site hosted on a Github repository to Github
     gh-pages with git subtree.'

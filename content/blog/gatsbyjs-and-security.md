@@ -1,6 +1,6 @@
 ---
 title: 'GatsbyJS and Security'
-image: calvin-ma-1270886-unsplash.jpg
+image: /img/calvin-ma-1270886-unsplash.jpg
 description:
     'The past couple of days(and later tonight) has been all about web security,
     so in this episode of Plugging In The Holes podcast I talk about web

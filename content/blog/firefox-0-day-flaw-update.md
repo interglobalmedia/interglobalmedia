@@ -1,6 +1,6 @@
 ---
 title: 'Firefox 0 day flaw update'
-image: julian-bock-45296-unsplash.jpg
+image: /img/julian-bock-45296-unsplash.jpg
 description:
     'In this episode, I talk about the second patch that was made to Firefox
     this week to fix a second vulnerability in the browser software and how
