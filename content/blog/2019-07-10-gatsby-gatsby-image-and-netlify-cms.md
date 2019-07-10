@@ -8,11 +8,16 @@ description: >-
   beautifully.
 image: /img/pawel-czerwinski-knx8h8schdk-unsplash.jpg
 tags:
-  - >-
-    source-maps gatsbyjs terser npm-force-resolutions netlify-cms gatsby-image
-    gatsby-plugin-netlify-cms
+  - source-maps
+  - gatsbyjs
+  - terser
+  - npm-force-resolutions
+  - netlify-cms
+  - gatsby-image
+  - gatsby-plugin-netlify-cms
 categories:
-  - gatsbyjs netlify-cms
+  - gatsbyjs
+  - netlify-cms
 ---
 - [Link to Gatsby, gatsby-image, and Netlify CMS podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Gatsby--gatsby-image--and-Netlify-CMS-e4j887)
 
