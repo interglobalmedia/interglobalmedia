@@ -171,6 +171,12 @@ export const Footer = () => {
                             Plugging In The Holes
                         </a>
                     </li>
+
+                    <li>
+                        <a href="https://www.interglobalmedianetwork.com/admin/#/">
+                            Admin Login
+                        </a>
+                    </li>
                 </ColumnsUl>
                 <ColumnsUl as="ul">
                     <li>
