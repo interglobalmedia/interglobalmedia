@@ -13,6 +13,12 @@ collections:
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       editor:
           preview: true
+    - name: 'image'
+      label: 'Featured Image'
+      widget: 'image'
+      media_library:
+          config:
+              multiple: true
       fields:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Publish Date', name: 'date', widget: 'datetime'}
