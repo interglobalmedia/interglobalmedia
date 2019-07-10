@@ -2,7 +2,7 @@
 title:
     'How to immediately increase the accessibility rating of your (GatsbyJS)
     site'
-image: neonbrand-395901-unsplash.jpg
+image: /img/neonbrand-395901-unsplash.jpg
 description:
     'How to immediately increase the accessibility rating of your (GatsbyJS)
     site.'

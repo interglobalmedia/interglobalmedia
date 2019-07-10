@@ -7,6 +7,7 @@ import {
     faDirections,
     faEnvelope,
     faPodcast,
+    faSignInAlt,
 } from '@fortawesome/free-solid-svg-icons'
 import {
     faGithub,
@@ -72,9 +73,13 @@ export const ColumnsUl = styled.div`
     & :nth-of-type(2) {
         & li {
             font-size: 1.1rem;
+            color: whitesmoke;
         }
         & li:first-of-type {
             color: whitesmoke;
+            font-style: italic;
+        }
+        & li:nth-of-type(3) {
             font-style: italic;
         }
     }
@@ -136,6 +141,9 @@ export const SiteCredsDiv = styled.div`
     color: rgb(255, 227, 159);
     margin-top: 1rem;
     text-align: center;
+    font-size: 0.9rem;
+    width: 90%;
+    letter-spacing: 0.07em;
 `
 
 export const Footer = () => {
@@ -171,9 +179,15 @@ export const Footer = () => {
                             Plugging In The Holes
                         </a>
                     </li>
-
+                    <li>Login</li>
                     <li>
                         <a href="https://www.interglobalmedianetwork.com/admin/#/">
+                            <FontAwesomeIcon
+                                icon={faSignInAlt}
+                                style={{
+                                    marginRight: '0.25rem',
+                                }}
+                            />
                             Admin Login
                         </a>
                     </li>

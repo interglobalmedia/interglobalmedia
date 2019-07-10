@@ -1,3 +1,10 @@
+const netlifyCmsPaths = {
+    resolve: `gatsby-plugin-netlify-cms-paths`,
+    options: {
+        cmsConfig: `/static/admin/config.yml`,
+    },
+}
+
 module.exports = {
     siteMetadata: {
         title: `Inter 🌐 Media`,
@@ -116,15 +123,16 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                path: `${__dirname}/static/assets`,
-                name: 'assets',
+                path: `${__dirname}/static/img`,
+                name: 'images',
             },
         },
+        netlifyCmsPaths, // Including in your Gatsby plugins will transform any paths in your frontmatter
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/src/content`,
-                name: 'content',
+                path: `${__dirname}/content`,
+                name: 'blog',
             },
         },
         `gatsby-plugin-twitter`,
@@ -143,17 +151,20 @@ module.exports = {
                 name: `blog`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/images/`,
+                name: `images`,
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    // gatsby-remark-relative-images must
-                    // go before gatsby-remark-images
-                    {
-                        resolve: `gatsby-remark-relative-images`,
-                    },
+                    netlifyCmsPaths, // Including in your Gatsby plugins will transform any paths in your frontmatter
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
@@ -179,13 +190,6 @@ module.exports = {
                     `gatsby-remark-copy-linked-files`,
                     `gatsby-remark-smartypants`,
                 ],
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
             },
         },
         {

@@ -1,6 +1,6 @@
 ---
 title: 'The Apple dictation and text editors bug'
-image: luke-chesser-49-unsplash.jpg
+image: /img/luke-chesser-49-unsplash.jpg
 description:
     'In this episode, I discuss the bug I encountered when typing non-alpha
     numeric characters in a text editor on my Mac, and how I came to fix the

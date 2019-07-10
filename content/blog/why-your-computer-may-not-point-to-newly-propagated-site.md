@@ -2,7 +2,7 @@
 title:
     'Why Your Local Machine (Computer) May Not be Pointing to Your Newly
     Propagated Site'
-image: mael-balland-1157034-unsplash.jpg
+image: /img/mael-balland-1157034-unsplash.jpg
 description:
     'I recently changed my hosting for my business site to Netlify from
     gh-pages, but my Macbook Pro, which I use for development, does not point to

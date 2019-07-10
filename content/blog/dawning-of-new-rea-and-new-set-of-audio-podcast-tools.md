@@ -1,7 +1,7 @@
 ---
 title: 'The Dawning of a New Era and a new set of Audio Podcast Tools
 '
-image: stanislav-kondratiev-123540-unsplash.jpg
+image: /img/stanislav-kondratiev-123540-unsplash.jpg
 description:
     'In this premier episode of Plugging in The Holes, I discuss why I decided to create this podcast.'
 date: '2019-06-19'

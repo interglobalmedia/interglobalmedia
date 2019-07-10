@@ -1,6 +1,6 @@
 ---
 title: 'The Browser War: Chrome vs Firefox'
-image: ev-623589-unsplash.jpg
+image: /img/ev-623589-unsplash.jpg
 description: 'In this episode, I talk about Washington Post columnist  Geoffrey A. Fowler's article entitled  "Review: Google Chrome has become surveillance software. It’s time to switch.", but does Firefox stand up against it?'
 date: '2019-06-22'
 tags: ['firefox', 'google-chrome', 'browser-wars', 'privacy', 'cookies', 'cookie-tracking']
