@@ -12,16 +12,11 @@ collections:
       create: true
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       editor:
-          preview: true
-    - name: 'image'
-      label: 'Featured Image'
-      widget: 'image'
-      media_library:
-          config:
-              multiple: true
+          preview: false
       fields:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+          - {label: 'Featured image', name: 'image', widget: 'string'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
           - {label: 'Tags', name: 'tags', widget: 'list'}
           - {label: 'Categories', name: 'categories', widget: 'list'}
