@@ -1,6 +1,6 @@
 ---
 title: 'Gatsby, terser, and source-maps'
-image: andrew-neel-1-29wyvvLJA-unsplash.jpg
+image: /img/andrew-neel-1-29wyvvLJA-unsplash.jpg
 description:
     'In this episode, I talk about how  during the past couple of days I have
     been working on adding a netlfiy-cms to my Gatsby site.'

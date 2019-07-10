@@ -1,6 +1,6 @@
 ---
 title: 'Adding new content to your hugo website hosted on gh-pages'
-image: james-wainscoat-1451484-unsplash.jpg
+image: /img/james-wainscoat-1451484-unsplash.jpg
 description:
     'How to add new content to your hugo website that is hosted on Github
     gh-pages.'
