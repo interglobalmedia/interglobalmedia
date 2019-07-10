@@ -112,7 +112,12 @@ module.exports = {
     },
     pathPrefix: '/',
     plugins: [
-        `gatsby-plugin-netlify-cms`,
+        {
+            resolve: `gatsby-plugin-netlify-cms`,
+            options: {
+                enableIdentityWidget: true,
+            },
+        },
         `gatsby-plugin-twitter`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-sass`,
