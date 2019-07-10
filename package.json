@@ -3,7 +3,7 @@
     "private": true,
     "description": "The business website for Inter-Global Media Network, Inc. built with Gatsbyjs 2",
     "version": "0.0.1",
-    "author": "Maria D. Campbell <mathews.kyle@gmail.com>",
+    "author": "Maria D. Campbell <interglobalmedia@gmail.com>",
     "bugs": {
         "url": "https://github.com/interglobalmedia/interglobalmedia/issues"
     },
@@ -21,6 +21,7 @@
         "gatsby-plugin-gtag": "^1.0.11",
         "gatsby-plugin-manifest": "^2.1.1",
         "gatsby-plugin-netlify-cms": "^4.1.1",
+        "gatsby-plugin-netlify-cms-paths": "^1.2.2",
         "gatsby-plugin-offline": "^2.1.3",
         "gatsby-plugin-react-helmet": "^3.0.12",
         "gatsby-plugin-sass": "^2.0.11",
@@ -32,7 +33,6 @@
         "gatsby-remark-copy-linked-files": "^2.0.13",
         "gatsby-remark-images": "^3.0.16",
         "gatsby-remark-prismjs": "^3.2.11",
-        "gatsby-remark-relative-images": "^0.2.2",
         "gatsby-remark-responsive-iframe": "^2.1.1",
         "gatsby-remark-smartypants": "^2.0.9",
         "gatsby-source-filesystem": "^2.0.39",
