@@ -112,10 +112,19 @@ module.exports = {
     },
     pathPrefix: '/',
     plugins: [
+        // Add static assets before markdown files
         {
-            resolve: `gatsby-plugin-netlify-cms`,
+            resolve: 'gatsby-source-filesystem',
             options: {
-                enableIdentityWidget: true,
+                path: `${__dirname}/static/assets`,
+                name: 'assets',
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/content`,
+                name: 'content',
             },
         },
         `gatsby-plugin-twitter`,
@@ -134,14 +143,27 @@ module.exports = {
                 name: `blog`,
             },
         },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    // gatsby-remark-relative-images must
+                    // go before gatsby-remark-images
+                    {
+                        resolve: `gatsby-remark-relative-images`,
+                    },
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
                             maxWidth: 1026,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-plugin-netlify-cms`,
+                        options: {
+                            enableIdentityWidget: true,
                         },
                     },
                     {
@@ -159,7 +181,6 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -202,7 +223,6 @@ module.exports = {
                 path: `${__dirname}/src/images/sites`,
             },
         },
-        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-gtag`,
             options: {
