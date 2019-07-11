@@ -18,6 +18,7 @@ tags:
 categories:
   - gatsbyjs
   - netlify-cms
+author: Maria D. Camcpbell
 ---
 - [Link to Gatsby, gatsby-image, and Netlify CMS podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Gatsby--gatsby-image--and-Netlify-CMS-e4j887)
 
