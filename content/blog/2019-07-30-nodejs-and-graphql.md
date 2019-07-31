@@ -20,7 +20,7 @@ categories:
   - graphql
 author: Maria D. Campbell
 ---
-[Link to the Node.js and graphql podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Node-js-and-graphql-e4plvp)
+- [Link to the Node.js and graphql podcast on anchorfm](https://anchor.fm/maria-campbell/episodes/Node-js-and-graphql-e4plvp)
 
 I first learned about and started using [graphql](https://graphql.org/) with [GatsbyJS](gatsbyjs.org/). I loved it. But I really got to know more about it when I learned how to use it for the backend with [Nodejs](https://nodejs.org/en/).
 
