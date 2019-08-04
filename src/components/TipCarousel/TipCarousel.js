@@ -107,6 +107,21 @@ const TipCarousel = () => {
                         .
                     </p>
                 </TipDiv>
+                <TipDiv as="div">
+                    <h2>Tip of the Day #5</h2>
+                    <p>
+                        Going <strong>serverless</strong> does not mean going{' '}
+                        <strong>"databaseless"</strong>.
+                    </p>
+                </TipDiv>
+                <TipDiv as="div">
+                    <h2>Tip of the Day #6</h2>
+                    <p>
+                        Going <strong>serverless</strong> with a{' '}
+                        <strong>backend serverless database</strong> does not
+                        necessarily mean your app is much more secure.
+                    </p>
+                </TipDiv>
             </Carousel>
         </CarouselWrapper>
     )
