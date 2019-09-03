@@ -22,6 +22,8 @@ categories:
   - web-development
 author: Maria D. Campbell
 ---
+- Link to the [Specialization: The Importance of Not Spreading Oneself Too Thin](https://anchor.fm/maria-campbell/episodes/Specialization-The-Importance-of-Not-Spreading-Oneself-Too-Thin-e576bk) podcast on anchorfm
+
 It's been a little while since my last podcast. I have been a bit busy and have also been working on my **presentation** for [Code Camp 2019](https://codecampnyc.org/)! It started as a problem solving quest and became a **Code Camp** submission. I submitted the proposal a few days ago and am awaiting confirmation. Wish me luck on the submission and hopefully I will be seeing some of you there this year! It **takes place** in ***NYC*** on **Saturday, October 12, 2019**. Looking forward to hearing others speak as well!
 
 On another note, I wanted to share a couple of tweets I came across on Twitter which I think are very important for you to hear. They come from **Cory House**, **Twitter handle** [@housecor](https://twitter.com/housecor). The first:
