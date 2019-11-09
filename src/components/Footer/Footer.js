@@ -223,20 +223,6 @@ export const Footer = () => {
                     </li>
                     <li>
                         <a
-                            className="facebook"
-                            href="https://www.facebook.com/mariador62"
-                            target="_new"
-                            rel="noopener noreferrer"
-                        >
-                            <FontAwesomeIcon
-                                icon={faFacebookF}
-                                transform="rotate-20 up-16 left-2 flip-h"
-                                title={`connect with us on Facebook`}
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
                             className="instagram"
                             href="https://www.instagram.com/letsbsocial/"
                             target="_new"
