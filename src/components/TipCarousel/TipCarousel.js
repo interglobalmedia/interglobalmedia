@@ -108,10 +108,11 @@ const TipCarousel = () => {
                     </p>
                 </TipDiv>
                 <TipDiv as="div">
-                    <h2>Tip of the Day #5</h2>
+                    <h2>Tip of the Day #7</h2>
                     <p>
-                        Going <strong>serverless</strong> does not mean going{' '}
-                        <strong>"databaseless"</strong>.
+                        if you don't use a tool often and tend to forget a step,
+                        set a <strong>daily reminder</strong>daily reminder to{' '}
+                        <strong>remember</strong> it until you get it down.
                     </p>
                 </TipDiv>
                 <TipDiv as="div">
@@ -120,6 +121,14 @@ const TipCarousel = () => {
                         Going <strong>serverless</strong> with a{' '}
                         <strong>backend serverless database</strong> does not
                         necessarily mean your app is much more secure.
+                    </p>
+                </TipDiv>
+                <TipDiv as="div">
+                    <h2>Tip of the Day #7</h2>
+                    <p>
+                        if you don't use a tool often and tend to forget a step,
+                        set a <strong>daily reminder </strong> to{' '}
+                        <strong>remember</strong> it until you get it down.
                     </p>
                 </TipDiv>
             </Carousel>
