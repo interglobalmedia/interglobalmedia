@@ -119,12 +119,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/My-thoughts-on-Social-Media-e959ef"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Checking-In-e9h79p"
                             height="102px"
                             width="400px"
-                            frameBorder="0"
+                            frameborder="0"
                             scrolling="no"
-                            title="My thoughts on Social Media"
+                            title="Checking In"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
