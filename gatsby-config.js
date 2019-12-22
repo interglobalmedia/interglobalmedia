@@ -304,13 +304,12 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Gatsby Starter Blog`,
+                name: `GatsbyJS`,
                 short_name: `GatsbyJS`,
                 start_url: `/`,
-                background_color: `#ffffff`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`,
+                background_color: `#f7f0eb`,
+                theme_color: `#a2466c`,
+                display: `standalone`,
             },
         },
         `gatsby-plugin-offline`,
