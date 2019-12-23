@@ -51,6 +51,10 @@ Then  I deployed the changes to Netlify. My deploy to remote was successful.
 
 I will be embedding this episode of Plugging in The Holes along with a transcript in the form of a post on interglobalmedianetwork.com for your hearing and reading pleasure. I will be including the related resource links mentioned in the podcast of course. Always do. Bye for now!
 
+- [GatsbyJS 2.18.16](https://www.interglobalmedianetwork.com/blog/2019-12-23-gatsbyjs-2-18-16/)
+
+- [When the Homebrew command brew update fails](https://www.interglobalmedianetwork.com/blog/2019-12-22-when-the-homebrew-command-brew-update-fails/)
+
 - [gatsby-plugin-sharp](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/)
 
 - [interglobalmedianetwork.com repo](https://github.com/interglobalmedia/interglobalmedia)
