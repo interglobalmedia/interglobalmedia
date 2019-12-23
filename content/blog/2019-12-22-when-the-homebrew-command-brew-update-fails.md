@@ -1,7 +1,7 @@
 ---
-title: When the Homebrew command 'brew update' fails
+title: When the Homebrew command brew update fails
 date: 2019-12-23T00:17:30.665Z
-description: When the Homebrew command 'brew update' fails.
+description: When the Homebrew command brew update fails.
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
   - homebrew
