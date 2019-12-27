@@ -165,7 +165,12 @@ const IndexPage = props => {
                 <IndexFooterStyle as="footer">
                     <AnchorDiv as="div">
                         <ScrollUpButton
-                            style={{background: 'transparent', outline: 'none'}}
+                            style={{
+                                background: 'transparent',
+                                outline: 'none',
+                                marginBottom: '3.5rem',
+                                marginRight: '0.5rem',
+                            }}
                         />
                         <Link
                             to="/contact"
