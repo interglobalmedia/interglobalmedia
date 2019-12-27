@@ -257,6 +257,8 @@ export const Footer = () => {
                     style={{
                         background: 'transparent',
                         outline: 'none',
+                        marginBottom: '3.5rem',
+                        marginRight: '0.5rem',
                     }}
                     ContainerClassName="ScrollUpButton__Container"
                 />
