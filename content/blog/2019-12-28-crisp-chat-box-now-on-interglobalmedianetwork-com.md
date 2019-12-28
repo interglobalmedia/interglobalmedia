@@ -16,8 +16,8 @@ categories:
 author: Maria D. Campbell
 ---
 
--   Link to \[Crisp Chat Box now on
-    interglobalmedianetwork.com](https://anchor.fm/maria-campbell/episodes/Crisp-Chat-Box-now-on-interglobalmedianetwork-com-e9s85s)
+-   Link to
+    [Crisp Chat Box now on interglobalmedianetwork.com](https://anchor.fm/maria-campbell/episodes/Crisp-Chat-Box-now-on-interglobalmedianetwork-com-e9s85s)
     podcast on anchorfm
 
 I finally have added a **\*chat widget** so people can talk to me about what I
