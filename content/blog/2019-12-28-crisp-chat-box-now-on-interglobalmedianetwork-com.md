@@ -20,7 +20,7 @@ author: Maria D. Campbell
     [Crisp Chat Box now on interglobalmedianetwork.com](https://anchor.fm/maria-campbell/episodes/Crisp-Chat-Box-now-on-interglobalmedianetwork-com-e9s85s)
     podcast on anchorfm
 
-I finally have added a **\*chat widget** so people can talk to me about what I
+I finally have added a **chat widget** so people can talk to me about what I
 might be able to do for them in real time. I'm very excited about this!
 
 I was thinking of and then trying to implement a **node chat box** myself on the
