@@ -19,6 +19,7 @@ import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
 import {SiteCredsDiv, AnchorDiv} from '../components/Footer/Footer'
 import TipCarousel from '../components/TipCarousel/TipCarousel'
+import {useMediaQuery} from '../hooks/mediaQueryHooks'
 
 const Container = styled.div`
     background: rgb(255, 227, 159);
@@ -95,11 +96,21 @@ const IndexFooterStyle = styled.footer`
         color: rgb(255, 165, 79);
     }
 `
+const styles = {
+    container: (notRightMargin, marginBottomLess) => ({
+        background: 'transparent',
+        outline: 'none',
+        marginBottom: marginBottomLess ? '3.0rem' : '3.75rem',
+        marginRight: notRightMargin ? '-0.25rem' : '0.5rem',
+    }),
+}
 
 const IndexPage = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
     const keywords = data.site.siteMetadata.keywords
+    const notRightMargin = useMediaQuery('(max-width: 559px)')
+    const marginBottomLess = useMediaQuery('(max-width: 559px)')
     return (
         <Container as="div">
             <SEO location={props.location} title={title} keywords={keywords} />
@@ -165,12 +176,11 @@ const IndexPage = props => {
                 <IndexFooterStyle as="footer">
                     <AnchorDiv as="div">
                         <ScrollUpButton
-                            style={{
-                                background: 'transparent',
-                                outline: 'none',
-                                marginBottom: '3.5rem',
-                                marginRight: '0.5rem',
-                            }}
+                            style={styles.container(
+                                notRightMargin,
+                                marginBottomLess,
+                            )}
+                            ContainerClassName="ScrollUpButton__Container"
                         />
                         <Link
                             to="/contact"
