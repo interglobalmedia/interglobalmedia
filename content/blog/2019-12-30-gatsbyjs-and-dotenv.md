@@ -107,8 +107,7 @@ mentioned in the podcast of course. Always do. Bye for now!
 
 -   [gatsby-plugin-crisp-chat](https://www.gatsbyjs.org/packages/gatsby-plugin-crisp-chat/)
 
--   [Gatsby .env variables with Heroku #11559
-    (https://github.com/gatsbyjs/gatsby/issues/11559)
+-   [Gatsby .env variables with Heroku #11559](https://github.com/gatsbyjs/gatsby/issues/11559)
 
 -   [Environment Variables in gatsby-config.js not working #3896](https://github.com/gatsbyjs/gatsby/issues/3896)
 
@@ -120,5 +119,4 @@ mentioned in the podcast of course. Always do. Bye for now!
 
 -   [Environments and Environment Variables](https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/environment-variables.md)
 
--   [gatsby-plugin-crisp-chat repository on
-    Github[(https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/5)
+-   [gatsby-plugin-crisp-chat repository onGithub](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/5)
