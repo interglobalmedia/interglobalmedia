@@ -1,5 +1,6 @@
-let env = process.env.NODE_ENV || 'production'
-require('dotenv').config({path: `./.env.${env}`})
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
 
 const CRISP_WEBSITE_ID = process.env.CRISP_WEBSITE_ID
 
