@@ -2,7 +2,7 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
 })
 
-const CRISP_WEBSITE_ID = process.env.CRISP_WEBSITE_ID
+const CRISP_WEBSITE_ID = `${process.env.CRISP_WEBSITE_ID}`
 
 const netlifyCmsPaths = {
     resolve: `gatsby-plugin-netlify-cms-paths`,
