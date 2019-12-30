@@ -71,7 +71,7 @@ In the end, however, the **Crisp** widget only appeared if I placed the actual
 **Crisp** `configuration` in `gatsby-config.js`. Just as shown in the `GatsbyJS`
 docs. I tried all the other solutions provided in the links I include in the
 post transcript of this podcast on[
-interglobalmedianetwork.com]https://www.interglobalmedianetwork.com/blog/2019-12-30-gatsbyjs-and-dotenv/),
+interglobalmedianetwork.com]h(https://www.interglobalmedianetwork.com/blog/2019-12-30-gatsbyjs-and-dotenv/),
 but none worked for me.
 
 Using environment variables only resulted in an `undefined` **Crisp**
