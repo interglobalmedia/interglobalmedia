@@ -1,9 +1,3 @@
-let env = process.env.NODE_ENV || 'development'
-
-require('dotenv').config({path: `./.env.${env}`})
-
-const CRISP_WEBSITE_ID = `${process.env.CRISP_WEBSITE_ID}`
-
 const netlifyCmsPaths = {
     resolve: `gatsby-plugin-netlify-cms-paths`,
     options: {
@@ -324,8 +318,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-crisp-chat',
             options: {
-                websiteId: CRISP_WEBSITE_ID,
-                enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+                websiteId: `ddd92651-5863-43f5-ab87-af276814354c`,
+                enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
                 defer: false, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
                 enableImprovedAccessibility: true, // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
             },
