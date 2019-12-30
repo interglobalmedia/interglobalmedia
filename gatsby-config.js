@@ -1,6 +1,4 @@
-require('dotenv').config({
-    path: `.env.${process.env.NODE_ENV}`,
-})
+const dotenv = require('dotenv').config()
 
 const netlifyCmsPaths = {
     resolve: `gatsby-plugin-netlify-cms-paths`,
