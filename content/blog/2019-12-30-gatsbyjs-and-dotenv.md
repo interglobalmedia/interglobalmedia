@@ -90,7 +90,7 @@ a package like `dotenv`.
 
 I will continue to research this issue, and I have actually created an issue
 regarding this problem on the
-[gatsby-plugin-crisp-chat[(https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/5)
+[gatsby-plugin-crisp-chat](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/5)
 **Github** repository.
 
 I will be embedding this episode of **Plugging in The Holes** along with a
