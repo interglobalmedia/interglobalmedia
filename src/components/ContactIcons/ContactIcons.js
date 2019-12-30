@@ -52,21 +52,6 @@ const ContactIcons = () => {
             </li>
             <li className="facebook">
                 <a
-                    className="facebook"
-                    href="https://www.facebook.com/mariador62"
-                    target="_new"
-                    rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon
-                        icon={faFacebookF}
-                        transform="rotate--30 flip-v up-10"
-                        style={{cursor: 'pointer'}}
-                        title={`connect with us on Facebook`}
-                    />{' '}
-                </a>
-            </li>
-            <li className="facebook">
-                <a
                     className="instagram"
                     href="https://www.instagram.com/letsbsocial/"
                     target="_new"
