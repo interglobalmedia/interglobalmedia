@@ -13,12 +13,12 @@ import {
     faGithub,
     faLinkedinIn,
     faTwitter,
-    faFacebookF,
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
 import styled from 'styled-components'
+import {useMediaQuery} from '../../hooks/mediaQueryHooks'
 
 export const FooterStyle = styled.footer`
     background: rgb(98, 22, 69);
@@ -146,7 +146,18 @@ export const SiteCredsDiv = styled.div`
     letter-spacing: 0.07em;
 `
 
-export const Footer = () => {
+const styles = {
+    container: (notRightMargin, marginBottomLess) => ({
+        background: 'transparent',
+        outline: 'none',
+        marginBottom: marginBottomLess ? '3rem' : '3.75rem',
+        marginRight: notRightMargin ? '-0.25rem' : '0.5rem',
+    }),
+}
+
+const Footer = () => {
+    const notRightMargin = useMediaQuery('(max-width: 559px)')
+    const marginBottomLess = useMediaQuery('(max-width: 559px)')
     return (
         <FooterStyle as="footer">
             <ColumnsDiv as="div">
@@ -223,20 +234,6 @@ export const Footer = () => {
                     </li>
                     <li>
                         <a
-                            className="facebook"
-                            href="https://www.facebook.com/mariador62"
-                            target="_new"
-                            rel="noopener noreferrer"
-                        >
-                            <FontAwesomeIcon
-                                icon={faFacebookF}
-                                transform="rotate-20 up-16 left-2 flip-h"
-                                title={`connect with us on Facebook`}
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
                             className="instagram"
                             href="https://www.instagram.com/letsbsocial/"
                             target="_new"
@@ -268,10 +265,7 @@ export const Footer = () => {
             </ColumnsDiv>
             <AnchorDiv as="div">
                 <ScrollUpButton
-                    style={{
-                        background: 'transparent',
-                        outline: 'none',
-                    }}
+                    style={styles.container(notRightMargin, marginBottomLess)}
                     ContainerClassName="ScrollUpButton__Container"
                 />
                 <Link

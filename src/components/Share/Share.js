@@ -39,25 +39,6 @@ const Share = props => {
         <SocialUl as="ul">
             <li>
                 <a
-                    href={fb}
-                    target="_new"
-                    rel="noopener noreferrer"
-                    title={`if you like this post share it on Facebook with your friends!`}
-                >
-                    <FontAwesomeIcon
-                        icon={faFacebookF}
-                        size="2x"
-                        style={{
-                            width: '24px',
-                            height: '24px',
-                            marginLeft: '-0.5rem',
-                        }}
-                    />
-                    Facebook
-                </a>
-            </li>
-            <li>
-                <a
                     href={twitter}
                     target="_new"
                     rel="noopener noreferrer"

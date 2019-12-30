@@ -21,3 +21,4 @@ collections:
           - {label: 'Body', name: 'body', widget: 'markdown'}
           - {label: 'Tags', name: 'tags', widget: 'list'}
           - {label: 'Categories', name: 'categories', widget: 'list'}
+          - {label: 'Author', name: 'author', widget: 'string'}
