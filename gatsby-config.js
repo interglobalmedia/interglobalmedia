@@ -1,5 +1,5 @@
 require('dotenv').config({
-    path: `.env.${process.env.CRISP_WEBSITE_ID}`,
+    path: `.env.${process.env.NODE_ENV}`,
 })
 
 const netlifyCmsPaths = {
