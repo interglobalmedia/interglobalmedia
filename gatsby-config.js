@@ -1,5 +1,8 @@
-let env = process.env.NODE_ENV || 'production'
-require('dotenv').config({path: `./.env.${env}`})
+let devEnv = process.env.NODE_ENV || 'development'
+require('dotenv').config({path: `./.env.${devEnv}`})
+
+let prodEnv = process.env.NODE_ENV || 'production'
+require('dotenv').config({path: `./.env.${prodEnv}`})
 
 const netlifyCmsPaths = {
     resolve: `gatsby-plugin-netlify-cms-paths`,
