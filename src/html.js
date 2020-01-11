@@ -13,6 +13,10 @@ export default function HTML(props) {
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
+                <meta
+                    name="p:domain_verify"
+                    content="c47312aa4109f8439eb3499ab4849309"
+                />
                 {props.headComponents}
             </head>
             <body {...props.bodyAttributes}>
