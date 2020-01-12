@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Github-Integration-App-Smart-Commits-on-Jira-ea4f2m"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/How-to-take-a-screenshot-on-your-Mac-Mojave-or-later-ea4p0f"
                             height="102px"
                             width="400px"
-                            frameborder="0"
+                            frameBorder="0"
                             scrolling="no"
-                            title="Github Integration App Smart Commits on Jira"
+                            title="How to take a screenshot on your Mac (Mojave or later)"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
