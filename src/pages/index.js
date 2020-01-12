@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/How-to-create-a-sticky-footer-when-you-originally-didnt-account-for-having-one-ea2vpl"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Github-Integration-App-Smart-Commits-on-Jira-ea4f2m"
                             height="102px"
                             width="400px"
-                            frameBorder="0"
+                            frameborder="0"
                             scrolling="no"
-                            title="How to create a sticky footer when you originally didn't account for having one"
+                            title="Github Integration App Smart Commits on Jira"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
