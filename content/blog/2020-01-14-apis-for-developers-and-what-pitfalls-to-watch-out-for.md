@@ -29,7 +29,7 @@ In order to create live projects with **React** using an `API` ***with*** `API` 
 
 I remember working on client side applications some years ago, and unwittingly **adding** ***free*** but **restricted** `API` keys in the script. One time my key was revoked because someone else found the key and used it for themselves. The number of requests to the API exceeded the limit, and the key was disabled. That's when I learned that one should not expose one's API keys, then I learned about packages like `dotenv` or creating my own env files. But these were all scenarios including a backend server.
 
-This is what I found on stackoverflow:
+This is what I found on **stackoverflow**:
 
 ```
 Question: Doesn't the API key still end up in the bundle?
