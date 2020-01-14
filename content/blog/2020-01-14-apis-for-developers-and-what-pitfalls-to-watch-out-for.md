@@ -31,10 +31,15 @@ I remember working on client side applications some years ago, and unwittingly *
 
 This is what I found on stackoverflow:
 
->**Question:** Doesn't the API key still end up in the bundle?**
-**Answer:** Even when you have your key (MY_KEY) as an environment variable in the script tag, it will get rendered on the page and will be visible. Generally, these are browser keys and are intended to be used on the client side. These can be restricted by providing Http Referer header in your request. More on the efficacy of securing these keys here. However API keys (like MY_OTHER_KEY) are not supposed to be used on the client side and should not be rendered in the script tag or stored in the client side JS.
-**Question:** Is there a canonic way of using API keys in a react app? Or is it up to the individual developer?
-**Answer:** The canonical way to use a third party API key is for your client side app to send a request to your backend API. Your backend API then formats the request as per the third-party API, adds the key and makes the call to the third-party API. Once it receives the response, it can either unpack it and translate it into domain objects which your front-end app would understand or send the raw response back to the front-end app. In this way, the API key stays at the backend and is never sent to the client-side. 
+```
+Question: Doesn't the API key still end up in the bundle?
+
+Answer: Even when you have your key (MY_KEY) as an environment variable in the script tag, it will get rendered on the page and will be visible. Generally, these are browser keys and are intended to be used on the client side. These can be restricted by providing Http Referer header in your request. More on the efficacy of securing these keys here. However API keys (like MY_OTHER_KEY) are not supposed to be used on the client side and should not be rendered in the script tag or stored in the client side JS.
+
+Question: Is there a canonic way of using API keys in a react app? Or is it up to the individual developer?
+
+Answer: The canonical way to use a third party API key is for your client side app to send a request to your backend API. Your backend API then formats the request as per the third-party API, adds the key and makes the call to the third-party API. Once it receives the response, it can either unpack it and translate it into domain objects which your front-end app would understand or send the raw response back to the front-end app. In this way, the API key stays at the backend and is never sent to the client-side.
+```
 
 Even if you are just a **frontend developer**, for cases like this, you need to have some kind of **backend** as well. In my opinion, unless you are working on a team with defined roles in which both frontend and backend are clearly defined but available to each other, it is important to know at least the ***fundamentals*** of creating a **backend** that would serve your `API` key ***needs***.
 
