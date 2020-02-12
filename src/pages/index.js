@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/APIs-for-Developers-and-what-pitfalls-to-watch-out-for-ea5vup"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Using-node-sass-instead-of-system-Sass-in-OS-X-Catalina-eaq2cd"
                             height="102px"
                             width="400px"
-                            frameborder="0"
+                            frameBorder="0"
                             scrolling="no"
-                            title="APIs for Developers and what pitfalls to watch out for"
+                            title="Using node-sass instead of system Sass in OS X Catalina"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
