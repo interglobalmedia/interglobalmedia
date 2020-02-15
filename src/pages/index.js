@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Using-node-sass-instead-of-system-Sass-in-OS-X-Catalina-eaq2cd"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/The-importance-and-advantage-of-git-push--u-earohp"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="Using node-sass instead of system Sass in OS X Catalina"
+                            title="The importance and advantage of git push -u"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
