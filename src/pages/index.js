@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/The-importance-and-advantage-of-git-push--u-earohp"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/The-importance-of-taking-time-out-to-check-your-code-and-html-markup-eatgo6"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="The importance and advantage of git push -u"
+                            title="The importance of taking time out to check your code and html markup"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
