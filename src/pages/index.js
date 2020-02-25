@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Images-in-Gatsby-Post-Content-when-using-Netlify-CMS-eb2l4o"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="Git cloning a branch other than master from Github"
+                            title="Images in Gatsby Post Content when using Netlify CMS"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
