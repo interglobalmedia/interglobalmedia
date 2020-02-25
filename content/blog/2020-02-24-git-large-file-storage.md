@@ -41,6 +41,8 @@ If you have ***pre-existing*** **files** that you need to ***convert*** to `Git 
 
 After you have ***tracked*** the **files** you want to **track** and ***committed***  the `.gitattributes` file, then you can simply `commit` your **files** and `push` them to `origin master`. And that is it!
 
+![Git File Large Storage](img/git-large-file-storage.png)
+
 I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. I will be including the related resource links mentioned in the podcast of course. Always do. Bye for now!
 
 ## Related Resources:
