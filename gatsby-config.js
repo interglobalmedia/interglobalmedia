@@ -165,7 +165,6 @@ module.exports = {
             options: {
                 plugins: [
                     netlifyCmsPaths, // Including in your Gatsby plugins will transform any paths in your frontmatter
-                    `gatsby-remark-relative-images`,
                     {
                         resolve: `gatsby-remark-images`,
                         options: {

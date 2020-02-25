@@ -66,7 +66,7 @@ After you have **_tracked_** the **files** you want to **track** and
 **_committed_** the `.gitattributes` file, then you can simply `commit` your
 **files** and `push` them to `origin master`. And that is it!
 
-![Git Large File Storage](images/posts/git-large-file-storage.png)
+![Git Large File Storage](/img/git-large-file-storage.png)
 
 I will be embedding this episode of **Plugging in The Holes** along with a
 **_transcript_** in the form of a **post** on
