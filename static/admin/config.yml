@@ -19,7 +19,6 @@ collections:
           - {label: 'Description', name: 'description', widget: 'text'}
           - {label: 'Featured Image', name: 'image', widget: 'image'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
-          - {label: 'Body Image', name: 'image', widget: 'image'}
           - {label: 'Tags', name: 'tags', widget: 'list'}
           - {label: 'Categories', name: 'categories', widget: 'list'}
           - {label: 'Author', name: 'author', widget: 'string'}
