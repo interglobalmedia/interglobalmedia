@@ -2,14 +2,14 @@
 title: Git Large File Storage
 date: 2020-02-24T22:51:59.869Z
 description: >-
-    In this episode, I discuss how I finally took the plunge and started using
-    Git Large File Storage in my repositories.
+  In this episode, I discuss how I finally took the plunge and started using Git
+  Large File Storage in my repositories.
 image: /img/robert-v-ruggiero-sspxcjdjb9s-unsplash.jpg
 tags:
-    - git-large-file-storage
-    - git
+  - git-large-file-storage
+  - git
 categories:
-    - git
+  - git
 author: Maria D. Campbell
 ---
 
