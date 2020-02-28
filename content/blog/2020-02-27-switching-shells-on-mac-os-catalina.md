@@ -2,19 +2,19 @@
 title: Switching Shells on Mac OS Catalina
 date: 2020-02-28T01:15:38.323Z
 description: >-
-  In this episode, I talk about why one should switch over to the ZShell from
-  Bash if they has Mac OS Catalina installed on their machine.
+    In this episode, I talk about why one should switch over to the ZShell from
+    Bash if they has Mac OS Catalina installed on their machine.
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
-  - bash
-  - zsh
-  - interactive-shell
-  - osx
-  - catalina
+    - bash
+    - zsh
+    - interactive-shell
+    - osx
+    - catalina
 categories:
-  - catalina
-  - osx
-  - interactive-shell
+    - catalina
+    - osx
+    - interactive-shell
 author: Maria D. Campbell
 ---
 
@@ -95,6 +95,11 @@ longer and more tedious process. I would just **go with** **_using_** the
 [What Shell Am I Using? Here’s How To Find Out](https://osxdaily.com/2009/09/25/what-shell-am-i-using/)
 that can walk you through changing your default shell via Users and Groups, if
 you absolutely insist on going that way.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YwhdDMT_dFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Opening VS Code with a shell command from within a folder in Terminal" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TisNvwkW1aI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Opening VS Code via open folder
+" allowfullscreen></iframe>
 
 I will be embedding this episode of **Plugging in The Holes** along with a
 **_transcript_** in the form of a **post** on
