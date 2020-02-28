@@ -31,11 +31,14 @@ then using `Live Server` after opening a `file` instead of a `folder`.
 I will be hosting the `.movs` on YouTube, and embedding them into the transcript
 of this podcast.
 
-<!-- blank line -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YwhdDMT_dFU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Opening VS Code with a shell command from within a folder in Terminal" allowFullScreen></iframe>
-<!-- blank line -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TisNvwkW1aI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Opening VS Code via open folder" allowFullScreen></iframe>
-<!-- blank line -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/906ebkHmHsI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Opening a file with VS Code" allowFullScreen></iframe>
-<!-- blank line -->
-I will be embedding this episode of **Plugging in The Holes** along with a _**transcript**_ in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your _**hearing**_ and _**reading**_ pleasure. I will be including the related resource links mentioned in the podcast of course. Always do. Bye for now!
+
+I will be embedding this episode of **Plugging in The Holes** along with a
+_**transcript**_ in the form of a **post** on
+[interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
+_**hearing**_ and _**reading**_ pleasure. I will be including the related
+resource links mentioned in the podcast of course. Always do. Bye for now!
