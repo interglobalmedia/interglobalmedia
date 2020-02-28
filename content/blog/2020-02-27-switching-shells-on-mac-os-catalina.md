@@ -2,19 +2,19 @@
 title: Switching Shells on Mac OS Catalina
 date: 2020-02-28T01:15:38.323Z
 description: >-
-    In this episode, I talk about why one should switch over to the ZShell from
-    Bash if they has Mac OS Catalina installed on their machine.
+  In this episode, I talk about why one should switch over to the ZShell from
+  Bash if they has Mac OS Catalina installed on their machine.
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
-    - bash
-    - zsh
-    - interactive-shell
-    - osx
-    - catalina
+  - bash
+  - zsh
+  - interactive-shell
+  - osx
+  - catalina
 categories:
-    - catalina
-    - osx
-    - interactive-shell
+  - catalina
+  - osx
+  - interactive-shell
 author: Maria D. Campbell
 ---
 
@@ -79,7 +79,7 @@ Just for the hell of it, I decided to **switch back** to `Bash` as my **_default
 shell_** to see what happens, now that I am on **Catalina**. When I executed
 `chsh -s /bin/bash`, I got the following afterwards in the `Terminal` window:
 
-![Switching Shells from Bash to Zsh](/img/zsh-to-bash-catalina,png)
+![Switching Shells from Bash to Zsh](/img/zsh-to-bash-catalina.png)
 
 It's not the best idea to stay with `Bash`. The version of `Bash` that is
 installed with `Mac OS/Catalina` has remained at `3.2` since `2007`. Make sure
