@@ -13,6 +13,10 @@ categories:
 author: Maria D. Campbell
 ---
 
+-   Link to
+    [VS Code and the Live Server extension](https://anchor.fm/maria-campbell/episodes/VS-Code-and-the-Live-Server-extension-eb4kd6)
+    podcast on anchorfm
+
 I have always opened my `code editors` from the `Command Line` and from within
 the directory I wanted to open in them using a `shell command`. I did it with
 `Atom`, I did it with `Sublime`, with `Web Storm`, `PHP Storm`, and now I do it
