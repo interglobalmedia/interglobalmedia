@@ -53,7 +53,7 @@ If you have just executed `chsh -s /bin/zsh` in Terminal, then executing `echo $
 
 Just for the hell of it, I decided to **switch back** to `Bash` as my _**default shell**_ to see what happens, now that I am on **Catalina**. When I executed `chsh -s /bin/bash`, I got the following afterwards in the `Terminal` window:
 
-![Switching from Bash to Zsh](/img/zsh-to-bash-catalina,png)
+![Switching from Bash to Zsh](/img/zsh-to-bash-catalina.png)
 
 It's not the best idea to stay with `Bash`. The version of `Bash` that is installed with `Mac OS/Catalina` has remained at `3.2` since `2007`. Make sure to _**switch over**_ to `Zsh`. Of course I immediately switched back to `Zsh` with the command `chsh -s /bin/zsh`, made sure to exit out of  that instance of `Terminal` afterwards, and then re-open it. When I executed `echo $SHELL`, `/bin/zsh` was printed out to `Terminal`.
 
