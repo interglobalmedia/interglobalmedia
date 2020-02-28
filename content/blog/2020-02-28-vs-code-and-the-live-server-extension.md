@@ -31,7 +31,20 @@ then using `Live Server` after opening a `file` instead of a `folder`.
 I will be hosting the `.movs` on YouTube, and embedding them into the transcript
 of this podcast.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YwhdDMT_dFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/YwhdDMT_dFU" frameBorder="0" title="Opening VS Code with a shell command from within a folder in Terminal" allowFullScreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://youtu.be/TisNvwkW1aI" frameBorder="0" title="Opening VS Code via open folder" allowFullScreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://youtu.be/906ebkHmHsI" frameBorder="0" title="Opening a file with VS Code" allowFullScreen="true"> </iframe>
+</figure>
+<!-- blank line -->
 
 I will be embedding this episode of **Plugging in The Holes** along with a
 **_transcript_** in the form of a **post** on
