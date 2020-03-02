@@ -9,7 +9,7 @@ tags:
     - geolocation
     - apis
     - cross-browser-compatibility
-    - browse-scrollbars
+    - browser-scrollbars
 categories:
     - cross-browser-compatibility
 author: Maria D. Campbell
