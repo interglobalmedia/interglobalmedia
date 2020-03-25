@@ -72,7 +72,7 @@ have _**forked**_ locally on your computer.
         associated with the `git fetch` and `git push` commands on `origin`. ->
         `git fetch (origin)` and `git push (origin)`.
     -   Then I execute the
-        `git remote add upstream git@github.com:YOUR-USERNAME/name-of-original-repo.git`.
+        `git remote add upstream git@github.com:FORKED-USERNAME/name-of-original-repo.git`.
         This is very similar to
         `git remote add origin git@github.com:YOUR-USERNAME/name-of-original-repo.git`when
         preparing to `push` a new `local git repository` to `remote origin` for
