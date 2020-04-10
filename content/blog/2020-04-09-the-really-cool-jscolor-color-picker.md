@@ -17,10 +17,6 @@ author: Maria D. Campbell
 ---
 - Link to [The really cool jscolor color picker](https://anchor.fm/maria-campbell/episodes/The-really-cool-jscolor-color-picker-ecjm5l) podcast on anchorfm
 
-**Update 4.9.20:** When I deployed Storage Fun With Forms to Github gh-pages using the jscolor.js file I downloaded from the `jscolor.com` website, the `color picker` ***itself*** did ***not*** **pop up** when I **clicked** on the `input` **element**. When I ***replaced*** the `local script` with a `CDNJS` `script`, it worked like a charm. You can find the `jscolor` `CDNJS` at:
-
-- [jscolor CDNJS](https://cdnjs.com/libraries/jscolor)
-
 While I have been building my `"Storage Fun With Forms"` **application**, I came across the `jscolor` **color picker** on `MDN`. Instead of using the default color picker implemented by **setting** the `value` of `color` to the `input` `type attribute` available in `HTML5`, you replace that with the `class` `"jscolor"`. If you do ***not*** **remove** `type="color"` from your `input` **elements**, it will not work!
 
 It took me a little while to figure this out, because there was ***no*** **explicit** documentation on what **attributes** one ***should*** and ***should not*** have in the `input`, but after some `hit` and `miss`, I finally figured it out by removing `type="color"` from my `color inputs` and ***replacing*** **it** with the `class attribute` set to the `"jscolor"` **class**. In my `index.html`:
