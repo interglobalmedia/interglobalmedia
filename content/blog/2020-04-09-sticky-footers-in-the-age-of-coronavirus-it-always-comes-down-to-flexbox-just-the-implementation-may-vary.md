@@ -277,7 +277,7 @@ I will be embedding this episode of **Plugging in The Holes** along with a ***tr
 
 - [How to calculate a number and turn it into vw or vh?](https://stackoverflow.com/questions/55751502/how-to-calculate-a-number-and-turn-it-into-vw-or-vh)
 
--[Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
+- [Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
 
 - [Units in CSS (em, rem, pt, px, vw, vh, vmin, vmax, ex, ch, ...)](https://dev.to/fullstack_to/units-in-css-em-rem-pt-px-vw-vh-vmin-vmax-ex-ch-53l0)
 
