@@ -465,7 +465,7 @@ I ***created*** a `deploy` **script** that ***deployed*** my `dist` `build` to `
 
 What the ***completed*** **application** looks like:
 
-![Storage Fun With Forms Application](/images/fireshot-capture-020-localstorage-vs-sessionstorage-fun-form-interglobalmedia.github.io.png)
+![Storage Fun With Forms Application](/img/fireshot-capture-020-localstorage-vs-sessionstorage-fun-form-interglobalmedia.github.io.png)
 
 ## Related Resources:
 
