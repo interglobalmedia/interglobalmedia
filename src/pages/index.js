@@ -121,7 +121,7 @@ const IndexPage = props => {
                     <PodDiv as="div">
                         <H1Style as="h1">
                             <a
-                                href="https://anchor.fm/maria-campbell/episodes/The-Dawning-of-a-New-Era-and-a-new-set-of-Audio-Podcast-Tools-e4crl0"
+                                href="https://anchor.fm/maria-campbell/episodes/When-deploying-an-app-to-gh-pages-that-uses-confetti-js-ed6sg9"
                                 target="_new"
                                 rel="noopener noreferrer"
                                 title="click on link to visit original podcast page on anchor.fm"
