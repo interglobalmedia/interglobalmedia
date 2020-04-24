@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/When-deploying-an-app-to-gh-pages-that-uses-confetti-js-ed6sg9"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="The really cool jscolor color picker"
+                            title="When deploying an app to gh-pages that uses confetti-js"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
