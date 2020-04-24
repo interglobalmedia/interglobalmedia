@@ -11,6 +11,7 @@ import catWhispererData from '../../data/portfolio/4_cat-whisperer-app'
 import trumpTalksData from '../../data/portfolio/5_trump-talks-trash'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
+import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 
 export const ColumnsDiv = styled.div`
     width: 90%;
@@ -99,13 +100,71 @@ const PortfolioIndex = props => {
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={webAudioApiAjaxData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-8'}
+                            title={`visit the link to the ${webAudioApiAjaxData.title} app page to learn more`}
+                        >
+                            {webAudioApiAjaxData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageEight.childImageSharp.fluid
+                        }
+                        alt={webAudioApiAjaxData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {webAudioApiAjaxData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{webAudioApiAjaxData.tags}</SpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-8'}
+                            title={`visit the link to the ${webAudioApiAjaxData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
+                <ProjectUl as="ul" key={nodeDrawingData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-7'}
+                            title={`visit the link to the ${nodeDrawingData.title} app page to learn more`}
+                        >
+                            {nodeDrawingData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageSeven.childImageSharp.fluid
+                        }
+                        alt={nodeDrawingData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {nodeDrawingData.shortDescription}
+                    </ParaStyle>
+                    <SpanStyle as="span">{nodeDrawingData.tags}</SpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-7'}
+                            title={`visit the link to the ${nodeDrawingData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
                 <ProjectUl as="ul" key={speechToTextData.id}>
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-1'}
-                            title={`visit the link to the ${
-                                speechToTextData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${speechToTextData.title} app page to learn more`}
                         >
                             {speechToTextData.title}
                         </Link>
@@ -125,9 +184,7 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-1'}
-                            title={`visit the link to the ${
-                                speechToTextData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${speechToTextData.title} app page to learn more`}
                         >
                             <MoreP>view more</MoreP>
                         </Link>
@@ -137,9 +194,7 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-2'}
-                            title={`visit the link to the ${
-                                theGrooveData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${theGrooveData.title} app page to learn more`}
                         >
                             {theGrooveData.title}
                         </Link>
@@ -160,9 +215,7 @@ const PortfolioIndex = props => {
                         <Link
                             to={'/portfolio/portfolio-view-2'}
                             state={theGrooveData}
-                            title={`visit the link to the ${
-                                theGrooveData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${theGrooveData.title} app page to learn more`}
                         >
                             <MoreP as="p">view more</MoreP>
                         </Link>
@@ -172,9 +225,7 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-3'}
-                            title={`visit the link to the ${
-                                rockinSynthData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${rockinSynthData.title} app page to learn more`}
                         >
                             {rockinSynthData.title}
                         </Link>
@@ -194,9 +245,7 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-3'}
-                            title={`visit the link to the ${
-                                rockinSynthData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${rockinSynthData.title} app page to learn more`}
                         >
                             <MoreP as="p">view more</MoreP>
                         </Link>
@@ -206,9 +255,7 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-4'}
-                            title={`visit the link to the ${
-                                catWhispererData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${catWhispererData.title} app page to learn more`}
                         >
                             {catWhispererData.title}
                         </Link>
@@ -228,9 +275,7 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-4'}
-                            title={`visit the link to the ${
-                                catWhispererData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${catWhispererData.title} app page to learn more`}
                         >
                             <MoreP as="p">view more</MoreP>
                         </Link>
@@ -240,9 +285,7 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-5'}
-                            title={`visit the link to the ${
-                                trumpTalksData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${trumpTalksData.title} app page to learn more`}
                         >
                             {trumpTalksData.title}
                         </Link>
@@ -262,9 +305,7 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-5'}
-                            title={`visit the link to the ${
-                                trumpTalksData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${trumpTalksData.title} app page to learn more`}
                         >
                             <MoreP as="p">view more</MoreP>
                         </Link>
@@ -274,9 +315,7 @@ const PortfolioIndex = props => {
                     <ProjectTitleLi as="li">
                         <Link
                             to={'/portfolio/portfolio-view-6'}
-                            title={`visit the link to the ${
-                                chattrboxData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${chattrboxData.title} app page to learn more`}
                         >
                             {chattrboxData.title}
                         </Link>
@@ -296,43 +335,7 @@ const PortfolioIndex = props => {
                     <li>
                         <Link
                             to={'/portfolio/portfolio-view-6'}
-                            title={`visit the link to the ${
-                                chattrboxData.title
-                            } app page to learn more`}
-                        >
-                            <MoreP as="p">view more</MoreP>
-                        </Link>
-                    </li>
-                </ProjectUl>
-                <ProjectUl as="ul" key={nodeDrawingData.id}>
-                    <ProjectTitleLi as="li">
-                        <Link
-                            to={'/portfolio/portfolio-view-7'}
-                            title={`visit the link to the ${
-                                nodeDrawingData.title
-                            } app page to learn more`}
-                        >
-                            {nodeDrawingData.title}
-                        </Link>
-                    </ProjectTitleLi>
-                    <Img
-                        fluid={
-                            props.data.portfolioImageSeven.childImageSharp.fluid
-                        }
-                        alt={nodeDrawingData.title}
-                    />
-                    <br />
-                    <ParaStyle as="p">
-                        {nodeDrawingData.shortDescription}
-                    </ParaStyle>
-                    <SpanStyle as="span">{nodeDrawingData.tags}</SpanStyle>
-                    <br />
-                    <li>
-                        <Link
-                            to={'/portfolio/portfolio-view-7'}
-                            title={`visit the link to the ${
-                                nodeDrawingData.title
-                            } app page to learn more`}
+                            title={`visit the link to the ${chattrboxData.title} app page to learn more`}
                         >
                             <MoreP as="p">view more</MoreP>
                         </Link>
@@ -407,6 +410,15 @@ export const indexQuery = graphql`
         }
         portfolioImageSeven: file(
             relativePath: {eq: "projects/node-collaborative-drawing-app.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        portfolioImageEight: file(
+            relativePath: {eq: "projects/web-audio-api-ajax.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
