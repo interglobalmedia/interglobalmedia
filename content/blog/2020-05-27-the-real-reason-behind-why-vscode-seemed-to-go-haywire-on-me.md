@@ -22,6 +22,8 @@ But I do love the ***ease*** of **access** and ***use*** of VS Code. Lately I fo
 
 So if you use `VS Code` and `Chrome`, and ***suddenly*** everything in the `browser` seems ***very small*** and ***strange***, just **click** on the `View tab` when in `Chrome`, and select the `"Actual Size"` option.
 
+![Chrome View Tab](/img/screenshot-2020-05-27-18.59.17.png)
+
 I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
 
 
