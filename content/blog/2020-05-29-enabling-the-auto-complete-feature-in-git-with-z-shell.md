@@ -27,6 +27,8 @@ I placed this line ***right above*** my `PATH` exports.
 
 I made sure to ***quit*** `Terminal` and then open a ***new*** `Terminal` window instance ***before*** testing out my new `Git` auto-complete ***feature***. And it works! For example, if I type `che` ***followed*** by the `tab` key, I get the ***following*** in `Terminal`:
 
+![Git auto-complete feature in action](/img/screenshot-2020-05-29-22.26.43.png)
+
 There are ***other*** ways of getting the `git-completion.zsh` file onto your desktop from Github such as with `git pull`, but I will get into that in another podcast (post).
 
 I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
