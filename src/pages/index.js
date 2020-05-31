@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Installing-the-latest-version-of-Python-on-Mac-OS-Catalina-and-overriding-the-old-default-pre-installed-version-eeodgp"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/How-to-set-up-more-than-one-wireless-printer-with-HP-ePrint-using-the-HP-Smart-App-eeqrpa"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version"
+                            title="How to set up more than one wireless printer with HP ePrint using the HP Smart App"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
