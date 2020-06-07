@@ -130,12 +130,12 @@ const IndexPage = props => {
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/How-to-set-up-more-than-one-wireless-printer-with-HP-ePrint-using-the-HP-Smart-App-eeqrpa"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Adding-host-property-to-webpack-config-js-which-permits-you-to-view-your-app-in-localhost-on-other-shared-network-devices-ef45ul"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="How to set up more than one wireless printer with HP ePrint using the HP Smart App"
+                            title="Adding host property to webpack.config.js which permits you to view your app in localhost on other shared network devices"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
