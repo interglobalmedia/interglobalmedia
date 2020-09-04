@@ -253,6 +253,7 @@ export const query = graphql`
             frontmatter {
                 title
                 date(formatString: "MMMM Do, YYYY")
+                modifiedLast: mtime
                 tags
                 categories
                 description
