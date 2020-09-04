@@ -2,28 +2,40 @@
 title: Rewording a pushed git commit message
 date: 2020-09-04T14:17:38.651Z
 description: >-
-  Sometimes we are in a rush and we push our git commits to remote with messages
-  that might contain typos, or we find later on that we could have simply made a
-  better commit message.
+    Sometimes we are in a rush and we push our git commits to remote with
+    messages that might contain typos, or we find later on that we could have
+    simply made a better commit message.
 image: /img/sydney-rae-gem5lzdj4iw-unsplash.jpg
 tags:
-  - git
-  - rewording-commit-messages
+    - git
+    - rewording-commit-messages
 categories:
-  - git
+    - git
 author: Maria D. Campbell
 ---
-**Sometimes** we **are** in a **rush** and we **push** our `commits` to `remote` with **messages** that ***might*** **contain** `typos`, or we **find** ***later on*** that we **could have** simply **made** a ***better*** `commit message`.
 
-If you **find** that you **made** a `typo` in a ***pushed*** `commit message` or **wanted** to `amend` the `message` in **some way**, you **can do** the ***following***:
+**Sometimes** we **are** in a **rush** and we **push** our `commits` to `remote`
+with **messages** that **_might_** **contain** `typos`, or we **find** **_later
+on_** that we **could have** simply **made** a **_better_** `commit message`.
+
+If you **find** that you **made** a `typo` in a **_pushed_** `commit message` or
+**wanted** to `amend` the `message` in **some way**, you **can do** the
+**_following_**:
 
 ```shell
 git rebase -i HEAD~n
 ```
 
-which **displays** the `git rebase -i HEAD~n` **last** `n` **commits** of the ***current*** **branch** you are in. So if you are ***not*** actually in the **branch** which **contains** the `commit message` you want to **change**, you **have** to `checkout` into that **branch** ***first*** with the **command** `git checkout branchname`. In my recent case, for instance, it was the `master` branch, so the command would be `git checkout master`. 
+which **displays** the `git rebase -i HEAD~n` **last** `n` **commits** of the
+**_current_** **branch** you are in. So if you are **_not_** actually in the
+**branch** which **contains** the `commit message` you want to **change**, you
+**have** to `checkout` into that **branch** **_first_** with the **command**
+`git checkout branchname`. In my recent case, for instance, it was the `master`
+branch, so the command would be `git checkout master`.
 
-Be **sure**, **however**, to ***first*** **commit** all **changes** you have **made** in ***that*** **branch** ***before*** **checking out** into the ***other*** **branch**.
+Be **sure**, **however**, to **_first_** **commit** all **changes** you have
+**made** in **_that_** **branch** **_before_** **checking out** into the
+**_other_** **branch**.
 
 **Once** you have **checked out** into the **branch** in **question**, `run`
 
@@ -31,7 +43,7 @@ Be **sure**, **however**, to ***first*** **commit** all **changes** you have **m
 git rebase -i HEAD~n
 ```
 
-and it will `return` **something** ***like*** the **following**:
+and it will `return` **something** **_like_** the **following**:
 
 ```shell
 pick e499d89 Delete CNAME
@@ -56,9 +68,10 @@ pick f7fde4a Change the commit message but push the same commit.
 # Note that empty commits are commented out
 ```
 
-**First** ***press*** the `i` **key** so that you **go** into `insert` **mode**.
+**First** **_press_** the `i` **key** so that you **go** into `insert` **mode**.
 
-**Replace** `pick` with `reword` ***before*** each `commit message` you **want** to **change**. **Something** like **this**:
+**Replace** `pick` with `reword` **_before_** each `commit message` you **want**
+to **change**. **Something** like **this**:
 
 ```shell
 pick e499d89 Delete CNAME
@@ -66,7 +79,8 @@ reword 0c39034 Better README
 reword f7fde4a Change the commit message but push the same commit.
 ```
 
-**Save** and **close** the `commit` **file**. **Then** you will be **taken** to a **screen** that **looks** something ***like*** **this**:
+**Save** and **close** the `commit` **file**. **Then** you will be **taken** to
+a **screen** that **looks** something **_like_** **this**:
 
 ```shell
 reword 06ea4e4 dd new dist build
@@ -76,7 +90,8 @@ TMSG" 18L, 591C
 Press ENTER or type command to continue
 ```
 
-**When** you **press** `enter`, the `Terminal` **window** will **look** something like **this**:
+**When** you **press** `enter`, the `Terminal` **window** will **look**
+something like **this**:
 
 ```shell
 reword 06ea4e4 dd new dist build
@@ -106,7 +121,10 @@ dd new dist build
 ~
 ```
 
-**Press** the `i` **key** ***again*** to **go** into `insert` **mode**, **make** the **change** you **want** to the `message`, and then **press** the `esc` **key** ***again*** **followed by** `:x` and then **finally** ***press*** the `return` **key** to be **taken back** to the `Terminal` **window**.
+**Press** the `i` **key** **_again_** to **go** into `insert` **mode**, **make**
+the **change** you **want** to the `message`, and then **press** the `esc`
+**key** **_again_** **followed by** `:x` and then **finally** **_press_** the
+`return` **key** to be **taken back** to the `Terminal` **window**.
 
 **Finally**, **run** the `command`
 
@@ -114,16 +132,91 @@ dd new dist build
 git push --force
 ```
 
-to **force-push** the ***amended*** `commits`.
+to **force-push** the **_amended_** `commits`.
 
-And if you ***don't*** **quite remember** the ***first*** `command` to **redo** these **steps** to `reword` ***another*** **pushed** `commit message` you **want** to **change**, you **can run** the
+And if you **_don't_** **quite remember** the **_first_** `command` to **redo**
+these **steps** to `reword` **_another_** **pushed** `commit message` you
+**want** to **change**, you **can run** the
 
 ```shell
 history
 ```
 
-**command** in `Terminal`, and it will **show** ***all*** the **commands** you **ran** in ***that*** **instance** of the `Terminal` **window**.
+**command** in `Terminal`, and it will **show** **_all_** the **commands** you
+**ran** in **_that_** **instance** of the `Terminal` **window**.
+
+**However**, **_this_** **way** is **not optimal** if you are **working** with a
+**team**. It **means** that they **have** to update the **changes** in the
+`Git history` as a **result** of `git rebase` . This **approach** **_changes_**
+the **commits** `included` within the `n` **range** as well.
+
+it is **_far_** **better** to **do** the **following**:
+
+```shell
+git log --oneline --graph
+```
+
+This **returns** something like **this** in `Terminal` :
+
+```shell
+
+* bc47b1a (HEAD -> master, origin/master) Add new dist build
+* 4ead7af Add inputsArray variable
+* fe11843 Add new dist build
+* c68f507 Add else ifs for validationMessage
+* e0ce9f7 Add new dist build
+* 27574b1 change back to e.keyCode or e.which
+* d6480e1 Add new dist build
+* afea001 Replace e.keyCode e.which with e.key
+* 612e5e5 Add new dist build
+* aad8dfa Spread inputs
+* 12b86f1 Add new dist build
+* 426d02a Add inputs forEach method event listeners
+* 2b12b23 Remove reset button
+* 28c32ae Add new dist build
+* 3cdd794 Add background to :invalid pseudo class
+* 101b53b Update npm
+* 4012090 Add new dist build
+* 0f79414 Change 8 to 7 in username message
+* 31cd171 Add new main.js dist build
+* 165f03e Conditionally change color of heading1 with js
+* d7dc13d Add new dist build
+* 5c6000a Change quotes to ticks
+* 56bf7c7 Add form attribute to submit button
+* 579fccb Add new index.html dist build
+
+```
+
+**Next**, **choose** the **commit** `SHAH` you **want** to **change** the
+**message** of and `run` the **following command** in `Terminal` :
+
+```shell
+git rebase -i 27574b1
+```
+
+for **example**. The **difference** between **_this_** approach and the
+**previous** one is that you are **only changing** the `history` of **_that
+one_** **commit** which **results**in a **new commit** `SHAH` . At **least** you
+are **_not_** **changing** a **whole bunch** of **others** as **_well_**.
+
+**After** you have **made** your **changes** and **committed** them (same way as
+before), you can **check** and **make sure** everything **went** as
+**expected**, **targeting** **_only_** that **one commit** by `re-reunning`
+
+```shell
+git log --oneline --graph
+```
+
+You **_should_** **see** that **only** the **commit** in **question's**
+`commit SHAH` was **changed**.
+
+The **_best_** when **dealing** with **teams** is to **try** and **get** it
+**right** the **_first_** **time**! If you **work alone**, or people **enter**
+the **picture** **_after_** these **changes** have **been made**, that's
+**another story** **_altogether_**.
 
 ## Related Resources
 
-- [Changing a  Git commit message](https://docs.github.com/en/enterprise/2.13/user/articles/changing-a-commit-message)
+-   [Changing a Git commit message](https://docs.github.com/en/enterprise/2.13/user/articles/changing-a-commit-message)
+
+-   [How To Amend Git Commit Message](https://devconnected.com/how-to-amend-git-commit-message/)
