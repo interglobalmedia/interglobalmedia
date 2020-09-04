@@ -108,6 +108,9 @@ const BlogPage = props => {
                         <PostListMetaDiv as="div">
                             by {node.frontmatter.author} {node.frontmatter.date}
                         </PostListMetaDiv>
+                        <PostListMetaDiv as="div">
+                            <li>{node.timeToRead} minute read</li>
+                        </PostListMetaDiv>
                         <ExcerptWrapUl as="ul">
                             <li>
                                 <Img
@@ -117,7 +120,6 @@ const BlogPage = props => {
                                     }
                                 />
                             </li>
-                            <li>{node.excerpt}</li>
                         </ExcerptWrapUl>
                     </PostListDiv>
                 ))}
@@ -175,6 +177,7 @@ export const blogListQuery = graphql`
                     fields {
                         slug
                     }
+                    timeToRead
                     excerpt(pruneLength: 150)
                     frontmatter {
                         date(fromNow: true)
