@@ -129,6 +129,7 @@ const BlogPostTemplate = props => {
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
     const blogPostUrl = `${url}${props.location.pathname}`
+    const timeToRead = props.data.timeToRead
     return (
         <Layout>
             <Helmet>

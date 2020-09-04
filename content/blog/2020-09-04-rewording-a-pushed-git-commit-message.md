@@ -203,9 +203,9 @@ are **_not_** **changing** a **whole bunch** of **others** as **_well_**.
 before), you can **check** and **make sure** everything **went** as
 **expected**, **targeting** **_only_** that **one commit** by `re-reunning`
 
-```shell
+````shell
 git log --oneline --graph
-```
+```****
 
 You **_should_** **see** that **only** the **commit** in **question's**
 `commit SHAH` was **changed**.
@@ -220,3 +220,4 @@ the **picture** **_after_** these **changes** have **been made**, that's
 -   [Changing a Git commit message](https://docs.github.com/en/enterprise/2.13/user/articles/changing-a-commit-message)
 
 -   [How To Amend Git Commit Message](https://devconnected.com/how-to-amend-git-commit-message/)
+````
