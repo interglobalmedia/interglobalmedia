@@ -303,6 +303,7 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                        modifiedLast
                       }
                     }
                   }

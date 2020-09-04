@@ -99,9 +99,7 @@ const BlogPage = props => {
                         <Link
                             to={node.fields.slug}
                             key={i}
-                            title={`visit link to the post entitled "${
-                                node.frontmatter.title
-                            }" to read more`}
+                            title={`visit link to the post entitled "${node.frontmatter.title}" to read more`}
                         >
                             <PostListTitle as="h1">
                                 {node.frontmatter.title}
@@ -180,6 +178,7 @@ export const blogListQuery = graphql`
                     excerpt(pruneLength: 150)
                     frontmatter {
                         date(formatString: "DD MMMM, YYYY")
+                        modifiedLast: mtime
                         title
                         author
                         image {
