@@ -106,8 +106,7 @@ const BlogPage = props => {
                             </PostListTitle>
                         </Link>
                         <PostListMetaDiv as="div">
-                            by {node.frontmatter.author} on{' '}
-                            {node.frontmatter.date}
+                            by {node.frontmatter.author} {node.frontmatter.date}
                         </PostListMetaDiv>
                         <ExcerptWrapUl as="ul">
                             <li>
@@ -167,6 +166,7 @@ export const blogListQuery = graphql`
     query blogListQuery($skip: Int!, $limit: Int!) {
         allMarkdownRemark(
             sort: {fields: [frontmatter___date], order: DESC}
+            filter: {frontmatter: {date: {ne: null}}}
             limit: $limit
             skip: $skip
         ) {
@@ -177,7 +177,7 @@ export const blogListQuery = graphql`
                     }
                     excerpt(pruneLength: 150)
                     frontmatter {
-                        date(formatString: "DD MMMM, YYYY")
+                        date(fromNow: true)
                         title
                         author
                         image {
