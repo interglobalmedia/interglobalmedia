@@ -127,15 +127,12 @@ const SiteMapPage = props => {
                         <Link
                             to={node.fields.slug}
                             key={i}
-                            title={`visit the link to the post entitled "${
-                                node.frontmatter.title
-                            }" to read more`}
+                            title={`visit the link to the post entitled "${node.frontmatter.title}" to read more`}
                         >
                             <h4>{node.frontmatter.title}</h4>
                         </Link>
                         <MetaDiv as="div">
-                            by {node.frontmatter.author} on{' '}
-                            {node.frontmatter.date}
+                            by {node.frontmatter.author} {node.frontmatter.date}
                         </MetaDiv>
                         <SitemapUl as="ul">
                             <li>
@@ -161,7 +158,10 @@ export const sitemapQuery = graphql`
                 keywords
             }
         }
-        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+        allMarkdownRemark(
+            sort: {fields: [frontmatter___date], order: DESC}
+            filter: {frontmatter: {date: {ne: null}}}
+        ) {
             edges {
                 node {
                     fields {
@@ -169,7 +169,7 @@ export const sitemapQuery = graphql`
                     }
                     excerpt(pruneLength: 150)
                     frontmatter {
-                        date(formatString: "DD MMMM, YYYY")
+                        date(fromNow: true)
                         title
                         author
                     }
