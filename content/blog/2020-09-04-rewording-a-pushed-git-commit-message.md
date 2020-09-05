@@ -160,30 +160,30 @@ This **returns** something like **this** in `Terminal` :
 
 ```shell
 
-* bc47b1a (HEAD -> master, origin/master) Add new dist build
-* 4ead7af Add inputsArray variable
-* fe11843 Add new dist build
-* c68f507 Add else ifs for validationMessage
-* e0ce9f7 Add new dist build
-* 27574b1 change back to e.keyCode or e.which
-* d6480e1 Add new dist build
-* afea001 Replace e.keyCode e.which with e.key
-* 612e5e5 Add new dist build
-* aad8dfa Spread inputs
-* 12b86f1 Add new dist build
-* 426d02a Add inputs forEach method event listeners
-* 2b12b23 Remove reset button
-* 28c32ae Add new dist build
-* 3cdd794 Add background to :invalid pseudo class
-* 101b53b Update npm
-* 4012090 Add new dist build
-* 0f79414 Change 8 to 7 in username message
-* 31cd171 Add new main.js dist build
-* 165f03e Conditionally change color of heading1 with js
-* d7dc13d Add new dist build
-* 5c6000a Change quotes to ticks
-* 56bf7c7 Add form attribute to submit button
-* 579fccb Add new index.html dist build
+bc47b1a (HEAD -> master, origin/master) Add new dist build
+4ead7af Add inputsArray variable
+fe11843 Add new dist build
+c68f507 Add else ifs for validationMessage
+e0ce9f7 Add new dist build
+27574b1 change back to e.keyCode or e.which
+d6480e1 Add new dist build
+afea001 Replace e.keyCode e.which with e.key
+612e5e5 Add new dist build
+aad8dfa Spread inputs
+12b86f1 Add new dist build
+426d02a Add inputs forEach method event listeners
+2b12b23 Remove reset button
+28c32ae Add new dist build
+3cdd794 Add background to :invalid pseudo class
+101b53b Update npm
+4012090 Add new dist build
+0f79414 Change 8 to 7 in username message
+31cd171 Add new main.js dist build
+165f03e Conditionally change color of heading1 with js
+d7dc13d Add new dist build
+5c6000a Change quotes to ticks
+56bf7c7 Add form attribute to submit button
+579fccb Add new index.html dist build
 
 ```
 
@@ -203,9 +203,9 @@ are **_not_** **changing** a **whole bunch** of **others** as **_well_**.
 before), you can **check** and **make sure** everything **went** as
 **expected**, **targeting** **_only_** that **one commit** by `re-reunning`
 
-````shell
+```shell
 git log --oneline --graph
-```****
+```
 
 You **_should_** **see** that **only** the **commit** in **question's**
 `commit SHAH` was **changed**.
@@ -220,4 +220,7 @@ the **picture** **_after_** these **changes** have **been made**, that's
 -   [Changing a Git commit message](https://docs.github.com/en/enterprise/2.13/user/articles/changing-a-commit-message)
 
 -   [How To Amend Git Commit Message](https://devconnected.com/how-to-amend-git-commit-message/)
-````
+
+```
+
+```
