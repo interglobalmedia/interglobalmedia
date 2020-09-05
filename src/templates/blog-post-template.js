@@ -129,7 +129,7 @@ const BlogPostTemplate = props => {
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
     const blogPostUrl = `${url}${props.location.pathname}`
-    const timeToRead = props.data.timeToRead
+    const timeToRead = props.data.markdownRemark.timeToRead
     return (
         <Layout>
             <Helmet>
@@ -155,6 +155,12 @@ const BlogPostTemplate = props => {
                 <PostMetaDiv as="div">
                     <MetaH1Title as="h1">{title}</MetaH1Title>
                     <MetaPDate as="p">{date}</MetaPDate>
+                    <MetaPDate>
+                        {timeToRead} minute read{' '}
+                        <span role="img" aria-label="book">
+                            📗
+                        </span>
+                    </MetaPDate>
                     <DangerousHTMLDiv
                         as="div"
                         dangerouslySetInnerHTML={{
@@ -251,6 +257,7 @@ export const query = graphql`
         markdownRemark(fields: {slug: {eq: $slug}}) {
             html
             excerpt
+            timeToRead
             frontmatter {
                 title
                 date(formatString: "MMMM Do, YYYY")
