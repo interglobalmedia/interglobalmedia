@@ -220,7 +220,3 @@ the **picture** **_after_** these **changes** have **been made**, that's
 -   [Changing a Git commit message](https://docs.github.com/en/enterprise/2.13/user/articles/changing-a-commit-message)
 
 -   [How To Amend Git Commit Message](https://devconnected.com/how-to-amend-git-commit-message/)
-
-```
-
-```

@@ -154,6 +154,6 @@ along with a transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [The Hacker News](https://thehackernews.com/)

@@ -71,6 +71,6 @@ I will be **_embedding_** this episode of **Plugging in The Holes** along with a
 **Update:** There were no more articles about **_Firefox_** today, and I used
 **anchor.fm** on **_Firefox_** to record this podcast episode. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [Review: Google Chrome has become surveillance software. It’s time to switch.](https://www.mercurynews.com/2019/06/21/google-chrome-has-become-surveillance-software-its-time-to-switch/)

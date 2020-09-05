@@ -28,9 +28,9 @@ files** such as `audio samples`, `videos`, `datasets`, and `graphics` with
 `text pointers` inside `Git`, while **_storing_** the **file contents** on a
 **remote server** like `Github.com` or `Github Enterprise`.
 
-First I had to **install\*8 the `Git command line` **extension**. I did this
-with `Homebrew` by \***typing**\* the **following command** in `Terminal`
-followed by \***hitting\*\*\* the `enter/return` key:
+First I had to **install** the `Git command line` **extension**. I did this with
+`Homebrew` by **_typing_** the **following command** in `Terminal` followed by
+**_pressing_** the `enter/return` key:
 
 ```shell
 brew install git-lfs
@@ -74,6 +74,6 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [Git Large File Storage](https://git-lfs.github.com./)

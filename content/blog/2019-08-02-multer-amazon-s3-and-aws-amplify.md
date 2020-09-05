@@ -2,30 +2,30 @@
 title: 'Multer, Amazon S3 and AWS Amplify'
 date: 2019-08-02T16:11:36.027Z
 description: >-
-  n this episode, I discuss the pitfalls of using the npm package multer-s3 for
-  uploading files onto Amazon Simple Storage Service (aka S3) and what might be
-  viable alternatives.
+    n this episode, I discuss the pitfalls of using the npm package multer-s3
+    for uploading files onto Amazon Simple Storage Service (aka S3) and what
+    might be viable alternatives.
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
-  - netlify
-  - serverless
-  - aws-amplify
-  - gatsbyjs
-  - aws-s-3
-  - aws-appsync
-  - aws-cognito
-  - graphql
-  - multer
-  - multer-s-3
-  - nodejs
-  - mongodb
-  - dynamodb
-  - expressjs
-  - heroku
-  - file-upload
-  - react
+    - netlify
+    - serverless
+    - aws-amplify
+    - gatsbyjs
+    - aws-s-3
+    - aws-appsync
+    - aws-cognito
+    - graphql
+    - multer
+    - multer-s-3
+    - nodejs
+    - mongodb
+    - dynamodb
+    - expressjs
+    - heroku
+    - file-upload
+    - react
 categories:
-  - file-upload
+    - file-upload
 author: Maria D. Campbell
 ---
 
@@ -123,6 +123,8 @@ I will be embedding this **_episode_** of **Plugging in The Holes** along with a
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
+
+## Related Resources
 
 -   [Jamstack NYC Meetup](https://www.meetup.com/JAMstack-nyc/)
 

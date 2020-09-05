@@ -39,8 +39,8 @@ default_**, and there are those who are **_not_** developers, who might want to
 know! And besides, why would they want to pay someone to do something that
 really is quite simple, when they could do it themselves and **_save their
 resources_** for **_bigger_**, **_better_**, and **_more complicated_**,
-**_code-related_** things they **\*don't want to\_** and **\*can't\_**
-**implement** themselves.
+**_code-related_** things they **_don't want to_** and **_can't_** **implement**
+themselves.
 
 There are steps you have to take in order to take advantage of **Google's**
 **_outdated content_** **feature**.
@@ -69,7 +69,7 @@ feature.
 
 Happy **_outdated content removal_**!
 
-## Related Resources:
+## Related Resources
 
 -   [A Complete Guide to the Google Search Console](https://www.searchenginejournal.com/google-search-console-guide/209318/#close)
 

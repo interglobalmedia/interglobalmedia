@@ -28,8 +28,9 @@ response to my
 `gatsby-plugin-crisp-chat` **Github**
 [repository](https://github.com/ryanditjia/gatsby-plugin-crisp-chat),
 
-```
-Last note: what Crisp says is true, your Crisp website ID is always there on the final rendered HTML, so it likely won’t matter much to hide it behind .env file.
+```html
+Last note: what Crisp says is true, your Crisp website ID is always there on the
+final rendered HTML, so it likely won’t matter much to hide it behind .env file.
 ```
 
 This means in Gatsby speak that trying to use environment variables with Crisp
@@ -56,7 +57,7 @@ With **_Crisp_**, all you need to do is delete your existing website
 configuration and re-add it. This way you receive a new `websiteId` which you
 can add to your `.env` file,
 
-```
+```html
 CRISP_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
@@ -98,6 +99,8 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
 hearing and reading pleasure. I will be including the related resource links
 mentioned in the podcast of course. Always do. Bye for now!
+
+## Related Resources
 
 -   [Why am I getting an "invalid chatbox code" error ?](https://help.crisp.chat/en/article/why-am-i-getting-an-invalid-chatbox-code-error-8j93zr/)
 

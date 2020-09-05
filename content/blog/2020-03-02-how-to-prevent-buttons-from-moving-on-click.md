@@ -216,9 +216,9 @@ with the `.wrapper` **class** to `block`, because in the `else/if`
 `.wrapper` **class** to `none`. **_Lastly_**, I needed to **_add back_** the
 `.show-scrollbar` **class** to the `div` with the `.wrapper` **class**, because
 I **_added back_** the **class** `.backgroundSkyblue` to **_it_**, **signaling**
-that **_not only_** should the `div` with the `.wrapper` **class\*** be
-`visible`, but the `scrollbar` for the `div` with the `.wrapper` **class**
-should be `visible` as **_well_**.
+that **_not only_** should the `div` with the `.wrapper` **class** be `visible`,
+but the `scrollbar` for the `div` with the `.wrapper` **class** should be
+`visible` as **_well_**.
 
 To **_view_** this **application** in **_action_**, please **_visit_** the
 `Free Geo IP` **application** on `Github gh-pages`. To **_view_** the
@@ -230,7 +230,7 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [scrollbar on CSS Tricks](https://css-tricks.com/almanac/properties/s/scrollbar/)
 

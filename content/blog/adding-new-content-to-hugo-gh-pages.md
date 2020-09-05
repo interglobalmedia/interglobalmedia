@@ -230,6 +230,6 @@ Last, but not least (and not re-mentioned in the **Hugo** docs), is the
 
 And that's it! Happy publishing!
 
-## Related Redsource:
+## Related Resource
 
 -   [Hosting (Hugo) on Github Pages]("https://gohugo.io/tutorials/github-pages-blog#using-a-custom-domain")

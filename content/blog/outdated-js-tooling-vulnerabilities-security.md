@@ -123,6 +123,6 @@ transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [The Node Security Platform service is shutting down 9/30](https://blog.npmjs.org/post/175511531085/the-node-security-platform-service-is-shutting)

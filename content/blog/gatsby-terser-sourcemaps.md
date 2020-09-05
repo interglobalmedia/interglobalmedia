@@ -121,7 +121,7 @@ along with a **transcript** in the form of a **post** on
 hearing and reading pleasure. I will be **_including_** the **related resource
 links** mentioned in the podcast of course. Always do. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [New installs of Gatsby fail on builds with source-map error](https://github.com/gatsbyjs/gatsby/issues/15249)
 

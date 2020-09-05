@@ -63,7 +63,7 @@ transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [Nuance Has Abandoned Mac Speech Recognition. Will Apple Fill the Void?](https://tidbits.com/2019/01/21/nuance-has-abandoned-mac-speech-recognition-will-apple-fill-the-void/)
 

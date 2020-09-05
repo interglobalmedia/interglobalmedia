@@ -67,21 +67,21 @@ I am using a **_dummy_** **domain nameserver** (@dns1.p01.nsone.net) thanks to
 
 The following (example) results are returned to **Terminal**:
 
-```shell
-; <<>> DiG 9.8.3-P1 <<>> example.com @dns1.p01.nsone.net a
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60796
-;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
-;; WARNING: recursion requested but not available
-;; QUESTION SECTION:
-;example.com.            IN    A
-;; ANSWER SECTION:
+```
+<<>> DiG 9.8.3-P1 <<>> example.com @dns1.p01.nsone.net a
+global options: +cmd
+Got answer:
+->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60796
+flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+WARNING: recursion requested but not available
+QUESTION SECTION:
+example.com.            IN    A
+ANSWER SECTION:
 example.com.        3600    IN    A    104.20.48.182
-;; Query time: 8 msec
-;; SERVER: 198.51.44.1#53(198.51.44.1)
-;; WHEN: Fri Jul  8 10:55:40 2016
-;; MSG SIZE  rcvd: 45
+Query time: 8 msec
+SERVER: 198.51.44.1#53(198.51.44.1)
+ WHEN: Fri Jul  8 10:55:40 2016
+MSG SIZE  rcvd: 45
 ```
 
 Using my actual **dnsnameserver** for **Netlify** (not dummy content here), I
@@ -152,7 +152,7 @@ browser of your choosing.
 
 Happy **_site propagation_**!
 
-## Related Resources:
+## Related Resources
 
 -   [How to Edit your hosts File on a Mac](https://www.inmotionhosting.com/support/website/how-to/how-to-edit-your-hosts-file-on-a-mac)
 

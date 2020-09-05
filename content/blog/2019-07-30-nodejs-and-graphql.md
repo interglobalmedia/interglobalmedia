@@ -605,6 +605,8 @@ with a **_transcript_** in the form of a **post** on
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
+## Related Resources
+
 -   [NodeJS The Complete Guide (inc MVC (Model View Controller), REST Apis, and Graphql)](https://www.udemy.com/course/nodejs-the-complete-guide)
 
 -   [graphql.org](https://graphql.org/)

@@ -57,4 +57,6 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
+## Related Resources
+
 -   [Download a specific branch of a github project](https://stackoverflow.com/questions/32340337/download-a-specific-branch-of-a-github-project)

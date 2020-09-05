@@ -139,6 +139,8 @@ _**transcript**_ in the form of a **post** on
 _**hearing**_ and _**reading**_ pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
+## Related Resources
+
 -   [Fork a repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 -   [Synching a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 -   [How To use Git and Github](https://github.community/t5/How-to-use-Git-and-GitHub/Update-a-forked-repository-when-the-original-repository-is/td-p/20980)

@@ -26,14 +26,14 @@ resulted in this new issue that I now have to resolve.
 But I digress. During this process, one of the solutions involved updating
 **Homebrew**. So I did the following in **Terminal**:
 
-```
+```shell
 brew update
 ```
 
 But instead of updating, the following was printed out to the **Terminal**
 window:
 
-```
+```shell
 fatal: could not read Username for 'https://github.com': terminal prompts disabled
 Error: Fetching [redacted] failed!
 ```
@@ -44,26 +44,26 @@ do with my SSH public and private **Github** SSH keys, because I have had no
 issues pushing to **Github**. In order to fix this problem, I had to type the
 following **command** in the **Terminal** window:
 
-```
+```shell
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 ```
 
 When I typed brew update again, I got the following in **Terminal**:
 
-```
+```shell
 Another active Homebrew update process is already in progress.
 Please wait for it to finish or terminate it to continue.
 ```
 
 I hit Ctrl + C and killed the brew update process. However, when I typed
 
-```
+```shell
 brew update
 ```
 
 I got the following:
 
-```
+```shell
 ERROR: Repository not found.
 fatal: Could not read from remote repository.
 
@@ -74,29 +74,31 @@ Error: homebrew/homebrew-dupes does not exist! Run 'brew untap homebrew/homebrew
 
 I followed the above instructions, and typed the following in **Terminal**:
 
-```
+```shell
 brew untap homebrew/homebrew-dupes
 ```
 
 It resulted in:
 
-```
+```shell
 Untapping homebrew/dupes...
 Untapped (117 files, 133.5KB).
 ```
 
 Then I typed the command:
 
-```
+```shell
 brew update
 ```
 
 which resulted in:
 
-```
+```shell
 Already up-to-date.
 ```
 
 Now I was ready to use Homebrew again.
+
+## Related Resources
 
 -   [Git Error: Could not read Username for 'https://github.com': terminal prompts disabled](https://jacopretorius.net/2018/05/git-error-could-not-read-username.html)

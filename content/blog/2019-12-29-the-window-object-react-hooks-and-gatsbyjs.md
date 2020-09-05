@@ -94,12 +94,12 @@ const Footer = () => {
     const notRightMargin = useMediaQuery('(max-width: 559px)')
     const marginBottomLess = useMediaQuery('(max-width: 559px)')
     return (
-    ....
+    ...
     <ScrollUpButton
     style={styles.container(notRightMargin, marginBottomLess)}
     ContainerClassName="ScrollUpButton__Container"
     />
-    ....
+    ...
     )
 }
 
@@ -136,7 +136,7 @@ const IndexPage = props => {
 
 Then I ran
 
-```
+```shell
 npx gatsby develop
 
 ```
@@ -144,13 +144,13 @@ npx gatsby develop
 and everything rendered as it should in the browser window when it was `< 560px`
 wide. But when I ran
 
-```
+```shell
 npx gatsby build
 ```
 
 I got the following errors in **Command Line**:
 
-```
+```shell
 npx gatsby build                                                   ⏎ ✹ ✭
 success open and validate gatsby-configs - 0.083s
 success load plugins - 1.829s
@@ -238,6 +238,8 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
+
+## Related Resources
 
 -   [React inline styles and media queries using a custom React Hook](https://medium.com/@ttennant/react-inline-styles-and-media-queries-using-a-custom-react-hook-e76fa9ec89f6)
 

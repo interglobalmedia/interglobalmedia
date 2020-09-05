@@ -1,88 +1,194 @@
 ---
 title: >-
-  How to set up more than one wireless printer with HP ePrint using the HP Smart
-  App
+    How to set up more than one wireless printer with HP ePrint using the HP
+    Smart App
 date: 2020-05-31T20:24:20.603Z
 description: >-
-  In this episode, I discuss setting up more than one wireless printer with HP
-  ePrint using the Hp Smart App.
+    In this episode, I discuss setting up more than one wireless printer with HP
+    ePrint using the Hp Smart App.
 image: /img/claudio-schwarz-purzlbaum-fmjayerwtdy-unsplash.jpg
 tags:
-  - wireless-printers
-  - mobile-devices
-  - multi-networks
-  - hp-smart
-  - hp-web-services
-  - eprinting
+    - wireless-printers
+    - mobile-devices
+    - multi-networks
+    - hp-smart
+    - hp-web-services
+    - eprinting
 categories:
-  - wirelress-printers
-  - hp-smart
-  - eprinting
+    - wirelress-printers
+    - hp-smart
+    - eprinting
 author: Maria D. Campbell
 ---
-- Link to [How to set up more than one wireless printer with HP ePrint using the HP Smart App](https://anchor.fm/maria-campbell/episodes/How-to-set-up-more-than-one-wireless-printer-with-HP-ePrint-using-the-HP-Smart-App-eeqrpa) podacast on anchorfm
 
-I spent most of my time the past week trying to set up a second wireless HP printer in my apartment. The process was hell for a variety of reasons.
+-   Link to
+    [How to set up more than one wireless printer with HP ePrint using the HP Smart App](https://anchor.fm/maria-campbell/episodes/How-to-set-up-more-than-one-wireless-printer-with-HP-ePrint-using-the-HP-Smart-App-eeqrpa)
+    podacast on anchorfm
 
-- ***First*** `Mac compatible Printer` I had `connected` to `HP Smart`: `HP Tango X`
+I spent most of my time the past week trying to set up a second wireless HP
+printer in my apartment. The process was hell for a variety of reasons.
 
-- ***Second*** `Mac compatible Printer` I `connected` to `HP Smart`: `Laser Jet Pro M102w`
+-   **_First_** `Mac compatible Printer` I had `connected` to `HP Smart`:
+    `HP Tango X`
 
-***First***, there was the documentation, or rather lack  thereof. ***Second***, it was ***hard*** to get a `live person` to ***speak with*** in `HP support`. Not that support ended up being the complete help I needed! But at ***least*** I learned all the steps ***by heart***!
+-   **_Second_** `Mac compatible Printer` I `connected` to `HP Smart`:
+    `Laser Jet Pro M102w`
 
-***Initially***, it took me forever to `connect` to this **second printer** and ***add it*** to the `HP Smart app` to begin with, which ***replaced*** `hpconnected.com`. ***Most*** initial `Google searches` ***pointed*** to the **old website**, which ***no longer exists***. ***Only after*** a week of `searching` and ***trying out*** different `search keywords`, did I finally get some ***partially*** `relevant information` I was ***looking*** for. The ***other*** issue which might have **contributed** to the ***complexity*** of setting up the ***second printer*** is that it was purchased ***for*** us, and **not** ***by*** us. The ***first*** printer was purchased by ***me***.
+**_First_**, there was the documentation, or rather lack thereof. **_Second_**,
+it was **_hard_** to get a `live person` to **_speak with_** in `HP support`.
+Not that support ended up being the complete help I needed! But at **_least_** I
+learned all the steps **_by heart_**!
 
-I thought I would share the information I gathered that resulted in a successful `set-up` of a ***second*** `HP wireless printer`.
+**_Initially_**, it took me forever to `connect` to this **second printer** and
+**_add it_** to the `HP Smart app` to begin with, which **_replaced_**
+`hpconnected.com`. **_Most_** initial `Google searches` **_pointed_** to the
+**old website**, which **_no longer exists_**. **_Only after_** a week of
+`searching` and **_trying out_** different `search keywords`, did I finally get
+some **_partially_** `relevant information` I was **_looking_** for. The
+**_other_** issue which might have **contributed** to the **_complexity_** of
+setting up the **_second printer_** is that it was purchased **_for_** us, and
+**not** **_by_** us. The **_first_** printer was purchased by **_me_**.
+
+I thought I would share the information I gathered that resulted in a successful
+`set-up` of a **_second_** `HP wireless printer`.
 
 ![HP Smart App Icon](/img/hp-smart.png)
 
-- [Link to the HP Smart App in the App Store](https://apps.apple.com/us/app/hp-smart/id469284907)
+-   [Link to the HP Smart App in the App Store](https://apps.apple.com/us/app/hp-smart/id469284907)
 
-***First***, you have to **download** the `HP Smart app` to the ***device*** you want to **connect** your ***printer*** to. I already had ***one*** `HP Smart printer` ***connected*** to my own `iPhone` and `laptop`, and I did ***not*** want (and could not) to **connect** a ***second*** `wireless printer` to those ***same devices***. Even if I could, it would mean a ***much slower*** `connection` for ***both***. As it is, I have ***intermittent*** `wireless congestion` in ***general***, so a ***second*** `wireless printer` to the ***same network*** would have been a **disaster** for ***me***. Especially since the printer was ***not meant*** for **my use** in the ***first place***!
+**_First_**, you have to **download** the `HP Smart app` to the **_device_** you
+want to **connect** your **_printer_** to. I already had **_one_**
+`HP Smart printer` **_connected_** to my own `iPhone` and `laptop`, and I did
+**_not_** want (and could not) to **connect** a **_second_** `wireless printer`
+to those **_same devices_**. Even if I could, it would mean a **_much slower_**
+`connection` for **_both_**. As it is, I have **_intermittent_**
+`wireless congestion` in **_general_**, so a **_second_** `wireless printer` to
+the **_same network_** would have been a **disaster** for **_me_**. Especially
+since the printer was **_not meant_** for **my use** in the **_first place_**!
 
-***After*** you have **downloaded** the app from the [App Store](https://apps.apple.com/us/app/hp-smart/id469284907), make sure that you ***actually*** have **created** an `account` on the [HP Smart](https://www.hpsmart.com/us/en) `website` ***as well***. In order for everything to work ***properly***, **not** ***only*** do you have to `connect` your `printer` to the `HP smart app` on a `mobile device` such as an `iPhone` if you want to ***print*** from a `mobile device` (which you ***should*** want to do, since that is the ***main point*** of `HP Smart` to ***begin with***), but you have to make sure that the `HP Smart website` ***recognizes*** that **printer** as ***well***. This step is ***crucial*** to being able to **set up** an `email address` for the `printer` so that you can ***print*** an `attachment` using the printer's ***unique*** `email address` from your ***own*** `email address`. In ***other words***, you send an `email` to the printer's ***unique*** `email address` with the `file` you want ***printed*** `attached` to the `email`. I will explain this in a bit. It's just ***important*** to **know** ***why*** it is **important** to have an `account` on the `HP Smart website`.
+**_After_** you have **downloaded** the app from the
+[App Store](https://apps.apple.com/us/app/hp-smart/id469284907), make sure that
+you **_actually_** have **created** an `account` on the
+[HP Smart](https://www.hpsmart.com/us/en) `website` **_as well_**. In order for
+everything to work **_properly_**, **not** **_only_** do you have to `connect`
+your `printer` to the `HP smart app` on a `mobile device` such as an `iPhone` if
+you want to **_print_** from a `mobile device` (which you **_should_** want to
+do, since that is the **_main point_** of `HP Smart` to **_begin with_**), but
+you have to make sure that the `HP Smart website` **_recognizes_** that
+**printer** as **_well_**. This step is **_crucial_** to being able to **set
+up** an `email address` for the `printer` so that you can **_print_** an
+`attachment` using the printer's **_unique_** `email address` from your
+**_own_** `email address`. In **_other words_**, you send an `email` to the
+printer's **_unique_** `email address` with the `file` you want **_printed_**
+`attached` to the `email`. I will explain this in a bit. It's just
+**_important_** to **know** **_why_** it is **important** to have an `account`
+on the `HP Smart website`.
 
-You can ***also*** set up your `wireless printer` for **printing** off of your `desktop/laptop` computer ***as well***. However, I will ***not*** be **covering** that ***aspect*** in this article. 
+You can **_also_** set up your `wireless printer` for **printing** off of your
+`desktop/laptop` computer **_as well_**. However, I will **_not_** be
+**covering** that **_aspect_** in this article.
 
-The ***main purpose*** here is to **discuss** creating a `unique email address` using HP's `Web Services` so that ***trusted parties*** (or you yourself) can **send attachments** to your `printer` that are ***subsequently*** printed out there. This is a `great feature` if you are ***not*** in the same **location** as your ***printer***, but a ***remote*** one, and want to **print** to that ***printer***, and **read** the ***contents*** at a **later date**. Or perhaps ***send it*** to **someone** who is at the `printer location` so that ***they*** can read it.
+The **_main purpose_** here is to **discuss** creating a `unique email address`
+using HP's `Web Services` so that **_trusted parties_** (or you yourself) can
+**send attachments** to your `printer` that are **_subsequently_** printed out
+there. This is a `great feature` if you are **_not_** in the same **location**
+as your **_printer_**, but a **_remote_** one, and want to **print** to that
+**_printer_**, and **read** the **_contents_** at a **later date**. Or perhaps
+**_send it_** to **someone** who is at the `printer location` so that **_they_**
+can read it.
 
-In ***my*** case, I am able to easily have ***two*** `wireless printers` which can function in ***tandem***,  because I have ***two*** `wireless networks` ***set up***, and can **dedicate** ***one network*** to one `printer`, and the ***other network*** to another `printer`.
+In **_my_** case, I am able to easily have **_two_** `wireless printers` which
+can function in **_tandem_**, because I have **_two_** `wireless networks`
+**_set up_**, and can **dedicate** **_one network_** to one `printer`, and the
+**_other network_** to another `printer`.
 
-I only found out after ***much struggle***, that the ***second*** printer had to be in the ***same room*** as the `network router` in order to be ***able*** to be **set up** and ***work properly***. I have `internet capability` in ***another room*** where I first set up the ***second*** printer, but it was ***impossible*** to `connect` the ***second*** `wireless printer` properly. Things took ***forever***, and the printer oftentimes also `lost connection`. ***Most important*** was that I was ***not able*** to `create` a `unique email address` for the ***printer*** from that `location`.
+I only found out after **_much struggle_**, that the **_second_** printer had to
+be in the **_same room_** as the `network router` in order to be **_able_** to
+be **set up** and **_work properly_**. I have `internet capability` in
+**_another room_** where I first set up the **_second_** printer, but it was
+**_impossible_** to `connect` the **_second_** `wireless printer` properly.
+Things took **_forever_**, and the printer oftentimes also `lost connection`.
+**_Most important_** was that I was **_not able_** to `create` a
+`unique email address` for the **_printer_** from that `location`.
 
-When I ***finally*** figured out ***where*** to **place** the ***second*** printer, it took ***no time*** to set things up.
+When I **_finally_** figured out **_where_** to **place** the **_second_**
+printer, it took **_no time_** to set things up.
 
 It's all about LOCATION. LOCATION. LOCATION.
 
-***First*** I set things up ***via*** the `HP Smart app` on an ***another*** `iPhone` which was **connected** to a `wireless network` ***different*** from my `iPhone` and `laptop`. Then I had to ***connect*** to `HP Web Services` by **typing** in the `unique IP address` of the `printer` in the `web address bar` on the ***associated*** `iPhone`. This ***took me*** to the `HP Web Services website`.
+**_First_** I set things up **_via_** the `HP Smart app` on an **_another_**
+`iPhone` which was **connected** to a `wireless network` **_different_** from my
+`iPhone` and `laptop`. Then I had to **_connect_** to `HP Web Services` by
+**typing** in the `unique IP address` of the `printer` in the `web address bar`
+on the **_associated_** `iPhone`. This **_took me_** to the
+`HP Web Services website`.
 
-***Next***, I had to make sure that I was in the `HP Web Services` ***tab***. If ***not***, I would have had to ***click*** on it to ***get in***.
+**_Next_**, I had to make sure that I was in the `HP Web Services` **_tab_**. If
+**_not_**, I would have had to **_click_** on it to **_get in_**.
 
-Then I had to ***click*** on an `"Enable Web Services"` **button** ***located*** in the `HP Web Services` **tab**, and was then ***given*** the `prompt` that a `printout` of the **printer** `Info Page` was ***being made***. The page ***contains*** the **printer** `email address`, and the **printer** `claim code`, so that you can ***add*** your `printer` to ***your account*** on the `HP Smart` **website**. It even ***prompts*** you to go to `hpconnected.com` to ***enter*** the **printer** `claim code` within your ***account***, and thereby be able to **manage** your ***printer***. ***However***, when you **type** `hpconnected.com` in the `web browser`, you will be ***re-directed*** to `hpsmart.com`.
+Then I had to **_click_** on an `"Enable Web Services"` **button** **_located_**
+in the `HP Web Services` **tab**, and was then **_given_** the `prompt` that a
+`printout` of the **printer** `Info Page` was **_being made_**. The page
+**_contains_** the **printer** `email address`, and the **printer**
+`claim code`, so that you can **_add_** your `printer` to **_your account_** on
+the `HP Smart` **website**. It even **_prompts_** you to go to `hpconnected.com`
+to **_enter_** the **printer** `claim code` within your **_account_**, and
+thereby be able to **manage** your **_printer_**. **_However_**, when you
+**type** `hpconnected.com` in the `web browser`, you will be **_re-directed_**
+to `hpsmart.com`.
 
-***Enabling*** `HP Web Services` ***results*** in your `printer` being `web-connected` and having its ***own*** unique `email address`. The `email address` ***allows you*** to `email` **file attachments** to your ***printer*** and **print** from ***anywhere*** at any time. IF you ***want*** to **print articles** off the `internet`, that is ***touch*** and ***go*** with this **set-up** and can **take** a ***long time***, depending on ***which*** device you `email` ***from*** and how ***far away*** you are **physically** from the ***printer***.
+**_Enabling_** `HP Web Services` **_results_** in your `printer` being
+`web-connected` and having its **_own_** unique `email address`. The
+`email address` **_allows you_** to `email` **file attachments** to your
+**_printer_** and **print** from **_anywhere_** at any time. IF you **_want_**
+to **print articles** off the `internet`, that is **_touch_** and **_go_** with
+this **set-up** and can **take** a **_long time_**, depending on **_which_**
+device you `email` **_from_** and how **_far away_** you are **physically** from
+the **_printer_**.
 
-For ***example***, when I **sent** an `email` from my ***laptop*** via my `gmail account`, **containing** an ***attachment*** which I wanted to ***print out***, the `printer` ***received*** the `request` almost ***instantaneously***. However, I ***first*** had to **save** the ***article*** in question on my **desktop** as an `html page` that I ***subsequently*** could **attach** to the ***email***. This was ***not*** optimal, as it involved a couple of ***extra*** steps, and **only text** was ***printed out***. The ***only*** other way I could ***possibly*** send the `article` via ***email***, was by ***copyin*** and ***pasting*** the **contents** of it into the ***body*** of the `email`. And ***who knows*** how it would **print out**! That ***also*** would involve **extra steps** and therefore ***extra time***.
+For **_example_**, when I **sent** an `email` from my **_laptop_** via my
+`gmail account`, **containing** an **_attachment_** which I wanted to **_print
+out_**, the `printer` **_received_** the `request` almost **_instantaneously_**.
+However, I **_first_** had to **save** the **_article_** in question on my
+**desktop** as an `html page` that I **_subsequently_** could **attach** to the
+**_email_**. This was **_not_** optimal, as it involved a couple of **_extra_**
+steps, and **only text** was **_printed out_**. The **_only_** other way I could
+**_possibly_** send the `article` via **_email_**, was by **_copyin_** and
+**_pasting_** the **contents** of it into the **_body_** of the `email`. And
+**_who knows_** how it would **print out**! That **_also_** would involve
+**extra steps** and therefore **_extra time_**.
 
-The ***best way*** to **send articles** for ***others*** to `print out`, is by ***texting*** the **link** to the `article` via `smart phone`. ***Then*** the person **receiving** the ***text*** just has to **click** on the ***link***, **then** on the `iPhone` ***share icon***, which **takes them** to ***sharing*** and/or ***printing options***:
+The **_best way_** to **send articles** for **_others_** to `print out`, is by
+**_texting_** the **link** to the `article` via `smart phone`. **_Then_** the
+person **receiving** the **_text_** just has to **click** on the **_link_**,
+**then** on the `iPhone` **_share icon_**, which **takes them** to **_sharing_**
+and/or **_printing options_**:
 
 ![iPhone share icon image](/img/img_3680.png)
 
-***Click*** on the `icon` with the `upward arrow`, and it will ***take you*** to **various options**, ***including*** printing with `HP Smart`, ***located*** towards the **bottom** of the `iPhone` **screen**. ***Click on*** `Print with HP Smart`, and it will ***show*** the `individual pages` of the ***selected*** `web article` (or `document`) to be ***printed***. ***Click*** `Print`, and a `progress bar` will ***appear***, letting you know ***which*** pages are being ***printed***, one at a time.
+**_Click_** on the `icon` with the `upward arrow`, and it will **_take you_** to
+**various options**, **_including_** printing with `HP Smart`, **_located_**
+towards the **bottom** of the `iPhone` **screen**. **_Click on_**
+`Print with HP Smart`, and it will **_show_** the `individual pages` of the
+**_selected_** `web article` (or `document`) to be **_printed_**. **_Click_**
+`Print`, and a `progress bar` will **_appear_**, letting you know **_which_**
+pages are being **_printed_**, one at a time.
 
-It is ***very*** quick and easy. No fuss. No muss. I am ***including*** the ***link*** to the `comprehensive documentation` I ***finally*** found `yesterday` on how to ***set up*** an `HP Smart website account` to ***enable*** `HP Web Services` for your `wireless printer`. ***This*** `article` in ***conjunction with*** the `HP Smart documentation` I have ***included*** in the `Related Resources` **section** of this podcast's `transcript/post` on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) should be ***all you need*** to **set up** your ***first*** OR ***second*** `wireless HP printer`.
+It is **_very_** quick and easy. No fuss. No muss. I am **_including_** the
+**_link_** to the `comprehensive documentation` I **_finally_** found
+`yesterday` on how to **_set up_** an `HP Smart website account` to **_enable_**
+`HP Web Services` for your `wireless printer`. **_This_** `article` in
+**_conjunction with_** the `HP Smart documentation` I have **_included_** in the
+`Related Resources` **section** of this podcast's `transcript/post` on
+[interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) should
+be **_all you need_** to **set up** your **_first_** OR **_second_**
+`wireless HP printer`.
 
-I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
+I will be embedding this episode of **Plugging in The Holes** along with a
+**_transcript_** in the form of a **post** on
+[interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
+**_hearing_** and **_reading_** pleasure. Bye for now!
 
-## Related Resources:
+## Related Resources
 
-- [HP Printers - Set Up an HP Smart Website Account](https://support.hp.com/au-en/document/c03609576)
-
-
-
-
-
-
-
-
-
+-   [HP Printers - Set Up an HP Smart Website Account](https://support.hp.com/au-en/document/c03609576)

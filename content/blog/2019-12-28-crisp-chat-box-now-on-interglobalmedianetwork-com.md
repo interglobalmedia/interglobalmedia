@@ -68,6 +68,8 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
+## Related Resources
+
 -   [gatsby-plugin-crisp-chat](https://www.gatsbyjs.org/packages/gatsby-plugin-crisp-chat/)
 
 -   [Customer Messaging Platform For Startups & SMB's - Crisp](https://crisp.chat/en/)

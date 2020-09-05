@@ -1,51 +1,72 @@
 ---
 title: >-
-  Adding host property to webpack.config.js which permits you to view your app
-  in localhost on other shared network devices
+    Adding host property to webpack.config.js which permits you to view your app
+    in localhost on other shared network devices
 date: 2020-06-07T18:53:18.300Z
 description: >-
-  In this episode, I talk about how to add the host property to your
-  webpack.config.js file, thereby permitting you to view your app in localhost
-  on other shared network devices.
+    In this episode, I talk about how to add the host property to your
+    webpack.config.js file, thereby permitting you to view your app in localhost
+    on other shared network devices.
 image: /img/annie-spratt-4ujhq5_fjik-unsplash.jpg
 tags:
-  - localhost
-  - host-property
-  - webpack-config
-  - local-ip-address
+    - localhost
+    - host-property
+    - webpack-config
+    - local-ip-address
 categories:
-  - webpack
+    - webpack
 author: Maria D. Campbell
 ---
-- Link to [Adding host property to webpack.config.js which permits you to view your app in localhost on other shared network devices](https://anchor.fm/maria-campbell/episodes/Adding-host-property-to-webpack-config-js-which-permits-you-to-view-your-app-in-localhost-on-other-shared-network-devices-ef45ul) podcast on anchorfm
 
-***Note***: this assumes your `operating system` is `Unix` (`OSX`) and that your ***computer*** is a `Mac`.
+-   Link to
+    [Adding host property to webpack.config.js which permits you to view your app in localhost on other shared network devices](https://anchor.fm/maria-campbell/episodes/Adding-host-property-to-webpack-config-js-which-permits-you-to-view-your-app-in-localhost-on-other-shared-network-devices-ef45ul)
+    podcast on anchorfm
 
-Did you know that if you ***added*** the `host` ***property*** to your `devServer` **object** in your `webpack.config.js` file, it ***enables*** you to view your app via `localhost` on ***other devices*** that **share** the ***same network*** as your `computer`? i.e., your ***smart phone*** or ***tablet***?
+**_Note_**: this assumes your `operating system` is `Unix` (`OSX`) and that your
+**_computer_** is a `Mac`.
 
-***First***, add the `host` **property** to your `devServer {}` ***object*** in your `webpack.config.js` file with the ***following*** `value`:
+Did you know that if you **_added_** the `host` **_property_** to your
+`devServer` **object** in your `webpack.config.js` file, it **_enables_** you to
+view your app via `localhost` on **_other devices_** that **share** the **_same
+network_** as your `computer`? i.e., your **_smart phone_** or **_tablet_**?
+
+**_First_**, add the `host` **property** to your `devServer {}` **_object_** in
+your `webpack.config.js` file with the **_following_** `value`:
 
 ```js
 host: '0.0.0.0'
 ```
-***Next***, **re-start** the `webpack-dev-server` with your `webpack-dev-server` ***script***. Mine is `npm run dev`.
 
-When you ***know*** that your `webpack-dev-server` has **started up** ***successfully***, ***type*** the following `command` in `Terminal` to find out the ***local*** `IP address` of your **Mac** `computer/laptop`:
+**_Next_**, **re-start** the `webpack-dev-server` with your `webpack-dev-server`
+**_script_**. Mine is `npm run dev`.
+
+When you **_know_** that your `webpack-dev-server` has **started up**
+**_successfully_**, **_type_** the following `command` in `Terminal` to find out
+the **_local_** `IP address` of your **Mac** `computer/laptop`:
 
 ```shell
 ipconfig getifaddr en0
 ```
-You can ***also*** find out your computer's **local** `IP address` by ***going into*** `Preferences` -> `Network`, and towards the ***top right*** of the `Network` **window**, ***below*** `Status: Connected`, you will find something like the ***following***:
+
+You can **_also_** find out your computer's **local** `IP address` by **_going
+into_** `Preferences` -> `Network`, and towards the **_top right_** of the
+`Network` **window**, **_below_** `Status: Connected`, you will find something
+like the **_following_**:
 
 ```shell
 Wi-Fi is Connected to xxxxxxxxxxx-5G and has the IP address 192.168.x.x
 ```
-Then ***go into*** another **device**, like your `smart phone`, for example, which is ***running*** on the **same network**, and type in the ***following***:
+
+Then **_go into_** another **device**, like your `smart phone`, for example,
+which is **_running_** on the **same network**, and type in the **_following_**:
 
 ```shell
 192.168.x.x:port
 ```
-`port` should be ***replaced*** by the `port number` you ***use*** in your `webpack.config.js` file. It is the `value` you ***pass*** to the `port` **property** ***within*** your `devServer` **object**:
+
+`port` should be **_replaced_** by the `port number` you **_use_** in your
+`webpack.config.js` file. It is the `value` you **_pass_** to the `port`
+**property** **_within_** your `devServer` **object**:
 
 ```js
 devServer:{
@@ -58,13 +79,15 @@ devServer:{
     host:'0.0.0.0'
 },
 ```
-And you should see the ***mobile version*** of your **application** rendered ***there***!
 
-I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
+And you should see the **_mobile version_** of your **application** rendered
+**_there_**!
 
-## Related Resources:
+I will be embedding this episode of **Plugging in The Holes** along with a
+**_transcript_** in the form of a **post** on
+[interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
+**_hearing_** and **_reading_** pleasure. Bye for now!
 
-- [Find Your IP Address on Windows or Mac](https://www.avg.com/en/signal/find-ip-address)
+## Related Resources
 
-
-
+-   [Find Your IP Address on Windows or Mac](https://www.avg.com/en/signal/find-ip-address)

@@ -2,61 +2,92 @@
 title: Installing Python 3.8.0+ on your Mac with pyenv
 date: 2020-06-30T03:50:37.694Z
 description: >-
-  Recently I wrote a post entitled [Installing the latest version of Python on
-  Mac OS Catalina and overriding the old default pre-installed
-  version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/)
-  about installing Python 3.7.7 on Mac OS Catalina with Homebrew. Python 3.7.7
-  was the latest version of Python that one could install < 3.8.0. At the time,
-  I was totally okay with that. That was before I discovered the Mkdocs
-  documentation generator, which requires Python 3.8.2. It also supports 3.8.3.
-  I checked to make sure!
+    Recently I wrote a post entitled [Installing the latest version of Python on
+    Mac OS Catalina and overriding the old default pre-installed
+    version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/)
+    about installing Python 3.7.7 on Mac OS Catalina with Homebrew. Python 3.7.7
+    was the latest version of Python that one could install < 3.8.0. At the
+    time, I was totally okay with that. That was before I discovered the Mkdocs
+    documentation generator, which requires Python 3.8.2. It also supports
+    3.8.3. I checked to make sure!
 image: /img/romina-farias-o4-cizsljeg-unsplash.jpg
 tags:
-  - python
-  - python3
-  - homebrew
-  - osx-catalina
-  - osx
-  - catalina
-  - pyenv
+    - python
+    - python3
+    - homebrew
+    - osx-catalina
+    - osx
+    - catalina
+    - pyenv
 categories:
-  - python
-  - python3
+    - python
+    - python3
 author: Maria D. Campbell
 ---
-- Link to [Installing Python 3.8.0+ on your Mac with pyenv](https://anchor.fm/maria-campbell/episodes/Installing-Python-3-8-0-on-your-Mac-with-pyenv-egabs5) podcast on anchorfm
 
-Recently I wrote a post entitled [Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/) about _**installing**_ `Python 3.7.7` on Mac OS Catalina with `Homebrew`. `Python 3.7.7` was the latest version of Python that one could install < 3.8.0. At the time, I was totally okay with that. That was before I discovered the `Mkdocs` documentation generator, which requires Python 3.8.2. It also supports 3.8.3. I checked to make sure!
+-   Link to
+    [Installing Python 3.8.0+ on your Mac with pyenv](https://anchor.fm/maria-campbell/episodes/Installing-Python-3-8-0-on-your-Mac-with-pyenv-egabs5)
+    podcast on anchorfm
 
-`Python 3.8.0+` requires a _**different path**_ than `Python 3 < 3.8.0` on `Mac OS Catalina`. I _**installed**_ ```Python 3.7.7`` using Homebrew```, and you can _**compare**_ the **differences** in the _**installation processes**_ by **reading** _**both**_ [Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/) and _**this post**_.
+Recently I wrote a post entitled
+[Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/)
+about _**installing**_ `Python 3.7.7` on Mac OS Catalina with `Homebrew`.
+`Python 3.7.7` was the latest version of Python that one could install < 3.8.0.
+At the time, I was totally okay with that. That was before I discovered the
+`Mkdocs` documentation generator, which requires Python 3.8.2. It also supports
+3.8.3. I checked to make sure!
 
-After a couple of failed attempts, I finally found the _**best way**_ to **install** `Python 3.8.0+` on my computer and make `Python 3.8.3` the _**global version**_ of **Python**. I ended up _**installing**_ `pyenv`, the `Python` **version manager**, on my computer using `Homebrew`, and then _**configuring**_`the correct path` to `Python 3.8.3` in my `.zshrc` file _**located**_ in my **home directory**. I could not afford to _**wait around**_ for `Homebrew` to _**support**_ ``3.8.0+, and `pyenv` is a ***great solution*** in ******general! It is ***akin to***`` `nvm`, the Nodejs **version manager**. The concept is the same, and both made installing `Nodejs` and `Python` _**easy**_ on `Mac OS Catalina`!
+`Python 3.8.0+` requires a _**different path**_ than `Python 3 < 3.8.0` on
+`Mac OS Catalina`. I _**installed**_ ` Python 3.7.7`` using Homebrew `, and you
+can _**compare**_ the **differences** in the _**installation processes**_ by
+**reading** _**both**_
+[Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/)
+and _**this post**_.
 
-This post _**assumes**_ that you have `Homebrew` _**installed**_ on your `Mac computer` with `OS Catalina` _**installed**_ as well.
+After a couple of failed attempts, I finally found the _**best way**_ to
+**install** `Python 3.8.0+` on my computer and make `Python 3.8.3` the _**global
+version**_ of **Python**. I ended up _**installing**_ `pyenv`, the `Python`
+**version manager**, on my computer using `Homebrew`, and then
+_**configuring**_`the correct path` to `Python 3.8.3` in my `.zshrc` file
+_**located**_ in my **home directory**. I could not afford to _**wait around**_
+for `Homebrew` to _**support**_ `3.8.0+`, and `pyenv` is a **_great solution_**
+in **_general_**! It is **_akin to_** `` `nvm`, the Nodejs **version manager**.
+The concept is the same, and both made installing `Nodejs` and `Python`
+_**easy**_ on `Mac OS Catalina`!
 
-First I ran `brew update`, to _**update**_ `Homebrew`. One should always run that command _**before**_ installing something **new** with `Homebrew`.
+This post _**assumes**_ that you have `Homebrew` _**installed**_ on your
+`Mac computer` with `OS Catalina` _**installed**_ as well.
 
-Then I ran `brew install pyenv`. That installed the Python version manager `pyenv`.
+First I ran `brew update`, to _**update**_ `Homebrew`. One should always run
+that command _**before**_ installing something **new** with `Homebrew`.
 
-Then I had to _**add**_ the `pyenv` **path** to my **zsh profile**, `.zshrc`, _**located**_ in my **home directory**.
+Then I ran `brew install pyenv`. That installed the Python version manager
+`pyenv`.
+
+Then I had to _**add**_ the `pyenv` **path** to my **zsh profile**, `.zshrc`,
+_**located**_ in my **home directory**.
 
 ```shell
 echo 'export PATH="$(pyenv root)/shims:$PATH"' >> ~/.zshrc
 ```
 
-This command _**copied**_ the command `export PATH="$(pyenv root)/shims:$PATH"` to my `.zshrc` file. The _**following**_ was **added** to the _**bottom**_ of `.zshrc`:
+This command _**copied**_ the command `export PATH="$(pyenv root)/shims:$PATH"`
+to my `.zshrc` file. The _**following**_ was **added** to the _**bottom**_ of
+`.zshrc`:
 
 ```shell
 export PATH="$(pyenv root):$PATH"
 ```
 
-Next, I wanted to _**check**_ what `Python` **versions** are available through `pyenv`, so I could _**execute**_ the following command in `Terminal`:
+Next, I wanted to _**check**_ what `Python` **versions** are available through
+`pyenv`, so I could _**execute**_ the following command in `Terminal`:
 
 ```shell
 pyenv install --list
 ```
 
-A long list of things were returned, but I will only list what versions of the `Real Python` were available to me (6.28.20) at the time of writing this post:
+A long list of things were returned, but I will only list what versions of the
+`Real Python` were available to me (6.28.20) at the time of writing this post:
 
 ```shell
 2.1.3
@@ -178,7 +209,8 @@ A long list of things were returned, but I will only list what versions of the `
   3.10-dev
 ```
 
-And after I installed the Python versions I wanted, I ran the following command to see what versions were installed on my computer via `pyenv`:
+And after I installed the Python versions I wanted, I ran the following command
+to see what versions were installed on my computer via `pyenv`:
 
 ```shell
 pyenv versions
@@ -192,9 +224,12 @@ system
 * 3.8.3 (set by /Users/mariacam/.pyenv/version)
 ```
 
-The **system version** is the `Mac OS` **system version** (`2.7.14`) which is _**included**_ with `pyenv` as well, and `3.8.2` and `3.8.3` were *_**installed**_ by **me**.
+The **system version** is the `Mac OS` **system version** (`2.7.14`) which is
+_**included**_ with `pyenv` as well, and `3.8.2` and `3.8.3`
+were \*_**installed**_ by **me**.
 
-Then I had to _**set**_ a `global` **version** for my computer, so I _**executed**_ the following command:
+Then I had to _**set**_ a `global` **version** for my computer, so I
+_**executed**_ the following command:
 
 ```shell
 pyenv global 3.8.3
@@ -214,24 +249,33 @@ Python 3.8.3
 
 And it worked!
 
-If you _**want**_ to use a **different version** of `Python` using `pyenv` in a _**particular project**_, you would **run** the _**following command**_:
+If you _**want**_ to use a **different version** of `Python` using `pyenv` in a
+_**particular project**_, you would **run** the _**following command**_:
 
 ```shell
 pyenv local 3.8.2
 ```
 
-for example. Just _**change**_ the `Python` **version number** to the one _**you want**_. You just have to **make sure** you _**already**_ have it **installed** on your computer via `pyenv`.
+for example. Just _**change**_ the `Python` **version number** to the one _**you
+want**_. You just have to **make sure** you _**already**_ have it **installed**
+on your computer via `pyenv`.
 
-Now my `Mkdocs` documentation generator works perfectly. I just had to _**make sure**_ that I **updated** `pip` to the _**latest version**_ before everything worked smoothly. I _**got**_ the **version** I _**needed**_ for `Mkdocs` support via their website, and then **updated** `pip` with the following command:
+Now my `Mkdocs` documentation generator works perfectly. I just had to _**make
+sure**_ that I **updated** `pip` to the _**latest version**_ before everything
+worked smoothly. I _**got**_ the **version** I _**needed**_ for `Mkdocs` support
+via their website, and then **updated** `pip` with the following command:
 
 ```shell
 pip install --upgrade pip
 ```
 
-`pip` comes with `Python`, but you _**may**_ want to just **upgrade** to the _**latest version**_. That is what I did, because I did not have the later version that was required for `Mkdocs`, so I upgraded `pip`.
+`pip` comes with `Python`, but you _**may**_ want to just **upgrade** to the
+_**latest version**_. That is what I did, because I did not have the later
+version that was required for `Mkdocs`, so I upgraded `pip`.
 
-## Related Resources:
+## Related Resources
 
-[How to install Python 3.8 on Mac using pyenv](https://installvirtual.com/how-to-install-python-3-8-on-mac-using-pyenv/)
-[Mkdocs installation](https://www.mkdocs.org/#installation)
-[How Do I Install pip on Mac OS or OSX?](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
+-   [How to install Python 3.8 on Mac using pyenv](https://installvirtual.com/how-to-install-python-3-8-on-mac-using-pyenv/)
+
+-   [Mkdocs installation](https://www.mkdocs.org/#installation)
+-   [How Do I Install pip on Mac OS or OSX?](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)

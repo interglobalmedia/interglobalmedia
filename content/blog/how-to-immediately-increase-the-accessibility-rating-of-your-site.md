@@ -155,7 +155,7 @@ ratings in the 80s. Not bad for a quick start!
 
 **_Happy a11y design and development!_**
 
-## Related Resources:
+## Related Resources
 
 -   <a href="https://a11yproject.com/" title="visit link to the Accessibility (A11y) Project website">The
     A11y Project</a>

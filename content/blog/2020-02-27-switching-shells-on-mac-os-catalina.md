@@ -107,7 +107,7 @@ I will be embedding this episode of **Plugging in The Holes** along with a
 **_hearing_** and **_reading_** pleasure. I will be including the related
 resource links mentioned in the podcast of course. Always do. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [What Shell Am I Using? Here’s How To Find Out](https://osxdaily.com/2009/09/25/what-shell-am-i-using/)
 

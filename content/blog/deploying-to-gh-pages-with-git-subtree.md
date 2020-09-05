@@ -161,7 +161,7 @@ perfect! Or at least ... nearly so!
 
 Happy coding!
 
-## Related Resources:
+## Related Resources
 
 -   [One line deployment of your site to gh-pages](http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html)
 

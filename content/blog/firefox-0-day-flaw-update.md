@@ -76,7 +76,7 @@ with a transcript in the form of a post on
 [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com) for your
 hearing and reading pleasure. Bye for now!
 
-## Related Resources:
+## Related Resources
 
 -   [Firefox Releases Critical Patch Update to Stop Ongoing Zero-Day Attacks](https://thehackernews.com/2019/06/mozilla-firefox-patch-update.html)
 
