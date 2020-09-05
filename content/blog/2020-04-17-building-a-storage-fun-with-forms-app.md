@@ -814,10 +814,10 @@ new DOMException()
 Then I **set** the `name` **property** on this **_new_** `instance` of the
 `DOMException` **object** represented by the domException parameter/variable.
 This way, the program can check whether the domException.name
-'QUOTA\*EXCEEDED\*ERR' or 'NS*ERROR_DOM_QUOTA_REACHED' \*\*\_exists**\*, and if
-it **does** because the `user's` `localStorage` **quota** has been **\_met**\*
-or **\_exceeded***, then the `value` of `storageQuotaMsg.innerHTML` should be
-**set\*\* to
+'QUOTA_EXCEEDED_ERR' or 'NS_ERROR_DOM_QUOTA_REACHED' **exists**, and if it
+**does** because the `user's` `localStorage` **quota** has been **met** or
+**exceeded**, then the `value` of `storageQuotaMsg.innerHTML` should be **set**
+to
 
 ```js
 'Local Storage Quota Exceeded!'
@@ -1027,10 +1027,10 @@ clearStorageButton.addEventListener('click', clearStorage)
 ```
 
 I **_also_** **needed** to **_set_** an `Event Listener` on the `Empty Storage`
-**button** to **_trigger_** the `emptyStorage()` **function*8 that
-***completely**\* empties all `key/value` **pairs** from the `user's`
-`localStorage`. The `.addEventListener()` **method** for the **button**
-looks \***something**\* like **this\*\*:
+**button** to **_trigger_** the `emptyStorage()` **function** that
+**completely** empties all `key/value` **pairs** from the `user's`
+`localStorage`. The `.addEventListener()` **method** for the **button** looks
+**something** like **this**:
 
 ```js
 // empty local storage completely

@@ -319,7 +319,7 @@ podcast of course. Always do. Bye for now!
 
 ## Related Resources
 
--   [Sticky Foote](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
+-   [Sticky Footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
 
 -   [Message Me app on Github](https://github.com/interglobalmedia/message-docs)
 

@@ -1,124 +1,164 @@
 ---
 title: >-
-  Sticky Footers in the age of coronavirus: It always comes down to FlexBox,
-  just the implementation may vary
+    Sticky Footers in the age of coronavirus: It always comes down to FlexBox,
+    just the implementation may vary
 date: 2020-04-09T18:04:41.066Z
 description: >-
-  In this episode, I talk about a new way that I implemented Flexbox to achieve
-  a sticky footer in the new application I created for my students called
-  "Storage Fun With Forms". I also give some advice on how to approach your work
-  during these times of the coronavirus. And yes, this comes from personal
-  experience!
+    In this episode, I talk about a new way that I implemented Flexbox to
+    achieve a sticky footer in the new application I created for my students
+    called "Storage Fun With Forms". I also give some advice on how to approach
+    your work during these times of the coronavirus. And yes, this comes from
+    personal experience!
 image: /img/markus-winkler-zew4bp2gwva-unsplash.jpg
 tags:
-  - css
-  - viewport
-  - flexbox
-  - sticky-footer
-  - vh
-  - javascript
-  - local-storage
-  - web-storage-api
+    - css
+    - viewport
+    - flexbox
+    - sticky-footer
+    - vh
+    - javascript
+    - local-storage
+    - web-storage-api
 categories:
-  - sticky-footer
-  - flexbox
-  - javascript
-  - web-storage-api
+    - sticky-footer
+    - flexbox
+    - javascript
+    - web-storage-api
 author: Maria D. Campbell
 ---
-- link to [Sticky Footers in the age of coronavirus: It always comes down to FlexBox, just the implementation may vary](https://anchor.fm/maria-campbell/episodes/Sticky-Footers-in-the-age-of-coronavirus-It-always-comes-down-to-FlexBox--just-the-implementation-may-vary-ecj6ubb) podcast on anchorfm
 
-I just ***completed*** a little `local storage form` **application** for ***my students***. I felt we **needed** something ***fun*** and ***silly*** to **uplift** our **spirits**, so I ***created*** an **application** called `"Storage Fun With Forms"`.
+-   link to
+    [Sticky Footers in the age of coronavirus: It always comes down to FlexBox, just the implementation may vary](https://anchor.fm/maria-campbell/episodes/Sticky-Footers-in-the-age-of-coronavirus-It-always-comes-down-to-FlexBox--just-the-implementation-may-vary-ecj6ubb)
+    podcast on anchorfm
 
-I ***initially*** built it **without** a ***footer***. I did something a bit ***unorthodox*** with my `image`, which I knew would ***break*** the `sticky footer` **styling** I ***normally*** **add** to my **applications**. In fact, when I **applied** it with ***no*** **adjustments**, it did ***not*** **result** in a `sticky footer`. It ***resulted in*** a `horizontal layout` ***instead*** **of** the `vertical` one I ***began with***, and my `footer` ***ended up*** **above** the **image**. Why? Because I ***set*** the `position` of the **image** to `absolute`.
+I just **_completed_** a little `local storage form` **application** for **_my
+students_**. I felt we **needed** something **_fun_** and **_silly_** to
+**uplift** our **spirits**, so I **_created_** an **application** called
+`"Storage Fun With Forms"`.
 
-I realized pretty quickly that I would have to ***remove*** my **usual** `sticky footer` **css**, and ***create*** **new** `css`, **emulating** the ***effects*** of my **default** `sticky footer` **css**.
+I **_initially_** built it **without** a **_footer_**. I did something a bit
+**_unorthodox_** with my `image`, which I knew would **_break_** the
+`sticky footer` **styling** I **_normally_** **add** to my **applications**. In
+fact, when I **applied** it with **_no_** **adjustments**, it did **_not_**
+**result** in a `sticky footer`. It **_resulted in_** a `horizontal layout`
+**_instead_** **of** the `vertical` one I **_began with_**, and my `footer`
+**_ended up_** **above** the **image**. Why? Because I **_set_** the `position`
+of the **image** to `absolute`.
 
-Below is the `sticky footer` **styling** I would ***normally*** **implement** in my ***applications***:
+I realized pretty quickly that I would have to **_remove_** my **usual**
+`sticky footer` **css**, and **_create_** **new** `css`, **emulating** the
+**_effects_** of my **default** `sticky footer` **css**.
+
+Below is the `sticky footer` **styling** I would **_normally_** **implement** in
+my **_applications_**:
 
 ```css
 // Sticky Footer Styling
 :root {
-  --space: 1.5em 0;
-  --space: 2em 0;
+    --space: 1.5em 0;
+    --space: 2em 0;
 }
 
 .Site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .Site-content {
-  flex: 1 0 auto;
-  padding: var(--space) var(--space) 0;
-  width: 100%;
+    flex: 1 0 auto;
+    padding: var(--space) var(--space) 0;
+    width: 100%;
 }
 
 .Site-content:after {
-  content: "\00a0";
-  display: block;
-  margin-top: var(--space);
-  height: 0;
-  visibility: hidden;
+    content: '\00a0';
+    display: block;
+    margin-top: var(--space);
+    height: 0;
+    visibility: hidden;
 }
 ```
-The following is what ***typical*** `html` **markup** would ***look like*** in application's `index.html` when implementing the `sticky footer` **css**:
+
+The following is what **_typical_** `html` **markup** would **_look like_** in
+application's `index.html` when implementing the `sticky footer` **css**:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Note App: LocalStorage vs SessionsStorage</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/css/main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note App: LocalStorage vs SessionsStorage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/main.css">
-</head>
-
-<body class="Site">
-    <div class="Site-content">
-        <div class="note-taker">
-            <h1 class="title">Note Taker To Session Storage App</h1>
-            <div class="storage-buttons">
-                <a class="clear">Clear Storage</a>
-                <a class="empty">Empty Storage</a>
-            </div>
-            <div id="storage-quota-msg"></div>
-            <div class="file-save-button">
-                <a id="save">Save Text To File for Download</a>
-            </div>
-            <div class="textarea-wrapper">
-                <textarea name="text" class="session-storage" id="textArea" cols="50"
-                    rows="10">Hello! I love JavaScript, and I prefer sessionStorage. How about you? 👍</textarea>
-                <button type="button" id="save-text">Save Text</button>
+    <body class="Site">
+        <div class="Site-content">
+            <div class="note-taker">
+                <h1 class="title">Note Taker To Session Storage App</h1>
+                <div class="storage-buttons">
+                    <a class="clear">Clear Storage</a>
+                    <a class="empty">Empty Storage</a>
+                </div>
+                <div id="storage-quota-msg"></div>
+                <div class="file-save-button">
+                    <a id="save">Save Text To File for Download</a>
+                </div>
+                <div class="textarea-wrapper">
+                    <textarea
+                        name="text"
+                        class="session-storage"
+                        id="textArea"
+                        cols="50"
+                        rows="10"
+                    >
+Hello! I love JavaScript, and I prefer sessionStorage. How about you? 👍</textarea
+                    >
+                    <button type="button" id="save-text">Save Text</button>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="site-footer">
-        <script>
-            const theDate = new Date();
-            const footer = document.querySelector(".site-footer");
-            footer.style.fontWeight = "600";
-            footer.style.letterSpacing = "0.07rem";
-            footer.style.fontFamily = "Arimo, sans-serif";
-            footer.innerHTML =
-                `&#10013; © ${theDate.getFullYear()} Maria D. Campbell &#10013;`;
-        </script>
-    </footer>
-    <script src="scripts/js/main.js"></script>
-</body>
-
+        <footer class="site-footer">
+            <script>
+                const theDate = new Date()
+                const footer = document.querySelector('.site-footer')
+                footer.style.fontWeight = '600'
+                footer.style.letterSpacing = '0.07rem'
+                footer.style.fontFamily = 'Arimo, sans-serif'
+                footer.innerHTML = `&#10013; © ${theDate.getFullYear()} Maria D. Campbell &#10013;`
+            </script>
+        </footer>
+        <script src="scripts/js/main.js"></script>
+    </body>
 </html>
 ```
-First I ***removed*** the `markup` related to the `sticky footer` **styling**. I ***removed*** the `.Site` **class** from the `body` **tag**, and the `.Site-content` **class** from the `div` ***right below*** the `body tag`. Then I **removed** that `div` **altogether**. It ***ruined*** the `layout` I had **created** for this **application**, and I wanted to ***stay*** **with it**. There had to be another way of **achieving** a `sticky footer` using `Flexbox`. And there ***was***!
 
-My problem was that I ***had to*** **create** a certain amount of **extra space** ***between*** my `form area` and the `footer`. But I had an `image` set to `position: absolute` to ***contend*** **with**. Then there was the `responsive design` ***aspect*** to consider. In ***smaller screens***, how was I going to **get** the **position** of the **image** to look ***relatively*** the **same** in ***different*** `viewport` **sizes**?
+First I **_removed_** the `markup` related to the `sticky footer` **styling**. I
+**_removed_** the `.Site` **class** from the `body` **tag**, and the
+`.Site-content` **class** from the `div` **_right below_** the `body tag`. Then
+I **removed** that `div` **altogether**. It **_ruined_** the `layout` I had
+**created** for this **application**, and I wanted to **_stay_** **with it**.
+There had to be another way of **achieving** a `sticky footer` using `Flexbox`.
+And there **_was_**!
 
-First I ***had*** to **make sure** that I ***added*** enough **extra space** between the `footer` and `form` so that: 1. the footer stuck to the bottom of the document. 2. The amount of space between the form and the footer was enough to address different device heights.
+My problem was that I **_had to_** **create** a certain amount of **extra
+space** **_between_** my `form area` and the `footer`. But I had an `image` set
+to `position: absolute` to **_contend_** **with**. Then there was the
+`responsive design` **_aspect_** to consider. In **_smaller screens_**, how was
+I going to **get** the **position** of the **image** to look **_relatively_**
+the **same** in **_different_** `viewport` **sizes**?
 
-This meant using `vh` instead of `%` and ***definitely not*** `px` or `rems`.
+First I **_had_** to **make sure** that I **_added_** enough **extra space**
+between the `footer` and `form` so that: 1. the footer stuck to the bottom of
+the document. 2. The amount of space between the form and the footer was enough
+to address different device heights.
+
+This meant using `vh` instead of `%` and **_definitely not_** `px` or `rems`.
 
 First I set
 
@@ -126,9 +166,19 @@ First I set
 display: flex;
 flex-direction: column;
 ```
-on the `body element` **selector**. But that was ***not*** **enough**. I had to figure out what `height` to ***set*** for the `footer`. I ***started*** **with** `25vh`, and ***initially*** **ended up** with what I thought was the `magic number` of `32vh`. It was ***difficult*** to **calculate** this ***scientifically*** since I was **using** `vh`. I tried, but then I decided to  ***roughly*** **calculate** by ***eye*** and then test out the `footer` **vh** `calculation` in `Chrome Developer Tools` **device mode** and then in my `Google Pixel 2` **smart phone**. `32vh` wasn't too far off from my **initial calculation** of `25vh`. And it ***did not*** `mess` with my `absolutely positioned image`.
 
-This is what my `footer` **styling** looked like at first: 
+on the `body element` **selector**. But that was **_not_** **enough**. I had to
+figure out what `height` to **_set_** for the `footer`. I **_started_** **with**
+`25vh`, and **_initially_** **ended up** with what I thought was the
+`magic number` of `32vh`. It was **_difficult_** to **calculate** this
+**_scientifically_** since I was **using** `vh`. I tried, but then I decided to
+**_roughly_** **calculate** by **_eye_** and then test out the `footer` **vh**
+`calculation` in `Chrome Developer Tools` **device mode** and then in my
+`Google Pixel 2` **smart phone**. `32vh` wasn't too far off from my **initial
+calculation** of `25vh`. And it **_did not_** `mess` with my
+`absolutely positioned image`.
+
+This is what my `footer` **styling** looked like at first:
 
 ```css
 site-footer {
@@ -147,10 +197,15 @@ site-footer {
         font-size: 130%;
     }
 }
-
 ```
 
-But when I **tested** in ***bigger screens***, i.e. `1924w x 2560h` in `Safari responsive design mode`, the `footer` did not quite make it all the way to the **bottom** of the `viewport`. I ***eyeballed*** the `viewport` again, and gave the `.site-footer` **class**  a `height` of `50vh`. Then the footer ***almost stuck*** to the **bottom**. But it was ***still*** relatively **too high** and could ***not*** be **considered** a `sticky footer`. Then I changed the css to the following:
+But when I **tested** in **_bigger screens_**, i.e. `1924w x 2560h` in
+`Safari responsive design mode`, the `footer` did not quite make it all the way
+to the **bottom** of the `viewport`. I **_eyeballed_** the `viewport` again, and
+gave the `.site-footer` **class** a `height` of `50vh`. Then the footer
+**_almost stuck_** to the **bottom**. But it was **_still_** relatively **too
+high** and could **_not_** be **considered** a `sticky footer`. Then I changed
+the css to the following:
 
 ```css
 site-footer {
@@ -170,24 +225,37 @@ site-footer {
     }
 }
 ```
-This was ***better***, and in **both cases**, the `icing on the cake` in the `css`, was
+
+This was **_better_**, and in **both cases**, the `icing on the cake` in the
+`css`, was
 
 ```css
 align-items: flex-end;
 ```
-If I had ***not*** **added** ***that***, the `footer` would have **shown up** ***even higher*** in the `viewport`!
 
-For the `height` of `2560px` (derived from `responsive mode` in `Safari`), I ***changed*** the  `footer` **height** to `67vh`:
+If I had **_not_** **added** **_that_**, the `footer` would have **shown up**
+**_even higher_** in the `viewport`!
+
+For the `height` of `2560px` (derived from `responsive mode` in `Safari`), I
+**_changed_** the `footer` **height** to `67vh`:
 
 ```css
 .site-footer {
     height: 67vh;
 }
 ```
-But this ***did not*** **work**. ***Nothing changed***. I had to **find** a **solution** that ***worked*** **across** ***all*** `viewport` **heights** ***up to*** and **including** `2560px`. I decided to ***not try*** and **increase** the `footer vh` **height** ***beyond*** `50vh` using the `media query` of `min-height: 2560px`, but ***instead*** **changed** the `body>.wrapper`'s  (using the `>` greater than symbol indicating that the `div` with the `.wrapper` **class** was a ***child*** of the `body element`) `margin-bottom` from an ***explicit amount*** of `6rem` to an ***explicit*** `vh` of `22vh`:
+
+But this **_did not_** **work**. **_Nothing changed_**. I had to **find** a
+**solution** that **_worked_** **across** **_all_** `viewport` **heights** **_up
+to_** and **including** `2560px`. I decided to **_not try_** and **increase**
+the `footer vh` **height** **_beyond_** `50vh` using the `media query` of
+`min-height: 2560px`, but **_instead_** **changed** the `body>.wrapper`'s (using
+the `>` greater than symbol indicating that the `div` with the `.wrapper`
+**class** was a **_child_** of the `body element`) `margin-bottom` from an
+**_explicit amount_** of `6rem` to an **_explicit_** `vh` of `22vh`:
 
 ```css
-body>.wrapper {
+body > .wrapper {
     margin-top: 9rem;
 }
 ```
@@ -195,38 +263,71 @@ body>.wrapper {
 and
 
 ```css
-body>.wrapper {
+body > .wrapper {
     margin-bottom: 22vh;
 }
 ```
-This ***DID*** work across **different** `viewport` **heights** ***up to*** and **including** the `height` of `2560px`. And I did ***not*** have to **add** another `media query` ***targeting*** the `min-height` of `2560px`.
 
-I went  this way because the `html` **markup** I had ***created*** for this **application** was ***too complex*** and ***different*** from my **usual** `html` **markup**. It was a ***quicker***, ***easier*** **solution** and delivered the ***same results***. Given the ***current situation***, it will **have** to ***do***!
+This **_DID_** work across **different** `viewport` **heights** **_up to_** and
+**including** the `height` of `2560px`. And I did **_not_** have to **add**
+another `media query` **_targeting_** the `min-height` of `2560px`.
 
-The `css` is much more ***terse*** than my **original** `sticky footer` **css**, but the ***concept*** remains the **same**. To make sure that **enough space** was ***added*** between the `form` *8content** and the `footer`, and that it would ***appear*** the **same** no matter what `height` the `viewport` was. BTW, I also use `vh` in my ***regular*** `sticky footer` **css**. My `.Site` **class** which I ***set*** on the `body element` in `index.html` usually **looks** like ***this***:
+I went this way because the `html` **markup** I had **_created_** for this
+**application** was **_too complex_** and **_different_** from my **usual**
+`html` **markup**. It was a **_quicker_**, **_easier_** **solution** and
+delivered the **_same results_**. Given the **_current situation_**, it will
+**have** to **_do_**!
+
+The `css` is much more **_terse_** than my **original** `sticky footer` **css**,
+but the **_concept_** remains the **same**. To make sure that **enough space**
+was **_added_** between the `form` **content** and the `footer`, and that it
+would **_appear_** the **same** no matter what `height` the `viewport` was. BTW,
+I also use `vh` in my **_regular_** `sticky footer` **css**. My `.Site`
+**class** which I **_set_** on the `body element` in `index.html` usually
+**looks** like **_this_**:
 
 ```css
-.Site {    
-    display: flex;    
-    flex-direction: column;    
+.Site {
+    display: flex;
+
+    flex-direction: column;
+
     min-height: 100vh;
 }
+```
 
-Next, I had to **address** some `cross-browser` **compatibility styling** ***issues***. I forgot that I should ***not*** tamper with the `user agent` **styling** of ***certain elements***, otherwise they ***look*** **very different** in **different browsers**. The `user agent` **styling**, ***however***, potentially looks ***pretty much*** the **same** across ***browsers***. 
+Next, I had to **address** some `cross-browser` **compatibility styling**
+**_issues_**. I forgot that I should **_not_** tamper with the `user agent`
+**styling** of **_certain elements_**, otherwise they **_look_** **very
+different** in **different browsers**. The `user agent` **styling**,
+**_however_**, potentially looks **_pretty much_** the **same** across
+**_browsers_**.
 
-I ***reverted*** back to the `user agent` **styling** for the `select` **element**. In ***addition***, I had to **set** an **explicit width** on the `inputs` with the `color type`. Initially, I did the following with the `inputs` of `type color`:
+I **_reverted_** back to the `user agent` **styling** for the `select`
+**element**. In **_addition_**, I had to **set** an **explicit width** on the
+`inputs` with the `color type`. Initially, I did the following with the `inputs`
+of `type color`:
 
 ```css
-input[name="color"] {    
-    width: 100%;    
-    max-width: calc(250px - 0px);    
+input[name='color'] {
+    width: 100%;
+
+    max-width: calc(250px - 0px);
+
     height: 1.5rem;
 }
 ```
-In `Chrome`, everything looked as I expected, but in `Firefox`, only a `sliver's worth` of `color input` **width** ***showed up***, and in `Safari`, ***no*** `color input` appeared at all. Since I had to set an **explicit width** in `pxs` or `rems`, for example, I made the `width` `200px` so that it would ***fit*** within the `body.>wrapper` in an `iphone 4` (and I didn't find it necessary to make it any bigger in wider screens). I ended up ***using*** the following `css` for my `color inputs`:
+
+In `Chrome`, everything looked as I expected, but in `Firefox`, only a
+`sliver's worth` of `color input` **width** **_showed up_**, and in `Safari`,
+**_no_** `color input` appeared at all. Since I had to set an **explicit width**
+in `pxs` or `rems`, for example, I made the `width` `200px` so that it would
+**_fit_** within the `body.>wrapper` in an `iphone 4` (and I didn't find it
+necessary to make it any bigger in wider screens). I ended up **_using_** the
+following `css` for my `color inputs`:
 
 ```css
-input[name="color"] {
+input[name='color'] {
     width: 100%;
     width: 200px;
     height: 1.5rem;
@@ -234,61 +335,75 @@ input[name="color"] {
     margin-bottom: 0.5rem;
 }
 ```
-Everything **rendered** as ***expected*** across **browsers**. You should test it out for yourself!
 
-The other ***interesting*** **thing** I ***noticed*** was that the `color picker` **itself** also ***somewhat*** **varied** across **browsers**. ***That*** I **could not** ***change***. The way they ***rendered*** to the **page** did **not vary** ***drastically***, just ***slightly***, but there **definitely** was a ***difference***. The look is ***most*** **similar** between `Safari` and `Chrome`. They both use the `-webkit` **vendor prefix** after all. The ***biggest*** **difference** shows up in `Firefox`, as it uses the `-moz` **vendor prefix**, and therefore its `rendering engine` ***potentially*** displays things **differently**. The `concept` that ***all browsers*** **render** things in the ***same way*** and that **all** `css` is `cross-browser` ***compatible*** is a **fallacy**! That also applies to the `user-agent` **stylesheets**.
+Everything **rendered** as **_expected_** across **browsers**. You should test
+it out for yourself!
 
-I ***ended up*** with the **following** `css` for the `select` **element**:
+The other **_interesting_** **thing** I **_noticed_** was that the
+`color picker` **itself** also **_somewhat_** **varied** across **browsers**.
+**_That_** I **could not** **_change_**. The way they **_rendered_** to the
+**page** did **not vary** **_drastically_**, just **_slightly_**, but there
+**definitely** was a **_difference_**. The look is **_most_** **similar**
+between `Safari` and `Chrome`. They both use the `-webkit` **vendor prefix**
+after all. The **_biggest_** **difference** shows up in `Firefox`, as it uses
+the `-moz` **vendor prefix**, and therefore its `rendering engine`
+**_potentially_** displays things **differently**. The `concept` that **_all
+browsers_** **render** things in the **_same way_** and that **all** `css` is
+`cross-browser` **_compatible_** is a **fallacy**! That also applies to the
+`user-agent` **stylesheets**.
+
+I **_ended up_** with the **following** `css` for the `select` **element**:
 
 ```css
-select {    
-    margin-top: 0.5rem;    
+select {
+    margin-top: 0.5rem;
+
     width: 200px;
-    &:first-of-type {        
-        margin-bottom: 0.5rem;    
+    &:first-of-type {
+        margin-bottom: 0.5rem;
     }
 }
 ```
-I did ***not*** make any **changes** to the `select element` except to the `width` **property**. I ***also used*** the `select element` **selector** instead of a `class` or `id`.
 
-These are ***difficult*** times, and sometimes it is **difficult** to ***focus***. My advice: check your work even more carefully than under normal circumstances. Sometimes you might **find** ***little errors*** due to **lack** of ***focus***, **negative distractions**, or ***due to*** one's **wandering thoughts** in ***reaction*** to the **current status** of the ***world***. As the (`unattributable`) saying ***goes***, `"If you’re going through hell, keep going"`.  As with ***everything else***, this ***too*** shall (eventually) **pass**. Eventually it ***will***, so ***don't act*** like it **won't**!
+I did **_not_** make any **changes** to the `select element` except to the
+`width` **property**. I **_also used_** the `select element` **selector**
+instead of a `class` or `id`.
 
-I will be embedding this episode of **Plugging in The Holes** along with a ***transcript*** in the form of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
+These are **_difficult_** times, and sometimes it is **difficult** to
+**_focus_**. My advice: check your work even more carefully than under normal
+circumstances. Sometimes you might **find** **_little errors_** due to **lack**
+of **_focus_**, **negative distractions**, or **_due to_** one's **wandering
+thoughts** in **_reaction_** to the **current status** of the **_world_**. As
+the (`unattributable`) saying **_goes_**,
+`"If you’re going through hell, keep going"`. As with **_everything else_**,
+this **_too_** shall (eventually) **pass**. Eventually it **_will_**, so
+**_don't act_** like it **won't**!
 
-## Related Resources:
+I will be embedding this episode of **Plugging in The Holes** along with a
+**_transcript_** in the form of a **post** on
+[interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your
+**_hearing_** and **_reading_** pleasure. Bye for now!
 
-- [Storage Fun With Forms  on Github gh-pages](https://interglobalmedia.github.io/local-storage-session-storage-fun-form/)
+## Related Resources
 
-- [Storage Fun With Forms Github Repository](https://github.com/interglobalmedia/local-storage-session-storage-fun-form)
+-   [Storage Fun With Forms on Github gh-pages](https://interglobalmedia.github.io/local-storage-session-storage-fun-form/)
 
-- [Web Storage API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+-   [Storage Fun With Forms Github Repository](https://github.com/interglobalmedia/local-storage-session-storage-fun-form)
 
-- [Free Collection of Amazing PNGs](https://www.pinpng.com/)
+-   [Web Storage API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
-- [What are -moz- and -webkit-? [duplicate]
-](https://stackoverflow.com/questions/18083056/what-are-moz-and-webkit)
+-   [Free Collection of Amazing PNGs](https://www.pinpng.com/)
 
-- [Understand ‘+’, ‘>’ and ‘~’ symbols in CSS Selector](https://techbrij.com/css-selector-adjacent-child-sibling)
+-   [What are -moz- and -webkit-? [duplicate] ](https://stackoverflow.com/questions/18083056/what-are-moz-and-webkit)
 
-- [CSS Viewport Units: A Quick Start](https://www.sitepoint.com/css-viewport-units-quick-start/)
+-   [Understand ‘+’, ‘>’ and ‘~’ symbols in CSS Selector](https://techbrij.com/css-selector-adjacent-child-sibling)
 
-- [How to use CSS calc() with an element's height
-](https://stackoverflow.com/questions/33776171/how-to-use-css-calc-with-an-elements-height)
+-   [CSS Viewport Units: A Quick Start](https://www.sitepoint.com/css-viewport-units-quick-start/)
 
-- [How to calculate a number and turn it into vw or vh?](https://stackoverflow.com/questions/55751502/how-to-calculate-a-number-and-turn-it-into-vw-or-vh)
+-   [How to use CSS calc() with an element's height ](https://stackoverflow.com/questions/33776171/how-to-use-css-calc-with-an-elements-height)
 
-- [Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
+-   [How to calculate a number and turn it into vw or vh?](https://stackoverflow.com/questions/55751502/how-to-calculate-a-number-and-turn-it-into-vw-or-vh)
 
-- [Units in CSS (em, rem, pt, px, vw, vh, vmin, vmax, ex, ch, ...)](https://dev.to/fullstack_to/units-in-css-em-rem-pt-px-vw-vh-vmin-vmax-ex-ch-53l0)
+-   [Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
 
- 
-
-
-
-
-
-
-
-
-
-
+-   [Units in CSS (em, rem, pt, px, vw, vh, vmin, vmax, ex, ch, ...)](https://dev.to/fullstack_to/units-in-css-em-rem-pt-px-vw-vh-vmin-vmax-ex-ch-53l0)

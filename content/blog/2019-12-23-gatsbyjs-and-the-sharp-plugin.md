@@ -52,7 +52,7 @@ why **_deduping_** was occurring. Not all plugins that depended on `sharp` in my
 
 I updated the **two sharp dependent plugins** and ran
 
-```
+```shell
 npx gatsby build
 ```
 

@@ -38,22 +38,22 @@ At the time, I was totally okay with that. That was before I discovered the
 3.8.3. I checked to make sure!
 
 `Python 3.8.0+` requires a _**different path**_ than `Python 3 < 3.8.0` on
-`Mac OS Catalina`. I _**installed**_ ` Python 3.7.7`` using Homebrew `, and you
+`Mac OS Catalina`. I _**installed**_ `Python 3.7.7` using `Homebrew`, and you
 can _**compare**_ the **differences** in the _**installation processes**_ by
 **reading** _**both**_
 [Installing the latest version of Python on Mac OS Catalina and overriding the old default pre-installed version](https://www.interglobalmedianetwork.com/blog/2020-05-29-installing-the-latest-version-of-python-on-mac-os-catalina-and-overriding-the-old-default-pre-installed-version/)
 and _**this post**_.
 
 After a couple of failed attempts, I finally found the _**best way**_ to
-**install** `Python 3.8.0+` on my computer and make `Python 3.8.3` the _**global
-version**_ of **Python**. I ended up _**installing**_ `pyenv`, the `Python`
+**install** `Python 3.8.0+` on my computer and make `Python 3.8.3` the **global
+version** of **Python**. I ended up **installing** `pyenv`, the `Python`
 **version manager**, on my computer using `Homebrew`, and then
 _**configuring**_`the correct path` to `Python 3.8.3` in my `.zshrc` file
 _**located**_ in my **home directory**. I could not afford to _**wait around**_
-for `Homebrew` to _**support**_ `3.8.0+`, and `pyenv` is a **_great solution_**
-in **_general_**! It is **_akin to_** `` `nvm`, the Nodejs **version manager**.
-The concept is the same, and both made installing `Nodejs` and `Python`
-_**easy**_ on `Mac OS Catalina`!
+for `Homebrew` to _**support**_ `3.8.0+`, and `pyenv` is a **great solution** in
+**general**! It is **_akin to_** `nvm`, the Nodejs **version manager**. The
+concept is the same, and both made installing `Nodejs` and `Python` **easy** on
+`Mac OS Catalina`!
 
 This post _**assumes**_ that you have `Homebrew` _**installed**_ on your
 `Mac computer` with `OS Catalina` _**installed**_ as well.
@@ -225,8 +225,8 @@ system
 ```
 
 The **system version** is the `Mac OS` **system version** (`2.7.14`) which is
-_**included**_ with `pyenv` as well, and `3.8.2` and `3.8.3`
-were \*_**installed**_ by **me**.
+_**included**_ with `pyenv` as well, and `3.8.2` and `3.8.3` were
+**_installed_** by **me**.
 
 Then I had to _**set**_ a `global` **version** for my computer, so I
 _**executed**_ the following command:
