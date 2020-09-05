@@ -134,6 +134,7 @@ const SiteMapPage = props => {
                         <MetaDiv as="div">
                             by {node.frontmatter.author} {node.frontmatter.date}
                         </MetaDiv>
+                        <MetaDiv>{node.timeToRead} minute read 📗</MetaDiv>
                         <SitemapUl as="ul">
                             <li>
                                 <SitemapSpan as="span">
@@ -167,6 +168,7 @@ export const sitemapQuery = graphql`
                     fields {
                         slug
                     }
+                    timeToRead
                     excerpt(pruneLength: 150)
                     frontmatter {
                         date(fromNow: true)

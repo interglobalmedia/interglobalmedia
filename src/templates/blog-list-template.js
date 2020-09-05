@@ -109,7 +109,7 @@ const BlogPage = props => {
                             by {node.frontmatter.author} {node.frontmatter.date}
                         </PostListMetaDiv>
                         <PostListMetaDiv as="div">
-                            <li>{node.timeToRead} minute read</li>
+                            <li>{node.timeToRead} minute read 📗</li>
                         </PostListMetaDiv>
                         <ExcerptWrapUl as="ul">
                             <li>
