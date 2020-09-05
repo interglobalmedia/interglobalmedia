@@ -95,6 +95,7 @@ exports.createPages = ({actions, graphql}) => {
                         },
                     })
                 })
+                // Create blog post page
                 posts.forEach(({node}, index) => {
                     createPage({
                         path: node.fields.slug,
