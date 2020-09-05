@@ -24,6 +24,7 @@ exports.createPages = ({actions, graphql}) => {
                                 fields {
                                     slug
                                 }
+                                timeToRead
                                 frontmatter {
                                     title
                                     author
@@ -102,6 +103,7 @@ exports.createPages = ({actions, graphql}) => {
                         component: blogPostTemplate,
                         context: {
                             slug: node.fields.slug,
+                            readingTime: node.timeToRead,
                             prev: index === 0 ? null : posts[index - 1],
                             next:
                                 index === result.length - 1

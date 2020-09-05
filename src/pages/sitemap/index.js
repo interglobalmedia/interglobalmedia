@@ -134,7 +134,12 @@ const SiteMapPage = props => {
                         <MetaDiv as="div">
                             by {node.frontmatter.author} {node.frontmatter.date}
                         </MetaDiv>
-                        <MetaDiv>{node.timeToRead} minute read 📗</MetaDiv>
+                        <MetaDiv>
+                            {node.timeToRead} minute read{' '}
+                            <span role="img" aria-label="book">
+                                📗
+                            </span>
+                        </MetaDiv>
                         <SitemapUl as="ul">
                             <li>
                                 <SitemapSpan as="span">
