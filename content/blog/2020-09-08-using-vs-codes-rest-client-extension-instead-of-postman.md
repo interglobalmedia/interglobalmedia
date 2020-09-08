@@ -59,12 +59,13 @@ The `"$shared": {}` **variable** is _**already**_ **there**, but I added the
 Then I **wanted** to **make** a `GET` **request** to the `production` **host**,
 so I **took** the _**following**_ **steps**:
 
--   I **went back**to my `rest-client.txt` **file**, **navigated** _**down**_ to
-    the **bottom** of the `code editor` **window** where it **stated**
+-   I **went back** to my `rest-client.txt` **file**, **navigated** _**down**_
+    to the **bottom** of the `code editor` **window** where it **stated**
     `"No Environment"`, and **clicked** on it. _**That**_ **took** me to the
     `Code Editor Palette`, and **there** I **selected** the **production
     environment** I had _**just**_ **created** in the `dropdown` that
     **appeared**.
+
 -   **Next**, I _**added**_ the `production` **url** I **used** as the `value`
     of the `production host` in `settings.json` **inside** `rest-client.txt`:
 
