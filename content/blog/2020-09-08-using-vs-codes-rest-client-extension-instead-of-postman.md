@@ -18,6 +18,10 @@ categories:
 author: Maria D. Campbell
 ---
 
+-   Link to
+    [Using VS Code's REST Client extension instead of Postman](https://anchor.fm/maria-campbell/episodes/Using-VS-Codes-REST-Client-extension-instead-of-Postman-ejarqv)
+    podcast on anchorfm
+
 _**These**_ **days**, I have found it **very difficult** if _**not**_
 **impossible** to **work** with **Postman**. So I **decided** to **see** if
 **there were** any **viable alternatives** in `VS Code`. And **there** _**is**_!
