@@ -121,10 +121,10 @@ const IndexPage = props => {
                     <PodDiv as="div">
                         <H1Style as="h1">
                             <a
-                                href="https://anchor.fm/maria-campbell/episodes/When-deploying-an-app-to-gh-pages-that-uses-confetti-js-ed6sg9"
+                                href="https://anchor.fm/maria-campbell/embed/episodes/Using-VS-Codes-REST-Client-extension-instead-of-Postman-ejarqv"
                                 target="_new"
                                 rel="noopener noreferrer"
-                                title="click on link to visit original podcast page on anchor.fm"
+                                title="Using VS Code's REST Client extension instead of Postman"
                             >
                                 Latest Podcast
                             </a>
