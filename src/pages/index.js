@@ -121,21 +121,21 @@ const IndexPage = props => {
                     <PodDiv as="div">
                         <H1Style as="h1">
                             <a
-                                href="https://anchor.fm/maria-campbell/embed/episodes/Using-VS-Codes-REST-Client-extension-instead-of-Postman-ejarqv"
+                                href="https://anchor.fm/maria-campbell/episodes/Using-POST-request-with-VS-Codes-REST-Client-extension-ejbuds"
                                 target="_new"
                                 rel="noopener noreferrer"
-                                title="Using VS Code's REST Client extension instead of Postman"
+                                title="Using POST request with VS Code's REST Client extension"
                             >
                                 Latest Podcast
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Using-VS-Codes-REST-Client-extension-instead-of-Postman-ejarqv"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Using-POST-request-with-VS-Codes-REST-Client-extension-ejbuds"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="Using VS Code's REST Client extension instead of Postman"
+                            title="Using POST request with VS Code's REST Client extension"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
