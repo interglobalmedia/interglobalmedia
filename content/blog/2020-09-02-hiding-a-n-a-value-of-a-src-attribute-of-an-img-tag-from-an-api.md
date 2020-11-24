@@ -1,7 +1,7 @@
 ---
 title: Hiding a "N/A" value of a src attribute  of an img tag from an API
 date: 2020-09-02T20:36:42.199Z
-description: n this episode, I discuss how one can hide the default alternate
+description: In this episode, I discuss how one can hide the default alternate
   placeholder image both when an image does not exist or the link passed to the
   value of its src attribute is broken.
 image: /img/usgs-k7wetnday6a-unsplash.jpg
