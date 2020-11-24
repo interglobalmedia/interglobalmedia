@@ -60,7 +60,7 @@ your `CSS`:
 
 ```js
 // remove img src broken links
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('img').forEach(function(img) {
         img.onerror = function() {
             this.style.display = 'none'
