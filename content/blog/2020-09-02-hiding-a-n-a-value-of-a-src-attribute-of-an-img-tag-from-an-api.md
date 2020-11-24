@@ -83,12 +83,12 @@ of `16w x 16h` **shows up** or **not** on the **page**. For **example**, I
 And the **_following_** **showed up** in my `html` **Elements** `tab` in the
 `Developer Tools Console`:
 
-![screenshot of altext image set to none](screen-shot-2020-09-02-at-10.24.00-am.png)
+![screenshot of altext image set to none](/img/screen-shot-2020-09-02-at-10.24.00-am.png)
 
 And the **page** looked like the **following** in the `browser` (**_no_**
 `alternate` **default placeholder** `image`):
 
-![screenshot of altext image successfully removed](screen-shot-2020-09-02-at-8.50.30-am.png)
+![screenshot of altext image successfully removed](/img/screen-shot-2020-09-02-at-8.50.30-am.png)
 
 So there are **_two_** **scenarios** one **has** to **cover**. **First** is when
 there is **_no_** **image** **_available_**, which **can** be **solved** with
