@@ -2,7 +2,7 @@
 title: How to enable async await in a Node.js/Express application with ESLint
 date: 2020-11-27T15:45:34.616Z
 description: In this first episode of Season 2,  I discuss how to configure
-  Eslint to recognize async/await in a Node.js/Express application.
+  ESLint to recognize async/await in a Node.js/Express.js application.
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
   - linters
