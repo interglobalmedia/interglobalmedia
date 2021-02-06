@@ -121,21 +121,21 @@ const IndexPage = props => {
                     <PodDiv as="div">
                         <H1Style as="h1">
                             <a
-                                href="https://anchor.fm/maria-campbell/episodes/How-iTunes-Match-saved-me-from-losing-iTunes-Purchases-bought-under-previous-Apple-IDs-en34to"
+                                href="https://anchor.fm/maria-campbell/episodes/Google-Chrome-and-the-Brackets-Live-Preview-extension-eq12j5"
                                 target="_new"
                                 rel="noopener noreferrer"
-                                title="How iTunes Match saved me from losing iTunes Purchases bought under previous Apple IDs"
+                                title="Google Chrome and the Brackets Live Preview extension"
                             >
                                 Latest Podcast
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/How-iTunes-Match-saved-me-from-losing-iTunes-Purchases-bought-under-previous-Apple-IDs-en34to"
+                            src="https://anchor.fm/maria-campbell/embed/episodes/Google-Chrome-and-the-Brackets-Live-Preview-extension-eq12j5"
                             height="102px"
                             width="400px"
                             frameBorder="0"
                             scrolling="no"
-                            title="How iTunes Match saved me from losing iTunes Purchases bought under previous Apple IDs"
+                            title="Google Chrome and the Brackets Live Preview extension"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
