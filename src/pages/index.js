@@ -121,21 +121,21 @@ const IndexPage = props => {
                     <PodDiv as="div">
                         <H1Style as="h1">
                             <a
-                                href="https://anchor.fm/maria-campbell/episodes/Using-Google-Meet-for-on-the-fly-screen-sharing-eqdlpr"
+                                href="https://anchor.fm/maria-campbell/episodes/Using-the-Notes-Extension-In-Brackets-eqfohs"
                                 target="_new"
                                 rel="noopener noreferrer"
-                                title="Using Google Meet for on-the-fly screen sharing"
+                                title="Using the Notes Extension In Brackets"
                             >
                                 Latest Podcast
                             </a>
                         </H1Style>
                         <iframe
-                            src="https://anchor.fm/maria-campbell/embed/episodes/Using-Google-Meet-for-on-the-fly-screen-sharing-eqdlpr"
+                            src="https://anchor.fm/maria-campbell/embed"
                             height="102px"
                             width="400px"
                             frameBorder="0"
-                            title="Using Google Meet for on-the-fly screen sharing"
                             scrolling="no"
+                            title="Using the Notes Extension In Brackets"
                         ></iframe>
                     </PodDiv>
                     <H1Style as="h1">
