@@ -43,7 +43,7 @@ I’m not ***quite sure*** exactly ***where*** it is **saving** ***itself***, bu
 
 ![Extracting a Brackets Note to a markdown file](/img/brackets_notes_extract_to_file.png)
 
-If ***anyone*** does know ***how*** this **extension*** ***works*** `behind the scenes`, I would ***love*** to ***know***!
+If ***anyone*** does know ***how*** this ***extension*** **works** `behind the scenes`, I would ***love*** to ***know***!
 
 I ***can’t*** use `Brackets` as a ***standalone*** since it ***doesn’t*** have `Terminal` ***integration***, and I **rely** ***heavily*** on ***that***. ***Especially*** when I ***need*** to be ***working*** on `multiple projects` or `slide decks` at the ***same time***. I use it ***along*** with `VS Code`! ***Sometimes*** I ***even start*** with `VS Code` for `project set up` ***related steps***, keep that `instance` of `VS Code` ***open***, and then ***switch over*** to `Brackets` for the `content creation` ***itself***. I do ***really like*** its `UI/UX`. It just does ***not*** provide me with ***everything*** that I ***need***. ***However***, this ***little extension*** is ***quite*** the `bonus`!
 
