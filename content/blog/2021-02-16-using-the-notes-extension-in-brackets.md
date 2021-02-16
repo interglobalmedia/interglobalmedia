@@ -27,6 +27,8 @@ I ***just*** started **playing around** with the `Notes` ***extension*** in `Bra
 
 Then ***click*** on `“New Note”`, and then a **preview window** ***appears***.
 
+![Notes Preview Window](/img/brackets_notes_preview.png)
+
 You can ***start*** **typing** your `note` in `markdown`. `Notes` ***supports*** `Markdown`.
 
 What is ***interesting*** is that the `note` is ***saved*** and will ***re-appear*** when you go ***back*** into the `project folder` at a ***later date***, but there is ***no*** actual file ***anywhere***. It’s a `note` that ***seems*** to `hang out` in the `Brackets` ***stratosphere***.
