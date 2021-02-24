@@ -47,6 +47,15 @@ const H1Style = styled.h1`
     }
 `
 
+const H2Style = styled.h2`
+    text-align: center;
+    font-weight: 300;
+    @media (min-width: 990px) {
+        width: 90%;
+        margin: 0 auto 3rem;
+    }
+`
+
 const AppsDiv = styled.div`
     margin: 3rem auto 2rem;
 `
@@ -146,6 +155,12 @@ const IndexPage = props => {
                             Services
                         </Link>
                     </H1Style>
+                    <H2Style>
+                        My specialty is to help sharpen the thinking of
+                        individuals in approaching their workflows in a more
+                        organized and efficient manner, thereby preparing them
+                        for jobs in Web Design and Development.
+                    </H2Style>
                     <ServicesCarousel />
                     <H1Style as="h1">
                         <Link
