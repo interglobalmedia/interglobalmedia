@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {burgerToggle} from '../../lib/navHelpers'
 import Headroom from 'react-headroom'
+import './Header.scss'
 
 export const NavContainerDiv = styled.div`
     margin-top: -2rem;
@@ -112,11 +113,7 @@ const Header = ({siteTitle}) => (
                     </li>
                 </ul>
             </nav>
-            <Headroom
-                style={{
-                    background: 'rgb(207,203,177)',
-                }}
-            >
+            <Headroom disableInlineStyles>
                 <nav className="top">
                     <TopHeading1
                         as="h1"
