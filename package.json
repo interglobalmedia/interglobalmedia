@@ -42,8 +42,6 @@
         "gatsby-source-filesystem": "^3.2.0",
         "gatsby-transformer-remark": "^3.2.0",
         "gatsby-transformer-sharp": "^3.2.0",
-        "graphql": "^15.4.0",
-        "graphql-compose": "^7.25.0",
         "lodash": "^4.17.21",
         "netlify-cms-app": "^2.14.40",
         "node-sass": "^4.14.1",
@@ -92,8 +90,7 @@
         "stylelint-config-recommended": "^2.2.0",
         "stylelint-config-styled-components": "^0.1.1",
         "stylelint-processor-styled-components": "^1.10.0",
-        "typescript": "^3.9.9",
-        "webpack": "^5.31.0"
+        "typescript": "^3.9.9"
     },
     "homepage": "https://github.com/interglobalmedia/interglobalmedia#readme",
     "keywords": [
