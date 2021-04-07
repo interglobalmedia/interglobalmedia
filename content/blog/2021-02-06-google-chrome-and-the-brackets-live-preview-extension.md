@@ -5,7 +5,7 @@ description: Google Chrome and the Brackets Live Preview extension
 image: /img/clement-helardot-95yrwf6cnw8-unsplash.jpg
 tags:
   - brackets
-  - addobe
+  - adobe
   - vscode
   - live-preview
   - extensions
