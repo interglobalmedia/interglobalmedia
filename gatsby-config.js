@@ -137,12 +137,7 @@ module.exports = {
         },
         `gatsby-plugin-twitter`,
         `gatsby-plugin-sitemap`,
-        {
-            resolve: 'gatsby-plugin-sass',
-            options: {
-                indentedSyntax: true
-            },
-        }, 
+        `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-styled-components`,
             options: {
