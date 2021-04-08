@@ -10,7 +10,7 @@ import Layout from '../components/Layout/Layout'
 import Bio from '../components/Bio/Bio'
 import PrevNext from '../components/PrevNext/PrevNext'
 import Share from '../components/Share/Share'
-import '../components/Layout/Layout.scss'
+import '../components/Layout/Layout.css'
 
 const PostWrapperDiv = styled.div`
     margin: 0 auto;

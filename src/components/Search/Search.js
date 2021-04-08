@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, {Component} from 'react'
-import classes from './Search.scss'
+import classes from './Search.css'
 
 class Search extends Component {
     componentDidMount() {

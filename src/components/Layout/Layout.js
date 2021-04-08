@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Search from '../Search/Search'
-import './Layout.scss'
+import './Layout.css'
 
 export const LayoutContainer = styled.div`
     background: rgb(255, 227, 159);

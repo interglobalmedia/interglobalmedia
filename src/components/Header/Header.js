@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {burgerToggle} from '../../lib/navHelpers'
 import Headroom from 'react-headroom'
-import './Header.scss'
+import './Header.css'
 
 export const NavContainerDiv = styled.div`
     margin-top: -2rem;
