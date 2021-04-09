@@ -17,7 +17,7 @@ import Header from '../components/Header/Header'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
-import {SiteCredsDiv, AnchorDiv} from '../components/Footer/Footer'
+import { SiteCredsDiv, AnchorDiv } from '../components/Footer/Footer'
 import TipCarousel from '../components/TipCarousel/TipCarousel'
 import {useMediaQuery} from '../hooks/mediaQueryHooks'
 
@@ -50,9 +50,13 @@ const H1Style = styled.h1`
 const H2Style = styled.h2`
     text-align: center;
     font-weight: 300;
+    outline: 6px double #422910;
+    margin: 0 auto 3rem;
+    padding: 1.5rem 1.25rem 1.25rem;
+    background: #ee7600;
+    width: 95%;
     @media (min-width: 990px) {
         width: 90%;
-        margin: 0 auto 3rem;
     }
 `
 
@@ -156,10 +160,10 @@ const IndexPage = props => {
                         </Link>
                     </H1Style>
                     <H2Style>
-                        My specialty is to help sharpen the thinking of
+                        <p>My specialty is to help sharpen the thinking of
                         individuals in approaching their workflows in a more
                         organized and efficient manner, thereby preparing them
-                        for jobs in Web Design and Development.
+                        for jobs in Web Design and Development.</p>
                     </H2Style>
                     <ServicesCarousel />
                     <H1Style as="h1">

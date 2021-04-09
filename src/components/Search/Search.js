@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React, {Component} from 'react'
-import classes from './Search.css'
 
 class Search extends Component {
     componentDidMount() {
@@ -38,7 +37,7 @@ class Search extends Component {
 
     render() {
         return (
-            <div id="search" className={classes.Search}>
+            <div id="search">
                 <div
                     className="gcse-search-box"
                     data-resultsurl="https://www.interglobalmedianetwork.com"

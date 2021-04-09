@@ -4,7 +4,7 @@ div.hamburger {
     display: block;
     width: 34px;
     height: 30px;
-    position: absolute;
+    position: fixed;
     top: 40px;
     right: 1.5rem;
     cursor: pointer;
@@ -45,6 +45,7 @@ nav.responsive-menu {
     opacity: 1;
     z-index: 1;
     transition: height 0.5s ease, opacity 1s;
+    position: sticky;
 
     li a,
     li div.active {

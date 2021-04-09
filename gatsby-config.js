@@ -137,6 +137,7 @@ module.exports = {
         },
         `gatsby-plugin-twitter`,
         `gatsby-plugin-sitemap`,
+        `gatsby-plugin-postcss`,
         {
         resolve: `gatsby-plugin-sass`,
         options: {

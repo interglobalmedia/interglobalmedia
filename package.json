@@ -33,6 +33,7 @@
         "gatsby-plugin-netlify-cms": "^5.2.0",
         "gatsby-plugin-netlify-cms-paths": "^1.3.0",
         "gatsby-plugin-offline": "^4.2.0",
+        "gatsby-plugin-postcss": "^4.2.0",
         "gatsby-plugin-react-helmet": "^4.2.0",
         "gatsby-plugin-sass": "^4.2.0",
         "gatsby-plugin-sharp": "^3.2.1",
@@ -54,6 +55,7 @@
         "graphql": "^14.7.0",
         "html-webpack-plugin": "^5.3.1",
         "immutable": "^3.8.2",
+        "install": "^0.13.0",
         "lodash": "^4.17.21",
         "moment": "^2.29.1",
         "netlify-cms-app": "^2.14.40",
@@ -69,6 +71,7 @@
         "netlify-cms-widget-file": "^2.9.2",
         "netlify-cms-widget-object": "^2.6.2",
         "node-sass": "^5.0.0",
+        "npm": "^7.8.0",
         "postcss": "^8.2.9",
         "prismjs": "^1.23.0",
         "prop-types": "^15.7.2",
@@ -88,7 +91,7 @@
         "typography": "^1.0.0-alpha.4",
         "typography-theme-wordpress-2016": "^0.16.19",
         "uuid": "^3.4.0",
-        "webpack": "^4.46.0"
+        "webpack": "^5.31.0"
     },
     "devDependencies": {
         "babel-eslint": "^10.1.0",
@@ -139,15 +142,15 @@
         "clearCache": "jest --clearCache",
         "build": "gatsby build",
         "develop": "gatsby develop",
-        "start": "npm run develop",
+        "start": "gatsby develop",
         "serve": "gatsby serve"
     },
     "engines": {
         "node": ">=14.4.0"
     },
     "resolutions": {
-        "graphql": "^15.4.0",
+        "graphql": "^15.5.0",
         "graphql-compose": "^7.25.0",
-        "webpack": "^5.24.2"
+        "webpack": "^5.31.0"
     }
 }
