@@ -185,7 +185,7 @@ export const blogListQuery = graphql`
                     timeToRead
                     excerpt(pruneLength: 150)
                     frontmatter {
-                        date(fromNow: true)
+                        date(formatString: "MM DD YYYY")
                         title
                         author
                         image {
