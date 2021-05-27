@@ -1,5 +1,5 @@
 import React from 'react'
-import {ContributeStyle} from '../Contribute/Contribute'
+import {ContributeStyle} from '../../exports/named-exports'
 
 const Email = () => {
     return [

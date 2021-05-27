@@ -1,35 +1,9 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Layout from '../components/Layout/Layout'
-import styled from 'styled-components'
 import SEO from '../components/Seo/Seo'
 
-export const TagCategoryWrapper = styled.div`
-    width: 90%;
-    margin: 3rem auto;
-`
-
-export const TagsCategoriesH1 = styled.h1`
-    margin: 0 auto;
-    letter-spacing: 0.07em;
-`
-
-export const TagCategoryDiv = styled.div`
-    margin: 0.75rem auto 4rem;
-    width: 100%;
-    & h1 {
-        color: rgb(47, 0, 0);
-    }
-    & li {
-        list-style-type: square;
-        list-style-position: outside;
-        margin-left: 1rem;
-        color: rgb(47, 0, 0);
-    }
-    & span {
-        color: rgb(88, 86, 86);
-    }
-`
+import {TagCategoryWrapper, TagsCategoriesH1, TagCategoryDiv} from '../exports/named-exports'
 
 const Categories = props => {
     const posts = props.data.allMarkdownRemark.edges

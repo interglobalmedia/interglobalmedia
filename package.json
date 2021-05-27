@@ -140,6 +140,7 @@
         "precommit": "lint-staged & npm test",
         "test": "jest",
         "clearCache": "jest --clearCache",
+        "clean": "gatsby clean",
         "build": "gatsby build",
         "develop": "gatsby develop",
         "start": "gatsby develop",

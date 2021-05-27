@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 import speechToTextData from '../../data/projects/speech-to-text'
-import {UsesSpan} from './FeaturedProjects'
+import {UsesSpan} from '../../exports/named-exports'
 
 const FeaturedProject2 = () => {
     return (

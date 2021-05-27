@@ -9,7 +9,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 import catWhispererData from '../../data/portfolio/4_cat-whisperer-app'
 class PortfolioView4 extends Component {
     render() {

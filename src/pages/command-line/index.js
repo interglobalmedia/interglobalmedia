@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {Link, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../../components/Layout/Layout'
@@ -14,14 +13,8 @@ import {
     ApproachDiv,
     ApproachIncludesSpan,
     ServiceDiv,
-} from '../fsjs'
-
-const CLIATagDiv = styled.div`
-    width: 100%;
-    margin: 0 auto 3rem;
-    max-width: 1026px;
-    color: rgb(88, 86, 86);
-`
+    CLIATagDiv
+} from '../../exports/named-exports'
 
 const CLI = props => {
     const {data} = props

@@ -3,7 +3,6 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import {Carousel} from 'react-responsive-carousel'
-import styled from 'styled-components'
 import Image from 'gatsby-image'
 import fullStackJS from '../../data/services/fsjs'
 import devWorkflows from '../../data/services/dev-workflows'
@@ -11,17 +10,7 @@ import gitForDevs from '../../data/services/gfd'
 import gitForNonDevs from '../../data/services/gfnd'
 import commandControl from '../../data/services/cli'
 
-const SlideDiv = styled.div`
-    width: 97.5%;
-    margin: 0 auto;
-    & h2,
-    & p {
-        cursor: pointer;
-    }
-    @media (min-width: 990px) {
-        width: 90%;
-    }
-`
+import {SlideDiv} from '../../exports/named-exports'
 
 const ServicesCarousel = () => {
     return (

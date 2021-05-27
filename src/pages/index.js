@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
-import styled from 'styled-components'
 import Search from '../components/Search/Search'
 import SEO from '../components/Seo/Seo'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -17,106 +16,23 @@ import Header from '../components/Header/Header'
 import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
-import { SiteCredsDiv, AnchorDiv } from '../components/Footer/Footer'
 import TipCarousel from '../components/TipCarousel/TipCarousel'
-import {useMediaQuery} from '../hooks/mediaQueryHooks'
+import { useMediaQuery } from '../hooks/mediaQueryHooks'
 
-const Container = styled.div`
-    background: rgb(255, 227, 159);
-    width: 100%;
-`
-
-const H1Style = styled.h1`
-    text-align: center;
-    font-weight: 400;
-    &:first-of-type {
-        margin: 3rem auto;
-    }
-    &:nth-of-type(2) {
-        margin: 3rem auto;
-    }
-    &:nth-of-type(3) {
-        margin: 0 auto;
-        width: 97.5%;
-        @media (min-width: 990px) {
-            width: 90%;
-        }
-    }
-    & a {
-        color: rgb(148, 75, 43);
-    }
-`
-
-const H2Style = styled.h2`
-    text-align: center;
-    font-weight: 300;
-    outline: 6px double #422910;
-    margin: 0 auto 3rem;
-    padding: 1.5rem 1.25rem 1.25rem;
-    background: #ee7600;
-    width: 95%;
-    @media (min-width: 990px) {
-        width: 90%;
-    }
-`
-
-const AppsDiv = styled.div`
-    margin: 3rem auto 2rem;
-`
-
-const PostsDiv = styled.div`
-    margin: 3rem auto;
-`
-const PodDiv = styled.div`
-    margin: 3rem auto;
-    & h1 {
-        color: rgb(148, 75, 43);
-    }
-    & iframe {
-        margin: 3rem auto;
-        display: flex;
-        width: 100%;
-        max-width: 400px;
-        height: 102px;
-    }
-`
-
-const CarouselDiv = styled.div`
-    margin: 0 3rem;
-`
-
-const IndexFooterStyle = styled.footer`
-    text-align: center;
-    letter-spacing: 0.07em;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 3rem;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background: #621645;
-    & li {
-        margin-bottom: 1.5rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        color: whitesmoke;
-    }
-    & a {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        color: rgb(255, 165, 79);
-    }
-`
-const styles = {
-    container: (notRightMargin, marginBottomLess) => ({
-        background: 'transparent',
-        outline: 'none',
-        marginBottom: marginBottomLess ? '3.0rem' : '3.75rem',
-        marginRight: notRightMargin ? '-0.25rem' : '0.5rem',
-    }),
-}
+import {
+    IndexContainer,
+    IndexH1Style,
+    IndexBoxH3Style,
+    IndexH2Style,
+    AppsDiv,
+    PostsDiv,
+    PodDiv,
+    CarouselDiv,
+    IndexFooterStyle,
+    IndexAnchorDiv,
+    SiteCredsDiv,
+    styles
+} from '../exports/named-exports'
 
 const IndexPage = props => {
     const {data} = props
@@ -125,14 +41,14 @@ const IndexPage = props => {
     const notRightMargin = useMediaQuery('(max-width: 559px)')
     const marginBottomLess = useMediaQuery('(max-width: 559px)')
     return (
-        <Container as="div">
+        <IndexContainer as="div">
             <SEO location={props.location} title={title} keywords={keywords} />
             <div className="Site">
                 <Header />
                 <Search />
-                <div className="Site-content">
+                <main className="Site-content">
                     <PodDiv as="div">
-                        <H1Style as="h1">
+                        <IndexH1Style as="h1">
                             <a
                                 href="https://anchor.fm/maria-campbell/episodes/Migrating-from-Gatsby-v2-to-v3-eukj32"
                                 target="_new"
@@ -141,7 +57,7 @@ const IndexPage = props => {
                             >
                                 Latest Podcast
                             </a>
-                        </H1Style>
+                        </IndexH1Style>
                         <iframe
                             src="https://anchor.fm/maria-campbell/embed/episodes/Migrating-from-Gatsby-v2-to-v3-eukj32"
                             height="102px"
@@ -152,49 +68,52 @@ const IndexPage = props => {
                         >
                         </iframe>
                     </PodDiv>
-                    <H1Style as="h1">
+                    <IndexH2Style as="h2">
+                        Specialty
+                    </IndexH2Style>
+                    <IndexBoxH3Style as="h3">
+                        <span>My specialty is to help sharpen the thinking of
+                        individuals in approaching their workflows in a more
+                        organized and efficient manner, thereby preparing them
+                        for jobs in Web Design and Development.</span>
+                    </IndexBoxH3Style>
+                    <IndexH2Style as="h2">
                         <Link
                             to="/services"
                             title={`visit the main Services page to learn more about the various services offered`}
                         >
                             Services
                         </Link>
-                    </H1Style>
-                    <H2Style>
-                        <p>My specialty is to help sharpen the thinking of
-                        individuals in approaching their workflows in a more
-                        organized and efficient manner, thereby preparing them
-                        for jobs in Web Design and Development.</p>
-                    </H2Style>
+                    </IndexH2Style>
                     <ServicesCarousel />
-                    <H1Style as="h1">
+                    <IndexH2Style as="h2">
                         <Link
                             to="/portfolio"
                             title={`visit the main Portfolio page to learn more about various apps which have been built`}
                         >
                             Portfolio
                         </Link>
-                    </H1Style>
+                    </IndexH2Style>
                     <AppsDiv as="div">
                         <FeaturedProjects />
                     </AppsDiv>
-                    <H1Style as="h1">
+                    <IndexH2Style as="h2">
                         <Link
                             to="/blog"
                             title={`visit the main Blog page to read the various posts which have been published`}
                         >
                             Blog
                         </Link>
-                    </H1Style>
+                    </IndexH2Style>
                     <PostsDiv as="div">
                         <FeaturedPosts />
                     </PostsDiv>
                     <CarouselDiv as="div">
                         <TipCarousel />
                     </CarouselDiv>
-                </div>
+                </main>
                 <IndexFooterStyle as="footer">
-                    <AnchorDiv as="div">
+                    <IndexAnchorDiv as="div">
                         <ScrollUpButton
                             style={styles.container(
                                 notRightMargin,
@@ -265,7 +184,7 @@ const IndexPage = props => {
                             Plugging In The Holes
                         </a>
                         <br />
-                    </AnchorDiv>
+                    </IndexAnchorDiv>
                     <SiteCredsDiv as="div">
                         © {new Date().getFullYear()}
                         {` `}
@@ -307,7 +226,7 @@ const IndexPage = props => {
                     </CookieConsent>
                 </IndexFooterStyle>
             </div>
-        </Container>
+        </IndexContainer>
     )
 }
 

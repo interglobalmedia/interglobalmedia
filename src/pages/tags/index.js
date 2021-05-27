@@ -3,7 +3,7 @@ import {Link, graphql} from 'gatsby'
 import Layout from '../../components/Layout/Layout'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTag} from '@fortawesome/free-solid-svg-icons'
-import {TagsCategoriesDiv} from '../categories'
+import {TagsCategoriesDiv} from '../../exports/named-exports'
 import SEO from '../../components/Seo/Seo'
 
 const TagsPage = props => {

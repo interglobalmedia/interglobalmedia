@@ -17,150 +17,23 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
-import styled from 'styled-components'
-import {useMediaQuery} from '../../hooks/mediaQueryHooks'
+import { useMediaQuery } from '../../hooks/mediaQueryHooks'
 
-export const FooterStyle = styled.footer`
-    background: rgb(98, 22, 69);
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    & a {
-        margin-bottom: 3rem;
-    }
-`
-
-export const ColumnsDiv = styled.div`
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 2rem auto;
-    & ul {
-        list-style-type: none;
-    }
-    @media (min-width: 990px) {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        column-gap: 2.5%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-`
-
-export const ColumnsUl = styled.div`
-    & :nth-of-type(1) {
-        & li {
-            color: rgb(255, 227, 159);
-            font-size: 1.1rem;
-        }
-        & li:first-of-type {
-            color: whitesmoke;
-            font-style: italic;
-        }
-        & li:last-of-type {
-            color: whitesmoke;
-            font-style: italic;
-        }
-    }
-    & :nth-of-type(2) {
-        & li {
-            font-size: 1.1rem;
-            color: whitesmoke;
-        }
-        & li:first-of-type {
-            color: whitesmoke;
-            font-style: italic;
-        }
-        & li:nth-of-type(3) {
-            font-style: italic;
-        }
-    }
-    & :nth-of-type(3) {
-        list-style-type: none;
-        // color: rgb(216, 132, 46);
-        display: flex;
-        justify-content: center;
-        flex-direction: columns;
-        margin-top: 2.5rem;
-    }
-    & li {
-        margin-right: 1rem;
-        font-size: 1.3rem;
-        & a {
-            color: rgb(255, 165, 79);
-        }
-        & a:hover {
-            color: white;
-            transition: 1s ease-out;
-        }
-    }
-    @media (min-width: 990px) {
-        margin-top: 0;
-    }
-`
-
-export const AnchorDiv = styled.div`
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    & li {
-        list-style-type: none;
-        margin-bottom: 3rem;
-        text-align: center;
-        & a {
-            color: rgb(255, 227, 159);
-            letter-spacing: 0.07em;
-        }
-    }
-    & a:nth-of-type(1) {
-        margin-right: 1rem;
-    }
-    & a:nth-of-type(2) {
-        margin-right: 1rem;
-    }
-    @media (min-width: 360px) {
-        font-size: 1rem;
-    }
-    @media (min-width: 375px) {
-        font-size: 1.1rem;
-    }
-    @media (min-width: 411px) {
-        font-size: 1.2rem;
-    }
-`
-
-export const SiteCredsDiv = styled.div`
-    color: rgb(255, 227, 159);
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    width: 90%;
-    letter-spacing: 0.07em;
-`
-
-const styles = {
-    container: (notRightMargin, marginBottomLess) => ({
-        background: 'transparent',
-        outline: 'none',
-        marginBottom: marginBottomLess ? '3rem' : '3.75rem',
-        marginRight: notRightMargin ? '-0.25rem' : '0.5rem',
-    }),
-}
+import {
+    FooterStyle,
+    FooterColumnsDiv,
+    ColumnsUl,
+    AnchorDiv,
+    SiteCredsDiv,
+    styles
+} from '../../exports/named-exports'
 
 const Footer = () => {
     const notRightMargin = useMediaQuery('(max-width: 559px)')
     const marginBottomLess = useMediaQuery('(max-width: 559px)')
     return (
         <FooterStyle as="footer">
-            <ColumnsDiv as="div">
+            <FooterColumnsDiv as="div">
                 <ColumnsUl as="ul">
                     <li>Business Hours</li>
                     <li>Monday: 9:00am - 5:00pm</li>
@@ -262,7 +135,7 @@ const Footer = () => {
                         </a>
                     </li>
                 </ColumnsUl>
-            </ColumnsDiv>
+            </FooterColumnsDiv>
             <AnchorDiv as="div">
                 <ScrollUpButton
                     style={styles.container(notRightMargin, marginBottomLess)}

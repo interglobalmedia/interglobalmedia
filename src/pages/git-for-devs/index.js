@@ -13,12 +13,8 @@ import {
     ApproachDiv,
     ApproachIncludesSpan,
     ServiceDiv,
-} from '../fsjs'
-
-export const GFDTagsDiv = styled.div`
-    color: rgb(148, 75, 43);
-    margin-bottom: 3rem;
-`
+    GFDTagsDiv
+} from '../../exports/named-exports'
 
 const GitForDevs = props => {
     const {data} = props

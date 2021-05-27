@@ -5,7 +5,7 @@ import {
     TagCategoryWrapper,
     TagsCategoriesH1,
     TagCategoryDiv,
-} from './category-template'
+} from '../exports/named-exports'
 import SEO from '../components/Seo/Seo'
 
 const Tags = props => {
