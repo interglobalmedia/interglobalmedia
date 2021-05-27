@@ -9,7 +9,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 class PortfolioView7 extends Component {
     render() {

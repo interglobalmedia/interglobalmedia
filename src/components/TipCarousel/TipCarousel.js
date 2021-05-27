@@ -1,29 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Carousel} from 'react-responsive-carousel'
+import { Carousel } from 'react-responsive-carousel'
 
-const CarouselWrapper = styled.div`
-    margin: 0 auto 6rem;
-`
-
-const TipDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    margin: 3rem auto;
-    background: rgb(207, 203, 177);
-    padding: 1.5rem;
-    border: 6px solid rgba(207, 203, 177, 0.07);
-    & h2,
-    & p {
-        color: rgb(25, 13, 8);
-    }
-    & p {
-        margin-top: 0.5rem;
-        margin-bottom: 1.75rem;
-    }
-`
+import {CarouselWrapper, TipDiv} from '../../exports/named-exports'
 
 const TipCarousel = () => {
     return (

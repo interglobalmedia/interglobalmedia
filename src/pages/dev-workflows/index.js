@@ -14,7 +14,7 @@ import {
     LiveSitesDiv,
     LiveSitesSpan,
     ServiceDiv,
-} from '../fsjs'
+} from '../../exports/named-exports'
 import WFLiveSites from '../../components/WFLiveSites/WFLiveSites'
 import SEO from '../../components/Seo/Seo'
 

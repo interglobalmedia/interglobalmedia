@@ -9,7 +9,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 import speechToTextData from '../../data/portfolio/1_speech-to-text'
 
 class PortfolioView1 extends Component {

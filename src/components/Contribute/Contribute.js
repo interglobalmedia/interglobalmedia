@@ -1,9 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-export const ContributeStyle = styled.a`
-    font-weight: 400;
-`
+import {ContributeStyle} from '../../exports/named-exports'
 
 const Contribute = () => {
     return [

@@ -9,7 +9,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 import theGrooveData from '../../data/portfolio/2_welcome-to-the-groove'
 
 class PortfolioView2 extends Component {

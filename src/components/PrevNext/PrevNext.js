@@ -1,16 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
-export const PrevNextUl = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 100%;
-    margin-right: 1rem;
-    margin-left: 0;
-    margin-top: 1.5rem;
-`
+import {PrevNextUl} from '../../exports/named-exports'
 
 const PrevNext = props => {
     const {prev, next} = props

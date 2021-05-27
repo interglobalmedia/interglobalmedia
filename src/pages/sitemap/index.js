@@ -1,48 +1,14 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
-import styled from 'styled-components'
 import Layout from '../../components/Layout/Layout'
 import SEO from '../../components/Seo/Seo'
 
-const SitemapDiv = styled.div`
-    margin: 3rem auto;
-    width: 90%;
-    max-width: 1026px;
-    background: rgba(235, 181, 135, 0.7);
-    padding: 1.5rem;
-    letter-spacing: 0.07em;
-    & h1 {
-        font-weight: 600;
-    }
-    & h1,
-    h2,
-    h4 {
-        color: rgb(133, 68, 66);
-    }
-    & h4 {
-        text-transform: capitalize;
-        font-size: 1.2rem;
-    }
-    & a:hover h4 {
-        text-decoration: underline;
-    }
-`
-
-const SitemapUl = styled.ul`
-    list-style-type: square;
-    list-style-position: outside;
-    & li {
-        color: rgb(133, 68, 66);
-    }
-`
-
-const MetaDiv = styled.div`
-    color: #a7138a;
-`
-
-const SitemapSpan = styled.span`
-    color: rgb(88, 86, 86);
-`
+import {
+    SitemapDiv,
+    SitemapUl,
+    MetaDiv,
+    SitemapSpan
+} from '../../exports/named-exports'
 
 const SiteMapPage = props => {
     const postList = props.data.allMarkdownRemark

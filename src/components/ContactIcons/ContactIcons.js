@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faGithub,
@@ -9,13 +8,7 @@ import {
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 
-const ContactIconsStyle = styled.ul`
-    display: flex;
-    width: 100%;
-    max-width: 250px;
-    margin: 40px auto;
-    cursor: pointer;
-`
+import {ContactIconsStyle} from '../../exports/named-exports'
 
 const ContactIcons = () => {
     return (

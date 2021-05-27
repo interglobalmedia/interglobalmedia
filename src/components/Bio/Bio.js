@@ -8,17 +8,9 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import styled from 'styled-components'
-import {rhythm} from '../../utils/typography'
+import { rhythm } from '../../utils/typography'
 
-const BioDiv = styled.div`
-    display: flex;
-    margin-bottom: rhythm(2.5);
-    color: rgba(88, 86, 86, 1);
-    & strong {
-        color: rgb(47, 0, 0);
-    }
-`
+import {BioDiv} from '../../exports/named-exports'
 
 function Bio() {
     return (

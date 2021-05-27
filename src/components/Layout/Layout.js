@@ -1,14 +1,11 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
-import styled from 'styled-components'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Search from '../Search/Search'
 import './Layout.css'
 
-export const LayoutContainer = styled.div`
-    background: rgb(255, 227, 159);
-`
+import {LayoutContainer} from '../../exports/named-exports'
 
 const Layout = ({children}) => (
     <StaticQuery

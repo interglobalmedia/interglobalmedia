@@ -13,18 +13,9 @@ import {
     H2Style,
     ApproachDiv,
     ApproachIncludesSpan,
-} from '../fsjs'
-
-const GitForNonDevsDiv = styled.div`
-    & img {
-        width: 100%;
-    }
-    margin-bottom: 3rem;
-`
-export const GFNDTagsDiv = styled.div`
-    color: rgb(148, 75, 43);
-    margin-bottom: 1rem;
-`
+    GitForNonDevsDiv,
+    GFNDTagsDiv
+} from '../../exports/named-exports'
 
 const GitForNonDevs = props => {
     const {data} = props

@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 import nodeDrawingData from '../../data/projects/node-drawing'
-import {UsesSpan} from './FeaturedProjects'
+import {UsesSpan} from '../../exports/named-exports'
 
 const FeaturedProject3 = () => {
     return (

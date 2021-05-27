@@ -12,106 +12,18 @@ import PrevNext from '../components/PrevNext/PrevNext'
 import Share from '../components/Share/Share'
 import '../components/Layout/Layout.css'
 
-const PostWrapperDiv = styled.div`
-    margin: 0 auto;
-    color: rgb(47, 0, 0);
-    text-align: left;
-`
-
-const PostMetaDiv = styled.div`
-    width: 90%;
-    max-width: 1026px;
-    margin: 3rem auto;
-`
-
-const MetaH1Title = styled.h1`
-    text-align: center;
-    font-weight: 600;
-    margin-top: -1.5rem;
-`
-
-const MetaPDate = styled.div`
-    text-align: center;
-    margin-bottom: 1rem;
-`
-
-const DangerousHTMLDiv = styled.div`
-    & h1,
-    &h2,
-    &h3,
-    &h4,
-    & h5,
-    & h6 {
-        color: rgb(47, 0, 0);
-        max-width: 1026px;
-        margin: 0 auto;
-    }
-    & p {
-        color: rgb(47, 0, 0);
-    }
-    & blockquote p {
-        color: rebeccapurple;
-    }
-    & ul {
-        list-style-type: none;
-    }
-    & ul li:before {
-        color: rgb(47, 0, 0);
-        content: '▪ ';
-        left: -32px;
-        position: absolute;
-        text-align: right;
-        width: 1em;
-    }
-    & li {
-        color: rgba(88, 86, 86, 0.7);
-    }
-    & ul li {
-        counter-increment: list;
-        list-style-type: none;
-        position: relative;
-    }
-    & ol li {
-        counter-increment: list;
-        list-style-type: none;
-        position: relative;
-    }
-    & ol li:before {
-        color: rgb(47, 0, 0);
-        content: counter(list) '.';
-        left: -32px;
-        position: absolute;
-        text-align: right;
-        width: 26px;
-    }
-`
-
-const TagCatWrapperDiv = styled.div`
-    margin: 0 auto;
-    max-width: 1026px;
-    display: flex;
-    flex-direction: column;
-`
-
-const TagDiv = styled.div`
-    margin-bottom: 0.25rem;
-`
-
-export const TagCatInSpan = styled.span`
-    letter-spacing: 0.07em;
-    font-weight: bold;
-`
-
-const CatDiv = styled.div`
-    margin-bottom: 2rem;
-`
-
-export const DiscussTwitter = styled.div`
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 1.5rem auto 0;
-`
+import {
+    PostWrapperDiv,
+    PostMetaDiv,
+    MetaH1Title,
+    MetaPDate,
+    DangerousHTMLDiv,
+    TagCatWrapperDiv,
+    TagDiv,
+    TagCatInSpan,
+    CatDiv,
+    DiscussTwitter
+} from '../exports/named-exports'
 
 const BlogPostTemplate = props => {
     const url = props.data.site.siteMetadata.siteUrl

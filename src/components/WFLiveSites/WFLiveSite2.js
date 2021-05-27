@@ -2,7 +2,7 @@ import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
 import wfSite2Data from '../../data/wf-live-sites/wf-live-site-2'
-import {SiteLi, SpanStyle} from './WFLiveSites'
+import {SiteLi, SpanStyle} from '../../exports/named-exports'
 
 const WFLiveSite2 = () => {
     return (

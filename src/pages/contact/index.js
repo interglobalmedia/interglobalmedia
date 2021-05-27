@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faPlus,
@@ -15,16 +14,8 @@ import Phone from '../../components/Phone/Phone'
 import Contribute from '../../components/Contribute/Contribute'
 import SEO from '../../components/Seo/Seo'
 
-export const H2Style = styled.h2`
-    text-align: center;
-    color: rgb(148, 75, 43);
-    font-size: 1.8rem;
-    cursor: pointer;
-`
+import {ContactH2Style, NumAddSpan} from '../../exports/named-exports'
 
-const NumAddSpan = styled.span`
-    font-size: 2.2rem;
-`
 const Contact = props => {
     const {data} = props
     const title = data.site.siteMetadata.title
@@ -34,7 +25,7 @@ const Contact = props => {
             <SEO location={props.location} title={title} keywords={keywords} />
             <div className="contact-content">
                 <div className="contact-social">
-                    <H2Style
+                    <ContactH2Style
                         as="h2"
                         className="title-social"
                         title={`connect with us on Github, Facebook, Twitter, or Linkedin`}
@@ -44,11 +35,11 @@ const Contact = props => {
                             style={{fontSize: '1.8rem'}}
                         />{' '}
                         <NumAddSpan>1</NumAddSpan>
-                    </H2Style>
+                    </ContactH2Style>
                     <ContactIcons />
                     <div className="follow" />
                     <div className="email">
-                        <H2Style
+                        <ContactH2Style
                             as="h2"
                             className="title-social"
                             title={`email us`}
@@ -63,10 +54,10 @@ const Contact = props => {
                                 transform="rotate-30"
                             />
                             <Email />
-                        </H2Style>
+                        </ContactH2Style>
                     </div>
                     <div className="phone">
-                        <H2Style
+                        <ContactH2Style
                             as="h2"
                             className="title-social"
                             title={`call us`}
@@ -81,10 +72,10 @@ const Contact = props => {
                                 transform="rotate-180"
                             />
                             <Phone />
-                        </H2Style>
+                        </ContactH2Style>
                     </div>
                     <div className="contribute">
-                        <H2Style
+                        <ContactH2Style
                             as="h2"
                             className="social"
                             title={`read our posts on our Developer Blog or The Practical Dev`}
@@ -99,7 +90,7 @@ const Contact = props => {
                                 transform="rotate-90"
                             />
                             <Contribute />
-                        </H2Style>
+                        </ContactH2Style>
                     </div>
                 </div>
             </div>

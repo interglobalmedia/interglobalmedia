@@ -10,7 +10,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 
 import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 

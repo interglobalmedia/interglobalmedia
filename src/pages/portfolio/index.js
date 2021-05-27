@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Layout from '../../components/Layout/Layout'
-import styled from 'styled-components'
 import Img from 'gatsby-image'
 import SEO from '../../components/Seo/Seo'
 import speechToTextData from '../../data/portfolio/1_speech-to-text'
@@ -13,85 +12,14 @@ import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 
-export const ColumnsDiv = styled.div`
-    width: 90%;
-    margin: 3rem auto;
-    display: grid;
-    @media (min-width: 990px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-`
-
-export const ProjectUl = styled.div`
-    width: 90%;
-    max-width: 1026px;
-    margin: 1rem auto;
-    list-style-type: none;
-    & li:last-child {
-        margin-top: 0.5rem;
-    }
-    @media (min-width: 990px) {
-        margin: 0.5rem auto;
-    }
-`
-
-export const ProjectTitleLi = styled.li`
-    font-size: 1.2rem;
-`
-export const ParaStyle = styled.p`
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: rgb(88, 86, 86);
-`
-
-export const SpanStyle = styled.span`
-    color: rgb(148, 75, 43);
-`
-
-export const MoreP = styled.p`
-    font-size: 1.1rem;
-`
-// views styling
-export const PortfolioViewDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 3rem auto;
-    width: 90%;
-    color: rgb(88, 86, 86);
-    & a {
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto 1rem;
-        cursor: pointer;
-    }
-`
-
-export const PortfolioBackDiv = styled.div`
-    margin-bottom: 3rem;
-    & a {
-        font-size: 1.3rem;
-    }
-`
-
-export const PortfolioViewH1Style = styled.h1`
-    text-align: center;
-    font-weight: 400;
-    color: rgb(148, 75, 43);
-`
-
-export const ShortDescDiv = styled.div`
-    color: rgb(88, 86, 86);
-`
-
-export const AnchorsUl = styled.ul`
-    display: grid;
-    margin-top: 1.5rem;
-    list-style-type: square;
-`
+import {
+    ColumnsDiv,
+    ProjectUl,
+    ProjectTitleLi,
+    ParaStyle,
+    PortfolioSpanStyle,
+    MoreP
+} from '../../exports/named-exports'
 
 const PortfolioIndex = props => {
     const title = props.data.site.siteMetadata.title
@@ -119,7 +47,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {webAudioApiAjaxData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{webAudioApiAjaxData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{webAudioApiAjaxData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -149,7 +77,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {nodeDrawingData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{nodeDrawingData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{nodeDrawingData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -179,7 +107,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {speechToTextData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{speechToTextData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{speechToTextData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -209,7 +137,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {theGrooveData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{theGrooveData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{theGrooveData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -240,7 +168,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {rockinSynthData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{rockinSynthData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{rockinSynthData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -270,7 +198,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {catWhispererData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{catWhispererData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{catWhispererData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -300,7 +228,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {trumpTalksData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{trumpTalksData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{trumpTalksData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -330,7 +258,7 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {chattrboxData.shortDescription}
                     </ParaStyle>
-                    <SpanStyle as="span">{chattrboxData.tags}</SpanStyle>
+                    <PortfolioSpanStyle as="span">{chattrboxData.tags}</PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link

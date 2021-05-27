@@ -9,7 +9,7 @@ import {
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from './index.js'
+} from '../../exports/named-exports'
 import rockinSynthData from '../../data/portfolio/3_rockin-synth'
 
 class PortfolioView3 extends Component {

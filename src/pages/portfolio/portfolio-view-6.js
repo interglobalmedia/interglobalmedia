@@ -8,8 +8,8 @@ import {
     PortfolioBackDiv,
     PortfolioViewH1Style,
     ShortDescDiv,
-    AnchorsUl,
-} from './index.js'
+    AnchorsUl
+} from '../../exports/named-exports'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 class PortfolioView6 extends Component {
     render() {

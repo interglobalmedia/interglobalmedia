@@ -5,28 +5,8 @@ import {
     faFacebookF,
     faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
-import styled from 'styled-components'
 
-export const SocialUl = styled.ul`
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1rem;
-    width: 100%;
-    & li {
-        list-style-type: none;
-        & a {
-            color: rgb(98, 22, 69);
-            padding: 17px 8px 8px 8px;
-            & :nth-of-type(2) {
-                padding-top: 20px;
-                padding-bottom: 5px;
-            }
-        }
-    }
-`
+import {SocialUl} from '../../exports/named-exports'
 
 const Share = props => {
     const twitter = `https://twitter.com/intent/tweet?url=${props.url +

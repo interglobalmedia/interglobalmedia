@@ -3,32 +3,11 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import {burgerToggle} from '../../lib/navHelpers'
 import Headroom from 'react-headroom'
 import './Header.css'
 
-export const NavContainerDiv = styled.div`
-    margin-top: -2rem;
-`
-export const HeaderStyle = styled.header`
-    padding: 1.5rem 0 0 1.5rem;
-    background: rgb(207, 203, 177);
-`
-export const ResponsiveHeading1 = styled.h1`
-    font-size: 2rem;
-    font-weight: normal;
-    margin-top: 2.25rem;
-`
-
-export const TopHeading1 = styled.h1`
-    @media (min-width: 990px) {
-        font-size: 2rem;
-        font-weight: normal;
-        margin-top: 2.25rem;
-        margin-left: 1rem;
-    }
-`
+import {NavContainerDiv, HeaderStyle, ResponsiveHeading1, TopHeading1} from '../../exports/named-exports'
 
 const Header = ({siteTitle}) => (
     <NavContainerDiv as="div">
