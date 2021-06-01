@@ -108,6 +108,7 @@ const IndexPage = props => {
                         <FeaturedPosts />
                     </PostsDiv>
                     <CarouselDiv as="div">
+                        <IndexH2Style as="h2">Dev Tips</IndexH2Style>
                         <TipCarousel />
                     </CarouselDiv>
                 </main>

@@ -33,7 +33,11 @@ export const PostsUl = styled.ul`
     margin: 0 auto 0.75rem;
     list-style-type: none;
     & > li {
-        padding: 5px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        margin-bottom: 1.5rem;
+        padding: 0 10px 5px;
         border: 1px solid gainsboro;
         box-shadow: 0 -1px 4px #ede7e7;
         cursor: pointer;
@@ -44,9 +48,6 @@ export const PostsUl = styled.ul`
     & h3 {
         font-weight: normal;
     }
-    & li:last-of-type {
-        margin-bottom: 0;
-    }
     br {
         line-height: 2.5;
     }
@@ -54,18 +55,26 @@ export const PostsUl = styled.ul`
         width: 90%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 8px;
+        grid-column-gap: 0.5rem;
+        grid-auto-rows: 1fr;
+
+        & > li {
+            margin-bottom: 0;
+        }
     }
 `
 
 // Featured Projects/FeaturedProjects.js
 export const AppsUl = styled.ul`
     width: 97.5%;
-    margin: 0 auto;
-    display: grid;
+    margin: 0 auto 0.75rem;
     list-style-type: none;
     & > li {
-        padding: 5px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        margin-bottom: 1.5rem;
+        padding: 0 10px 5px;
         border: 1px solid gainsboro;
         box-shadow: 0 -1px 4px #ede7e7;
         cursor: pointer;
@@ -83,7 +92,12 @@ export const AppsUl = styled.ul`
         width: 90%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 8px;
+        grid-column-gap: 0.5rem;
+        grid-auto-rows: 1fr;
+
+        & > li {
+            margin-bottom: 0;
+        }
     }
 `
 
@@ -341,7 +355,7 @@ export const TipDiv = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    margin: 3rem auto;
+    margin: 0 auto;
     background: rgb(207, 203, 177);
     padding: 1.5rem;
     border: 6px solid rgba(207, 203, 177, 0.07);
@@ -672,18 +686,27 @@ export const IndexH2Style = styled.h2`
     text-align: center;
     font-weight: 400;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 97.5%;
     &:first-of-type {
-        margin: 3rem auto;
+        margin: 4.5rem auto;
+        width: 97.5%;
     }
     &:nth-of-type(2) {
-        margin: 3rem auto;
+        margin: 4.5rem auto;
+        width: 97.5%;
     }
     &:nth-of-type(3) {
-        margin: 0 auto;
+        margin: 3rem auto;
         width: 97.5%;
         @media (min-width: 990px) {
-            width: 90%;
+            width: 97.5%;
         }
+    }
+    &:nth-of-type(5) {
+        margin: 0 auto;
     }
     & a {
         color: rgb(148, 75, 43);

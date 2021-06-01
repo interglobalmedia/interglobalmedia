@@ -24,7 +24,6 @@ const FeaturedPost1 = () => {
                             style={{marginBottom: '1rem', marginTop: '1rem'}}
                         />
                         {featuredPost1Data.excerpt} ...
-                        <br />
                         <Link
                             to="/tags"
                             title={`visit the tags page for the post "${featuredPost1Data.title}" to view more`}
@@ -32,7 +31,6 @@ const FeaturedPost1 = () => {
                             <span>tagged in:</span>
                         </Link>{' '}
                         {featuredPost1Data.tagNames}
-                        <br />
                         <Link
                             to="/categories"
                             title={`visit the categories page for the post "${featuredPost1Data.title}" to view more`}
