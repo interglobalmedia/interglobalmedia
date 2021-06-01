@@ -140,7 +140,7 @@
         "format": "yarn run prettier -- --write",
         "prepare": "husky install",
         "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
-        "validate": "yarn run validate && yarn run prettier -- --list-different",
+        "validate": "yarn run lint && yarn run lint:css && yarn run prettier -- --list-different",
         "precommit": "yarn run validate & yarn run test",
         "test": "jest",
         "clearCache": "jest --clearCache",
