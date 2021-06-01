@@ -14,9 +14,7 @@ const FeaturedProject3 = () => {
                         <h3>
                             <a
                                 href={nodeDrawingData.liveSiteUrl}
-                                title={`visit the ${
-                                    nodeDrawingData.title
-                                } app live site to view on Heroku`}
+                                title={`visit the ${nodeDrawingData.title} app live site to view on Heroku`}
                                 target="_new"
                                 rel="noopener noreferrer"
                             >
@@ -33,9 +31,7 @@ const FeaturedProject3 = () => {
                         <br />
                         <Link
                             to="/portfolio/portfolio-view-7"
-                            title={`visit the ${
-                                nodeDrawingData.title
-                            } app main page to learn more`}
+                            title={`visit the ${nodeDrawingData.title} app main page to learn more`}
                         >
                             learn more
                         </Link>

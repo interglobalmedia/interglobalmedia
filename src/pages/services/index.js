@@ -8,7 +8,7 @@ import servicesData from '../../data/services'
 import {
     ServicesWrapperDiv,
     ServicesUl,
-    MoreLi
+    MoreLi,
 } from '../../exports/named-exports'
 class ServicesIndex extends Component {
     render() {
@@ -31,9 +31,7 @@ class ServicesIndex extends Component {
                                 <a
                                     href={service.path}
                                     key={service.title}
-                                    title={`visit the ${
-                                        service.title
-                                    } Services page to learn more`}
+                                    title={`visit the ${service.title} Services page to learn more`}
                                 >
                                     {service.icon} {service.title}
                                 </a>
@@ -45,11 +43,7 @@ class ServicesIndex extends Component {
                                 <a
                                     href={service.path}
                                     key={service.title}
-                                    title={`view more about ${
-                                        service.title
-                                    } Services on the ${
-                                        service.title
-                                    } Services page`}
+                                    title={`view more about ${service.title} Services on the ${service.title} Services page`}
                                 >
                                     <p>view more</p>
                                 </a>

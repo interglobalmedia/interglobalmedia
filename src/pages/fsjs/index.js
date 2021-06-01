@@ -16,7 +16,7 @@ import {
     ApproachIncludesSpan,
     AllTagsDiv,
     LiveSitesDiv,
-    LiveSitesSpan
+    LiveSitesSpan,
 } from '../../exports/named-exports'
 
 const FullStackSJS = props => {

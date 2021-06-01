@@ -1,33 +1,41 @@
 ---
 title: Running the Docker Tutorial
 date: 2021-05-09T14:34:36.965Z
-description: In this post, I talk about how to bypass the issue one most
-  probably will come across when attempting to begin the Docker tutorial on
-  docker.com. It involves the docker run command that they provide. It does not
-  take into account that the default port it points to, port 80, is not already
-  being used by something else on the system, when the probability is VERY HIGH
-  that it is!
+description:
+    In this post, I talk about how to bypass the issue one most probably will
+    come across when attempting to begin the Docker tutorial on docker.com. It
+    involves the docker run command that they provide. It does not take into
+    account that the default port it points to, port 80, is not already being
+    used by something else on the system, when the probability is VERY HIGH that
+    it is!
 image: /img/stanislav-kondratiev-123540-unsplash.jpg
 tags:
-  - php
-  - composer
-  - package-managers
-  - wordpress
-  - phpdotenv
-  - docker
-  - composer
-  - workflows
-  - development-workflows
+    - php
+    - composer
+    - package-managers
+    - wordpress
+    - phpdotenv
+    - docker
+    - composer
+    - workflows
+    - development-workflows
 categories:
-  - php
-  - wordpress
-  - docker
-  - composer
+    - php
+    - wordpress
+    - docker
+    - composer
 author: Maria D. Campbell
 ---
-I have ***just started*** learning `Docker`, because the `wp-env` **node module** I want(ed) to use for my `environment variables` ***locally*** that **include** an `API Key`, ***require*** using `Docker Compose`. This is ***similar to***, but would be ***in lieu*** of the `Composer` **package manager**.
 
-When I went onto the `Docker` **website** to ***check out*** their `tutorial` so I could ***get started*** with **using** `Docker` with the `Wordpress` **website** I am ***building***, I saw the ***following***:
+I have **_just started_** learning `Docker`, because the `wp-env` **node
+module** I want(ed) to use for my `environment variables` **_locally_** that
+**include** an `API Key`, **_require_** using `Docker Compose`. This is
+**_similar to_**, but would be **_in lieu_** of the `Composer` **package
+manager**.
+
+When I went onto the `Docker` **website** to **_check out_** their `tutorial` so
+I could **_get started_** with **using** `Docker` with the `Wordpress`
+**website** I am **_building_**, I saw the **_following_**:
 
 ```shell
 Docker Desktop (the new Docker, totally different from the previous Docker)
@@ -55,7 +63,7 @@ Play with Docker is an interactive playground that allows you to run Docker comm
 4. Have fun!
 ```
 
-I am ***specifically*** referring to the `command`
+I am **_specifically_** referring to the `command`
 
 ```shell
 docker run -dp 80:80 docker/getting-started
@@ -67,7 +75,8 @@ or
 docker run -dp 80:80 docker/getting-started:pwd
 ```
 
-When I ***ran*** the ***first command***, I **got back** the ***following*** in `Terminal`:
+When I **_ran_** the **_first command_**, I **got back** the **_following_** in
+`Terminal`:
 
 ```shell
 docker run -dp 80:80 docker/getting-started                         ⏎
@@ -75,7 +84,7 @@ a6df47c9de95cd206c18599321d5dfd920dc3307782d8762e706a88e673b6d49
 docker: Error response from daemon: Ports are not available: listen tcp 0.0.0.0:80: bind: address already in use.
 ```
 
-For the ***second command***, I **got** the ***following***:
+For the **_second command_**, I **got** the **_following_**:
 
 ```shell
 docker run -dp 80:80 docker/getting-started:pwd                     ⏎
@@ -91,7 +100,9 @@ Status: Downloaded newer image for docker/getting-started:pwd
 docker: Error response from daemon: Ports are not available: listen tcp 0.0.0.0:80: bind: address already in use.
 ```
 
-When I ***ran*** the **command** `sudo lsof -i -P -n | grep 80` to find out what was **running** on `port 80` in the **background**, I **got** the ***following***:
+When I **_ran_** the **command** `sudo lsof -i -P -n | grep 80` to find out what
+was **running** on `port 80` in the **background**, I **got** the
+**_following_**:
 
 ```shell
 identitys   324       mariacam   43u  IPv6 0x459711abdda06415      0t0    TCP [fe80:d::aaac:a8:598f:c1f9]:1024->[fe80:d::68ee:9100:3bd5:b0bb]:1024 (ESTABLISHED)
@@ -106,34 +117,64 @@ nginx     83681       mariacam    7u  IPv4 0x459711abe601b5e5      0t0    TCP *:
 nginx     83681
 ```
 
-Simply running the command(s) that `Docker` ****provided*** me with, was ***not*** an option!
+Simply running the command(s) that `Docker` \***_provided_** me with, was
+**_not_** an option!
 
-I ***dug deeper***, and **found** the ***following*** on `The Practical Dev` (a `wonderful resource` by the way, and great `developer community`):
+I **_dug deeper_**, and **found** the **_following_** on `The Practical Dev` (a
+`wonderful resource` by the way, and great `developer community`):
 
-* [Docker Basics for Data Apps
-  ](https://dev.to/analythium/docker-basics-for-data-apps-2e4l)
+-   [Docker Basics for Data Apps ](https://dev.to/analythium/docker-basics-for-data-apps-2e4l)
 
-Within that **post**, I ***found*** the ***following resource***:
+Within that **post**, I **_found_** the **_following resource_**:
 
-* [Docker Curriculum](https://docker-curriculum.com/)
+-   [Docker Curriculum](https://docker-curriculum.com/)
 
-I started ***going through*** the `documentation`, and ***following*** the `tutorial`. Low and behold, I ***found*** the `answer/solution` I was ***looking for***. A **way** of ***running*** `Docker` ***without*** specifying `port 80` ***specifically***. I ***found*** a `command` which ***publishes*** the **port** `Docker` is ***running on***, but in a way that my `Terminal` was ***not attached*** to the **running container**, meaning ***not running*** on `port 80` ***directly***, which is **used** for `HTTP` (`Hyper Text Transfer Protocol`) **connection** by ***default***. It is a ***popular*** and ***widely used*** `port` across the world. `Port 80` was **introduced** by [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee) in `1991` in the `HTTP 0.9 document`. The `document` ***states*** that if there is ***no*** `port` **assigned** for `HTTP connection`, `Port 80` is **used** by ***default***. It ***connects*** you to the `World Wide Web` (`WWW`). A **user**, with the ***help*** of this `port`, can ***connect*** to `webpages` **available** on the `Internet`. It ***means*** `unencoded` **data exchange** takes place between the **user**’s `browser` and the `server` **using** this `port`. This `port` ***relates*** to `TCP` (`Transfer Control Protocol`- a `protocol` ***used*** in `data transmission`). He was ***also*** the **founder** of `World Wide Web` (`WWW`) in `1989`.
+I started **_going through_** the `documentation`, and **_following_** the
+`tutorial`. Low and behold, I **_found_** the `answer/solution` I was **_looking
+for_**. A **way** of **_running_** `Docker` **_without_** specifying `port 80`
+**_specifically_**. I **_found_** a `command` which **_publishes_** the **port**
+`Docker` is **_running on_**, but in a way that my `Terminal` was **_not
+attached_** to the **running container**, meaning **_not running_** on `port 80`
+**_directly_**, which is **used** for `HTTP` (`Hyper Text Transfer Protocol`)
+**connection** by **_default_**. It is a **_popular_** and **_widely used_**
+`port` across the world. `Port 80` was **introduced** by
+[Tim Berners-Lee](https://www.w3.org/People/Berners-Lee) in `1991` in
+the `HTTP 0.9 document`. The `document` **_states_** that if there is **_no_**
+`port` **assigned** for `HTTP connection`, `Port 80` is **used** by
+**_default_**. It **_connects_** you to the `World Wide Web` (`WWW`). A
+**user**, with the **_help_** of this `port`, can **_connect_** to `webpages`
+**available** on the `Internet`. It **_means_** `unencoded` **data exchange**
+takes place between the **user**’s `browser` and the `server` **using** this
+`port`. This `port` **_relates_** to `TCP` (`Transfer Control Protocol`- a
+`protocol` **_used_** in `data transmission`). He was **_also_** the **founder**
+of `World Wide Web` (`WWW`) in `1989`.
 
-The `command` was the ***following***:
+The `command` was the **_following_**:
 
 ```shell
 docker run -d -P --name static-site <name of static site>
 ```
 
-The `-d` ***detaches*** my `Terminal` **instance** from the ***running container***, which would by ***default*** run on `port 80`. ***However***, there were ***other*** instance(s) **running** on `port 80`, which made this ***impossible*** for me to **connect** to the `Docker` **tutorial** using their `command`! Using the `-d` flag ***means*** that `Docker` has **gone** into `detached mode`. This ***also means*** that when you **close** your **instance** of `Terminal` **running** the **container**, the **container** will ***continue*** to **run** in the ***background***. The `-P` flag ***publishes*** all **exposed ports** used by ***running*** the `docker run` **command**. The `—name` flag ***corresponds*** to a `name` I want to give ***followed*** by the `name`.
+The `-d` **_detaches_** my `Terminal` **instance** from the **_running
+container_**, which would by **_default_** run on `port 80`. **_However_**,
+there were **_other_** instance(s) **running** on `port 80`, which made this
+**_impossible_** for me to **connect** to the `Docker` **tutorial** using their
+`command`! Using the `-d` flag **_means_** that `Docker` has **gone** into
+`detached mode`. This **_also means_** that when you **close** your **instance**
+of `Terminal` **running** the **container**, the **container** will
+**_continue_** to **run** in the **_background_**. The `-P` flag **_publishes_**
+all **exposed ports** used by **_running_** the `docker run` **command**. The
+`—name` flag **_corresponds_** to a `name` I want to give **_followed_** by the
+`name`.
 
-***After*** I ran the above `command`, I ran the `command`
+**_After_** I ran the above `command`, I ran the `command`
 
 ```shell
 docker port static-site
 ```
 
-to ***see*** the `ports` ***exposed*** being **used** by `Docker` when **running** the ***particular instance***. I **got back** the ***following***:
+to **_see_** the `ports` **_exposed_** being **used** by `Docker` when
+**running** the **_particular instance_**. I **got back** the **_following_**:
 
 **Command**:
 
@@ -148,12 +189,31 @@ docker port static-site
 80/tcp -> 0.0.0.0:55001
 ```
 
-The ***second*** `port` is what **worked** for ***me***. So it could be the ***first*** or ***second*** `port` which ***could connect*** me to the **running container**. `TCP` stands for [Transmission Control Protocol](https://www.sdxcentral.com/resources/glossary/transmission-control-protocol-tcp), which is a ***connection-oriented*** `communications protocol` that ***facilitates*** the **exchange** of **messages** between **computing devices** in a `network`. It is the ***most common*** `protocol` in `networks` that ***use*** the `Internet Protocol` (`IP`), ***Together*** they are sometimes referred to as `TCP/IP`.
+The **_second_** `port` is what **worked** for **_me_**. So it could be the
+**_first_** or **_second_** `port` which **_could connect_** me to the **running
+container**. `TCP` stands for
+[Transmission Control Protocol](https://www.sdxcentral.com/resources/glossary/transmission-control-protocol-tcp),
+which is a **_connection-oriented_** `communications protocol` that
+**_facilitates_** the **exchange** of **messages** between **computing devices**
+in a `network`. It is the **_most common_** `protocol` in `networks` that
+**_use_** the `Internet Protocol` (`IP`), **_Together_** they are sometimes
+referred to as `TCP/IP`.
 
-If you are ***also new*** to `Docker`, and you ***can’t get*** the `tutorial` **running** (probably not) using the `command` that ***they provide***, do the above.
+If you are **_also new_** to `Docker`, and you **_can’t get_** the `tutorial`
+**running** (probably not) using the `command` that **_they provide_**, do the
+above.
 
-**Note**: I ***decided*** to go with [phpdotenv](https://github.com/vlucas/phpdotenv) using the `Composer` **package manager**. I also ***wanted*** to **double check** if my `Mac` still had `PHP` ***installed***. I found out that ***probably*** `Big Sur` will be the ***last*** `Mac OS` that will ***include*** `PHP`, and right now it is ***only*** for `legacy purposes`. Probably **installing** `PHP` on my `computer` would be a ***very good*** idea. Just as I ***ended up*** doing with `Python 3.8+`.
+**Note**: I **_decided_** to go with
+[phpdotenv](https://github.com/vlucas/phpdotenv) using the `Composer` **package
+manager**. I also **_wanted_** to **double check** if my `Mac` still had `PHP`
+**_installed_**. I found out that **_probably_** `Big Sur` will be the
+**_last_** `Mac OS` that will **_include_** `PHP`, and right now it is
+**_only_** for `legacy purposes`. Probably **installing** `PHP` on my `computer`
+would be a **_very good_** idea. Just as I **_ended up_** doing with
+`Python 3.8+`.
 
-I ***still intend*** on using `Docker` as part of my `workflow`, since so much is starting to require that step anyway!
+I **_still intend_** on using `Docker` as part of my `workflow`, since so much
+is starting to require that step anyway!
 
-It’s NOT just about the `code` anymore. It is ALSO about the `tools` that ***enable*** you to `“publish”` the `code`.
+It’s NOT just about the `code` anymore. It is ALSO about the `tools` that
+**_enable_** you to `“publish”` the `code`.

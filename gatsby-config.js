@@ -139,15 +139,15 @@ module.exports = {
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-postcss`,
         {
-        resolve: `gatsby-plugin-sass`,
-        options: {
-          cssLoaderOptions: {
-            modules: {
-              exportLocalsConvention: 'camelCaseOnly'
-            }
-          }
-        }
-    },
+            resolve: `gatsby-plugin-sass`,
+            options: {
+                cssLoaderOptions: {
+                    modules: {
+                        exportLocalsConvention: 'camelCaseOnly',
+                    },
+                },
+            },
+        },
         {
             resolve: `gatsby-plugin-styled-components`,
             options: {

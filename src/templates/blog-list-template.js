@@ -10,7 +10,7 @@ import {
     PostListTitle,
     ExcerptWrapUl,
     PostListMetaDiv,
-    BLPrevNextUl
+    BLPrevNextUl,
 } from '../exports/named-exports'
 
 const BlogPage = props => {

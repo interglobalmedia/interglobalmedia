@@ -11,10 +11,10 @@
     "settings": {
         "react": {
             "pragma": "React",
-            "version": "16.8.6"
+            "version": "17.0.2"
         }
     },
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true

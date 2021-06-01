@@ -1,11 +1,15 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from 'react'
-import {render} from 'react-testing-library'
+import { render } from '@testing-library/react'
 import {
     PortfolioViewDiv,
     PortfolioViewH1Style,
     ShortDescDiv,
     AnchorsUl,
-} from '../../pages/portfolio/index'
+} from '../../exports/named-exports'
 
 describe('portfolio/portfolio-view-1', () => {
     it(`should render a PortfolioViewDiv emotion styled component`, () => {

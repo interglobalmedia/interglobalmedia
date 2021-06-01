@@ -14,9 +14,7 @@ const FSJSLiveSite1 = () => {
                         <SpanStyle as="span">url: </SpanStyle>
                         <a
                             href={fsjsLiveSite1Data.liveSiteUrl}
-                            title={`visit the ${
-                                fsjsLiveSite1Data.projectName
-                            } live site to view on Heroku`}
+                            title={`visit the ${fsjsLiveSite1Data.projectName} live site to view on Heroku`}
                             target="_new"
                             rel="noopener noreferrer"
                         >
@@ -34,9 +32,7 @@ const FSJSLiveSite1 = () => {
                         <SpanStyle as="span">repository: </SpanStyle>
                         <a
                             href={fsjsLiveSite1Data.siteRepoUrl}
-                            title={`visit the ${
-                                fsjsLiveSite1Data.projectName
-                            } repository to view on Github`}
+                            title={`visit the ${fsjsLiveSite1Data.projectName} repository to view on Github`}
                             target="_new"
                             rel="noopener noreferrer"
                         >

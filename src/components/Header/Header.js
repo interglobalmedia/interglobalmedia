@@ -7,7 +7,12 @@ import {burgerToggle} from '../../lib/navHelpers'
 import Headroom from 'react-headroom'
 import './Header.css'
 
-import {NavContainerDiv, HeaderStyle, ResponsiveHeading1, TopHeading1} from '../../exports/named-exports'
+import {
+    NavContainerDiv,
+    HeaderStyle,
+    ResponsiveHeading1,
+    TopHeading1,
+} from '../../exports/named-exports'
 
 const Header = ({siteTitle}) => (
     <NavContainerDiv as="div">

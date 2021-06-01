@@ -1,13 +1,16 @@
-import React from "react"
-import { render } from "react-testing-library"
+/**
+ * @jest-environment jsdom
+ */
 
-import Header from "../Header/Header"
+import React from 'react'
+import { render, screen } from '@testing-library/react'
 
-describe("Header", () => {
-  it("renders siteTitle", () => {
-    const siteTitle = `Inter-Global Media`
-    const { getByText } = render(<Header siteTitle={siteTitle} />)
-    const title = getByText(siteTitle)
-    expect(title).toBeInTheDocument()
-  })
+import Header from '../Header/Header'
+
+describe('Header', () => {
+    it('renders Header component', () => {
+        render(<Header />)
+
+        screen.debug()
+    })
 })

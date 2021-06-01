@@ -1,6 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Carousel } from 'react-responsive-carousel'
+import {Carousel} from 'react-responsive-carousel'
 
 import {CarouselWrapper, TipDiv} from '../../exports/named-exports'
 

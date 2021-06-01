@@ -1,5 +1,3 @@
-import React from 'react'
-
 import fullstack from '../../images/services/fullstack.jpg'
 
 const fsjs = {

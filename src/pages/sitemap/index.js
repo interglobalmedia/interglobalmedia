@@ -7,7 +7,7 @@ import {
     SitemapDiv,
     SitemapUl,
     MetaDiv,
-    SitemapSpan
+    SitemapSpan,
 } from '../../exports/named-exports'
 
 const SiteMapPage = props => {

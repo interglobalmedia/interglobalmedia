@@ -1,5 +1,3 @@
-import React from 'react'
-
 import control from '../../images/services/rohan-makhecha-408608-unsplash.jpg'
 
 const cli = {

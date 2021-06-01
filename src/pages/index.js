@@ -17,7 +17,7 @@ import FeaturedProjects from '../components/FeaturedProjects/FeaturedProjects'
 import FeaturedPosts from '../components/FeaturedPosts/FeaturedPosts'
 import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel'
 import TipCarousel from '../components/TipCarousel/TipCarousel'
-import { useMediaQuery } from '../hooks/mediaQueryHooks'
+import {useMediaQuery} from '../hooks/mediaQueryHooks'
 
 import {
     IndexContainer,
@@ -31,7 +31,7 @@ import {
     IndexFooterStyle,
     IndexAnchorDiv,
     SiteCredsDiv,
-    styles
+    styles,
 } from '../exports/named-exports'
 
 const IndexPage = props => {
@@ -65,17 +65,16 @@ const IndexPage = props => {
                             frameBorder="0"
                             scrolling="no"
                             title="Migrating from Gatsby v2 to v3"
-                        >
-                        </iframe>
+                        ></iframe>
                     </PodDiv>
-                    <IndexH2Style as="h2">
-                        Specialty
-                    </IndexH2Style>
+                    <IndexH2Style as="h2">Specialty</IndexH2Style>
                     <IndexBoxH3Style as="h3">
-                        <span>My specialty is to help sharpen the thinking of
-                        individuals in approaching their workflows in a more
-                        organized and efficient manner, thereby preparing them
-                        for jobs in Web Design and Development.</span>
+                        <span>
+                            My specialty is to help sharpen the thinking of
+                            individuals in approaching their workflows in a more
+                            organized and efficient manner, thereby preparing
+                            them for jobs in Web Design and Development.
+                        </span>
                     </IndexBoxH3Style>
                     <IndexH2Style as="h2">
                         <Link

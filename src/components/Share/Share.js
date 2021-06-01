@@ -2,7 +2,6 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faTwitter,
-    faFacebookF,
     faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -11,8 +10,6 @@ import {SocialUl} from '../../exports/named-exports'
 const Share = props => {
     const twitter = `https://twitter.com/intent/tweet?url=${props.url +
         props.pathname}&text=${props.title} by @letsbsocial1`
-    const fb = `https://www.facebook.com/sharer/sharer.php?u=${props.url +
-        props.pathname}&text=${props.title}`
     const linkedin = `https://www.linkedin.com/shareArticle?mini=true&url=${props.url +
         props.pathname}&text=${props.title}`
     return (

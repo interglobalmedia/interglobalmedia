@@ -21,9 +21,7 @@ class PortfolioView2 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${
-                        theGrooveData.title
-                    } | Inter-Global Media Network, Inc.`}</title>
+                    <title>{`${theGrooveData.title} | Inter-Global Media Network, Inc.`}</title>
                     <meta
                         name="repository"
                         content={theGrooveData.repository}
@@ -63,9 +61,7 @@ class PortfolioView2 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${
-                                    theGrooveData.title
-                                } write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${theGrooveData.title} write up on our portfolio site built with React to read more`}
                             >
                                 Read More About {theGrooveData.title}
                             </a>
@@ -76,9 +72,7 @@ class PortfolioView2 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${
-                                    theGrooveData.title
-                                } source code on Github to learn more`}
+                                title={`visit the link to the ${theGrooveData.title} source code on Github to learn more`}
                             >
                                 {theGrooveData.title} Source Code
                             </a>
@@ -89,9 +83,7 @@ class PortfolioView2 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${
-                                    theGrooveData.title
-                                } live site to view more`}
+                                title={`visit the ${theGrooveData.title} live site to view more`}
                             >
                                 {theGrooveData.title} Live Site
                             </a>

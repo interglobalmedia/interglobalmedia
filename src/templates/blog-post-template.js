@@ -4,7 +4,6 @@ import {Link} from 'gatsby'
 import {faTag, faFolder, faComment} from '@fortawesome/free-solid-svg-icons'
 import {graphql} from 'gatsby'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 import {Helmet} from 'react-helmet'
 import Layout from '../components/Layout/Layout'
 import Bio from '../components/Bio/Bio'
@@ -22,7 +21,7 @@ import {
     TagDiv,
     TagCatInSpan,
     CatDiv,
-    DiscussTwitter
+    DiscussTwitter,
 } from '../exports/named-exports'
 
 const BlogPostTemplate = props => {
@@ -37,7 +36,6 @@ const BlogPostTemplate = props => {
         tags,
         categories,
         description,
-        author,
     } = props.data.markdownRemark.frontmatter
     const {prev, next} = props.pageContext
     const blogPostUrl = `${url}${props.location.pathname}`

@@ -13,7 +13,7 @@ import {
     ApproachDiv,
     ApproachIncludesSpan,
     ServiceDiv,
-    CLIATagDiv
+    CLIATagDiv,
 } from '../../exports/named-exports'
 
 const CLI = props => {

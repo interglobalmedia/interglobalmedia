@@ -157,7 +157,6 @@ export const ColumnsUl = styled.div`
     }
     & :nth-of-type(3) {
         list-style-type: none;
-        // color: rgb(216, 132, 46);
         display: flex;
         justify-content: center;
         flex-direction: columns;
@@ -669,7 +668,7 @@ export const IndexH1Style = styled.h1`
 `
 
 export const IndexH2Style = styled.h2`
-    color: rgb(148,75,43);
+    color: rgb(148, 75, 43);
     text-align: center;
     font-weight: 400;
     font-size: 2rem;

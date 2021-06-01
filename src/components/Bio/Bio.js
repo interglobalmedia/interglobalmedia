@@ -8,7 +8,7 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
-import { rhythm } from '../../utils/typography'
+import {rhythm} from '../../utils/typography'
 
 import {BioDiv} from '../../exports/named-exports'
 
@@ -48,7 +48,7 @@ function Bio() {
                             . She also has a developer blog{' '}
                             <a
                                 href="https://www.mariadcampbell.com"
-                                title={`visit this link to Maria\'s developer blog to read her posts there`}
+                                title={`visit this link to Maria's developer blog to read her posts there`}
                                 target="_new"
                                 rel="noopener noreferrer"
                             >

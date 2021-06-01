@@ -22,18 +22,14 @@ const ServicesCarousel = () => {
                         <Carousel showArrows={true} showThumbs={false}>
                             <SlideDiv
                                 as="div"
-                                title={`A visualization of various ${
-                                    fullStackJS.title
-                                } Services offered by us to make the visit to this site more fun!`}
+                                title={`A visualization of various ${fullStackJS.title} Services offered by us to make the visit to this site more fun!`}
                             >
                                 <h2
                                     style={{
                                         color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
-                                    title={`the title for the ${
-                                        fullStackJS.title
-                                    } Service carousel slide`}
+                                    title={`the title for the ${fullStackJS.title} Service carousel slide`}
                                 >
                                     {fullStackJS.title}
                                 </h2>
@@ -50,27 +46,21 @@ const ServicesCarousel = () => {
                                         marginTop: '0.5rem',
                                         marginBottom: '1.75rem',
                                     }}
-                                    title={`the short description for the ${
-                                        fullStackJS.title
-                                    } Service carousel slide`}
+                                    title={`the short description for the ${fullStackJS.title} Service carousel slide`}
                                 >
                                     {fullStackJS.shortDescription}
                                 </p>
                             </SlideDiv>
                             <SlideDiv
                                 as="div"
-                                title={`A visualization of various ${
-                                    devWorkflows.title
-                                } Services offered by us to make the visit to this site more fun!`}
+                                title={`A visualization of various ${devWorkflows.title} Services offered by us to make the visit to this site more fun!`}
                             >
                                 <h2
                                     style={{
                                         color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
-                                    title={`the title for the ${
-                                        devWorkflows.title
-                                    } Service carousel slide`}
+                                    title={`the title for the ${devWorkflows.title} Service carousel slide`}
                                 >
                                     {devWorkflows.title}
                                 </h2>
@@ -86,27 +76,21 @@ const ServicesCarousel = () => {
                                         marginBottom: '1.75rem',
                                         color: 'rgb(167,19,138)',
                                     }}
-                                    title={`the short description for the ${
-                                        devWorkflows.title
-                                    } Service carousel slide`}
+                                    title={`the short description for the ${devWorkflows.title} Service carousel slide`}
                                 >
                                     {devWorkflows.shortDescription}
                                 </p>
                             </SlideDiv>
                             <SlideDiv
                                 as="div"
-                                title={`A visualization of various ${
-                                    gitForDevs.title
-                                } Services offered by us to make the visit to this site more fun!`}
+                                title={`A visualization of various ${gitForDevs.title} Services offered by us to make the visit to this site more fun!`}
                             >
                                 <h2
                                     style={{
                                         color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
-                                    title={`the title for the ${
-                                        gitForDevs.title
-                                    } Service carousel slide`}
+                                    title={`the title for the ${gitForDevs.title} Service carousel slide`}
                                 >
                                     {gitForDevs.title}
                                 </h2>
@@ -124,27 +108,21 @@ const ServicesCarousel = () => {
                                         marginBottom: '1.75rem',
                                         color: 'rgb(167,19,138)',
                                     }}
-                                    title={`the short description for the ${
-                                        gitForDevs.title
-                                    } Service carousel slide`}
+                                    title={`the short description for the ${gitForDevs.title} Service carousel slide`}
                                 >
                                     {gitForDevs.shortDescription}
                                 </p>
                             </SlideDiv>
                             <SlideDiv
                                 as="div"
-                                title={`A visualization of various ${
-                                    gitForNonDevs.title
-                                } Services offered by us to make the visit to this site more fun!`}
+                                title={`A visualization of various ${gitForNonDevs.title} Services offered by us to make the visit to this site more fun!`}
                             >
                                 <h2
                                     style={{
                                         color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
-                                    title={`the title for the ${
-                                        gitForNonDevs.title
-                                    } Service carousel slide`}
+                                    title={`the title for the ${gitForNonDevs.title} Service carousel slide`}
                                 >
                                     {gitForNonDevs.title}
                                 </h2>
@@ -160,27 +138,21 @@ const ServicesCarousel = () => {
                                         marginBottom: '1.75rem',
                                         color: 'rgb(167,19,138)',
                                     }}
-                                    title={`the short description for the ${
-                                        gitForNonDevs.title
-                                    } Service carousel slide`}
+                                    title={`the short description for the ${gitForNonDevs.title} Service carousel slide`}
                                 >
                                     {gitForNonDevs.shortDescription}
                                 </p>
                             </SlideDiv>
                             <SlideDiv
                                 as="div"
-                                title={`A visualization of ${
-                                    commandControl.title
-                                } Services offered by us to make the visit to this site more fun!`}
+                                title={`A visualization of ${commandControl.title} Services offered by us to make the visit to this site more fun!`}
                             >
                                 <h2
                                     style={{
                                         color: 'rgb(167,19,138)',
                                         fontWeight: '400',
                                     }}
-                                    title={`the title for the ${
-                                        commandControl.title
-                                    } Service carousel slide`}
+                                    title={`the title for the ${commandControl.title} Service carousel slide`}
                                 >
                                     {commandControl.title}
                                 </h2>
@@ -196,9 +168,7 @@ const ServicesCarousel = () => {
                                         marginBottom: '1.75rem',
                                         color: 'rgb(167,19,138)',
                                     }}
-                                    title={`the short description for the ${
-                                        commandControl.title
-                                    } Service carousel slide`}
+                                    title={`the short description for the ${commandControl.title} Service carousel slide`}
                                 >
                                     {commandControl.shortDescription}
                                 </p>

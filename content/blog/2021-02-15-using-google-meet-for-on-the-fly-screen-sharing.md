@@ -1,54 +1,100 @@
 ---
 title: Using Google Meet for on-the-fly screen sharing
 date: 2021-02-15T02:55:29.086Z
-description: n this episode of Plugging in the Holes, I discuss how one can use
-  the Google Meet video conferencing app with screen sharing capability.
+description:
+    n this episode of Plugging in the Holes, I discuss how one can use the
+    Google Meet video conferencing app with screen sharing capability.
 image: /img/joshua-sortino-71vab1fxb6g-unsplash.jpg
 tags:
-  - video-conferencing
-  - google-meet
-  - screen-sharing
+    - video-conferencing
+    - google-meet
+    - screen-sharing
 categories:
-  - screen-sharing
-  - video-conferencing
+    - screen-sharing
+    - video-conferencing
 author: Maria D. Campbell
 ---
-* Link to [Using Google Meet for on-the-fly screen sharing](https://anchor.fm/maria-campbell/episodes/Using-Google-Meet-for-on-the-fly-screen-sharing-eqdlpr) podcast on anchorfm
 
-***Recently***, I **found** that **using** ***Discord***’s **screen sharing** for ***on-the-fly* screen sharing** was a ***bust***. It ***complicated*** both ***my life*** and the ***lives*** of my **students**. Things took ***much longer*** to **demonstrate**, and I **wasn’t** ***always*** **able** to ***get*** my ***point across***, even if it ***was*** **supported** by ***slide decks***.
+-   Link to
+    [Using Google Meet for on-the-fly screen sharing](https://anchor.fm/maria-campbell/episodes/Using-Google-Meet-for-on-the-fly-screen-sharing-eqdlpr)
+    podcast on anchorfm
 
-So I ***searched*** for ***“absolutely free”*** **screen sharing software** we ***could use*** in ***addition*** to **Blackboard Ultra** (***used*** for **official class sessions** and **office hours**). I ***wanted*** **something simple** to ***use*** that **everyone** would ***learn*** **how** to **use** ***immediately*** and ***would*** be ***readily available*** for **on-the-fly** ***sessions***.
+**_Recently_**, I **found** that **using** **_Discord_**’s **screen sharing**
+for **_on-the-fly_ screen sharing** was a **_bust_**. It **_complicated_** both
+**_my life_** and the **_lives_** of my **students**. Things took **_much
+longer_** to **demonstrate**, and I **wasn’t** **_always_** **able** to
+**_get_** my **_point across_**, even if it **_was_** **supported** by **_slide
+decks_**.
 
-**After** ***much* research**, I ***finally* stumbled upon** ***Google Meet***. ***As long as*** one has a **Gmail *account***, one has ***access*** to this ***nifty*** **little tool**. ***Access*** to it **resides** ***right inside*** the **Gmail** **inbox**. 
+So I **_searched_** for **_“absolutely free”_** **screen sharing software** we
+**_could use_** in **_addition_** to **Blackboard Ultra** (**_used_** for
+**official class sessions** and **office hours**). I **_wanted_** **something
+simple** to **_use_** that **everyone** would **_learn_** **how** to **use**
+**_immediately_** and **_would_** be **_readily available_** for **on-the-fly**
+**_sessions_**.
 
-**Google Meet** ***started*** as a **video conferencing** ***solution*** for **people** in **organizations** that ***use*** **G Suite**. ***Then***, ***late*** in **April 2020** (at the ***height*** of the ***first*** **COVID-19** ***wave***), **Google** ***announced*** that **Meet** would ***soon be*** **available** to ***use*** to **anyone** with an **email address** and **internet access**. The ***change*** made **Google**'s ***scalable***, ***stable***, and ***secure*** **modern meeting app** ***available*** to ***everyone***.
+**After** **_much_ research**, I **_finally_ stumbled upon** **_Google Meet_**.
+**_As long as_** one has a **Gmail _account_**, one has **_access_** to this
+**_nifty_** **little tool**. **_Access_** to it **resides** **_right inside_**
+the **Gmail** **inbox**.
 
-**Google** has also ***woven* Meet** ***connections*** into ***other*** **apps**, **such as** **Gmail**, **Google Chat**, and **Google Classroom**. 
+**Google Meet** **_started_** as a **video conferencing** **_solution_** for
+**people** in **organizations** that **_use_** **G Suite**. **_Then_**,
+**_late_** in **April 2020** (at the **_height_** of the **_first_**
+**COVID-19** **_wave_**), **Google** **_announced_** that **Meet** would **_soon
+be_** **available** to **_use_** to **anyone** with an **email address** and
+**internet access**. The **_change_** made **Google**'s **_scalable_**,
+**_stable_**, and **_secure_** **modern meeting app** **_available_** to
+**_everyone_**.
 
-> These interconnections give people who use Google's tools a wide range of options for collaboration. People may select whichever tool best helps them accomplish a task, then move from typed text to Google Meet when merited — with all the emotion that video can convey.
-> — [7 ways to access Google Meet: Andy Wolber](https://www.techrepublic.com/article/7-ways-to-access-google-meet/) — Andy Wolber, TechRepublic
+**Google** has also **_woven_ Meet** **_connections_** into **_other_**
+**apps**, **such as** **Gmail**, **Google Chat**, and **Google Classroom**.
 
-To ***start*** **video conferencing** In **Chrome** on ***your computer***, ***go to*** [meet.google.com](https://meet.google.com/) and ***sign in*** if ***necessary***. Then ***select*** **Join** or **Start a Meeting**. On a ***mobile device***, ***install*** the **Meet App** on ***either*** **Android** or **iOS**. When you ***want*** to ***meet***, ***open*** the ***app***, ***tap*** **New Meeting** to ***start*** a **session**. You can **then** ***share*** the **meeting info** with the ***people*** you ***want*** to **join**.
+> These interconnections give people who use Google's tools a wide range of
+> options for collaboration. People may select whichever tool best helps them
+> accomplish a task, then move from typed text to Google Meet when merited —
+> with all the emotion that video can convey. —
+> [7 ways to access Google Meet: Andy Wolber](https://www.techrepublic.com/article/7-ways-to-access-google-meet/)
+> — Andy Wolber, TechRepublic
 
-There are ***different*** **ways** you can access **Google Meet**.
+To **_start_** **video conferencing** In **Chrome** on **_your computer_**,
+**_go to_** [meet.google.com](https://meet.google.com/) and **_sign in_** if
+**_necessary_**. Then **_select_** **Join** or **Start a Meeting**. On a
+**_mobile device_**, **_install_** the **Meet App** on **_either_** **Android**
+or **iOS**. When you **_want_** to **_meet_**, **_open_** the **_app_**,
+**_tap_** **New Meeting** to **_start_** a **session**. You can **then**
+**_share_** the **meeting info** with the **_people_** you **_want_** to
+**join**.
 
-You can ***access* Google Meet** via **Gmail**.
+There are **_different_** **ways** you can access **Google Meet**.
 
-You can ***access*** **Google Meet** via **Google Classroom**.
+You can **_access_ Google Meet** via **Gmail**.
 
-You can ***access* Google Meet** via **Google Chat**.
+You can **_access_** **Google Meet** via **Google Classroom**.
 
-You can ***access*** **Google Meet** via **Google Slides**.
+You can **_access_ Google Meet** via **Google Chat**.
 
-You can ***access*** **Google Meet** via Your **Jamboard device**.
+You can **_access_** **Google Meet** via **Google Slides**.
 
-The ***user interface*** is so ***simple***. It is ***so quick*** to **get up** and **running**. And it is ***forever free***. You even can ***change*** your **background**! So if that is the ***only reason*** why you are ***using*** **Zoom** (***other than*** **recording capabilities**, which **Google Meet** has ***as well***, but that is a ***premium*** **feature**), then ***perhaps*** you **should** ***check out*** **Google Meet**. There is even a **White Boarding** ***capability***, among ***other*** **things**. The **screen sharing** is ***great***, and it is ***easy*** to ***transfer*** **screen sharing** ***from*** one person to ***another***.
+You can **_access_** **Google Meet** via Your **Jamboard device**.
 
-I will be **embedding** this ***episode*** of **Plugging in The Holes** ***along*** with a **transcript** in the ***form*** of a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for your ***hearing*** and ***reading*** pleasure. Bye for now!
+The **_user interface_** is so **_simple_**. It is **_so quick_** to **get up**
+and **running**. And it is **_forever free_**. You even can **_change_** your
+**background**! So if that is the **_only reason_** why you are **_using_**
+**Zoom** (**_other than_** **recording capabilities**, which **Google Meet** has
+**_as well_**, but that is a **_premium_** **feature**), then **_perhaps_** you
+**should** **_check out_** **Google Meet**. There is even a **White Boarding**
+**_capability_**, among **_other_** **things**. The **screen sharing** is
+**_great_**, and it is **_easy_** to **_transfer_** **screen sharing**
+**_from_** one person to **_another_**.
+
+I will be **embedding** this **_episode_** of **Plugging in The
+Holes** **_along_** with a **transcript** in the **_form_** of
+a **post** on [interglobalmedianetwork.com](https://www.interglobalmedianetwork.com/) for
+your **_hearing_** and **_reading_** pleasure. Bye for now!
 
 ## Related Resources
 
-* [7 ways to access Google Meet: TechRepublic](https://www.techrepublic.com/article/7-ways-to-access-google-meet/)
-* [Google Workspace](https://workspace.google.com/pricing.html)
-* [Access to advanced Google Meet features
-  ](https://support.google.com/a/answer/10037875)
+-   [7 ways to access Google Meet: TechRepublic](https://www.techrepublic.com/article/7-ways-to-access-google-meet/)
+-   [Google Workspace](https://workspace.google.com/pricing.html)
+-   [Access to advanced Google Meet features ](https://support.google.com/a/answer/10037875)
