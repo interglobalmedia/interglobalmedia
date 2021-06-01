@@ -1,6 +1,10 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from 'react'
-import {render} from 'react-testing-library'
-import {SiteCredsDiv} from '../Footer/Footer'
+import { render } from '@testing-library/react'
+import { SiteCredsDiv } from '../../exports/named-exports'
 
 describe('Footer', () => {
     it('should render a credits div', () => {

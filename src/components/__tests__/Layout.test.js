@@ -1,8 +1,11 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from 'react'
-import {render} from 'react-testing-library'
+import { render } from '@testing-library/react'
 import Header from '../Header/Header'
-import {SiteCredsDiv} from '../Footer/Footer'
-import {LayoutContainer} from '../Layout/Layout'
+import { SiteCredsDiv, LayoutContainer } from '../../exports/named-exports'
 
 describe('Layout', () => {
     it('renders a header', () => {

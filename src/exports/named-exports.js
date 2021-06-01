@@ -157,7 +157,6 @@ export const ColumnsUl = styled.div`
     }
     & :nth-of-type(3) {
         list-style-type: none;
-        // color: rgb(216, 132, 46);
         display: flex;
         justify-content: center;
         flex-direction: columns;
