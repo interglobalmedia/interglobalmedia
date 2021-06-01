@@ -28,7 +28,6 @@ const FeaturedProject1 = () => {
                         />
                         <UsesSpan as="span">application uses:</UsesSpan>{' '}
                         {nodeChatData.tagNames}
-                        <br />
                         <Link
                             to="/portfolio/portfolio-view-6"
                             title={`visit the ${nodeChatData.title} app main page to learn more`}
