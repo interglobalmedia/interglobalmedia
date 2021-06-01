@@ -8,7 +8,7 @@ import {
     PortfolioBackDiv,
     PortfolioViewH1Style,
     ShortDescDiv,
-    AnchorsUl
+    AnchorsUl,
 } from '../../exports/named-exports'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 class PortfolioView6 extends Component {
@@ -20,9 +20,7 @@ class PortfolioView6 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${
-                        chattrboxData.title
-                    } | Inter-Global Media Network, Inc.`}</title>
+                    <title>{`${chattrboxData.title} | Inter-Global Media Network, Inc.`}</title>
                     <meta
                         name="repository"
                         content={chattrboxData.repository}
@@ -45,7 +43,6 @@ class PortfolioView6 extends Component {
                     </PortfolioBackDiv>
                     <PortfolioViewH1Style
                         as="h1"
-                        as="h1"
                         data-testid="project-title"
                     >
                         {chattrboxData.title}
@@ -66,11 +63,7 @@ class PortfolioView6 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${
-                                    chattrboxData.title
-                                } write up on the ${
-                                    chattrboxData.title
-                                } Github repository README.md to read more`}
+                                title={`visit the link to the ${chattrboxData.title} write up on the ${chattrboxData.title} Github repository README.md to read more`}
                             >
                                 Read More About {chattrboxData.title}
                             </a>
@@ -81,9 +74,7 @@ class PortfolioView6 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit link to view ${
-                                    chattrboxData.title
-                                } app source code on Github to learn more`}
+                                title={`visit link to view ${chattrboxData.title} app source code on Github to learn more`}
                             >
                                 {chattrboxData.title} Source Code
                             </a>
@@ -94,9 +85,7 @@ class PortfolioView6 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit link to the ${
-                                    chattrboxData.title
-                                } live site to view more`}
+                                title={`visit link to the ${chattrboxData.title} live site to view more`}
                             >
                                 {chattrboxData.title} Live Site
                             </a>

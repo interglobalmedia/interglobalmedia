@@ -15,9 +15,7 @@ const WFLiveSite1 = () => {
                         <a
                             href={wfSite1Data.liveSiteUrl}
                             alt={wfSite1Data.projectName}
-                            title={`visit the React ${
-                                wfSite1Data.projectName
-                            } live site to view on Github gh-pages`}
+                            title={`visit the React ${wfSite1Data.projectName} live site to view on Github gh-pages`}
                             target="_new"
                             rel="noopener noreferrer"
                         >
@@ -33,9 +31,7 @@ const WFLiveSite1 = () => {
                         <SpanStyle as="span">repository: </SpanStyle>
                         <a
                             href={wfSite1Data.siteRepoUrl}
-                            title={`visit the React ${
-                                wfSite1Data.projectName
-                            } repository to view on Github`}
+                            title={`visit the React ${wfSite1Data.projectName} repository to view on Github`}
                             target="_new"
                             rel="noopener noreferrer"
                         >

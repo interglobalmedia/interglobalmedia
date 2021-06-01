@@ -17,7 +17,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import ScrollUpButton from 'react-scroll-up-button'
 import CookieConsent from 'react-cookie-consent'
-import { useMediaQuery } from '../../hooks/mediaQueryHooks'
+import {useMediaQuery} from '../../hooks/mediaQueryHooks'
 
 import {
     FooterStyle,
@@ -25,7 +25,7 @@ import {
     ColumnsUl,
     AnchorDiv,
     SiteCredsDiv,
-    styles
+    styles,
 } from '../../exports/named-exports'
 
 const Footer = () => {

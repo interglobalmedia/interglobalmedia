@@ -3,7 +3,11 @@ import {Link, graphql} from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/Seo/Seo'
 
-import {TagCategoryWrapper, TagsCategoriesH1, TagCategoryDiv} from '../exports/named-exports'
+import {
+    TagCategoryWrapper,
+    TagsCategoriesH1,
+    TagCategoryDiv,
+} from '../exports/named-exports'
 
 const Categories = props => {
     const posts = props.data.allMarkdownRemark.edges

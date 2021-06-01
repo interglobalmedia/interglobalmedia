@@ -20,9 +20,7 @@ class PortfolioView7 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${
-                        nodeDrawingData.title
-                    } | Inter - Global Media Network, Inc.`}</title>
+                    <title>{`${nodeDrawingData.title} | Inter - Global Media Network, Inc.`}</title>
                     <meta
                         name="repository"
                         content={nodeDrawingData.repository}
@@ -62,11 +60,7 @@ class PortfolioView7 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${
-                                    nodeDrawingData.title
-                                } write up on the ${
-                                    nodeDrawingData.title
-                                } Github repository README.md to read more`}
+                                title={`visit the link to the ${nodeDrawingData.title} write up on the ${nodeDrawingData.title} Github repository README.md to read more`}
                             >
                                 Read More About {nodeDrawingData.title}
                             </a>
@@ -77,9 +71,7 @@ class PortfolioView7 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit link to view ${
-                                    nodeDrawingData.title
-                                } app source code on Github to learn more`}
+                                title={`visit link to view ${nodeDrawingData.title} app source code on Github to learn more`}
                             >
                                 {nodeDrawingData.title} Source Code
                             </a>
@@ -90,9 +82,7 @@ class PortfolioView7 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit link to view ${
-                                    nodeDrawingData.title
-                                } app live site to view more`}
+                                title={`visit link to view ${nodeDrawingData.title} app live site to view more`}
                             >
                                 {nodeDrawingData.title} Live Site
                             </a>

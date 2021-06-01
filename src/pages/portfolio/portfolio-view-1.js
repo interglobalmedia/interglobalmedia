@@ -21,9 +21,7 @@ class PortfolioView1 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${
-                        speechToTextData.title
-                    } | Inter-Global Media Network, Inc.`}</title>
+                    <title>{`${speechToTextData.title} | Inter-Global Media Network, Inc.`}</title>
                     <meta
                         name="repository"
                         content={speechToTextData.repository}
@@ -63,9 +61,7 @@ class PortfolioView1 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${
-                                    speechToTextData.title
-                                } write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${speechToTextData.title} write up on our portfolio site built with React to read more`}
                             >
                                 Read More About {speechToTextData.title}
                             </a>
@@ -76,9 +72,7 @@ class PortfolioView1 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${
-                                    speechToTextData.title
-                                } source code on Github to learn more`}
+                                title={`visit the link to the ${speechToTextData.title} source code on Github to learn more`}
                             >
                                 {speechToTextData.title} Source Code
                             </a>
@@ -89,9 +83,7 @@ class PortfolioView1 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${
-                                    speechToTextData.title
-                                } live site to view more`}
+                                title={`visit the ${speechToTextData.title} live site to view more`}
                             >
                                 {speechToTextData.title} Live Site
                             </a>

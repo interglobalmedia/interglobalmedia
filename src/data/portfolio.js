@@ -58,7 +58,6 @@ const data = [
         title: 'Rockin Synth',
         repository: `https://github.com/interglobalmedia/rockin-synth`,
         website: `https://interglobalmedia.github.io/rockin-synth/`,
-        shortDescription: `Long description`,
         image: rockinSynth,
         shortDescription: `When the user presses a key, it creates a musical note corresponding to that of a real piano.
     

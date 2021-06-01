@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/Layout'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFolder} from '@fortawesome/free-solid-svg-icons'
 import SEO from '../../components/Seo/Seo'
-import { TagsCategoriesDiv } from '../../exports/named-exports'
+import {TagsCategoriesDiv} from '../../exports/named-exports'
 
 const CategoriesPage = props => {
     const data = props.data.allMarkdownRemark.group
@@ -47,4 +47,3 @@ export const catQuery = graphql`
         }
     }
 `
-

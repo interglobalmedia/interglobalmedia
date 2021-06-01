@@ -12,9 +12,7 @@ const FeaturedPost2 = () => {
                     <li>
                         <a
                             href={featuredPost2Data.path}
-                            title={`visit the post entitled "${
-                                featuredPost2Data.title
-                            }" to read more`}
+                            title={`visit the post entitled "${featuredPost2Data.title}" to read more`}
                             target="_new"
                             rel="noopener noreferrer"
                         >
@@ -29,9 +27,7 @@ const FeaturedPost2 = () => {
                         <br />
                         <Link
                             to="/tags"
-                            title={`view the tags page for the post "${
-                                featuredPost2Data.title
-                            }" to view more`}
+                            title={`view the tags page for the post "${featuredPost2Data.title}" to view more`}
                         >
                             tagged in:
                         </Link>{' '}
@@ -39,9 +35,7 @@ const FeaturedPost2 = () => {
                         <br />
                         <Link
                             to="/categories"
-                            title={`view the categories page for the post "${
-                                featuredPost2Data.title
-                            }" to view more`}
+                            title={`view the categories page for the post "${featuredPost2Data.title}" to view more`}
                         >
                             categorized under:
                         </Link>{' '}

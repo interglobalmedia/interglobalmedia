@@ -18,7 +18,7 @@ import {
     ProjectTitleLi,
     ParaStyle,
     PortfolioSpanStyle,
-    MoreP
+    MoreP,
 } from '../../exports/named-exports'
 
 const PortfolioIndex = props => {
@@ -47,7 +47,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {webAudioApiAjaxData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{webAudioApiAjaxData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {webAudioApiAjaxData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -77,7 +79,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {nodeDrawingData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{nodeDrawingData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {nodeDrawingData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -107,7 +111,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {speechToTextData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{speechToTextData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {speechToTextData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -137,7 +143,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {theGrooveData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{theGrooveData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {theGrooveData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -168,7 +176,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {rockinSynthData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{rockinSynthData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {rockinSynthData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -198,7 +208,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {catWhispererData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{catWhispererData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {catWhispererData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -228,7 +240,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {trumpTalksData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{trumpTalksData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {trumpTalksData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link
@@ -258,7 +272,9 @@ const PortfolioIndex = props => {
                     <ParaStyle as="p">
                         {chattrboxData.shortDescription}
                     </ParaStyle>
-                    <PortfolioSpanStyle as="span">{chattrboxData.tags}</PortfolioSpanStyle>
+                    <PortfolioSpanStyle as="span">
+                        {chattrboxData.tags}
+                    </PortfolioSpanStyle>
                     <br />
                     <li>
                         <Link

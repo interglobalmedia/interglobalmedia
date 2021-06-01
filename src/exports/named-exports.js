@@ -669,7 +669,7 @@ export const IndexH1Style = styled.h1`
 `
 
 export const IndexH2Style = styled.h2`
-    color: rgb(148,75,43);
+    color: rgb(148, 75, 43);
     text-align: center;
     font-weight: 400;
     font-size: 2rem;

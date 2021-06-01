@@ -14,9 +14,7 @@ const FeaturedProject2 = () => {
                         <h3>
                             <a
                                 href={speechToTextData.liveSiteUrl}
-                                title={`visit the ${
-                                    speechToTextData.title
-                                } app live site to view on Github gh-pages`}
+                                title={`visit the ${speechToTextData.title} app live site to view on Github gh-pages`}
                                 target="_new"
                                 rel="noopener noreferrer"
                             >
@@ -33,9 +31,7 @@ const FeaturedProject2 = () => {
                         <br />
                         <Link
                             to="/portfolio/portfolio-view-1"
-                            title={`visit the ${
-                                speechToTextData.title
-                            } app main page to learn more`}
+                            title={`visit the ${speechToTextData.title} app main page to learn more`}
                         >
                             learn more
                         </Link>

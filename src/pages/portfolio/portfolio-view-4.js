@@ -20,9 +20,7 @@ class PortfolioView4 extends Component {
                 <Helmet>
                     <meta charset="utf-8" />
                     <meta name="keywords" content={keywords} />
-                    <title>{`${
-                        catWhispererData.title
-                    } | Inter-Global Media Network, Inc.`}</title>
+                    <title>{`${catWhispererData.title} | Inter-Global Media Network, Inc.`}</title>
                     <meta
                         name="repository"
                         content={catWhispererData.repository}
@@ -62,9 +60,7 @@ class PortfolioView4 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-more"
-                                title={`visit the link to the ${
-                                    catWhispererData.title
-                                } write up on our portfolio site built with React to read more`}
+                                title={`visit the link to the ${catWhispererData.title} write up on our portfolio site built with React to read more`}
                             >
                                 Read More About {catWhispererData.title}
                             </a>
@@ -75,9 +71,7 @@ class PortfolioView4 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-repository"
-                                title={`visit the link to the ${
-                                    catWhispererData.title
-                                } source code on Github to learn more`}
+                                title={`visit the link to the ${catWhispererData.title} source code on Github to learn more`}
                             >
                                 {catWhispererData.title} Source Code
                             </a>
@@ -88,9 +82,7 @@ class PortfolioView4 extends Component {
                                 target="_new"
                                 rel="noopener noreferrer"
                                 data-testid="project-website"
-                                title={`visit the ${
-                                    catWhispererData.title
-                                } live site to view more`}
+                                title={`visit the ${catWhispererData.title} live site to view more`}
                             >
                                 {catWhispererData.title} Live Site
                             </a>
