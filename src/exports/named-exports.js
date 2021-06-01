@@ -241,20 +241,33 @@ export const styles = {
 }
 
 // FSJSLiveSites.js, WFLiveSites.js
-export const SiteWrapperDiv = styled.div`
-    display: flex;
-    flex-direction: column;
+export const SiteWrapperUl = styled.ul`
     width: 100%;
     margin: 0 auto;
     & li {
-        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        margin-bottom: 1.5rem;
+        padding: 0 10px 5px;
+        border: 1px solid gainsboro;
+        box-shadow: 0 -1px 4px #ede7e7;
+        cursor: pointer;
+    }
+    & li:hover {
+        background: rgba(255, 153, 0, 0.5);
     }
     @media (min-width: 800px) {
+        --auto-grid-min-size: 16rem;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 1.25%;
+        grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+        grid-column-gap: 0.5rem;
+        grid-auto-rows: 1fr;
         width: 100%;
         max-width: 1026px;
+        & li {
+            margin-bottom: 0;
+        }
     }
 `
 
@@ -466,7 +479,7 @@ export const AllTagsDiv = styled.div`
 `
 
 export const LiveSitesDiv = styled.div`
-    margin: 0 auto 3rem;
+    margin: 1.5rem auto 3rem;
 `
 
 export const LiveSitesSpan = styled.div`
@@ -493,19 +506,28 @@ export const GFNDTagsDiv = styled.div`
 
 // portfolio/index.js
 export const ColumnsDiv = styled.div`
-    width: 90%;
+    width: 97.5%;
     margin: 3rem auto;
-    display: grid;
     @media (min-width: 990px) {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 `
 
 export const ProjectUl = styled.div`
-    width: 90%;
-    max-width: 1026px;
+    width: 97.5%;
     margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    padding: 5px 10px 5px;
+    border: 1px solid gainsboro;
+    box-shadow: 0 -1px 4px #ede7e7;
+    cursor: pointer;
     list-style-type: none;
+    &:hover {
+        background-color: rgba(255, 153, 0, 0.5);
+    }
     & li:last-child {
         margin-top: 0.5rem;
     }
@@ -575,13 +597,13 @@ export const AnchorsUl = styled.ul`
 // services/index.js
 export const ServicesWrapperDiv = styled.div`
     width: 90%;
-    max-width: 1026px;
+    /* max-width: 1026px; */
     margin: 3rem auto;
     @media (min-width: 800px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: fit-content(40%);
-        column-gap: 1rem;
+        grid-gap: 0.75rem;
     }
 `
 
@@ -589,7 +611,7 @@ export const ServicesUl = styled.ul`
     list-style-type: none;
     width: 100%;
     max-width: 1026px;
-    margin: 0 auto 1rem;
+    margin: 0.75rem auto;
     border: 1px solid gainsboro;
     box-shadow: 0 -1px 4px #ede7e7;
     padding: 1.5rem 1rem 0;
@@ -603,6 +625,8 @@ export const ServicesUl = styled.ul`
     }
     @media (min-width: 800px) {
         display: grid;
+         margin: 0 auto;
+        
     }
 `
 
