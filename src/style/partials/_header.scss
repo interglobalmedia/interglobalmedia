@@ -1,22 +1,22 @@
 /* Mobile Hamburger Styling */
 
 div.hamburger {
+    cursor: pointer;
     display: block;
-    width: 34px;
     height: 30px;
     position: fixed;
-    top: 40px;
     right: 1.5rem;
-    cursor: pointer;
+    top: 40px;
+    width: 34px;
     z-index: 99999;
 }
 
 div.hamburger div.line {
-    width: 100%;
+    background: $chocolate;
     height: 6px;
     margin: 0 0 6px 0;
-    background: $chocolate;
     transition: transform 0.3s, opacity 0.1s;
+    width: 100%;
 }
 
 /* End Mobile Hamburger Styling */
@@ -36,176 +36,167 @@ div.hamburger div.line {
 
 /* End Animation classes for Hamburger Rotation Animation Styling in topNavNarrow */
 
+
 /* Animation classes for Hamburger Rotation Animation Styling Used in topNavNarrow */
 
 nav.responsive-menu {
-    width: 100%;
     height: 85px;
-    overflow-y: visible;
     opacity: 1;
-    z-index: 1;
-    transition: height 0.5s ease, opacity 1s;
+    overflow-y: visible;
     position: sticky;
+    transition: height 0.5s ease, opacity 1s;
+    width: 100%;
+    z-index: 1;
 
     li a,
     li div.active {
         display: none !important;
+        transition: transform .8s cubic-bezier(0.85, 0, 0.15, 1);
     }
 
     & ul {
-        -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
-        -webkit-transform-origin: 50% 0;
-        -webkit-transition: 350ms;
-        -moz-transition: 350ms;
-        -o-transition: 350ms;
-        transition: 350ms;
+        list-style-type: none;
+        margin-bottom: 6rem;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        opacity: 0;
+        transform: perspective(600) rotate3d(1, 0, 0, -90deg) translateY(-100%);
+        transform-origin: 0 100%;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -o-transition: 2s;
+        transition: transform 3s ease;
     }
 }
 
 nav.responsive-menu.show {
-    opacity: 1;
-    z-index: 9999;
-    transition: height 0.5s ease, visibility 1s;
+    background: rgb(255, 227, 159);
+    background-image: repeating-radial-gradient(circle at 100%,
+            $frenchYellow,
+            $frenchYellow 2.5%,
+            $mistyRose 2.5%,
+            $mistyRose 5%);
+    bottom: 0;
+    display: flex;
     height: 100vh;
+    margin-bottom: 0;
+    margin-left: -1.5rem;
+    opacity: 1;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 6rem;
     position: fixed;
     top: -0.85rem;
-    bottom: 0;
-    overflow-y: hidden;
-    padding-top: 6rem;
-    margin-left: -1.5rem;
-    background: rgb(255, 227, 159);
-    display: flex;
+    transition: height 0.5s ease, visibility 1s;
+    z-index: 9999;
 
     h1 {
         display: none;
     }
 
+    ul {
+        opacity: 1;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        @include absoluteCenter;
+        margin-top: -0.25rem;
+        background: rgba($mistyRose, 0.5);
+        margin-left: 0;
+        transition: left 1.5s ease;
+    }
+
+    @keyframes slidein {
+
+        from {
+            margin-left: -120vw;
+            width: auto;
+            max-height: 72vh;
+            background: rgba($mistyRose, 0.5);
+        }
+        50% {
+            margin-left: 25vw;
+            width: auto;
+            max-height: 72vh;
+            background: rgba($frenchYellow, 0.75);
+        }
+
+        to {
+            margin-left: 0;
+            width: auto;
+            max-height: 72vh;
+            background: rgba($mistyRose, 0.5);
+        }
+    }
+
     li {
+        margin: 1rem;
         margin-top: 1.5rem;
     }
 
     li a,
     li div.active {
         display: block !important;
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
-    margin-top: 15px;
+    margin-top: 0.94rem;
 
     a {
+        &:link,
+        &:visited {
+            /* So that animation works as it should for example padding is defined properly only with this property declaration */
+            // display: inline-block;
+            background-image: linear-gradient(120deg,
+                    transparent 0%,
+                    transparent 50%,
+                    #fff 50%);
+            background-size: 230%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 0.25rem 1.25rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all .4s ease;
+            @media #{$min-384} {
+                font-size: 1.75rem;
+                padding: 1rem 2rem;
+            }
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            background: $white;
+            color: $chocolate;
+            text-decoration: underline;
+            transform: translateX(1rem);
+            transition: transform .4s ease;
+        }
         color: $mainBackground;
 
-        &:hover,
-        &:focus {
-            color: $chocolate;
-            transition: 1s ease-out;
-            text-decoration: underline;
+        & ul {
+            transform: perspective(600) rotate3d(0, 0, 0, 0);
+
+            li div.active a {
+                display: none !important;
+            }
         }
     }
 
-    & ul {
-        -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
-        margin: 30px auto 0;
+    /* End responsive Menu Styling */
 
-        li div.active a {
-            display: none !important;
-        }
-    }
+    /* Make sure that nav links are not reversed in mobile */
 
-    @media #{$min-990} {
-        display: none;
-    }
-}
-
-/* Get rid of .top nav > 900px wide screens with display: none so does not take up space on page */
-
-nav.top {
-    display: none;
-}
-
-/* End responsive Menu Styling */
-
-/* Wider Screens Styling > 675px */
-
-div.hamburger,
-nav.responsive-menu {
-    @media #{$min-990} {
-        display: none;
-    }
-}
-
-/* Make sure that nav links are not reversed in mobile */
-
-nav li a {
-    display: block;
-
-    @media #{$min-990} {
-        display: inline-block;
-        text-decoration: none;
-        display: inline-block;
-    }
-}
-
-nav li {
-    display: block;
-
-    @media #{$min-990} {
-        display: inline-block;
-    }
-}
-
-nav ul {
-    @media #{$min-990} {
-        display: inline-block;
-        float: right;
-    }
-}
-
-/* end nav link fix */
-
-/* Nav Styling > 900px wide */
-
-nav.top {
-    @media #{$min-990} {
+    nav li,
+    nav li a {
         display: block;
-        width: 100%;
-        height: 85px;
-        z-index: 4;
     }
 
-    ul {
-        list-style: none;
-        margin-top: -140px;
+    /* get rid of duplicate active links created by label with react-router-dom. Gets rid of dups in mobile nav. */
+
+    li div a,
+    li div.active a {
+        display: none !important;
     }
-
-    li {
-        margin-right: 20px;
-    }
-
-    li a {
-        display: block !important;
-        font-size: 20px;
-    }
-
-    a {
-        color: $mainBackground;
-
-        &:hover,
-        &:focus {
-            color: $chocolate;
-            transition: 1s ease-out;
-            text-decoration: underline;
-        }
-    }
-
-    li a.active {
-        display: none;
-    }
-}
-
-/* get rid of duplicate active links created by label with react-router-dom. Gets rid of dups in mobile nav. */
-
-li div a,
-li div.active a {
-    display: none !important;
 }
