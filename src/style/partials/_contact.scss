@@ -1,19 +1,19 @@
 .contact-content {
-    margin: 60px auto;
+    margin: 3.75rem auto;
 }
 
 .contact-social {
     li {
-        text-align: center;
-        margin: 0 auto;
-        padding: 6px 12px;
         list-style-type: none;
+        margin: 0 auto;
+        padding: 0.31rem 0.75rem;
+        text-align: center;
     }
 
     a {
+        box-shadow: none;
         color: rgb(167, 19, 138);
         font-size: 1.5rem;
-        box-shadow: none;
     }
 
     &:hover,
@@ -33,7 +33,7 @@
 .follow,
 .phone,
 .contribute {
-    margin: 40px auto 20px;
+    margin: 2.5rem auto 1.25rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,7 +44,7 @@
     font-size: 24px;
 
     @media #{$min-675} {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 }
 
@@ -57,11 +57,11 @@ a.linkedin:hover {
 }
 
 .twitter {
-    width: 33px;
+    width: 2.06rem;
 }
 
 .facebook {
-    width: 42px;
+    width: 2.63rem;
 }
 
 .github:hover {
@@ -69,7 +69,7 @@ a.linkedin:hover {
 }
 
 .linkedin {
-    width: 30px;
-    padding-left: 0;
     margin-top: -5px;
+    padding-left: 0;
+    width: 1.88rem;
 }
