@@ -338,21 +338,24 @@ export const SlideDiv = styled.div`
 
 // Share.js
 export const SocialUl = styled.ul`
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 50px;
+    grid-gap: 1rem;
+    list-style-type: none;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1rem;
-    width: 100%;
+    margin-top: 2rem;
     & li {
         list-style-type: none;
         & a {
             color: rgb(98, 22, 69);
             padding: 17px 8px 8px 8px;
             & :nth-of-type(2) {
-                padding-top: 20px;
                 padding-bottom: 5px;
+                padding-top: 20px;
             }
         }
     }
@@ -956,7 +959,8 @@ export const TagCatWrapperDiv = styled.div`
 `
 
 export const TagDiv = styled.div`
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    line-height: 2;
 `
 
 export const TagCatInSpan = styled.span`
@@ -965,7 +969,8 @@ export const TagCatInSpan = styled.span`
 `
 
 export const CatDiv = styled.div`
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    line-height: 2;
 `
 
 export const DiscussTwitter = styled.div`
