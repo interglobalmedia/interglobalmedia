@@ -1,6 +1,6 @@
 ---
 title: Creating a Custom HTML5 Video Player And The Shadow DOM
-date: 2021-06-03T13:37:23.704Z
+date: 2017-01-04T14:37:23.704Z
 description: Creating a Custom HTML5 Video Player And The Shadow DOM.
 image: /img/shadow_dom.jpg
 tags:
