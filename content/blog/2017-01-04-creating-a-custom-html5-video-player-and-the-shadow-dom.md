@@ -5,7 +5,8 @@ description: Creating a Custom HTML5 Video Player And The Shadow DOM.
 image: /img/shadow_dom.jpg
 tags:
   - fullscreen-api
-  - html5-video
+  - html-5-video
+  - html-5
   - cross-browser-issues
   - cascading-stylesheets
   - shadow-dom
