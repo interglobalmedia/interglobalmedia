@@ -12,6 +12,7 @@ import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 import omdbApiNodejsData from '../../data/portfolio/9_omdb_api_nodejs'
+import customHTML5VideoData from '../../data/portfolio/10_custom_html5_video_player'
 
 import {
     ColumnsDiv,
@@ -29,6 +30,38 @@ const PortfolioIndex = props => {
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={customHTML5VideoData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-10'}
+                            title={`visit the link to the ${customHTML5VideoData.title} app page to learn more`}
+                        >
+                            {customHTML5VideoData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageTen.childImageSharp.fluid
+                        }
+                        alt={customHTML5VideoData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {customHTML5VideoData.shortDescription}
+                    </ParaStyle>
+                    <PortfolioSpanStyle as="span">
+                        {customHTML5VideoData.tags}
+                    </PortfolioSpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-10'}
+                            title={`visit the link to the ${customHTML5VideoData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
                 <ProjectUl as="ul" key={omdbApiNodejsData.id}>
                     <ProjectTitleLi as="li">
                         <Link
@@ -405,6 +438,15 @@ export const indexQuery = graphql`
         }
         portfolioImageNine: file(
             relativePath: {eq: "projects/omdb-api-nodejs-app.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        portfolioImageTen: file(
+            relativePath: {eq: "projects/custom-html5-video-player.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
