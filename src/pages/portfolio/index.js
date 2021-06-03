@@ -13,6 +13,7 @@ import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 import omdbApiNodejsData from '../../data/portfolio/9_omdb_api_nodejs'
 import customHTML5VideoData from '../../data/portfolio/10_custom_html5_video_player'
+import musicInBrowserData from '../../data/portfolio/11_making_music_in_browser'
 
 import {
     ColumnsDiv,
@@ -30,6 +31,38 @@ const PortfolioIndex = props => {
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={musicInBrowserData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-11'}
+                            title={`visit the link to the ${musicInBrowserData.title} app page to learn more`}
+                        >
+                            {musicInBrowserData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageEleven.childImageSharp.fluid
+                        }
+                        alt={musicInBrowserData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {musicInBrowserData.shortDescription}
+                    </ParaStyle>
+                    <PortfolioSpanStyle as="span">
+                        {musicInBrowserData.tags}
+                    </PortfolioSpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-10'}
+                            title={`visit the link to the ${musicInBrowserData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
                 <ProjectUl as="ul" key={customHTML5VideoData.id}>
                     <ProjectTitleLi as="li">
                         <Link
@@ -447,6 +480,15 @@ export const indexQuery = graphql`
         }
         portfolioImageTen: file(
             relativePath: {eq: "projects/custom-html5-video-player.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        portfolioImageEleven: file(
+            relativePath: {eq: "projects/making-music-in-browser.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
