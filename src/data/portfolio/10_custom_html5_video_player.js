@@ -2,7 +2,7 @@ import customHTML5Video from '../../images/projects/custom-html5-video-player.jp
 
 const customHTML5VideoData = {
     id: 10,
-    title: 'Custom HTML5 Video Player and Shadow DOM',
+    title: 'Custom HTML5 Video Player/Shadow DOM',
     repository: 'https://github.com/interglobalmedia/custom-html5-video-player',
     website: 'https://interglobalmedia.github.io/custom-html5-video-player/',
     image: customHTML5Video,
