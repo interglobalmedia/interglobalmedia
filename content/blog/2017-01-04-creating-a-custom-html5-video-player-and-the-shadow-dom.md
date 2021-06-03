@@ -11,7 +11,6 @@ tags:
   - shadow-dom
   - user-agent-stylesheets
   - pseudo-elements
-  - html5
   - javascript
 categories:
   - frontend-development
