@@ -11,6 +11,7 @@ import trumpTalksData from '../../data/portfolio/5_trump-talks-trash'
 import chattrboxData from '../../data/portfolio/6_node-chat-app'
 import nodeDrawingData from '../../data/portfolio/7_node-drawing-app'
 import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
+import omdbApiNodejsData from '../../data/portfolio/9_omdb_api_nodejs'
 
 import {
     ColumnsDiv,
@@ -28,6 +29,38 @@ const PortfolioIndex = props => {
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={omdbApiNodejsData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-9'}
+                            title={`visit the link to the ${omdbApiNodejsData.title} app page to learn more`}
+                        >
+                            {omdbApiNodejsData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageNine.childImageSharp.fluid
+                        }
+                        alt={omdbApiNodejsData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {omdbApiNodejsData.shortDescription}
+                    </ParaStyle>
+                    <PortfolioSpanStyle as="span">
+                        {omdbApiNodejsData.tags}
+                    </PortfolioSpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-9'}
+                            title={`visit the link to the ${omdbApiNodejsData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
                 <ProjectUl as="ul" key={webAudioApiAjaxData.id}>
                     <ProjectTitleLi as="li">
                         <Link
@@ -363,6 +396,15 @@ export const indexQuery = graphql`
         }
         portfolioImageEight: file(
             relativePath: {eq: "projects/web-audio-api-ajax.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        portfolioImageNine: file(
+            relativePath: {eq: "projects/omdb-api-nodejs-app.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
