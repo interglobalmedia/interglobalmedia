@@ -1,5 +1,5 @@
 ---
-title: Changing Mac’s default screenshot file format to jpg
+title: Changing Macs default screenshot file format to jpg
 date: 2021-06-03T21:55:11.869Z
 description: How to change the default format for screenshots created on your Mac.
 image: /img/mathew-schwartz-sb7rurrmac4-unsplash.jpg
