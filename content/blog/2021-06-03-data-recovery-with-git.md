@@ -3,7 +3,7 @@ title: Data Recovery with Git
 date: 2016-10-23T17:31:11.501Z
 description: Why is there data recovery? Because sometimes you may lose a
   commit. Stuff happens! Remember. Nothing is perfect.
-image: /img/data_recovery_git.jpg
+image: /img/fredy-jacob-764477-unsplash.jpg
 tags:
   - git
   - distributed-version-control
