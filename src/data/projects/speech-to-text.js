@@ -2,9 +2,6 @@ import speechToText from '../../images/projects/speech-to-text.jpg'
 
 const speechToTextData = {
     id: 2,
-    shortDescription: `A voice controlled notes app using the Speech Recognition Api and React.
-    
-            This little app was built with React, Webpack, The Web Speech Recognition Api, and Session Storage. I also use Babel 7 for JS compilation and Jest for testing.`,
     tagNames: [
         'code refactoring',
         ', ',

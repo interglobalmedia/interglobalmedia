@@ -2,7 +2,6 @@ import nodeDrawingApp from '../../images/projects/node-collaborative-drawing-app
 
 const nodeDrawingData = {
     id: 3,
-    shortDescription: `A real time collaborative drawing app built with websockets/socket.io websocket library, express, and node canvas. What is it for? For friends and family or colleagues to connect in real time and draw collaboratively with each other.`,
     tagNames: [
         'nodejs',
         ', ',
