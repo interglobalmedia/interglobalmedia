@@ -1,17 +1,17 @@
 import React from 'react'
 
-import FeaturedProject1 from './FeaturedProject1'
-import FeaturedProject2 from './FeaturedProject2'
-import FeaturedProject3 from './FeaturedProject3'
+import FeaturedProject4 from './FeaturedProject4'
+import FeaturedProject5 from './FeaturedProject5'
+import FeaturedProject6 from './FeaturedProject6'
 
 import {AppsUl} from '../../exports/named-exports'
 
 const FeaturedProjects = () => {
     return (
         <AppsUl as="ul">
-            <FeaturedProject1 />
-            <FeaturedProject2 />
-            <FeaturedProject3 />
+            <FeaturedProject4 />
+            <FeaturedProject5 />
+            <FeaturedProject6 />
         </AppsUl>
     )
 }
