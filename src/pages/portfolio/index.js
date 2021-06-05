@@ -14,6 +14,7 @@ import webAudioApiAjaxData from '../../data/portfolio/8_web-audio-api-ajax'
 import omdbApiNodejsData from '../../data/portfolio/9_omdb_api_nodejs'
 import customHTML5VideoData from '../../data/portfolio/10_custom_html5_video_player'
 import musicInBrowserData from '../../data/portfolio/11_making_music_in_browser'
+import weatherAppNodejsData from '../../data/portfolio/12_weather_app_nodejs_server'
 
 import {
     ColumnsDiv,
@@ -31,6 +32,38 @@ const PortfolioIndex = props => {
         <Layout>
             <SEO location={props.location} title={title} keywords={keywords} />
             <ColumnsDiv as="div">
+                <ProjectUl as="ul" key={weatherAppNodejsData.id}>
+                    <ProjectTitleLi as="li">
+                        <Link
+                            to={'/portfolio/portfolio-view-12'}
+                            title={`visit the link to the ${weatherAppNodejsData.title} app page to learn more`}
+                        >
+                            {weatherAppNodejsData.title}
+                        </Link>
+                    </ProjectTitleLi>
+                    <Img
+                        fluid={
+                            props.data.portfolioImageTwelve.childImageSharp.fluid
+                        }
+                        alt={weatherAppNodejsData.title}
+                    />
+                    <br />
+                    <ParaStyle as="p">
+                        {weatherAppNodejsData.shortDescription}
+                    </ParaStyle>
+                    <PortfolioSpanStyle as="span">
+                        {weatherAppNodejsData.tags}
+                    </PortfolioSpanStyle>
+                    <br />
+                    <li>
+                        <Link
+                            to={'/portfolio/portfolio-view-12'}
+                            title={`visit the link to the ${weatherAppNodejsData.title} app page to learn more`}
+                        >
+                            <MoreP as="p">view more</MoreP>
+                        </Link>
+                    </li>
+                </ProjectUl>
                 <ProjectUl as="ul" key={musicInBrowserData.id}>
                     <ProjectTitleLi as="li">
                         <Link
@@ -489,6 +522,15 @@ export const indexQuery = graphql`
         }
         portfolioImageEleven: file(
             relativePath: {eq: "projects/making-music-in-browser.jpg"}
+        ) {
+            childImageSharp {
+                fluid(maxWidth: 1026) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        portfolioImageTwelve: file(
+            relativePath: {eq: "projects/weather-app-nodejs-server.jpg"}
         ) {
             childImageSharp {
                 fluid(maxWidth: 1026) {
