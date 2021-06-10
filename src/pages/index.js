@@ -73,7 +73,7 @@ const IndexPage = props => {
                             My specialty is to help sharpen the thinking of
                             individuals in approaching their workflows in a more
                             organized and efficient manner, thereby preparing
-                            them for jobs in Web Design and Development.
+                            them for jobs in Web Development.
                         </span>
                     </IndexBoxH3Style>
                     <IndexH2Style as="h2">
